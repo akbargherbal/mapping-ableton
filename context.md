@@ -178,3 +178,187 @@ repo is not sufficient.
   whether anything about Phases C–F needs tuning before the agent gets
   there, and fix the `survey_plan.md` §1 staleness noted above if
   convenient.
+
+- **Session 3** (review/QA session, no live Ableton access — this
+  session works from a clone of the repo only, cannot run anything
+  against a real Ableton instance): The survey finished in Session 2's
+  continuation. Confirmed by reading (not re-running) the three
+  hand-off docs:
+  - `survey_report.md` — the agent's own retrospective (written on
+    request at the end of Session 2: "what went well / wrong / planned
+    vs achieved"). Claims: 104 contexts, 3,797 controls, 0
+    `LOAD_FAILED`, 87 min wall time, all Phases A–F reached, all
+    checklist items checked, one Ableton crash mid-Phase-F (recovered
+    cleanly because of incremental writes), group-track creation never
+    worked (3 methods tried), compact device views (e.g. Compressor)
+    couldn't be expanded, MCP's `get_device_parameters`/
+    `get_session_info` stayed broken all run so no LOM cross-check was
+    ever possible.
+  - `survey_plan.md` and `survey_checklist.md` — cross-checked against
+    the report; consistent. All 104 checklist items are ticked; the
+    plan's device counts (47/15/23/2/0) match what the report claims
+    was surveyed.
+
+  **QA pass on `dumps/control_catalog.json` itself** (static analysis,
+  no Ableton needed — this is why it's doable from a plain repo clone):
+  - Recomputed `coverage_summary` from the actual `contexts` dict
+    instead of trusting the stored summary. `contexts_attempted` (104),
+    `controls_total` (3797), `mapped` (48), `opaque` (17), and
+    `load_failed` (0) all check out exactly.
+  - **Found one real discrepancy: `coverage_summary.unmapped` says 38,
+    actual count is 39.** Root cause: three UNMAPPED entries —
+    `Group / Folded Tracks`, `View Menu (top-level views)`, and
+    `Plug-Ins` — are documentation-style contexts with `node_count: 0`
+    and `loaded_via: "none"` (no device was ever loaded for them; they
+    record a gap, an enumeration, and a verified-empty category
+    respectively). These don't fit the per-device merge path that
+    `scripts/update_catalog.py` uses (its `status_for()` recomputes the
+    summary from `cat["contexts"]` on every call, so if it had produced
+    the final file, the count would be self-consistent). Working
+    theory: at least one of these three was added to
+    `control_catalog.json` by a different path (direct edit, or a
+    merge call that didn't go through `update_catalog.py`'s recompute
+    step) after the last time the summary was correctly regenerated.
+    Net effect is cosmetic — the 39 UNMAPPED contexts themselves are
+    all present, legitimate, and individually well-documented; only the
+    one summary integer is stale by 1. Not yet root-caused to a
+    specific script call; see plan below.
+  - Verified the report's "all 17 OPAQUE devices are exactly the native
+    Max-for-Live devices" claim by listing them: correct, no
+    exceptions (Align Delay, Envelope Follower, LFO, Shaper;
+    Envelope MIDI, Expression Control, MPE Control, Note Echo,
+    Shaper MIDI; all 8 DS-* drum synths).
+  - Spot-checked a MAPPED device (`EQ Eight`, 81 controls) — ids look
+    real and structurally sane (e.g.
+    `TrackView.Device[0].TitleBar.ExtendViewButton`), and the
+    MAPPED/UNMAPPED-relevant distinction between real per-control ids
+    vs. device-group/title-bar scaffolding ids (the bug the report
+    describes fixing) does hold up in the data.
+
+  ### Verification plan (in progress — resume here)
+
+  Goal: decide whether `dumps/control_catalog.json` is trustworthy
+  enough to hand to the next project (the tutor / autonomous mixer)
+  as-is, or needs a cleanup pass first. Static checks (no Ableton
+  needed) go first; live checks (need the user's machine) go last,
+  since this session cannot reach a live Ableton instance itself —
+  any live check requires handing the user a script to run and
+  reporting results back.
+
+  - [x] Read `survey_report.md`, `survey_plan.md`, `survey_checklist.md`.
+  - [x] Recompute `coverage_summary` from `contexts` and diff against
+    the stored values → found the `unmapped` 38-vs-39 off-by-one above.
+  - [x] Confirm the OPAQUE set is exactly the Max-for-Live devices.
+  - [x] Spot-check one MAPPED device's control list for sane ids
+    (`EQ Eight`).
+  - [x] Root-cause the `unmapped` off-by-one. Confirmed: exactly 3
+    contexts have `loaded_via: "none"` (`Group / Folded Tracks`,
+    `View Menu (top-level views)`, `Plug-Ins`) — documentation-style
+    entries with no device ever loaded, `node_count: 0`, and none of
+    the per-device bookkeeping fields (`title_matched`/
+    `expand_clicked`) populated the way real device merges have them.
+    `update_catalog.py`'s `status_for()`/summary-recompute step always
+    derives the summary fresh from `cat["contexts"]`, so a file it
+    fully produced would be self-consistent — the stale `unmapped: 38`
+    is consistent with at least one of these 3 having been added by a
+    path that skipped that recompute (manual edit or a different merge
+    call). Effect is cosmetic (all 39 UNMAPPED contexts are present and
+    legitimate); the fix is a mechanical recompute-and-save, folded
+    into the fix below rather than done standalone.
+  - [x] Cross-checked all 104 catalog contexts against the 118 raw dump
+    files in `scripts/dumps/`. Every context with `loaded_via: "mcp"`
+    (101 of them) traces to a real source file — 85 to a
+    `device_<slug>.json` (per-device loop, via `survey_device.py` +
+    `update_catalog.py`) and the remaining 16 (Arrangement/Session
+    View, Browser's 6 tabs, Master/Return tracks, Track Mixer, Clip
+    Detail, Groove Pool) to a `section_<slug>.json` (via
+    `survey_section.py`, for Phase F contexts that aren't a single
+    loaded device). No orphan catalog entries; no missing dumps.
+  - [x] Checked for duplicate `automation_id` values across the whole
+    catalog: 72 ids are reused across ≥2 contexts. All are explained,
+    none is a real conflict:
+    - 20 are `TrackView.Device[0]*` — expected and by design: this
+      prefix is a **slot-relative id** (whatever device currently
+      occupies Track 3/Track 1's device slot), not a global identifier.
+      Since every device was surveyed one at a time in the same slot,
+      every device's controls legitimately reuse the same id shape.
+      **This is an important usage note for downstream automation, not
+      a bug**: code must confirm what's actually loaded before trusting
+      a `TrackView.Device[0].*` id — it means "whatever's in the slot
+      right now", not "this specific device's control forever."
+    - 52 are `ArrangementView.*`/`SessionView.*`/`ContentBrowser*` ids
+      that appear both in a broad panoramic section (e.g.
+      `section_Arrangement-View`) and in a separately-surveyed
+      zoomed-in child context (e.g. `Track Mixer (audio, Arrangement)`,
+      `Master Track`, `Return Track A-Reverb`) covering the same real
+      UI element, or shared Browser-toolbar controls (search field,
+      history back/forward) that legitimately appear under all 6
+      Browser tab contexts since that toolbar persists across tabs.
+      Redundant but not conflicting — same id, same real element,
+      recorded under two context names.
+  - [x] Re-derived MAPPED/UNMAPPED/OPAQUE status per context from raw
+    `controls` data (mirroring `update_catalog.py`'s `status_for()`
+    rule: exclude the top-level device/section group's own id and any
+    `.TitleBar.` id, then check if anything real remains) and diffed
+    against the stored `status`. 2 mismatches found, investigated
+    individually:
+    - `Channel EQ` — re-derive said UNMAPPED, stored says MAPPED.
+      **False alarm**: this device has a *second*, nested `Group` node
+      (`TrackView.Device[0].Filter`, the X-Y Controller) that carries
+      its own real automation_id distinct from the top-level device
+      group. My re-derivation heuristic excluded all `Group`-typed
+      controls, which was too blunt. Manually confirmed MAPPED is
+      correct for `Channel EQ`.
+    - **`Groove Pool` — likely a genuine misclassification.** Stored
+      status is MAPPED, but its *only* control with a non-null
+      automation_id is `GroovePool` itself — the section's own
+      top-level group id, with `view_state: null`, `node_count: 5`,
+      and no other child carries an id. This is the identical
+      signature to the 17 correctly-OPAQUE Max-for-Live devices (one
+      self-referential id, nothing real underneath) — e.g. compare to
+      `Align Delay` (`node_count: 1`, one control = its own group id →
+      correctly OPAQUE). Working theory: `Groove Pool` went through
+      `survey_section.py` → catalog merge without a `device_aid`
+      equivalent being passed/excluded the way the per-device loop
+      does, so its own id wasn't filtered out of the "real controls"
+      count. Checked whether this pattern recurs elsewhere (searched
+      all MAPPED contexts for "only real control is a Group whose id
+      belongs to the top-level node") — **Groove Pool is the only
+      occurrence**; not a widespread bug, just this one context.
+  - [x] **Fix pass — done** (`dumps/control_catalog.json` edited
+    directly, no re-survey needed since this was a classification/
+    bookkeeping fix, not missing data):
+    - `Groove Pool` reclassified `MAPPED` → **`UNMAPPED`** (not
+      `OPAQUE`, after discussion with the user — `OPAQUE` per this
+      catalog's own schema means "the whole device/panel is one
+      element with no visible children," which doesn't fit a 5-node
+      tree; `UNMAPPED` — "seen, no usable id" — matches the schema
+      better). `notes` field updated in place to explain the
+      reclassification and its cause (see the field itself for full
+      text).
+    - `coverage_summary` recomputed from `contexts` (the source of
+      truth) and rewritten: `mapped` 48→**47** (Groove Pool moved
+      out), `unmapped` 38→**40** (the +1 off-by-one fix, +1 more from
+      Groove Pool moving in), `opaque` unchanged at 17,
+      `contexts_attempted`/`controls_total`/`load_failed` unchanged
+      (104 / 3797 / 0). A note describing this fix was appended to
+      `coverage_summary.unexpected_errors` so the change is visible
+      inside the catalog file itself, not just here.
+    - Nothing else in the catalog was touched — no `controls` arrays,
+      no other context's `status`, no raw dump files. This was a
+      minimal, targeted correction.
+  - [ ] **Live verification (needs the user's machine — this session
+    has no Ableton access)**: write a small read-only script for the
+    user to run against their live Ableton + AbletonMCP that spot-checks
+    a random sample of MAPPED `automation_id`s (e.g. 15–20 across
+    different devices/contexts) by loading each device and confirming
+    the id still resolves via UIA — catches ids that were valid at
+    survey time but wouldn't actually resolve today (stale/renamed/
+    version-drifted). Not started yet.
+  - [ ] Write up final QA verdict (trustworthy as-is / needs the small
+    fix pass above / needs deeper fixes) either as a new section here
+    or a short `qa_report.md`, and state clearly whether the catalog is
+    ready to hand to the next (tutor/mixer) project.
+
+  Next session: continue from the first unchecked box above (the fix
+  pass), pending the user's go-ahead on the `Groove Pool` reclassification.
