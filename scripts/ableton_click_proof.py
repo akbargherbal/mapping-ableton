@@ -104,11 +104,84 @@ def main():
         write_result(args.out, result)
         sys.exit(1)
 
+    def iter_all_elements(root, max_depth=25):
+        """
+        Manually walk the UIA tree via .children() (immediate children,
+        recursively) instead of .descendants().
+
+        Why: pywinauto's descendants() does FindAll(TreeScope_Descendants,
+        TrueCondition) in one shot. Against a large/complex tree like
+        Ableton's (thousands of elements), that single call frequently
+        raises a COMError -- and pywinauto's _get_elements() SILENTLY
+        SWALLOWS that error and returns an empty list, with no exception
+        bubbling up. Net effect: descendants() looks like it ran fine but
+        reports "0 elements found", indistinguishable from an empty tree.
+
+        This project's own proven-working script (dump_ableton_pywinauto.py)
+        never calls descendants() for exactly this reason -- it walks via
+        children() layer by layer, which is far more reliable against big
+        trees. We do the same here.
+        """
+        stack = [(root, 0)]
+        while stack:
+            node, depth = stack.pop()
+            yield node
+            if depth >= max_depth:
+                continue
+            try:
+                kids = node.children()
+            except Exception:
+                kids = []
+            for kid in kids:
+                stack.append((kid, depth + 1))
+
+    def find_by_auto_id(window, auto_id):
+        """Return descendant elements (via manual tree walk) whose
+        automation_id matches."""
+        matches = []
+        for elem in iter_all_elements(window):
+            try:
+                if elem.element_info.automation_id == auto_id:
+                    matches.append(elem)
+            except Exception:
+                continue
+        return matches
+
+    def ensure_window_ready(window, maximize=True):
+        """
+        Restore/focus/maximize the Ableton window before walking its UIA
+        tree. Ableton's Session/Device views are UI-virtualized -- a
+        control that isn't actually rendered on screen (window minimized,
+        too small, unfocused/backgrounded) simply doesn't exist as a UIA
+        element yet, even though its automation_id is well-defined once
+        it IS visible. This is the same lesson baked into
+        dump_ableton_pywinauto.py / automate_ableton_task.py elsewhere in
+        this project -- ported here since this script is standalone.
+        """
+        try:
+            if window.is_minimized():
+                log(trail, "Window is minimized; restoring...")
+                window.restore()
+        except Exception:
+            pass
+        try:
+            window.set_focus()
+        except Exception:
+            pass
+        if maximize:
+            try:
+                window.maximize()
+            except Exception:
+                pass
+        time.sleep(0.3)  # give the redraw a moment before we walk the tree
+
     # --- Step 2: find the live Ableton window
     try:
         win = Desktop(backend="uia").window(title_re=".*Ableton Live.*")
         win.wait("exists enabled visible ready", timeout=10)
         log(trail, f"Found Ableton window: '{win.window_text()}'")
+        ensure_window_ready(win)
+        log(trail, "Window restored/focused/maximized before walking the UIA tree.")
     except Exception as e:
         result["reason"] = (
             f"Could not find/connect to an Ableton window ({e}). "
@@ -119,9 +192,40 @@ def main():
         write_result(args.out, result)
         sys.exit(1)
 
+    # --- Step 2b: DIAGNOSTIC -- how many elements does the tree walk even
+    # see, and how many of those carry a non-empty automation_id at all?
+    # This tells us whether the problem is "wrong id" vs. "tree walk is
+    # seeing almost nothing" (focus/rendering/backend issue).
+    try:
+        all_descendants = list(iter_all_elements(win))
+        total_count = len(all_descendants)
+        with_auto_id = []
+        for elem in all_descendants:
+            try:
+                aid = elem.element_info.automation_id
+                if aid:
+                    with_auto_id.append(aid)
+            except Exception:
+                continue
+        result["diagnostic_total_descendants"] = total_count
+        result["diagnostic_with_automation_id_count"] = len(with_auto_id)
+        result["diagnostic_sample_automation_ids"] = with_auto_id[:40]
+        log(trail, f"DIAGNOSTIC: tree walk saw {total_count} total elements, "
+                    f"{len(with_auto_id)} of them carry a non-empty automation_id.")
+        if with_auto_id:
+            log(trail, "DIAGNOSTIC sample automation_ids: " + ", ".join(with_auto_id[:15]))
+        # Also check specifically for anything starting with "TrackView"
+        trackview_ids = [a for a in with_auto_id if a.startswith("TrackView")]
+        result["diagnostic_trackview_ids"] = trackview_ids[:40]
+        log(trail, f"DIAGNOSTIC: {len(trackview_ids)} automation_ids start with 'TrackView'.")
+        if trackview_ids:
+            log(trail, "DIAGNOSTIC TrackView ids: " + ", ".join(trackview_ids[:20]))
+    except Exception as e:
+        log(trail, f"DIAGNOSTIC step failed: {e}")
+
     # --- Step 3: confirm the loaded device is actually Auto Filter
     try:
-        title_elem = win.descendants(auto_id=TITLE_CHECK_ID)
+        title_elem = find_by_auto_id(win, TITLE_CHECK_ID)
         if title_elem:
             device_title = title_elem[0].window_text()
             result["device_title_seen"] = device_title
@@ -138,7 +242,7 @@ def main():
 
     # --- Step 4: locate the target control by automation_id
     try:
-        elems = win.descendants(auto_id=TARGET_AUTOMATION_ID)
+        elems = find_by_auto_id(win, TARGET_AUTOMATION_ID)
         if not elems:
             result["reason"] = (
                 f"'{TARGET_NAME}' (id={TARGET_AUTOMATION_ID}) not found live. "
@@ -174,7 +278,7 @@ def main():
 
     # --- Step 7: read state AFTER
     try:
-        elems_after = win.descendants(auto_id=TARGET_AUTOMATION_ID)
+        elems_after = find_by_auto_id(win, TARGET_AUTOMATION_ID)
         after = elems_after[0].get_toggle_state() if elems_after else None
         result["toggle_state_after"] = after
         log(trail, f"Toggle state AFTER click: {after}")

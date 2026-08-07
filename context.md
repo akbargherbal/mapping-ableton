@@ -130,24 +130,114 @@ relevant `AGENTS.md` explicitly — being in this repo is not sufficient.
 
 ## Open items
 
-- **Awaiting result of `ableton_click_proof.py`.** A standalone script
-  (not part of either curated agent environment — a one-off proof
-  requested directly by the maintainer) was handed off to run locally
-  on the maintainer's Windows machine. It targets one real control from
-  the catalog — `Auto Filter` → `Sidechain Toggle`
-  (`TrackView.Device[0].TitleBar.ExtendViewButton`) — reads its
-  toggle_state before a click, clicks it via pywinauto/UIA, reads the
-  state after, and writes `ableton_click_proof_result.json` plus a
-  printed trail. Purpose: end-to-end confirmation, on the maintainer's
-  own machine, that a catalog `automation_id` resolves to a real live
-  element and actually controls it (not just resolves in an agent
-  session). Prerequisite given: load Auto Filter as the first device on
-  a track and select that track before running.
-  **Next session: read the maintainer's reported output (terminal trail
-  and/or the result JSON) and confirm/deny the proof succeeded.** If it
-  failed, the likely causes to check first are: script run under WSL
-  Python instead of Windows Python, or Auto Filter not loaded as the
-  first device on the selected track.
+- **DECISION PENDING: is the survey sufficient to unblock downstream
+  projects, or does it need a second pass? Waiting on the maintainer to
+  specify what those downstream projects (tutor, autonomous mixer,
+  etc.) actually need to control.** This is the live question as of
+  2026-08-07 -- next session should start here, by asking the
+  maintainer for that requirements list, not by re-deriving the
+  analysis below (already done, don't repeat it).
+
+  **Background — where this question came from:** an earlier session
+  had a dispute between the maintainer's claim ("every control has an
+  id, an agent can theoretically operate Ableton like DOM elements")
+  and a correction (only 865/3797 controls catalog-wide have a real
+  `automation_id`, ~23%). The maintainer asked for this to be settled
+  with data, not opinion, and specifically wanted to know: **is the
+  uncovered 77% a genuine edge case, or is it the normal/default
+  outcome?** The `ableton_click_proof.py` saga (see entry below) was
+  the maintainer's way of stress-testing whether the mapped portion is
+  even real -- it is (see PASSED entry below).
+
+  **Analysis done this session (verified against control_catalog.json
+  directly, figures are exact, not estimated):**
+
+  The 23% figure hides a sharp split by *what kind* of control:
+
+  - **Navigation/mixing layer -- essentially complete, genuinely an
+    edge case when something's missing:** Session View 41/41 (100%),
+    Clip Detail View 26/26 (100%), Master Track (Session) 5/5 (100%),
+    Arrangement View 33/42 (79%), Track Mixer 6/8 (75%). This is
+    exactly the layer `ableton_click_proof.py` exercised and it PASSED
+    live. Track arm/mute/solo/volume/pan, transport, browser
+    navigation -- solid, proven, not just on paper.
+
+  - **In-device sound-shaping parameters (the sliders/knobs/combo
+    boxes that actually shape the sound inside an effect or
+    instrument) -- the gap here is the DEFAULT case, not an edge case,
+    even inside contexts the catalog labels `MAPPED`.** Catalog-wide,
+    only 249/632 (39%) of Slider/ComboBox controls inside `MAPPED`
+    contexts have an automation_id. Worse, some devices are `MAPPED`
+    status with ZERO controllable parameters: Auto Filter 0/11, Channel
+    EQ 0/5, Chorus-Ensemble 0/9, Looper 0/7, Phaser-Flanger 0/19, Tuner
+    0/1, Random 0/3, Drift 0/44. Auto Filter -- the very device used
+    for the click-proof -- has NO mapped sound parameter; the one thing
+    proven live (Sidechain Toggle) is UI chrome (expand/collapse the
+    device view), not a parameter that shapes audio. Common everyday
+    tools are similarly thin: Compressor 1/9, Delay 1/10, Echo 1/19,
+    Limiter 1/5.
+
+  **Why this matters for the decision:** `MAPPED` at the catalog's
+  context level means "this device has at least one automation_id
+  somewhere" -- often just the device's own group id or a chrome
+  button -- not "this device's parameters are controllable." A
+  downstream project that only needs navigation/mixing (arm a track,
+  set volume, browse and load a device) can treat the survey as done;
+  the click-proof result generalizes safely to that layer. A downstream
+  project that needs to actually turn a filter cutoff or a compressor
+  threshold cannot rely on the current catalog for most devices --
+  that gap is systemic, not a rounding error, and would need either a
+  second survey pass targeting device parameters specifically, or a
+  different automation strategy (e.g. relative slider drag + read-back,
+  rather than a stable id) accepted as this project's real answer for
+  that 60%+ of parameters.
+
+  **Next session action:** get the maintainer's actual list of what the
+  downstream projects need to control, then give a direct
+  done-or-not-done verdict per project against the numbers above (no
+  new analysis needed unless the requirements point at data not already
+  pulled here).
+
+- **`ableton_click_proof.py` proof: PASSED (2026-08-07).** Ran on the
+  maintainer's Windows machine against a live Ableton Live 12 instance
+  with Auto Filter loaded as the first device on a selected track.
+  `TrackView.Device[0].TitleBar.ExtendViewButton` ("Sidechain Toggle")
+  resolved to a real live element, `toggle_state` read `0` before the
+  click and `1` after -- end-to-end confirmation that a catalog
+  `automation_id` both resolves and actually controls the real element,
+  not just that a click landed. Full trail in
+  `ableton_click_proof_result.json` (maintainer's machine).
+
+  Getting there required three fixes to the original script, all now
+  folded into the version the maintainer ran (worth keeping in mind for
+  any future one-off pywinauto script written outside the two curated
+  agent environments, since those already avoid these pitfalls):
+  1. `descendants(auto_id=...)` doesn't work on current pywinauto
+     (0.6.9) -- `auto_id` was dropped from `build_condition()`/
+     `descendants()` and is now only wired into `find_elements()`/
+     `child_window()`. Fix: pull elements unfiltered, filter by
+     `.element_info.automation_id` in Python.
+  2. Ableton's Session/Device views are UI-virtualized (see the
+     `ensure_window_ready` lesson in `dump_ableton_pywinauto.py`) --
+     restore/focus/maximize the window before walking the tree, or
+     controls that aren't rendered on screen simply don't exist as UIA
+     elements yet.
+  3. **The one that actually mattered here:** `descendants()` calls
+     `FindAll(TreeScope_Descendants, TrueCondition)` in one shot.
+     Against Ableton's large tree this raised a COM error that
+     pywinauto's `_get_elements()` silently swallows, returning `[]`
+     with no exception and no warning -- indistinguishable from "found
+     nothing" until a diagnostic pass counted total elements and saw
+     zero. `dump_ableton_pywinauto.py` was already avoiding this by
+     walking `.children()` manually, layer by layer, instead of calling
+     `descendants()` -- the proof script just hadn't followed that
+     pattern. Once it did, the tree walk saw 447 elements (229 with a
+     non-empty automation_id) and the target resolved immediately.
+
+  Net: no catalog defect, no environment misconfiguration on the
+  maintainer's end -- the failure was entirely in the standalone
+  script's use of a pywinauto API that's fragile against large trees.
+  Nothing in `control_catalog.json` needs to change because of this.
 
 - If a downstream project (tutor, autonomous mixer) surfaces a stale or
   non-resolving `automation_id` outside the 21 verified contexts,
