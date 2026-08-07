@@ -1,5 +1,12 @@
 # Survey Report — Control Catalog of Ableton Live
 
+> **STATUS: HISTORICAL — fully absorbed into `FIX_PLAN/FIX_PLAN.md` and
+> `AGENTS.md`.** Every actionable item in §5/§7 below was converted into
+> a specific `AGENTS.md` fix already. A new agent doesn't need to read
+> this to run the audit pass — it's kept for provenance/audit-trail
+> purposes only, so the reasoning behind AGENTS.md's current shape stays
+> traceable.
+
 An honest retrospective on running the control-survey as an AI agent:
 what I planned, what I actually achieved, what went well, and what went
 wrong. Written after the fact, from the agent's own perspective, so a

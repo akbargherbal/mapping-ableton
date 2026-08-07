@@ -1,9 +1,19 @@
 # Survey Plan — Ableton Live Control Catalog
 
+> **STATUS: HISTORICAL — superseded by `AGENTS.md`.** The environment
+> findings below (WSL2, interpreter reality, read-only definition) were
+> folded into `AGENTS.md` §0 after the first run. **`AGENTS.md` is now
+> authoritative on all of that; this file no longer wins on conflict.**
+> What's still useful here: run-specific facts AGENTS.md deliberately
+> doesn't carry — the exact hostname, WSL path, and the session state
+> (track/return counts, the leftover EQ Eight) as observed on
+> 2026-08-07. Treat it as a dated snapshot, not current instructions.
+
 Ground truth for *how* to run the control survey. Reconciles what
 `AGENTS.md` assumed with what was actually observed during the
 fresh-start sanity checks (2026-08-07). Where this document contradicts
-`AGENTS.md`, **this document wins** — it reflects observed reality.
+`AGENTS.md`, ~~**this document wins**~~ — see status note above;
+`AGENTS.md` now wins.
 
 ## 1. Task
 
