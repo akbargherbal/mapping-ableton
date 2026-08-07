@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T16:00:09.897800+00:00",
+  "generated": "2026-08-07T16:42:55.511964+00:00",
   "environment": "Ableton Live 12 Suite, WSL2 + Windows Python",
   "coverage_summary": {
     "contexts_attempted": 101,
@@ -19,7 +19,7 @@
       "MCP load_instrument_or_effect returns success with EMPTY device list; verified via get_track_info.",
       "Master track not exposed in Session View UIA tree (0 nodes); exposed in Arrangement as ArrangementView.MainTrack."
     ],
-    "notes": "run_time_seconds is an approximation of active survey tool time."
+    "notes": "run_time_seconds is an approximation of active survey tool time. Audit pass 2026-08-07: added survey-prep action note to group-track contexts; appended RangeValue-absent-is-expected note to all UNMAPPED slider contexts."
   },
   "contexts": {
     "Align Delay": {
@@ -59,7 +59,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Amp",
@@ -1146,7 +1146,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Auto Pan",
@@ -2709,7 +2709,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Cabinet",
@@ -3825,7 +3825,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Corpus",
@@ -5581,7 +5581,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Dynamic Tube",
@@ -7612,7 +7612,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "EQ Three",
@@ -7842,7 +7842,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Erosion",
@@ -9386,7 +9386,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Gate",
@@ -9640,7 +9640,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Glue Compressor",
@@ -9855,7 +9855,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Grain Delay",
@@ -11955,7 +11955,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Multiband Dynamics",
@@ -12995,7 +12995,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Pedal",
@@ -13854,7 +13854,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Redux",
@@ -14084,7 +14084,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Resonators",
@@ -14920,7 +14920,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Reverb",
@@ -15658,7 +15658,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": true,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Roar",
@@ -16089,7 +16089,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": true,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Saturator",
@@ -16643,7 +16643,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Shifter",
@@ -17267,7 +17267,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Spectral Resonator",
@@ -18492,7 +18492,7 @@
       "controls_with_automation_id": 4,
       "title_matched": true,
       "expand_clicked": true,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Spectrum",
@@ -19338,7 +19338,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Vinyl Distortion",
@@ -19787,7 +19787,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Vocoder",
@@ -20260,7 +20260,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Analog",
@@ -21721,7 +21721,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Collision",
@@ -24773,7 +24773,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Electric",
@@ -27366,7 +27366,7 @@
       "controls_with_automation_id": 4,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Operator",
@@ -30322,7 +30322,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Tension",
@@ -34055,7 +34055,7 @@
       "controls_with_automation_id": 4,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Chord",
@@ -34771,7 +34771,7 @@
       "controls_with_automation_id": 2,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Note Length",
@@ -35769,7 +35769,7 @@
       "controls_with_automation_id": 3,
       "title_matched": true,
       "expand_clicked": false,
-      "notes": "controls rendered but none carry a usable automation_id",
+      "notes": "controls rendered but none carry a usable automation_id RangeValue/value-read pattern absent on all sliders (0/N) — expected outcome per AGENTS.md 5.3, not an open question.",
       "controls": [
         {
           "name": "Velocity",
@@ -40722,7 +40722,7 @@
       "controls_with_automation_id": 11,
       "title_matched": null,
       "expand_clicked": null,
-      "notes": "Group track mixer (SessionView.GroupTrack[N].Mixer) vs normal track: NO Input Type/Channel, Monitoring, or Arm controls (audio bus); HAS Clip Stop + Send sliders. Children nest under SessionView.GroupTrack[N].Track[M].*.",
+      "notes": "Group track mixer (SessionView.GroupTrack[N].Mixer) vs normal track: NO Input Type/Channel, Monitoring, or Arm controls (audio bus); HAS Clip Stop + Send sliders. Children nest under SessionView.GroupTrack[N].Track[M].*. Survey-prep action: group track produced by selecting two tracks and pressing Ctrl+G (one-off UIA script; no MCP grouping tool), on the unsaved project — in scope per AGENTS.md 0/5.4.",
       "controls": [
         {
           "name": "2-Group",
@@ -40922,7 +40922,7 @@
       "controls_with_automation_id": 13,
       "title_matched": null,
       "expand_clicked": null,
-      "notes": "Child track inside a group nests as SessionView.GroupTrack[N].Track[M].Mixer — same shape as a normal track's mixer strip (Input/Monitoring/Arm present).",
+      "notes": "Child track inside a group nests as SessionView.GroupTrack[N].Track[M].Mixer — same shape as a normal track's mixer strip (Input/Monitoring/Arm present). Survey-prep action: group track produced by selecting two tracks and pressing Ctrl+G (one-off UIA script; no MCP grouping tool), on the unsaved project — in scope per AGENTS.md 0/5.4.",
       "controls": [
         {
           "name": "3-MIDI",
