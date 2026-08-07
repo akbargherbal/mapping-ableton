@@ -1,1 +1,25 @@
-Write me about your experience as an AI agent survey Ableton; what went well; what went wrong; compare what you planned; vs what you achieved etc; write in survey_report.md in project root.
+# Session Prompt — Next Survey Pass (Resume/Audit)
+
+Read `AGENTS.md` in full before doing anything else — it's the current, authoritative briefing, already rewritten to incorporate lessons from the prior run. This is a **resume/audit pass, not a fresh survey**: the catalog already has 101/101 contexts and 0 LOAD_FAILED. Do not re-survey anything that's already complete.
+
+**Other docs in this repo, and how to treat each one:**
+
+- `AGENTS.md` — current instructions. Follow this. Wins on any conflict.
+- `survey_checklist.md` — the running record of what's been surveyed. **Read this and reconcile it against `dumps/control_catalog.json`** as your first real step (an item only counts as done if a matching context exists in the catalog, not just a checked box).
+- `dumps/control_catalog.json` — the actual deliverable. Source of truth over the checklist.
+- `survey_plan.md` — **historical**, superseded by AGENTS.md §0. Only useful for run-specific facts AGENTS.md doesn't carry (hostname, WSL path, prior session state). Not authoritative.
+- `survey_report.md` — **historical**, fully absorbed into this pass's scope already. No need to read it; kept for provenance only.
+
+**What to actually do, in order:**
+
+1. Sanity check 0 (AGENTS.md): confirm which environment/interpreter you're actually in and record it before running any script.
+2. Reconcile `survey_checklist.md` against `dumps/control_catalog.json`.
+3. Re-open only these three items:
+   - The two non-read-only contexts (group-track creation, Clip Detail) — confirm their `notes` field documents the UI action taken to produce them. If missing, add the note; don't redo the action.
+   - A sample of UNMAPPED sliders — spot-check a handful and confirm the status note reflects "RangeValue absent is expected," not an open question.
+   - `dump_ableton_states.py` — confirm there's exactly one clear note that it's known-broken (not scattered across files). Do not attempt to fix it.
+4. Do not touch any action code (§9 of AGENTS.md), do not save/export the project, and do not re-run the 85 device loads — those are done and clean.
+
+If anything in `AGENTS.md` doesn't match what you observe, log it in the catalog/notes rather than silently working around it — write up a short retrospective at the end (what you found, what needed a note added) the same way the prior run's `survey_report.md` fed this one, so it's ready to feed a third pass if needed.
+
+---
