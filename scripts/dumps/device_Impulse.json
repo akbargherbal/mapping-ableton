@@ -1,0 +1,655 @@
+{
+  "device_name": "Impulse",
+  "slug": "Impulse",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Impulse",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 51,
+  "controls_with_automation_id": 12,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Impulse",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 837,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Impulse",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 363,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 788,
+        "top": 767,
+        "right": 806,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 807,
+        "top": 767,
+        "right": 825,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot0.TitleBarEditField",
+      "bounding_rect": {
+        "left": 300,
+        "top": 815,
+        "right": 350,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 850,
+        "right": 347,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 352,
+        "top": 850,
+        "right": 399,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].TransposeRandom",
+      "bounding_rect": {
+        "left": 352,
+        "top": 966,
+        "right": 399,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 352,
+        "top": 933,
+        "right": 399,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 933,
+        "right": 347,
+        "bottom": 950
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 850,
+        "right": 451,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 933,
+        "right": 451,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 966,
+        "right": 451,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 352,
+        "top": 918,
+        "right": 400,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Random",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 352,
+        "top": 951,
+        "right": 400,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 918,
+        "right": 452,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 951,
+        "right": 438,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 933,
+        "right": 499,
+        "bottom": 950
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 850,
+        "right": 499,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 553,
+        "top": 850,
+        "right": 601,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 933,
+        "right": 553,
+        "bottom": 950
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 951,
+        "right": 540,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 966,
+        "right": 553,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 850,
+        "right": 555,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 555,
+        "top": 918,
+        "right": 603,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 555,
+        "top": 933,
+        "right": 602,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Random",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 555,
+        "top": 951,
+        "right": 603,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 555,
+        "top": 966,
+        "right": 602,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 609,
+        "top": 850,
+        "right": 656,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 609,
+        "top": 933,
+        "right": 656,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 716,
+        "top": 850,
+        "right": 763,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 716,
+        "top": 933,
+        "right": 763,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 663,
+        "top": 850,
+        "right": 710,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 663,
+        "top": 933,
+        "right": 710,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 663,
+        "top": 966,
+        "right": 710,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 716,
+        "top": 966,
+        "right": 739,
+        "bottom": 983
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 741,
+        "top": 966,
+        "right": 763,
+        "bottom": 983
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 716,
+        "top": 918,
+        "right": 765,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 663,
+        "top": 918,
+        "right": 712,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Random",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 663,
+        "top": 951,
+        "right": 712,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot1.TitleBarEditField",
+      "bounding_rect": {
+        "left": 359,
+        "top": 815,
+        "right": 409,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot2.TitleBarEditField",
+      "bounding_rect": {
+        "left": 418,
+        "top": 815,
+        "right": 468,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot3.TitleBarEditField",
+      "bounding_rect": {
+        "left": 477,
+        "top": 815,
+        "right": 527,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot4.TitleBarEditField",
+      "bounding_rect": {
+        "left": 536,
+        "top": 815,
+        "right": 586,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot5.TitleBarEditField",
+      "bounding_rect": {
+        "left": 595,
+        "top": 815,
+        "right": 645,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot6.TitleBarEditField",
+      "bounding_rect": {
+        "left": 654,
+        "top": 815,
+        "right": 704,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Edit",
+      "name": "Device",
+      "automation_id": "TrackView.Device[0].Slot7.TitleBarEditField",
+      "bounding_rect": {
+        "left": 713,
+        "top": 815,
+        "right": 763,
+        "bottom": 830
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 771,
+        "top": 789,
+        "right": 824,
+        "bottom": 855
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 771,
+        "top": 855,
+        "right": 824,
+        "bottom": 921
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 771,
+        "top": 921,
+        "right": 824,
+        "bottom": 987
+      },
+      "patterns": {}
+    }
+  ]
+}

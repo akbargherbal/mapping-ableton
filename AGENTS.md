@@ -20,49 +20,67 @@ document doesn't answer, log it honestly in the catalog and keep moving
   loading a device onto a track (§4). Use it; you don't need to verify
   its presence, it's already confirmed available for this run.
 
-## 1. Before you start — write your plan
+## 1. Startup — checkpoint first
 
-Everything in this document is a strong, considered starting point. It
-is not ground truth. **Nothing here excuses you from checking reality
-before you commit to a course of action.** Before you survey a single
-device, do the following, in order:
+Two files at the repo root are the **standing checkpoint mechanism** for
+this survey — not a one-off write, but the thing every session starts
+from:
 
-1. **Run a handful of sanity checks** against what this document assumes:
-   - Dump the current window once (`dump_ableton_pywinauto.py`,
-     maximized) and confirm you get a non-trivial tree back, not an
-     empty or near-empty one.
-   - Confirm AbletonMCP actually responds to a real call (e.g. a
-     read-only query, or a trivial load-by-name on one device) — "it's
-     connected" is not the same as "it does what §4 assumes it does."
-     If it behaves differently than described (different call shape,
-     partial capability, load-by-name works but returns no confirmation,
-     etc.), that's real information — update your plan around what it
-     actually does, don't force it into the assumed shape.
-   - Pull the actual device list from the Browser (or AbletonMCP, if it
-     exposes one) and get a real count. Don't proceed on an assumed or
-     remembered list.
-   - Confirm the six Browser category tabs still behave as described
-     (§5.4) — a quick switch-and-check, not a full re-verification.
-2. **Write a short plan file** (`dumps/run_plan.md` or `.json` — your
-   choice of format, but write it before starting the survey proper) that
-   states: the device/context list you're about to work through and its
-   order, which of this document's assumptions you just confirmed vs.
-   which turned out different, and a rough time budget per phase (native
-   devices vs. everything else in §5.4). This doesn't need to be long —
-   a few lines per point is enough. Its purpose is to force the
-   check-before-commit step to actually happen and leave a record of
-   what you found, not to produce a polished document.
-3. If a sanity check contradicts something this document states as fact,
-   **trust what you just observed, not the document** — note the
-   discrepancy in your plan file and proceed on the corrected
-   understanding. Don't stop and wait for a human over this; a corrected
-   plan is a normal outcome, not an error state.
-4. Only after this — start the actual survey (§5).
+- **`survey_plan.md`** — the full plan + environment reality: tooling,
+  AbletonMCP capability map, device list, method, catalog schema, risks.
+  Ground truth for *how* to run.
+- **`survey_checklist.md`** — one checkbox per device/context, grouped by
+  phase A–F. The running record of *what* has been surveyed.
 
-This step is short (a few checks, a short file), not a second research
-project. Its only job is to catch "the plan assumed X but the real
-environment does Y" before that assumption quietly shapes 40 minutes of
-survey work.
+Every session starts at the same single step, with two branches:
+
+### Fresh start (no `dumps/control_catalog.json`)
+
+1. **Run the sanity checks** (below) against what `survey_plan.md`
+   assumes. They are fresh-start only — a resume does not repeat them.
+2. If a sanity check contradicts the plan, **trust what you just
+   observed, not the document** — update `survey_plan.md` and
+   `survey_checklist.md` to match, and proceed on the corrected
+   understanding. Don't stop and wait for a human; a corrected plan is a
+   normal outcome, not an error state.
+3. Survey the checklist from the top — the first unchecked item — writing
+   the catalog incrementally (§7).
+
+### Resume (catalog exists)
+
+1. **Reconcile the checklist against `dumps/control_catalog.json` before
+   trusting it — the catalog wins.** For each context key present in the
+   catalog, mark the matching checklist item done. For any checklist item
+   marked done that has **no** matching context in the catalog, treat it
+   as NOT done and log the disagreement — never trust a checkbox the
+   catalog doesn't back.
+2. Do a quick read-only environment poke (window present, AbletonMCP
+   responds) — a 30-second check, not the full sanity list.
+3. Continue from the first unchecked checklist item.
+
+### Sanity checks (fresh-start only)
+
+1. **Dump the current window once** (`dump_ableton_pywinauto.py`,
+   maximized) and confirm you get a non-trivial tree back, not an
+   empty or near-empty one.
+2. **Confirm AbletonMCP actually responds to a real call** (e.g. a
+   read-only query, or a trivial load-by-name on one device) — "it's
+   connected" is not the same as "it does what §4 assumes it does."
+   If it behaves differently than `survey_plan.md` describes (different
+   call shape, partial capability, load-by-name works but returns no
+   confirmation, etc.), that's real information — update the plan around
+   what it actually does, don't force it into the assumed shape.
+3. **Pull the actual device list** from the Browser (or AbletonMCP, if it
+   exposes one) and get a real count. Diff it against
+   `survey_checklist.md` and update the checklist if the real list
+   differs. Don't proceed on an assumed or remembered list.
+4. **Confirm the six Browser category tabs still behave as described**
+   (§5.4) — a quick switch-and-check, not a full re-verification.
+
+This startup step is short (a few checks, a reconcile), not a second
+research project. Its only job is to catch "the plan assumed X but the
+real environment does Y" before that assumption shapes survey work — or,
+on resume, to catch a checklist that drifted from the catalog.
 
 ## 2. Your task
 

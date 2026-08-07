@@ -1,0 +1,675 @@
+{
+  "device_name": "Hybrid Reverb",
+  "slug": "Hybrid-Reverb",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Hybrid Reverb",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 54,
+  "controls_with_automation_id": 6,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Hybrid Reverb",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1043,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Hybrid Reverb",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 401,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.Tab",
+      "bounding_rect": {
+        "left": 563,
+        "top": 769,
+        "right": 775,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Reverb",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 563,
+        "top": 769,
+        "right": 668,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Reverb",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 594,
+        "top": 770,
+        "right": 636,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "EQ,checked",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 670,
+        "top": 769,
+        "right": 775,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "EQ On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 707,
+        "top": 771,
+        "right": 717,
+        "bottom": 782
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "EQ",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 720,
+        "top": 770,
+        "right": 737,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 996,
+        "top": 767,
+        "right": 1014,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1014,
+        "top": 767,
+        "right": 1031,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Send",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 791,
+        "right": 356,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Predelay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 859,
+        "right": 356,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Predelay Sync",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 918,
+        "right": 358,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Milliseconds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 918,
+        "right": 328,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 329,
+        "top": 918,
+        "right": 358,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 951,
+        "right": 356,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Predelay Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 964,
+        "right": 358,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "IR Post-processing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 371,
+        "top": 882,
+        "right": 383,
+        "bottom": 895
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 389,
+        "top": 882,
+        "right": 430,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 451,
+        "top": 882,
+        "right": 487,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Size",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 516,
+        "top": 882,
+        "right": 540,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "IR Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 382,
+        "top": 898,
+        "right": 440,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "IR Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 441,
+        "top": 898,
+        "right": 499,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "IR Size",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 500,
+        "top": 898,
+        "right": 558,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Routing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 898,
+        "right": 629,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Algorithm",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 640,
+        "top": 882,
+        "right": 699,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Algorithm Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 637,
+        "top": 898,
+        "right": 720,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Freeze",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 723,
+        "top": 882,
+        "right": 763,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freeze In",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 726,
+        "top": 898,
+        "right": 743,
+        "bottom": 916
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freeze",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 745,
+        "top": 898,
+        "right": 762,
+        "bottom": 916
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 782,
+        "top": 882,
+        "right": 815,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Algorithm Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 768,
+        "top": 898,
+        "right": 831,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 848,
+        "top": 882,
+        "right": 876,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 832,
+        "top": 898,
+        "right": 894,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Bass X",
+      "automation_id": "TrackView.Device[0].Tab.LCD.LCDControls.AlgoLCD.DarkHall7th",
+      "bounding_rect": {
+        "left": 907,
+        "top": 882,
+        "right": 945,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bass Crossover",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 896,
+        "top": 898,
+        "right": 958,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Convolution IR",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 928,
+        "right": 453,
+        "bottom": 941
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Previous/Next IR",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 518,
+        "top": 925,
+        "right": 542,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Previous/Next IR",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 536,
+        "top": 925,
+        "right": 557,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Impulse Responses",
+      "automation_id": "TrackView.Device[0].Tab.BottomControls.IRChooser.Dropdowns.IRCategory",
+      "bounding_rect": {
+        "left": 367,
+        "top": 946,
+        "right": 557,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Impulse Responses",
+      "automation_id": "TrackView.Device[0].Tab.BottomControls.IRChooser.Dropdowns.IRFile",
+      "bounding_rect": {
+        "left": 367,
+        "top": 964,
+        "right": 557,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Blend",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 925,
+        "right": 629,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 642,
+        "top": 925,
+        "right": 702,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Size",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 706,
+        "top": 925,
+        "right": 766,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Damping",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 925,
+        "right": 830,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 925,
+        "right": 893,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bass Multiplier",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 897,
+        "top": 925,
+        "right": 957,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stereo Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 971,
+        "top": 791,
+        "right": 1027,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vintage",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 976,
+        "top": 851,
+        "right": 1022,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vintage",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 970,
+        "top": 864,
+        "right": 1028,
+        "bottom": 882
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Bass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 985,
+        "top": 888,
+        "right": 1012,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Bass Mono",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 970,
+        "top": 901,
+        "right": 1028,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 971,
+        "top": 925,
+        "right": 1027,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "device_name": "Random",
+  "slug": "Random",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Random",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 19,
+  "controls_with_automation_id": 6,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Random",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 439,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Random",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 365,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Use Current Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.UseCurrentScale",
+      "bounding_rect": {
+        "left": 372,
+        "top": 767,
+        "right": 389,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 391,
+        "top": 767,
+        "right": 408,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 409,
+        "top": 767,
+        "right": 427,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Chance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 303,
+        "top": 792,
+        "right": 356,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Choices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 303,
+        "top": 858,
+        "right": 356,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Interval",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 303,
+        "top": 925,
+        "right": 356,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "0",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 396,
+        "top": 816,
+        "right": 405,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 858,
+        "right": 400,
+        "bottom": 871
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Mode",
+      "automation_id": "TrackView.Device[0].Mode",
+      "bounding_rect": {
+        "left": 366,
+        "top": 871,
+        "right": 424,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Random",
+      "automation_id": "TrackView.Device[0].Mode.Buttons[0]",
+      "bounding_rect": {
+        "left": 366,
+        "top": 871,
+        "right": 424,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Alt",
+      "automation_id": "TrackView.Device[0].Mode.Buttons[1]",
+      "bounding_rect": {
+        "left": 366,
+        "top": 890,
+        "right": 424,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Sign",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 914,
+        "right": 393,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Sign",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 927,
+        "right": 424,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Add",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 927,
+        "right": 424,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Sub",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 946,
+        "right": 424,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Bi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 964,
+        "right": 424,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

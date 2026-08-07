@@ -1,0 +1,1011 @@
+{
+  "device_name": "EQ Eight",
+  "slug": "EQ-Eight",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "EQ Eight",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 81,
+  "controls_with_automation_id": 38,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "EQ Eight",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 872,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 315,
+        "top": 767,
+        "right": 333,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "EQ Eight",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 335,
+        "top": 770,
+        "right": 386,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 824,
+        "top": 767,
+        "right": 841,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 843,
+        "top": 767,
+        "right": 860,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Analyze",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 822,
+        "right": 345,
+        "bottom": 836
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Block",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 844,
+        "right": 332,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "FFT Block Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 857,
+        "right": 350,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Refresh",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 881,
+        "right": 345,
+        "bottom": 894
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Refresh Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 894,
+        "right": 350,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Avg",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 918,
+        "right": 322,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Number of Averages",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 931,
+        "right": 350,
+        "bottom": 949
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band0.Freq",
+      "bounding_rect": {
+        "left": 355,
+        "top": 790,
+        "right": 408,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band0.Gain",
+      "bounding_rect": {
+        "left": 355,
+        "top": 848,
+        "right": 408,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 376,
+        "top": 913,
+        "right": 387,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band0.Q",
+      "bounding_rect": {
+        "left": 359,
+        "top": 925,
+        "right": 405,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 359,
+        "top": 948,
+        "right": 405,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 367,
+        "top": 967,
+        "right": 382,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "1",
+      "automation_id": "TrackView.Device[0].Band0.Selector",
+      "bounding_rect": {
+        "left": 387,
+        "top": 968,
+        "right": 395,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band1.Freq",
+      "bounding_rect": {
+        "left": 411,
+        "top": 790,
+        "right": 464,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band1.Gain",
+      "bounding_rect": {
+        "left": 411,
+        "top": 848,
+        "right": 464,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 432,
+        "top": 913,
+        "right": 442,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band1.Q",
+      "bounding_rect": {
+        "left": 414,
+        "top": 925,
+        "right": 460,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 414,
+        "top": 948,
+        "right": 460,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 422,
+        "top": 967,
+        "right": 438,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "2",
+      "automation_id": "TrackView.Device[0].Band1.Selector",
+      "bounding_rect": {
+        "left": 442,
+        "top": 968,
+        "right": 451,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band2.Freq",
+      "bounding_rect": {
+        "left": 466,
+        "top": 790,
+        "right": 519,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band2.Gain",
+      "bounding_rect": {
+        "left": 466,
+        "top": 848,
+        "right": 519,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 913,
+        "right": 498,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band2.Q",
+      "bounding_rect": {
+        "left": 470,
+        "top": 925,
+        "right": 516,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 470,
+        "top": 948,
+        "right": 516,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 967,
+        "right": 493,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "3",
+      "automation_id": "TrackView.Device[0].Band2.Selector",
+      "bounding_rect": {
+        "left": 498,
+        "top": 968,
+        "right": 506,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band3.Freq",
+      "bounding_rect": {
+        "left": 522,
+        "top": 790,
+        "right": 575,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band3.Gain",
+      "bounding_rect": {
+        "left": 522,
+        "top": 848,
+        "right": 575,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 913,
+        "right": 553,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band3.Q",
+      "bounding_rect": {
+        "left": 525,
+        "top": 925,
+        "right": 571,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 525,
+        "top": 948,
+        "right": 571,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 533,
+        "top": 967,
+        "right": 549,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "4",
+      "automation_id": "TrackView.Device[0].Band3.Selector",
+      "bounding_rect": {
+        "left": 553,
+        "top": 968,
+        "right": 562,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band4.Freq",
+      "bounding_rect": {
+        "left": 577,
+        "top": 790,
+        "right": 630,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band4.Gain",
+      "bounding_rect": {
+        "left": 577,
+        "top": 848,
+        "right": 630,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 913,
+        "right": 609,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band4.Q",
+      "bounding_rect": {
+        "left": 581,
+        "top": 925,
+        "right": 627,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 581,
+        "top": 948,
+        "right": 627,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 589,
+        "top": 967,
+        "right": 604,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "5",
+      "automation_id": "TrackView.Device[0].Band4.Selector",
+      "bounding_rect": {
+        "left": 609,
+        "top": 968,
+        "right": 617,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band5.Freq",
+      "bounding_rect": {
+        "left": 632,
+        "top": 790,
+        "right": 686,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band5.Gain",
+      "bounding_rect": {
+        "left": 632,
+        "top": 848,
+        "right": 686,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 654,
+        "top": 913,
+        "right": 664,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band5.Q",
+      "bounding_rect": {
+        "left": 636,
+        "top": 925,
+        "right": 682,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 636,
+        "top": 948,
+        "right": 682,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 644,
+        "top": 967,
+        "right": 660,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "6",
+      "automation_id": "TrackView.Device[0].Band5.Selector",
+      "bounding_rect": {
+        "left": 664,
+        "top": 968,
+        "right": 673,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band6.Freq",
+      "bounding_rect": {
+        "left": 688,
+        "top": 790,
+        "right": 741,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band6.Gain",
+      "bounding_rect": {
+        "left": 688,
+        "top": 848,
+        "right": 741,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 709,
+        "top": 913,
+        "right": 720,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band6.Q",
+      "bounding_rect": {
+        "left": 691,
+        "top": 925,
+        "right": 737,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 691,
+        "top": 948,
+        "right": 737,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 700,
+        "top": 967,
+        "right": 715,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "7",
+      "automation_id": "TrackView.Device[0].Band6.Selector",
+      "bounding_rect": {
+        "left": 720,
+        "top": 968,
+        "right": 728,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "TrackView.Device[0].Band7.Freq",
+      "bounding_rect": {
+        "left": 743,
+        "top": 790,
+        "right": 796,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "TrackView.Device[0].Band7.Gain",
+      "bounding_rect": {
+        "left": 743,
+        "top": 848,
+        "right": 796,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 913,
+        "right": 775,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Q",
+      "automation_id": "TrackView.Device[0].Band7.Q",
+      "bounding_rect": {
+        "left": 747,
+        "top": 925,
+        "right": 793,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 747,
+        "top": 948,
+        "right": 793,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 755,
+        "top": 967,
+        "right": 771,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "8",
+      "automation_id": "TrackView.Device[0].Band7.Selector",
+      "bounding_rect": {
+        "left": 775,
+        "top": 968,
+        "right": 784,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Audition Mode",
+      "automation_id": "TrackView.Device[0].Audition",
+      "bounding_rect": {
+        "left": 801,
+        "top": 792,
+        "right": 828,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Analyze",
+      "automation_id": "TrackView.Device[0].Analyze",
+      "bounding_rect": {
+        "left": 831,
+        "top": 792,
+        "right": 858,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 812,
+        "right": 835,
+        "bottom": 825
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Global Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 825,
+        "right": 858,
+        "bottom": 843
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Edit",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 845,
+        "right": 826,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Edit Switch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 858,
+        "right": 858,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Adapt. Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 879,
+        "right": 854,
+        "bottom": 892
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Adaptive Q",
+      "automation_id": "TrackView.Device[0].AdaptiveQ",
+      "bounding_rect": {
+        "left": 801,
+        "top": 892,
+        "right": 858,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 914,
+        "right": 834,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 927,
+        "right": 858,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 949,
+        "right": 830,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Global Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 962,
+        "right": 858,
+        "bottom": 980
+      },
+      "patterns": {}
+    }
+  ]
+}

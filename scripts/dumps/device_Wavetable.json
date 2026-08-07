@@ -1,0 +1,1505 @@
+{
+  "device_name": "Wavetable",
+  "slug": "Wavetable",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Wavetable",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 123,
+  "controls_with_automation_id": 14,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Wavetable",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1462,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 315,
+        "top": 767,
+        "right": 333,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Wavetable",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 335,
+        "top": 770,
+        "right": 398,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.LeftTab",
+      "bounding_rect": {
+        "left": 503,
+        "top": 769,
+        "right": 623,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Osc 1,checked",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 503,
+        "top": 769,
+        "right": 562,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 510,
+        "top": 771,
+        "right": 519,
+        "bottom": 780
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Osc 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 522,
+        "top": 770,
+        "right": 555,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Osc 2,unchecked",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 564,
+        "top": 769,
+        "right": 623,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 571,
+        "top": 771,
+        "right": 581,
+        "bottom": 780
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Osc 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 583,
+        "top": 770,
+        "right": 616,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.RightTab",
+      "bounding_rect": {
+        "left": 1103,
+        "top": 769,
+        "right": 1245,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Matrix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1103,
+        "top": 769,
+        "right": 1156,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Matrix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1110,
+        "top": 770,
+        "right": 1149,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "MIDI",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1159,
+        "top": 769,
+        "right": 1201,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1166,
+        "top": 770,
+        "right": 1194,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "MPE",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1204,
+        "top": 769,
+        "right": 1245,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MPE",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1211,
+        "top": 770,
+        "right": 1238,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1414,
+        "top": 767,
+        "right": 1431,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1433,
+        "top": 767,
+        "right": 1450,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sub On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 793,
+        "right": 362,
+        "bottom": 811
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sub Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 813,
+        "right": 360,
+        "bottom": 856
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sub Tone",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 858,
+        "right": 360,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 903,
+        "right": 362,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Sub Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 918,
+        "right": 362,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "0",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 918,
+        "right": 320,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "-1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 320,
+        "top": 918,
+        "right": 341,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "-2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 341,
+        "top": 918,
+        "right": 362,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 947,
+        "right": 362,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Global Transpose",
+      "automation_id": "TrackView.Device[0].MainViewSubOsc.GlobalTransposeControl",
+      "bounding_rect": {
+        "left": 299,
+        "top": 962,
+        "right": 362,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Wavetables",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 371,
+        "top": 790,
+        "right": 451,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Wavetables",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 458,
+        "top": 790,
+        "right": 581,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Next/Previous Wavetable",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 651,
+        "top": 790,
+        "right": 663,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Next/Previous Wavetable",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 663,
+        "top": 790,
+        "right": 675,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "",
+      "automation_id": "TrackView.Device[0].LeftTab.MainViewOsc.TopRow.VisualizationMode",
+      "bounding_rect": {
+        "left": 683,
+        "top": 790,
+        "right": 717,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Linear",
+      "automation_id": "TrackView.Device[0].LeftTab.MainViewOsc.TopRow.VisualizationMode.Linear",
+      "bounding_rect": {
+        "left": 683,
+        "top": 790,
+        "right": 700,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Polar",
+      "automation_id": "TrackView.Device[0].LeftTab.MainViewOsc.TopRow.VisualizationMode.Polar",
+      "bounding_rect": {
+        "left": 701,
+        "top": 790,
+        "right": 717,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator Pan",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 391,
+        "top": 810,
+        "right": 415,
+        "bottom": 828
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 381,
+        "top": 829,
+        "right": 426,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "TrackView.Device[0].LeftTab.MainViewOsc.CenterRow.DeviceSpriteView",
+      "bounding_rect": {
+        "left": 440,
+        "top": 813,
+        "right": 653,
+        "bottom": 953
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 440,
+        "top": 813,
+        "right": 653,
+        "bottom": 953
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Wave Position",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 667,
+        "top": 809,
+        "right": 707,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Effect Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 371,
+        "top": 964,
+        "right": 431,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Warp",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 967,
+        "right": 463,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 463,
+        "top": 964,
+        "right": 509,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 509,
+        "top": 967,
+        "right": 537,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 537,
+        "top": 964,
+        "right": 578,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Semi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 585,
+        "top": 967,
+        "right": 615,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 964,
+        "right": 655,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Det",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 655,
+        "top": 967,
+        "right": 677,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 677,
+        "top": 964,
+        "right": 719,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 729,
+        "top": 792,
+        "right": 742,
+        "bottom": 805
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 745,
+        "top": 790,
+        "right": 780,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Filter Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 782,
+        "top": 790,
+        "right": 804,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Circuit",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 806,
+        "top": 790,
+        "right": 853,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 870,
+        "top": 792,
+        "right": 883,
+        "bottom": 805
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 885,
+        "top": 790,
+        "right": 920,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Filter Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 923,
+        "top": 790,
+        "right": 944,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Circuit",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 946,
+        "top": 790,
+        "right": 994,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 725,
+        "top": 807,
+        "right": 998,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter 2 Frequency, Filter 2 Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 725,
+        "top": 864,
+        "right": 740,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter 1 Frequency, Filter 1 Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 983,
+        "top": 864,
+        "right": 998,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Routing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 756,
+        "top": 881,
+        "right": 814,
+        "bottom": 898
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 732,
+        "top": 903,
+        "right": 785,
+        "bottom": 946
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 786,
+        "top": 903,
+        "right": 848,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 873,
+        "top": 903,
+        "right": 936,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 938,
+        "top": 903,
+        "right": 991,
+        "bottom": 946
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Target",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1010,
+        "top": 795,
+        "right": 1097,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Amp",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1099,
+        "top": 792,
+        "right": 1147,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Env 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1148,
+        "top": 792,
+        "right": 1197,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Env 3",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1198,
+        "top": 792,
+        "right": 1246,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "LFO 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1247,
+        "top": 792,
+        "right": 1296,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "LFO 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1297,
+        "top": 792,
+        "right": 1345,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Tree",
+      "name": "Modulation Matrix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 813,
+        "right": 1369,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 813,
+        "right": 1346,
+        "bottom": 836
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 813,
+        "right": 1097,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Matrix",
+      "automation_id": "TrackView.Device[0].RightTab.target_list.target_slider",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 813,
+        "right": 1100,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1099,
+        "top": 813,
+        "right": 1147,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1148,
+        "top": 813,
+        "right": 1197,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1198,
+        "top": 813,
+        "right": 1246,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1247,
+        "top": 813,
+        "right": 1296,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1297,
+        "top": 813,
+        "right": 1345,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 836,
+        "right": 1346,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 836,
+        "right": 1097,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Matrix",
+      "automation_id": "TrackView.Device[0].RightTab.target_list.target_slider",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 836,
+        "right": 1100,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1099,
+        "top": 836,
+        "right": 1147,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1148,
+        "top": 836,
+        "right": 1197,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1198,
+        "top": 836,
+        "right": 1246,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1247,
+        "top": 836,
+        "right": 1296,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1297,
+        "top": 836,
+        "right": 1345,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 858,
+        "right": 1346,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 858,
+        "right": 1097,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Matrix",
+      "automation_id": "TrackView.Device[0].RightTab.target_list.target_slider",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 858,
+        "right": 1100,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1099,
+        "top": 858,
+        "right": 1147,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1148,
+        "top": 858,
+        "right": 1197,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1198,
+        "top": 858,
+        "right": 1246,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1247,
+        "top": 858,
+        "right": 1296,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1297,
+        "top": 858,
+        "right": 1345,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 881,
+        "right": 1346,
+        "bottom": 903
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 881,
+        "right": 1097,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Matrix",
+      "automation_id": "TrackView.Device[0].RightTab.target_list.target_slider",
+      "bounding_rect": {
+        "left": 1007,
+        "top": 881,
+        "right": 1100,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1099,
+        "top": 881,
+        "right": 1147,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1148,
+        "top": 881,
+        "right": 1197,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1198,
+        "top": 881,
+        "right": 1246,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1247,
+        "top": 881,
+        "right": 1296,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1297,
+        "top": 881,
+        "right": 1345,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Global",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1010,
+        "top": 964,
+        "right": 1049,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1169,
+        "top": 964,
+        "right": 1205,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Global Modulation Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1207,
+        "top": 962,
+        "right": 1253,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1265,
+        "top": 964,
+        "right": 1313,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Global Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1316,
+        "top": 962,
+        "right": 1357,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 791,
+        "right": 1448,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 804,
+        "right": 1448,
+        "bottom": 822
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Poly/Mono",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 829,
+        "right": 1418,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Poly Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1421,
+        "top": 829,
+        "right": 1448,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 846,
+        "right": 1448,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 859,
+        "right": 1448,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Unison",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 888,
+        "right": 1448,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Unison Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 901,
+        "right": 1448,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 918,
+        "right": 1448,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unison Voice Count",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 931,
+        "right": 1448,
+        "bottom": 949
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 949,
+        "right": 1448,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unison Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1379,
+        "top": 962,
+        "right": 1448,
+        "bottom": 980
+      },
+      "patterns": {}
+    }
+  ]
+}

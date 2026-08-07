@@ -1,0 +1,215 @@
+{
+  "device_name": "EQ Three",
+  "slug": "EQ-Three",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "EQ Three",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 16,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "EQ Three",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 480,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "EQ Three",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 371,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 432,
+        "top": 767,
+        "right": 450,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 451,
+        "top": 767,
+        "right": 468,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "24/48 dB Filter Switch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 365,
+        "top": 930,
+        "right": 400,
+        "bottom": 967
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "24",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 365,
+        "top": 930,
+        "right": 400,
+        "bottom": 948
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "48",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 365,
+        "top": 949,
+        "right": 400,
+        "bottom": 967
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 806,
+        "right": 353,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mid Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 356,
+        "top": 806,
+        "right": 408,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "High Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 412,
+        "top": 806,
+        "right": 464,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Low",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 309,
+        "top": 866,
+        "right": 345,
+        "bottom": 884
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Mid",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 365,
+        "top": 866,
+        "right": 400,
+        "bottom": 884
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "High",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 420,
+        "top": 866,
+        "right": 455,
+        "bottom": 884
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "FreqLow Crossover",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 924,
+        "right": 353,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "FreqHi Crossover",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 412,
+        "top": 924,
+        "right": 464,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

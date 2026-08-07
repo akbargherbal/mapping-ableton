@@ -1,0 +1,134 @@
+{
+  "context_key": "Return-Track-B-Delay",
+  "section_aid": "ArrangementView.ReturnTrack[1].Mixer",
+  "section_name": "B-Delay",
+  "found_by": "aid prefix 'ArrangementView.ReturnTrack[1].Mixer'",
+  "node_count": 10,
+  "controls_with_automation_id": 7,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "B-Delay",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer",
+      "bounding_rect": {
+        "left": 1677,
+        "top": 684,
+        "right": 1909,
+        "bottom": 706
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Type",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer.OutputType",
+      "bounding_rect": {
+        "left": 1680,
+        "top": 667,
+        "right": 1765,
+        "bottom": 685
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Channel",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer.OutputChannel",
+      "bounding_rect": {
+        "left": 1680,
+        "top": 687,
+        "right": 1765,
+        "bottom": 705
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Track Activator",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Activator",
+      "bounding_rect": {
+        "left": 1770,
+        "top": 687,
+        "right": 1827,
+        "bottom": 705
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo/Cue",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Solo",
+      "bounding_rect": {
+        "left": 1829,
+        "top": 687,
+        "right": 1851,
+        "bottom": 705
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Pre/Post Toggle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1854,
+        "top": 687,
+        "right": 1886,
+        "bottom": 705
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Volume",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Volume",
+      "bounding_rect": {
+        "left": 1770,
+        "top": 707,
+        "right": 1827,
+        "bottom": 725
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Pan",
+      "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Pan",
+      "bounding_rect": {
+        "left": 1829,
+        "top": 707,
+        "right": 1886,
+        "bottom": 725
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "A-Reverb",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1770,
+        "top": 727,
+        "right": 1808,
+        "bottom": 745
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "B-Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1809,
+        "top": 727,
+        "right": 1847,
+        "bottom": 745
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "device_name": "Instrument Rack",
+  "slug": "Instrument-Rack",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "",
+  "title_matched": false,
+  "view_state": "expanded",
+  "node_count": 8,
+  "controls_with_automation_id": 1,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Instrument Rack",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 294,
+        "top": 765,
+        "right": 319,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 767,
+        "right": 315,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show/Hide Macro Controls",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 790,
+        "right": 315,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show/Hide Macro Variations",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 810,
+        "right": 315,
+        "bottom": 828
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show/Hide Devices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 830,
+        "right": 315,
+        "bottom": 848
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show/Hide Chain List",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 850,
+        "right": 315,
+        "bottom": 868
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 947,
+        "right": 315,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 297,
+        "top": 967,
+        "right": 315,
+        "bottom": 984
+      },
+      "patterns": {}
+    }
+  ]
+}

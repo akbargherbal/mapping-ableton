@@ -1,0 +1,623 @@
+{
+  "device_name": "Phaser-Flanger",
+  "slug": "Phaser-Flanger",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Phaser-Flanger",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 50,
+  "controls_with_automation_id": 5,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Phaser-Flanger",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 834,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 315,
+        "top": 767,
+        "right": 333,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Phaser-Flanger",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 335,
+        "top": 770,
+        "right": 426,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 786,
+        "top": 767,
+        "right": 804,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 805,
+        "top": 767,
+        "right": 822,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Phaser/Flanger Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 859,
+        "right": 542,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Phaser",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 859,
+        "right": 381,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Flanger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 382,
+        "top": 859,
+        "right": 461,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Doubler",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 463,
+        "top": 859,
+        "right": 542,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Notches",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 303,
+        "top": 883,
+        "right": 353,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Center",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 363,
+        "top": 883,
+        "right": 405,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 424,
+        "top": 883,
+        "right": 466,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Blend",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 484,
+        "top": 883,
+        "right": 518,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Notches",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 303,
+        "top": 897,
+        "right": 362,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Center Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 363,
+        "top": 897,
+        "right": 422,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 424,
+        "top": 897,
+        "right": 483,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Blend",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 484,
+        "top": 897,
+        "right": 542,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 859,
+        "right": 604,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Stereo Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 617,
+        "top": 861,
+        "right": 675,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Phi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 617,
+        "top": 861,
+        "right": 644,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Spin",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 648,
+        "top": 861,
+        "right": 675,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Duty Cyc",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 883,
+        "right": 605,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 883,
+        "right": 653,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Duty Cycle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 897,
+        "right": 612,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 897,
+        "right": 676,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO2 Mix",
+      "automation_id": "TrackView.Device[0].MainControlView.ExpandableLcdView.ExpandableLcdView.LcdRoundedBorder.LFO2.LFO2_Title",
+      "bounding_rect": {
+        "left": 689,
+        "top": 799,
+        "right": 742,
+        "bottom": 812
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO2 Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 813,
+        "right": 729,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Modulation Sync 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 690,
+        "top": 861,
+        "right": 748,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 690,
+        "top": 861,
+        "right": 717,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 861,
+        "right": 748,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO2 Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 883,
+        "right": 748,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Sync Rate 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 897,
+        "right": 749,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Modulation Sync",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 936,
+        "right": 327,
+        "bottom": 973
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 936,
+        "right": 327,
+        "bottom": 954
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 955,
+        "right": 327,
+        "bottom": 973
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Sync Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 329,
+        "top": 925,
+        "right": 392,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 394,
+        "top": 925,
+        "right": 450,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 452,
+        "top": 925,
+        "right": 514,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Invert Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 946,
+        "right": 537,
+        "bottom": 963
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Envelope On",
+      "automation_id": "TrackView.Device[0].MainControlView.ExpandableBottomView.EnvelopeFollower.EnvelopeFollowerActive",
+      "bounding_rect": {
+        "left": 552,
+        "top": 928,
+        "right": 612,
+        "bottom": 946
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 928,
+        "right": 676,
+        "bottom": 946
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 553,
+        "top": 949,
+        "right": 594,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 949,
+        "right": 662,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 962,
+        "right": 612,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 962,
+        "right": 676,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Safe Bass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 688,
+        "top": 925,
+        "right": 750,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 761,
+        "top": 792,
+        "right": 819,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Warmth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 761,
+        "top": 858,
+        "right": 819,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 761,
+        "top": 925,
+        "right": 819,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

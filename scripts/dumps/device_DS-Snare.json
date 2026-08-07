@@ -1,0 +1,27 @@
+{
+  "device_name": "DS Snare",
+  "slug": "DS-Snare",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "",
+  "title_matched": false,
+  "view_state": "opaque",
+  "node_count": 1,
+  "controls_with_automation_id": 1,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "DS Snare",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 489,
+        "bottom": 989
+      },
+      "patterns": {}
+    }
+  ]
+}

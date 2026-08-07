@@ -1,0 +1,607 @@
+{
+  "device_name": "Spectral Resonator",
+  "slug": "Spectral-Resonator",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Spectral Resonator",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 49,
+  "controls_with_automation_id": 3,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Spectral Resonator",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 912,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Spectral Resonator",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 431,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MPE",
+      "automation_id": "TrackView.Device[0].TitleBar.MPELabel",
+      "bounding_rect": {
+        "left": 834,
+        "top": 770,
+        "right": 863,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 864,
+        "top": 767,
+        "right": 881,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 883,
+        "top": 767,
+        "right": 900,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 791,
+        "right": 334,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Pitch Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 805,
+        "right": 391,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Internal",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 805,
+        "right": 354,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "MIDI",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 355,
+        "top": 805,
+        "right": 391,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI From",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 831,
+        "right": 361,
+        "bottom": 844
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "External Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 844,
+        "right": 391,
+        "bottom": 862
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Tapping Point",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 863,
+        "right": 391,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Mono/Poly Switch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 896,
+        "right": 359,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Polyphony",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 360,
+        "top": 896,
+        "right": 391,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 917,
+        "right": 358,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "MIDI Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 360,
+        "top": 915,
+        "right": 391,
+        "bottom": 933
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 949,
+        "right": 332,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 335,
+        "top": 947,
+        "right": 391,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "PB",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 968,
+        "right": 332,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Bend Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 335,
+        "top": 966,
+        "right": 391,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 399,
+        "top": 791,
+        "right": 457,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Frequency Dial Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 400,
+        "top": 870,
+        "right": 455,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 400,
+        "top": 870,
+        "right": 427,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat8th",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 870,
+        "right": 455,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Stretch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 405,
+        "top": 915,
+        "right": 450,
+        "bottom": 928
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Partial Stretch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 399,
+        "top": 929,
+        "right": 457,
+        "bottom": 947
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 413,
+        "top": 951,
+        "right": 442,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Pitch Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 399,
+        "top": 966,
+        "right": 457,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 460,
+        "top": 791,
+        "right": 518,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "High Frequency Damping",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 460,
+        "top": 858,
+        "right": 518,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low Frequency Damping",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 460,
+        "top": 927,
+        "right": 518,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Modulation Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 790,
+        "right": 588,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "None",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 790,
+        "right": 588,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Chorus",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 809,
+        "right": 588,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Wander",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 828,
+        "right": 588,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Granular",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 846,
+        "right": 588,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 882,
+        "right": 588,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pch.Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 531,
+        "top": 951,
+        "right": 583,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 527,
+        "top": 966,
+        "right": 588,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 597,
+        "top": 790,
+        "right": 612,
+        "bottom": 805
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Harmonics",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 717,
+        "top": 791,
+        "right": 781,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Harmonics",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 784,
+        "top": 789,
+        "right": 821,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Post Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 791,
+        "right": 897,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Unison",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 843,
+        "top": 854,
+        "right": 884,
+        "bottom": 866
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unison Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 868,
+        "right": 897,
+        "bottom": 885
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Uni. Amt",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 838,
+        "top": 888,
+        "right": 889,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unison Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 902,
+        "right": 897,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 927,
+        "right": 897,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

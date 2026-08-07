@@ -1,0 +1,269 @@
+{
+  "device_name": "Velocity",
+  "slug": "Velocity",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Velocity",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 21,
+  "controls_with_automation_id": 3,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Velocity",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 501,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 365,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 453,
+        "top": 767,
+        "right": 471,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 472,
+        "top": 767,
+        "right": 490,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Operation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 307,
+        "top": 884,
+        "right": 369,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 322,
+        "top": 915,
+        "right": 369,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Operation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 307,
+        "top": 896,
+        "right": 369,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 307,
+        "top": 927,
+        "right": 369,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Clip",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 307,
+        "top": 927,
+        "right": 369,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 307,
+        "top": 946,
+        "right": 369,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Fixed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 307,
+        "top": 964,
+        "right": 369,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 382,
+        "top": 793,
+        "right": 430,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Compand",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 382,
+        "top": 861,
+        "right": 430,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Random",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 382,
+        "top": 929,
+        "right": 432,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 439,
+        "top": 793,
+        "right": 486,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 439,
+        "top": 861,
+        "right": 489,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 924,
+        "right": 480,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 936,
+        "right": 485,
+        "bottom": 954
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Lowest",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 954,
+        "right": 485,
+        "bottom": 967
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 966,
+        "right": 485,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

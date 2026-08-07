@@ -1,0 +1,685 @@
+{
+  "device_name": "Reverb",
+  "slug": "Reverb",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Reverb",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 54,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Reverb",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 907,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Reverb",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 359,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 859,
+        "top": 767,
+        "right": 877,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 878,
+        "top": 767,
+        "right": 896,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Input Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 792,
+        "right": 367,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Input Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 809,
+        "right": 355,
+        "bottom": 826
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Input Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 358,
+        "top": 809,
+        "right": 413,
+        "bottom": 826
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 831,
+        "right": 411,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "In Filter Freq, In Filter Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 347,
+        "top": 850,
+        "right": 362,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 901,
+        "right": 358,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 380,
+        "top": 901,
+        "right": 412,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 792,
+        "right": 527,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 452,
+        "top": 822,
+        "right": 503,
+        "bottom": 839
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 426,
+        "top": 848,
+        "right": 473,
+        "bottom": 861
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 861,
+        "right": 476,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 490,
+        "top": 848,
+        "right": 518,
+        "bottom": 861
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 479,
+        "top": 861,
+        "right": 530,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 903,
+        "right": 468,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 479,
+        "top": 901,
+        "right": 530,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 542,
+        "top": 792,
+        "right": 650,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 542,
+        "top": 809,
+        "right": 577,
+        "bottom": 826
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "High Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 578,
+        "top": 807,
+        "right": 608,
+        "bottom": 828
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 609,
+        "top": 809,
+        "right": 666,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 670,
+        "top": 809,
+        "right": 702,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 544,
+        "top": 831,
+        "right": 700,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "HiFilter Freq, HiShelf Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 657,
+        "top": 850,
+        "right": 673,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LowShelf Freq, LowShelf Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 576,
+        "top": 846,
+        "right": 591,
+        "bottom": 862
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 542,
+        "top": 901,
+        "right": 577,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 609,
+        "top": 901,
+        "right": 666,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 670,
+        "top": 901,
+        "right": 702,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Diffusion",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 704,
+        "top": 828,
+        "right": 759,
+        "bottom": 841
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 704,
+        "top": 841,
+        "right": 760,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 715,
+        "top": 869,
+        "right": 748,
+        "bottom": 882
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 704,
+        "top": 882,
+        "right": 760,
+        "bottom": 900
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Chorus",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 790,
+        "right": 825,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 828,
+        "right": 820,
+        "bottom": 841
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Chorus",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 772,
+        "top": 841,
+        "right": 822,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 784,
+        "top": 869,
+        "right": 811,
+        "bottom": 882
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Chorus",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 772,
+        "top": 882,
+        "right": 822,
+        "bottom": 900
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Predelay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 328,
+        "top": 927,
+        "right": 383,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Smooth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 937,
+        "right": 471,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Size Smoothing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 424,
+        "top": 950,
+        "right": 472,
+        "bottom": 968
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Size",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 479,
+        "top": 927,
+        "right": 530,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 544,
+        "top": 927,
+        "right": 595,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freeze",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 937,
+        "right": 677,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Flat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 956,
+        "right": 645,
+        "bottom": 974
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Cut",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 647,
+        "top": 956,
+        "right": 677,
+        "bottom": 974
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stereo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 699,
+        "top": 927,
+        "right": 749,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Density",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 937,
+        "right": 809,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Density",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 950,
+        "right": 820,
+        "bottom": 968
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Reflect",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 839,
+        "top": 791,
+        "right": 886,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffuse",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 839,
+        "top": 857,
+        "right": 886,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 838,
+        "top": 924,
+        "right": 889,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

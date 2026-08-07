@@ -1,0 +1,1091 @@
+{
+  "device_name": "Operator",
+  "slug": "Operator",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Operator",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 87,
+  "controls_with_automation_id": 4,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Operator",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1159,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Unfold Device Parameters",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 315,
+        "top": 767,
+        "right": 333,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Operator",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 335,
+        "top": 770,
+        "right": 391,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1110,
+        "top": 767,
+        "right": 1128,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1129,
+        "top": 767,
+        "right": 1147,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc D Coarse Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 789,
+        "right": 367,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc D Fine Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 789,
+        "right": 419,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fixed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 420,
+        "top": 789,
+        "right": 452,
+        "bottom": 802
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc D Fixed Frequency Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 810,
+        "right": 441,
+        "bottom": 823
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc D Output Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 789,
+        "right": 517,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc D On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 518,
+        "top": 802,
+        "right": 536,
+        "bottom": 819
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc C Coarse Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 839,
+        "right": 367,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc C Fine Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 839,
+        "right": 419,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fixed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 420,
+        "top": 839,
+        "right": 452,
+        "bottom": 852
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc C Fixed Frequency Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 861,
+        "right": 441,
+        "bottom": 874
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc C Output Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 839,
+        "right": 517,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc C On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 518,
+        "top": 852,
+        "right": 536,
+        "bottom": 870
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc B Coarse Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 890,
+        "right": 367,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc B Fine Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 890,
+        "right": 419,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fixed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 420,
+        "top": 890,
+        "right": 452,
+        "bottom": 903
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc B Fixed Frequency Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 911,
+        "right": 441,
+        "bottom": 924
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc B Output Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 890,
+        "right": 517,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc B On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 518,
+        "top": 903,
+        "right": 536,
+        "bottom": 921
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Coarse Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 942,
+        "right": 367,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Fine Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 942,
+        "right": 419,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fixed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 420,
+        "top": 942,
+        "right": 452,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc A Fixed Frequency Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 963,
+        "right": 441,
+        "bottom": 976
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Output Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 942,
+        "right": 517,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc A On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 518,
+        "top": 955,
+        "right": 536,
+        "bottom": 973
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 926,
+        "top": 793,
+        "right": 950,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 907,
+        "top": 791,
+        "right": 925,
+        "bottom": 809
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 907,
+        "top": 811,
+        "right": 968,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 969,
+        "top": 811,
+        "right": 994,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 995,
+        "top": 811,
+        "right": 1012,
+        "bottom": 829
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1018,
+        "top": 789,
+        "right": 1080,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1086,
+        "top": 789,
+        "right": 1143,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 926,
+        "top": 844,
+        "right": 959,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 907,
+        "top": 842,
+        "right": 925,
+        "bottom": 859
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 963,
+        "top": 842,
+        "right": 1012,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Filter Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 907,
+        "top": 862,
+        "right": 958,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "12",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 907,
+        "top": 862,
+        "right": 932,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "24",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 933,
+        "top": 862,
+        "right": 958,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Circuit Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 963,
+        "top": 862,
+        "right": 1012,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1018,
+        "top": 839,
+        "right": 1084,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1086,
+        "top": 839,
+        "right": 1145,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Pitch Envelope On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 907,
+        "top": 907,
+        "right": 925,
+        "bottom": 924
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Envelope Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 951,
+        "top": 890,
+        "right": 1014,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1018,
+        "top": 890,
+        "right": 1080,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1081,
+        "top": 890,
+        "right": 1143,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 951,
+        "top": 942,
+        "right": 1014,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tone",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1018,
+        "top": 942,
+        "right": 1080,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1086,
+        "top": 942,
+        "right": 1145,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Envelope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 562,
+        "top": 858,
+        "right": 616,
+        "bottom": 871
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 876,
+        "right": 592,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Envelope Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 890,
+        "right": 603,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 876,
+        "right": 648,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Envelope Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 890,
+        "right": 662,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 662,
+        "top": 876,
+        "right": 708,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Envelope Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 662,
+        "top": 890,
+        "right": 713,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Initial",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 911,
+        "right": 586,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Envelope Initial Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 925,
+        "right": 603,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Peak",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 911,
+        "right": 641,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Envelope Peak Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 925,
+        "right": 662,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Sustain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 662,
+        "top": 911,
+        "right": 707,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Sustain Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 662,
+        "top": 925,
+        "right": 713,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Loop",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 947,
+        "right": 582,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Volume Envelope Loop Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 961,
+        "right": 611,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Time<Vel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 713,
+        "top": 876,
+        "right": 767,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Envelope Rates < Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 713,
+        "top": 890,
+        "right": 763,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 713,
+        "top": 911,
+        "right": 732,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Output Level < Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 713,
+        "top": 925,
+        "right": 763,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 713,
+        "top": 947,
+        "right": 735,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Output Level < Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 713,
+        "top": 961,
+        "right": 763,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Oscillator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 784,
+        "top": 858,
+        "right": 841,
+        "bottom": 871
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Wave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 876,
+        "right": 807,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Osc A Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 890,
+        "right": 825,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 911,
+        "right": 831,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 925,
+        "right": 825,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Repeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 911,
+        "right": 876,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Osc A Repeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 925,
+        "right": 884,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 947,
+        "right": 811,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc A Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 962,
+        "right": 789,
+        "bottom": 977
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 791,
+        "top": 961,
+        "right": 831,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Osc<Vel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 947,
+        "right": 880,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Osc A Frequency < Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 961,
+        "right": 868,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Osc A Freq < Vel Quantized",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 870,
+        "top": 962,
+        "right": 885,
+        "bottom": 977
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    }
+  ]
+}

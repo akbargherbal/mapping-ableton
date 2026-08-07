@@ -1,0 +1,635 @@
+{
+  "device_name": "Corpus",
+  "slug": "Corpus",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Corpus",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 51,
+  "controls_with_automation_id": 3,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Corpus",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 897,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Unfold Sidechain Parameters",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 316,
+        "top": 767,
+        "right": 334,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Corpus",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 336,
+        "top": 770,
+        "right": 380,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 848,
+        "top": 767,
+        "right": 866,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 767,
+        "right": 885,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Resonance Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 789,
+        "right": 424,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Resonator Quality",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 432,
+        "top": 789,
+        "right": 489,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 813,
+        "right": 487,
+        "bottom": 892
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay, Material",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 387,
+        "top": 845,
+        "right": 402,
+        "bottom": 861
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 902,
+        "right": 337,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 339,
+        "top": 900,
+        "right": 388,
+        "bottom": 917
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Material",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 391,
+        "top": 902,
+        "right": 440,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Material",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 441,
+        "top": 900,
+        "right": 489,
+        "bottom": 917
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 509,
+        "top": 791,
+        "right": 545,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stereo Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 498,
+        "top": 805,
+        "right": 556,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pos. L",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 510,
+        "top": 838,
+        "right": 544,
+        "bottom": 851
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Left Listening Position",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 498,
+        "top": 852,
+        "right": 556,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pos. R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 509,
+        "top": 885,
+        "right": 545,
+        "bottom": 898
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Right Listening Position",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 498,
+        "top": 900,
+        "right": 556,
+        "bottom": 917
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Brightness",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 925,
+        "right": 356,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Inharmonics",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 367,
+        "top": 925,
+        "right": 422,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Ratio",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 433,
+        "top": 925,
+        "right": 489,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Hit Position",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 497,
+        "top": 925,
+        "right": 552,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 563,
+        "top": 791,
+        "right": 635,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "C3",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 855,
+        "right": 592,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "0",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 592,
+        "top": 855,
+        "right": 614,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "ct",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 855,
+        "right": 629,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 563,
+        "top": 878,
+        "right": 635,
+        "bottom": 942
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 577,
+        "top": 947,
+        "right": 620,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 563,
+        "top": 962,
+        "right": 635,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 645,
+        "top": 791,
+        "right": 658,
+        "bottom": 804
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 661,
+        "top": 791,
+        "right": 684,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 645,
+        "top": 822,
+        "right": 702,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 704,
+        "top": 822,
+        "right": 742,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 704,
+        "top": 839,
+        "right": 743,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 645,
+        "top": 879,
+        "right": 695,
+        "bottom": 922
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 883,
+        "right": 743,
+        "bottom": 922
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 883,
+        "right": 743,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 903,
+        "right": 743,
+        "bottom": 922
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 645,
+        "top": 937,
+        "right": 695,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Stereo Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 941,
+        "right": 743,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Phi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 941,
+        "right": 743,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Spin",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 961,
+        "right": 743,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 755,
+        "top": 791,
+        "right": 768,
+        "bottom": 804
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 771,
+        "top": 791,
+        "right": 804,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Center Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 755,
+        "top": 858,
+        "right": 813,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bandwidth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 755,
+        "top": 925,
+        "right": 813,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bleed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 824,
+        "top": 791,
+        "right": 881,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 824,
+        "top": 858,
+        "right": 881,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 824,
+        "top": 925,
+        "right": 881,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

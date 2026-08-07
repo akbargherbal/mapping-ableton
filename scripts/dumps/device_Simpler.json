@@ -1,0 +1,725 @@
+{
+  "device_name": "Simpler",
+  "slug": "Simpler",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Simpler",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 58,
+  "controls_with_automation_id": 20,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Simpler",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1151,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Simpler",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 362,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 976,
+        "top": 769,
+        "right": 1097,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Sample",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 976,
+        "top": 769,
+        "right": 1034,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Sample",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 983,
+        "top": 770,
+        "right": 1027,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Controls",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1036,
+        "top": 769,
+        "right": 1097,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Controls",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1040,
+        "top": 770,
+        "right": 1090,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1102,
+        "top": 767,
+        "right": 1120,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1121,
+        "top": 767,
+        "right": 1139,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "",
+      "automation_id": "TrackView.Device[0].PlaybackMode",
+      "bounding_rect": {
+        "left": 297,
+        "top": 790,
+        "right": 346,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Classic",
+      "automation_id": "TrackView.Device[0].PlaybackMode.Classic",
+      "bounding_rect": {
+        "left": 297,
+        "top": 790,
+        "right": 346,
+        "bottom": 838
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "One-Shot",
+      "automation_id": "TrackView.Device[0].PlaybackMode.One-Shot",
+      "bounding_rect": {
+        "left": 297,
+        "top": 839,
+        "right": 346,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Slicing",
+      "automation_id": "TrackView.Device[0].PlaybackMode.Slicing",
+      "bounding_rect": {
+        "left": 297,
+        "top": 889,
+        "right": 346,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Drop Sample Here",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 352,
+        "top": 795,
+        "right": 1134,
+        "bottom": 897
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 352,
+        "top": 902,
+        "right": 380,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Volume",
+      "automation_id": "TrackView.Device[0].Details.Sample.SampleGain.SampleVolume",
+      "bounding_rect": {
+        "left": 352,
+        "top": 917,
+        "right": 399,
+        "bottom": 935
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Start",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 406,
+        "top": 902,
+        "right": 438,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Start",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 406,
+        "top": 917,
+        "right": 453,
+        "bottom": 935
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Loop",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 459,
+        "top": 902,
+        "right": 489,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 459,
+        "top": 917,
+        "right": 506,
+        "bottom": 935
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 512,
+        "top": 902,
+        "right": 555,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 512,
+        "top": 917,
+        "right": 559,
+        "bottom": 935
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fade",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 902,
+        "right": 595,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Crossfade Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 917,
+        "right": 612,
+        "bottom": 935
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Loop",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 902,
+        "right": 666,
+        "bottom": 917
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Snap",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 918,
+        "right": 666,
+        "bottom": 934
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 675,
+        "top": 902,
+        "right": 714,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Number of Voices",
+      "automation_id": "TrackView.Device[0].Details.Sample.ModeSpecific.Classic.VoiceCount",
+      "bounding_rect": {
+        "left": 676,
+        "top": 917,
+        "right": 712,
+        "bottom": 935
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Retrig",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 723,
+        "top": 902,
+        "right": 761,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 734,
+        "top": 917,
+        "right": 749,
+        "bottom": 933
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Warping",
+      "automation_id": "TrackView.Device[0].Details.Sample.Warp.IsWarped",
+      "bounding_rect": {
+        "left": 977,
+        "top": 902,
+        "right": 1043,
+        "bottom": 917
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Warp Mode",
+      "automation_id": "TrackView.Device[0].Details.Sample.Warp.WarpMode",
+      "bounding_rect": {
+        "left": 977,
+        "top": 918,
+        "right": 1043,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "as",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1049,
+        "top": 903,
+        "right": 1063,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "4 Bars",
+      "automation_id": "TrackView.Device[0].Details.Sample.WarpActions.WarpPlaybackRegion",
+      "bounding_rect": {
+        "left": 1066,
+        "top": 901,
+        "right": 1130,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Halve Tempo",
+      "automation_id": "TrackView.Device[0].Details.Sample.WarpActions.WarpHalfWarpDouble.WarpHalf",
+      "bounding_rect": {
+        "left": 1066,
+        "top": 918,
+        "right": 1097,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Double Tempo",
+      "automation_id": "TrackView.Device[0].Details.Sample.WarpActions.WarpHalfWarpDouble.WarpDouble",
+      "bounding_rect": {
+        "left": 1097,
+        "top": 918,
+        "right": 1130,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "TrackView.Device[0].Fingers.Filter.IsOn",
+      "bounding_rect": {
+        "left": 299,
+        "top": 943,
+        "right": 316,
+        "bottom": 961
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 317,
+        "top": 946,
+        "right": 352,
+        "bottom": 959
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 354,
+        "top": 943,
+        "right": 404,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Filter Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 966,
+        "right": 349,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "12",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 966,
+        "right": 323,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "24",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 325,
+        "top": 966,
+        "right": 349,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Circuit Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 354,
+        "top": 966,
+        "right": 404,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Cutoff Frequency",
+      "automation_id": "TrackView.Device[0].Fingers.Filter.Freq",
+      "bounding_rect": {
+        "left": 409,
+        "top": 942,
+        "right": 476,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Resonance",
+      "automation_id": "TrackView.Device[0].Fingers.Filter.Res",
+      "bounding_rect": {
+        "left": 477,
+        "top": 942,
+        "right": 530,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO",
+      "automation_id": "TrackView.Device[0].Fingers.LFO.IsOn",
+      "bounding_rect": {
+        "left": 628,
+        "top": 944,
+        "right": 645,
+        "bottom": 962
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 648,
+        "top": 947,
+        "right": 671,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 628,
+        "top": 964,
+        "right": 681,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Rate Mode",
+      "automation_id": "TrackView.Device[0].Fingers.LFO.Rate.RateType",
+      "bounding_rect": {
+        "left": 695,
+        "top": 944,
+        "right": 759,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "TrackView.Device[0].Fingers.LFO.Rate.RateType.Buttons[0]",
+      "bounding_rect": {
+        "left": 695,
+        "top": 944,
+        "right": 726,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "TrackView.Device[0].Fingers.LFO.Rate.RateType.Buttons[1]",
+      "bounding_rect": {
+        "left": 728,
+        "top": 944,
+        "right": 759,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Rate (Hz)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 695,
+        "top": 964,
+        "right": 759,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amp Envelope Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 788,
+        "top": 942,
+        "right": 857,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amp Envelope Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 859,
+        "top": 942,
+        "right": 927,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amp Envelope Sustain Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 930,
+        "top": 942,
+        "right": 998,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amp Envelope Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1001,
+        "top": 942,
+        "right": 1069,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1071,
+        "top": 942,
+        "right": 1138,
+        "bottom": 984
+      },
+      "patterns": {}
+    }
+  ]
+}

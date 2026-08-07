@@ -1,0 +1,1353 @@
+{
+  "device_name": "Analog",
+  "slug": "Analog",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Analog",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 109,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Analog",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1141,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Analog",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 359,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1093,
+        "top": 767,
+        "right": 1110,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1112,
+        "top": 767,
+        "right": 1129,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 792,
+        "right": 336,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "F1/F2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 811,
+        "right": 336,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 792,
+        "right": 387,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Balance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 811,
+        "right": 387,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 393,
+        "top": 787,
+        "right": 432,
+        "bottom": 803
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator 1 Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 394,
+        "top": 803,
+        "right": 433,
+        "bottom": 820
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 440,
+        "top": 789,
+        "right": 486,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Semitones",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 789,
+        "right": 543,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 789,
+        "right": 598,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 605,
+        "top": 792,
+        "right": 637,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "To F2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 602,
+        "top": 811,
+        "right": 638,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter 1 Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 638,
+        "top": 792,
+        "right": 687,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output to Filter 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 638,
+        "top": 811,
+        "right": 687,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter 1 Cutoff Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 696,
+        "top": 789,
+        "right": 748,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter 1 Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 749,
+        "top": 789,
+        "right": 804,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Amplifier 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 811,
+        "top": 792,
+        "right": 851,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amplifier 1 Pan",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 858,
+        "top": 790,
+        "right": 912,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amplifier 1 Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 910,
+        "top": 790,
+        "right": 971,
+        "bottom": 832
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Noise",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 842,
+        "right": 336,
+        "bottom": 859
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "F1/F2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 861,
+        "right": 336,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 842,
+        "right": 387,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Balance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 861,
+        "right": 387,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Color",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 317,
+        "top": 888,
+        "right": 386,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Quick Routing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 399,
+        "top": 857,
+        "right": 481,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Quick Routing 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 400,
+        "top": 872,
+        "right": 452,
+        "bottom": 900
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Quick Routing 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 455,
+        "top": 872,
+        "right": 507,
+        "bottom": 900
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Quick Routing 3",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 400,
+        "top": 903,
+        "right": 452,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Quick Routing 4",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 455,
+        "top": 903,
+        "right": 507,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Global / MPE Modulation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 519,
+        "top": 842,
+        "right": 632,
+        "bottom": 855
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Global",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 519,
+        "top": 842,
+        "right": 570,
+        "bottom": 855
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "MPE",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 582,
+        "top": 842,
+        "right": 632,
+        "bottom": 855
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vibrato",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 857,
+        "right": 562,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 870,
+        "right": 550,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 883,
+        "right": 566,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Error",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 901,
+        "right": 549,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Error",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 914,
+        "right": 573,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 573,
+        "top": 870,
+        "right": 614,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 573,
+        "top": 883,
+        "right": 630,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Amt<MW",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 573,
+        "top": 901,
+        "right": 628,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato < Mod Wheel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 573,
+        "top": 914,
+        "right": 630,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Keyboard",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 857,
+        "right": 687,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 870,
+        "right": 673,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 883,
+        "right": 687,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "PB Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 901,
+        "right": 686,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "MIDI Pitch Bend Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 914,
+        "right": 687,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Semi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 687,
+        "top": 870,
+        "right": 716,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose in Semitones",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 687,
+        "top": 883,
+        "right": 743,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Stretch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 687,
+        "top": 901,
+        "right": 732,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stretch Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 687,
+        "top": 914,
+        "right": 743,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 743,
+        "top": 870,
+        "right": 787,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 743,
+        "top": 883,
+        "right": 800,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Error",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 743,
+        "top": 901,
+        "right": 775,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tuning Error",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 743,
+        "top": 914,
+        "right": 800,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 800,
+        "top": 870,
+        "right": 839,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Polyphony",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 800,
+        "top": 883,
+        "right": 857,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Priority",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 800,
+        "top": 901,
+        "right": 845,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Note Stealing Priority",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 800,
+        "top": 914,
+        "right": 857,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Unison",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 857,
+        "right": 898,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 870,
+        "right": 896,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Number of Unison Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 883,
+        "right": 913,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 901,
+        "right": 890,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unison Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 914,
+        "right": 913,
+        "bottom": 931
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 913,
+        "top": 857,
+        "right": 945,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 913,
+        "top": 870,
+        "right": 948,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Glide Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 913,
+        "top": 883,
+        "right": 970,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 2 On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 943,
+        "right": 336,
+        "bottom": 961
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "F1/F2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 962,
+        "right": 336,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 943,
+        "right": 387,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Balance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 962,
+        "right": 387,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 393,
+        "top": 938,
+        "right": 432,
+        "bottom": 954
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator 2 Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 394,
+        "top": 954,
+        "right": 433,
+        "bottom": 972
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 440,
+        "top": 940,
+        "right": 486,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Semitones",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 940,
+        "right": 545,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 940,
+        "right": 598,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 605,
+        "top": 943,
+        "right": 637,
+        "bottom": 961
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Filter 2 Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 638,
+        "top": 943,
+        "right": 687,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Follow Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 638,
+        "top": 962,
+        "right": 687,
+        "bottom": 980
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter 2 Cutoff Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 696,
+        "top": 940,
+        "right": 748,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter 2 Q",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 749,
+        "top": 940,
+        "right": 804,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Amplifier 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 811,
+        "top": 943,
+        "right": 851,
+        "bottom": 961
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amplifier 2 Pan",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 858,
+        "top": 941,
+        "right": 912,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amplifier 2 Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 910,
+        "top": 941,
+        "right": 971,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 979,
+        "top": 792,
+        "right": 1016,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO 1 Rate Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1017,
+        "top": 792,
+        "right": 1040,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1017,
+        "top": 792,
+        "right": 1040,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1017,
+        "top": 811,
+        "right": 1040,
+        "bottom": 829
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO 1 Rate (Hertz)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 985,
+        "top": 839,
+        "right": 1042,
+        "bottom": 882
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 979,
+        "top": 943,
+        "right": 1016,
+        "bottom": 961
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO 2 Rate Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1017,
+        "top": 943,
+        "right": 1040,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1017,
+        "top": 943,
+        "right": 1040,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1017,
+        "top": 962,
+        "right": 1040,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO 2 Rate (Hertz)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 985,
+        "top": 890,
+        "right": 1042,
+        "bottom": 933
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1064,
+        "top": 789,
+        "right": 1126,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Vibrato",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1050,
+        "top": 842,
+        "right": 1077,
+        "bottom": 859
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 842,
+        "right": 1127,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1050,
+        "top": 864,
+        "right": 1077,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 861,
+        "right": 1127,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Unison",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1050,
+        "top": 902,
+        "right": 1077,
+        "bottom": 920
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 889,
+        "right": 1126,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unison Detune Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 902,
+        "right": 1127,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1050,
+        "top": 943,
+        "right": 1077,
+        "bottom": 961
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 930,
+        "right": 1120,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Glide Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 943,
+        "right": 1127,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Legato",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1079,
+        "top": 962,
+        "right": 1127,
+        "bottom": 980
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    }
+  ]
+}

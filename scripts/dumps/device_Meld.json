@@ -1,0 +1,939 @@
+{
+  "device_name": "Meld",
+  "slug": "Meld",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Meld",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 75,
+  "controls_with_automation_id": 23,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Meld",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1388,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 315,
+        "top": 767,
+        "right": 333,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Meld",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 335,
+        "top": 770,
+        "right": 366,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Display Selector Tab",
+      "automation_id": "TrackView.Device[0].TitleBar.HeaderControls.LCDTab",
+      "bounding_rect": {
+        "left": 677,
+        "top": 769,
+        "right": 983,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "A",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 677,
+        "top": 769,
+        "right": 778,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "A",
+      "automation_id": "TrackView.Device[0].TitleBar.HeaderControls.LCDTab.EngineATab",
+      "bounding_rect": {
+        "left": 677,
+        "top": 770,
+        "right": 778,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "B",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 780,
+        "top": 769,
+        "right": 880,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "B",
+      "automation_id": "TrackView.Device[0].TitleBar.HeaderControls.LCDTab.EngineBTab",
+      "bounding_rect": {
+        "left": 780,
+        "top": 770,
+        "right": 880,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Settings",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 883,
+        "top": 769,
+        "right": 983,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Settings",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 883,
+        "top": 770,
+        "right": 983,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Limiter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1254,
+        "top": 767,
+        "right": 1292,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Use Current Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.HeaderControls.UseScale",
+      "bounding_rect": {
+        "left": 1320,
+        "top": 767,
+        "right": 1338,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1339,
+        "top": 767,
+        "right": 1357,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1358,
+        "top": 767,
+        "right": 1376,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator A Type",
+      "automation_id": "TrackView.Device[0].OscAControls.OscATypeChooser",
+      "bounding_rect": {
+        "left": 320,
+        "top": 790,
+        "right": 428,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Oscillator A Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 825,
+        "right": 320,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Oscillator A Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 408,
+        "top": 825,
+        "right": 428,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator A Pitch Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 863,
+        "right": 341,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator A Pitch Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 343,
+        "top": 863,
+        "right": 385,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator A Pitch Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 387,
+        "top": 863,
+        "right": 428,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator A Macro 1",
+      "automation_id": "TrackView.Device[0].OscAControls.Macro1Slider",
+      "bounding_rect": {
+        "left": 451,
+        "top": 810,
+        "right": 511,
+        "bottom": 872
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator A Macro 2",
+      "automation_id": "TrackView.Device[0].OscAControls.Macro2Slider",
+      "bounding_rect": {
+        "left": 518,
+        "top": 810,
+        "right": 578,
+        "bottom": 872
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Engine A",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 790,
+        "right": 317,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator B Type",
+      "automation_id": "TrackView.Device[0].OscBControls.OscBTypeChooser",
+      "bounding_rect": {
+        "left": 320,
+        "top": 890,
+        "right": 428,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Oscillator B Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 925,
+        "right": 320,
+        "bottom": 946
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Oscillator B Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 408,
+        "top": 925,
+        "right": 428,
+        "bottom": 946
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator B Pitch Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 964,
+        "right": 341,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator B Pitch Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 343,
+        "top": 964,
+        "right": 385,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator B Pitch Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 387,
+        "top": 964,
+        "right": 428,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator B Macro 1",
+      "automation_id": "TrackView.Device[0].OscBControls.Macro1Slider",
+      "bounding_rect": {
+        "left": 451,
+        "top": 911,
+        "right": 511,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator B Macro 2",
+      "automation_id": "TrackView.Device[0].OscBControls.Macro2Slider",
+      "bounding_rect": {
+        "left": 518,
+        "top": 911,
+        "right": 578,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Engine B",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 890,
+        "right": 317,
+        "bottom": 908
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Link Envelopes",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 647,
+        "top": 789,
+        "right": 669,
+        "bottom": 806
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Envelopes",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 669,
+        "top": 787,
+        "right": 743,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFOs",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 759,
+        "top": 787,
+        "right": 833,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Envelope Loop Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 766,
+        "top": 813,
+        "right": 828,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 602,
+        "top": 925,
+        "right": 656,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Attack Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 602,
+        "top": 963,
+        "right": 656,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 656,
+        "top": 925,
+        "right": 710,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Decay Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 656,
+        "top": 963,
+        "right": 710,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Sustain Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 710,
+        "top": 925,
+        "right": 765,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 925,
+        "right": 819,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Release Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 963,
+        "right": 819,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Envelope Loop Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1002,
+        "top": 813,
+        "right": 1064,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show Slopes",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 835,
+        "top": 951,
+        "right": 846,
+        "bottom": 962
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 847,
+        "top": 925,
+        "right": 902,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 902,
+        "top": 925,
+        "right": 956,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Sustain Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 956,
+        "top": 925,
+        "right": 1010,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1010,
+        "top": 925,
+        "right": 1064,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Initial Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 847,
+        "top": 963,
+        "right": 898,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Peak Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 902,
+        "top": 963,
+        "right": 952,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Final Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1010,
+        "top": 963,
+        "right": 1061,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Engine A Filter Type",
+      "automation_id": "TrackView.Device[0].FilterAControls.FilterATypeChooser",
+      "bounding_rect": {
+        "left": 1094,
+        "top": 790,
+        "right": 1202,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine A Filter Frequency",
+      "automation_id": "TrackView.Device[0].FilterAControls.EngineAFilterFrequencyCombiSlider",
+      "bounding_rect": {
+        "left": 1077,
+        "top": 812,
+        "right": 1138,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine A Filter Parameter 1",
+      "automation_id": "TrackView.Device[0].FilterAControls.Macro1Slider",
+      "bounding_rect": {
+        "left": 1146,
+        "top": 825,
+        "right": 1194,
+        "bottom": 843
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine A Filter Parameter 2",
+      "automation_id": "TrackView.Device[0].FilterAControls.Macro2Slider",
+      "bounding_rect": {
+        "left": 1146,
+        "top": 859,
+        "right": 1194,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Engine A Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1074,
+        "top": 790,
+        "right": 1092,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Engine B Filter Type",
+      "automation_id": "TrackView.Device[0].FilterBControls.FilterBTypeChooser",
+      "bounding_rect": {
+        "left": 1094,
+        "top": 890,
+        "right": 1202,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine B Filter Frequency",
+      "automation_id": "TrackView.Device[0].FilterBControls.EngineBFilterFrequencyCombiSlider",
+      "bounding_rect": {
+        "left": 1077,
+        "top": 914,
+        "right": 1138,
+        "bottom": 976
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine B Filter Parameter 1",
+      "automation_id": "TrackView.Device[0].FilterBControls.Macro1Slider",
+      "bounding_rect": {
+        "left": 1146,
+        "top": 927,
+        "right": 1194,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine B Filter Parameter 2",
+      "automation_id": "TrackView.Device[0].FilterBControls.Macro2Slider",
+      "bounding_rect": {
+        "left": 1146,
+        "top": 961,
+        "right": 1194,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Engine B Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1074,
+        "top": 890,
+        "right": 1092,
+        "bottom": 908
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine A Pan",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1212,
+        "top": 790,
+        "right": 1258,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine A Tone Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1213,
+        "top": 816,
+        "right": 1257,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine A Volume",
+      "automation_id": "TrackView.Device[0].MixerAControls.Volume",
+      "bounding_rect": {
+        "left": 1258,
+        "top": 791,
+        "right": 1304,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine B Pan",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1212,
+        "top": 890,
+        "right": 1258,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine B Tone Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1213,
+        "top": 917,
+        "right": 1257,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Engine B Volume",
+      "automation_id": "TrackView.Device[0].MixerBControls.Volume",
+      "bounding_rect": {
+        "left": 1258,
+        "top": 891,
+        "right": 1304,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Mono/Poly Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1312,
+        "top": 790,
+        "right": 1372,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Poly Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1312,
+        "top": 809,
+        "right": 1372,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Voice Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1312,
+        "top": 843,
+        "right": 1372,
+        "bottom": 861
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Stacked Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1312,
+        "top": 877,
+        "right": 1372,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mixer Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1312,
+        "top": 916,
+        "right": 1372,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1312,
+        "top": 938,
+        "right": 1371,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

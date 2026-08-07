@@ -1,0 +1,489 @@
+{
+  "device_name": "Saturator",
+  "slug": "Saturator",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Saturator",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 39,
+  "controls_with_automation_id": 3,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Saturator",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 881,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 316,
+        "top": 767,
+        "right": 334,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Saturator",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 336,
+        "top": 770,
+        "right": 395,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 767,
+        "right": 851,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 852,
+        "top": 767,
+        "right": 870,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Curve Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 795,
+        "right": 428,
+        "bottom": 812
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Post Clip Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 316,
+        "top": 898,
+        "right": 388,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Color On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 402,
+        "top": 898,
+        "right": 453,
+        "bottom": 916
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Amt Lo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 465,
+        "top": 901,
+        "right": 506,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Color Amount Low",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 507,
+        "top": 898,
+        "right": 553,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Saturator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 317,
+        "top": 925,
+        "right": 376,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Saturator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 398,
+        "top": 925,
+        "right": 457,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Saturator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 925,
+        "right": 537,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Color Curve",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 795,
+        "right": 785,
+        "bottom": 812
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "In",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 802,
+        "top": 795,
+        "right": 821,
+        "bottom": 812
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Out",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 839,
+        "top": 795,
+        "right": 863,
+        "bottom": 812
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 817,
+        "right": 863,
+        "bottom": 894
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Color Frequency, Color Amount High",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 720,
+        "top": 848,
+        "right": 735,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 579,
+        "top": 848,
+        "right": 595,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Amt Hi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 901,
+        "right": 607,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Color Amount High",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 607,
+        "top": 898,
+        "right": 653,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 660,
+        "top": 901,
+        "right": 722,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Color Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 722,
+        "top": 898,
+        "right": 779,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 786,
+        "top": 901,
+        "right": 822,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Color Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 822,
+        "top": 898,
+        "right": 864,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Waveshaper",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 925,
+        "right": 638,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 947,
+        "right": 597,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveshaper Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 604,
+        "top": 944,
+        "right": 655,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Curve",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 671,
+        "top": 947,
+        "right": 707,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveshaper Curve",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 710,
+        "top": 944,
+        "right": 761,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Depth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 776,
+        "top": 947,
+        "right": 813,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveshaper Depth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 817,
+        "top": 944,
+        "right": 867,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Linear",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 968,
+        "right": 603,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveshaper Linearity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 604,
+        "top": 966,
+        "right": 655,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Damp",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 671,
+        "top": 968,
+        "right": 706,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveshaper Damping",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 710,
+        "top": 966,
+        "right": 761,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Period",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 776,
+        "top": 968,
+        "right": 815,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveshaper Period",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 817,
+        "top": 966,
+        "right": 867,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

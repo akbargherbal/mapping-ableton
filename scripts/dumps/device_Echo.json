@@ -1,0 +1,627 @@
+{
+  "device_name": "Echo",
+  "slug": "Echo",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Echo",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 50,
+  "controls_with_automation_id": 4,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Echo",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 909,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Echo",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 346,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.Tab",
+      "bounding_rect": {
+        "left": 500,
+        "top": 769,
+        "right": 704,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Echo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 500,
+        "top": 769,
+        "right": 544,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Echo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 507,
+        "top": 770,
+        "right": 537,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Modulation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 769,
+        "right": 628,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Modulation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 553,
+        "top": 770,
+        "right": 621,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Character",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 769,
+        "right": 704,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Character",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 637,
+        "top": 770,
+        "right": 697,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 860,
+        "top": 767,
+        "right": 878,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 879,
+        "top": 767,
+        "right": 897,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Left",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 314,
+        "top": 789,
+        "right": 339,
+        "bottom": 802
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Division",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 802,
+        "right": 355,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Right",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 386,
+        "top": 789,
+        "right": 419,
+        "bottom": 802
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Division",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 374,
+        "top": 802,
+        "right": 431,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Delay Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 858,
+        "right": 356,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Sync Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 877,
+        "right": 356,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Offset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 896,
+        "right": 356,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Delay Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 374,
+        "top": 858,
+        "right": 432,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Sync Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 374,
+        "top": 877,
+        "right": 432,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Offset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 374,
+        "top": 896,
+        "right": 432,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Stereo Link",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 353,
+        "top": 811,
+        "right": 378,
+        "bottom": 826
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 927,
+        "right": 356,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 374,
+        "top": 927,
+        "right": 432,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Clip Dry",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 355,
+        "top": 936,
+        "right": 375,
+        "bottom": 954
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Feedback Invert",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 355,
+        "top": 955,
+        "right": 375,
+        "bottom": 973
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Echo Tunnel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 450,
+        "top": 793,
+        "right": 752,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter Display Toggle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 439,
+        "top": 966,
+        "right": 457,
+        "bottom": 983
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 459,
+        "top": 968,
+        "right": 472,
+        "bottom": 981
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 474,
+        "top": 968,
+        "right": 507,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "HP",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 507,
+        "top": 968,
+        "right": 525,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "High-Pass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 525,
+        "top": 966,
+        "right": 582,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Res",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 582,
+        "top": 968,
+        "right": 604,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "High-Pass Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 604,
+        "top": 966,
+        "right": 636,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "LP",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 636,
+        "top": 968,
+        "right": 651,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-Pass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 651,
+        "top": 966,
+        "right": 708,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Res",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 708,
+        "top": 968,
+        "right": 730,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-Pass Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 730,
+        "top": 966,
+        "right": 762,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Reverb Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 774,
+        "top": 789,
+        "right": 831,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Reverb Location",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 859,
+        "right": 835,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 879,
+        "right": 806,
+        "bottom": 892
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Reverb Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 892,
+        "right": 835,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Channel Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 927,
+        "right": 835,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Stereo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 927,
+        "right": 835,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Ping Pong",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 946,
+        "right": 835,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Mid/Side",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 964,
+        "right": 835,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stereo Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 838,
+        "top": 789,
+        "right": 894,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 838,
+        "top": 857,
+        "right": 894,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "TrackView.Device[0].DryWet",
+      "bounding_rect": {
+        "left": 838,
+        "top": 927,
+        "right": 894,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

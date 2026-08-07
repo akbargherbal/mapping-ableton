@@ -1,0 +1,473 @@
+{
+  "device_name": "Electric",
+  "slug": "Electric",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Electric",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 38,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Electric",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 743,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Electric",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 363,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 695,
+        "top": 767,
+        "right": 713,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 714,
+        "top": 767,
+        "right": 732,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Hammer",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 333,
+        "top": 791,
+        "right": 385,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stiffness",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 807,
+        "right": 361,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 361,
+        "top": 807,
+        "right": 417,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fork",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 470,
+        "top": 791,
+        "right": 498,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tine Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 807,
+        "right": 484,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tone Bar Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 484,
+        "top": 807,
+        "right": 539,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Damper / Pickup",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 553,
+        "top": 791,
+        "right": 651,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pickup Symmetry",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 551,
+        "top": 807,
+        "right": 611,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 622,
+        "top": 810,
+        "right": 651,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Pickup Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 824,
+        "right": 655,
+        "bottom": 861
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 824,
+        "right": 655,
+        "bottom": 842
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "W",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 843,
+        "right": 655,
+        "bottom": 861
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Global",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 680,
+        "top": 791,
+        "right": 719,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 671,
+        "top": 807,
+        "right": 727,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Stiffness",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 426,
+        "top": 874,
+        "right": 582,
+        "bottom": 887
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 585,
+        "top": 874,
+        "right": 604,
+        "bottom": 887
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stiffness < Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 584,
+        "top": 887,
+        "right": 631,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 666,
+        "top": 874,
+        "right": 688,
+        "bottom": 887
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stiffness < Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 664,
+        "top": 887,
+        "right": 712,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Force",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 426,
+        "top": 913,
+        "right": 501,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 505,
+        "top": 913,
+        "right": 552,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Force",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 925,
+        "right": 551,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 586,
+        "top": 913,
+        "right": 605,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Force < Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 585,
+        "top": 925,
+        "right": 632,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 667,
+        "top": 913,
+        "right": 689,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Force < Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 666,
+        "top": 925,
+        "right": 713,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Noise",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 426,
+        "top": 951,
+        "right": 501,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 505,
+        "top": 951,
+        "right": 537,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 964,
+        "right": 551,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 585,
+        "top": 951,
+        "right": 622,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 584,
+        "top": 964,
+        "right": 631,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 666,
+        "top": 951,
+        "right": 688,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise < Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 664,
+        "top": 964,
+        "right": 712,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

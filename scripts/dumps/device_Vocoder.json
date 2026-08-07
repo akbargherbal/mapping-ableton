@@ -1,0 +1,439 @@
+{
+  "device_name": "Vocoder",
+  "slug": "Vocoder",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Vocoder",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 35,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Vocoder",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 818,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Vocoder",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 367,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 769,
+        "top": 767,
+        "right": 787,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 788,
+        "top": 767,
+        "right": 806,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Carrier",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 793,
+        "right": 342,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Enhance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 350,
+        "top": 791,
+        "right": 407,
+        "bottom": 809
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Carrier Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 810,
+        "right": 407,
+        "bottom": 828
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 831,
+        "right": 406,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Rate, Noise Crackle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 391,
+        "top": 831,
+        "right": 406,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unvoiced Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 925,
+        "right": 355,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Sens.",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 366,
+        "top": 925,
+        "right": 399,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Unvoiced Sensitivity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 358,
+        "top": 938,
+        "right": 407,
+        "bottom": 956
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Unvoiced Speed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 358,
+        "top": 966,
+        "right": 407,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 581,
+        "top": 931,
+        "right": 610,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gate Threshold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 581,
+        "top": 944,
+        "right": 630,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Bands",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 419,
+        "top": 931,
+        "right": 455,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Number of Bands",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 419,
+        "top": 944,
+        "right": 467,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 470,
+        "top": 931,
+        "right": 507,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Upper Filter Band",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 470,
+        "top": 944,
+        "right": 526,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Lower Filter Band",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 470,
+        "top": 962,
+        "right": 526,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "BW",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 529,
+        "top": 931,
+        "right": 550,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Bandwidth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 529,
+        "top": 944,
+        "right": 578,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Precise/Retro",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 529,
+        "top": 962,
+        "right": 578,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 632,
+        "top": 931,
+        "right": 663,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 632,
+        "top": 944,
+        "right": 682,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Depth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 793,
+        "right": 747,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 866,
+        "right": 747,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 927,
+        "right": 747,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Mono / Stereo / L/R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 791,
+        "right": 801,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Mono",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 791,
+        "right": 801,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Stereo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 810,
+        "right": 801,
+        "bottom": 828
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "L/R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 829,
+        "right": 801,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Formant Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 752,
+        "top": 859,
+        "right": 804,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 752,
+        "top": 927,
+        "right": 804,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

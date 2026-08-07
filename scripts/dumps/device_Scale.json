@@ -1,0 +1,237 @@
+{
+  "device_name": "Scale",
+  "slug": "Scale",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Scale",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 18,
+  "controls_with_automation_id": 7,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Scale",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 594,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 349,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Use Current Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.UseCurrentScale",
+      "bounding_rect": {
+        "left": 526,
+        "top": 767,
+        "right": 544,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 545,
+        "top": 767,
+        "right": 563,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 564,
+        "top": 767,
+        "right": 582,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "In",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 481,
+        "top": 792,
+        "right": 494,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "TrackView.Device[0].PitchInDisplay",
+      "bounding_rect": {
+        "left": 497,
+        "top": 792,
+        "right": 516,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Out",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 518,
+        "top": 792,
+        "right": 542,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "TrackView.Device[0].PitchOutDisplay",
+      "bounding_rect": {
+        "left": 544,
+        "top": 792,
+        "right": 581,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Base",
+      "automation_id": "TrackView.Device[0].RootNoteChooser",
+      "bounding_rect": {
+        "left": 480,
+        "top": 813,
+        "right": 581,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Scale Name",
+      "automation_id": "TrackView.Device[0].ScaleChooser",
+      "bounding_rect": {
+        "left": 480,
+        "top": 832,
+        "right": 581,
+        "bottom": 850
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 499,
+        "top": 857,
+        "right": 562,
+        "bottom": 921
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Fold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 927,
+        "right": 557,
+        "bottom": 944
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Lowest",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 480,
+        "top": 954,
+        "right": 523,
+        "bottom": 967
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Processed Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 480,
+        "top": 967,
+        "right": 530,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 531,
+        "top": 954,
+        "right": 569,
+        "bottom": 967
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Processed Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 531,
+        "top": 967,
+        "right": 581,
+        "bottom": 984
+      },
+      "patterns": {}
+    }
+  ]
+}

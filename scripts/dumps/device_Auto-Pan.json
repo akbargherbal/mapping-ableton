@@ -1,0 +1,269 @@
+{
+  "device_name": "Auto Pan",
+  "slug": "Auto-Pan",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Auto Pan",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 21,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Auto Pan",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 544,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Auto Pan",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 371,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 767,
+        "right": 513,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 514,
+        "top": 767,
+        "right": 532,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 866,
+        "right": 348,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Normal/Invert Switch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 956,
+        "right": 350,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Frequency (Hertz)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 358,
+        "top": 866,
+        "right": 406,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Rate Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 937,
+        "right": 395,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 937,
+        "right": 395,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 368,
+        "top": 956,
+        "right": 395,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 417,
+        "top": 866,
+        "right": 465,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Stereo Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 937,
+        "right": 454,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Phi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 937,
+        "right": 454,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Spin",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 956,
+        "right": 454,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Waveform Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 477,
+        "top": 866,
+        "right": 525,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 473,
+        "top": 937,
+        "right": 529,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationSine",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 473,
+        "top": 937,
+        "right": 500,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationTriangle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 473,
+        "top": 956,
+        "right": 500,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationSawDown",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 501,
+        "top": 937,
+        "right": 529,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationSHstereo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 501,
+        "top": 956,
+        "right": 529,
+        "bottom": 974
+      },
+      "patterns": {}
+    }
+  ]
+}

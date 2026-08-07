@@ -1,0 +1,1064 @@
+{
+  "context_key": "Browser: Plug-Ins",
+  "section_aid": "ContentBrowser",
+  "section_name": "Browser",
+  "found_by": "aid prefix 'ContentBrowser'",
+  "node_count": 87,
+  "controls_with_automation_id": 6,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Browser",
+      "automation_id": "ContentBrowser",
+      "bounding_rect": {
+        "left": 11,
+        "top": 118,
+        "right": 627,
+        "bottom": 700
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Browse Back",
+      "automation_id": "ContentBrowser.KeywordEditorSplitter.BrowserToolbar.HistoryBack",
+      "bounding_rect": {
+        "left": 11,
+        "top": 118,
+        "right": 33,
+        "bottom": 143
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Browse Forward",
+      "automation_id": "ContentBrowser.KeywordEditorSplitter.BrowserToolbar.HistoryForward",
+      "bounding_rect": {
+        "left": 34,
+        "top": 118,
+        "right": 57,
+        "bottom": 143
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Edit",
+      "name": "Search",
+      "automation_id": "ContentBrowser.KeywordEditorSplitter.BrowserToolbar.SearchField",
+      "bounding_rect": {
+        "left": 59,
+        "top": 118,
+        "right": 627,
+        "bottom": 143
+      },
+      "patterns": {
+        "value": ""
+      }
+    },
+    {
+      "control_type": "Tree",
+      "name": "Browser Sidebar",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 147,
+        "right": 289,
+        "bottom": 700
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Collections",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 147,
+        "right": 289,
+        "bottom": 192
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Favorites",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 169,
+        "right": 289,
+        "bottom": 192
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Favorites",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 169,
+        "right": 281,
+        "bottom": 190
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Favorites",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 173,
+        "right": 93,
+        "bottom": 186
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Library",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 192,
+        "right": 289,
+        "bottom": 550
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "All",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 236,
+        "right": 289,
+        "bottom": 259
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "All",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 236,
+        "right": 281,
+        "bottom": 258
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "All",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 240,
+        "right": 55,
+        "bottom": 253
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Sounds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 259,
+        "right": 289,
+        "bottom": 281
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Sounds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 259,
+        "right": 281,
+        "bottom": 280
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Sounds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 262,
+        "right": 83,
+        "bottom": 275
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Drums",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 281,
+        "right": 289,
+        "bottom": 304
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Drums",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 281,
+        "right": 281,
+        "bottom": 302
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Drums",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 285,
+        "right": 78,
+        "bottom": 298
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Instruments",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 304,
+        "right": 289,
+        "bottom": 326
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Instruments",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 304,
+        "right": 281,
+        "bottom": 325
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Instruments",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 307,
+        "right": 111,
+        "bottom": 320
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Audio Effects",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 326,
+        "right": 289,
+        "bottom": 348
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Audio Effects",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 326,
+        "right": 281,
+        "bottom": 347
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Audio Effects",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 330,
+        "right": 118,
+        "bottom": 343
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "MIDI Effects",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 348,
+        "right": 289,
+        "bottom": 371
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "MIDI Effects",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 348,
+        "right": 281,
+        "bottom": 370
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI Effects",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 352,
+        "right": 111,
+        "bottom": 365
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Modulators",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 371,
+        "right": 289,
+        "bottom": 393
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Modulators",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 371,
+        "right": 281,
+        "bottom": 392
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Modulators",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 374,
+        "right": 106,
+        "bottom": 387
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Max for Live",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 393,
+        "right": 289,
+        "bottom": 416
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Max for Live",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 393,
+        "right": 281,
+        "bottom": 415
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Max for Live",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 397,
+        "right": 110,
+        "bottom": 410
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Plug-Ins",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 416,
+        "right": 289,
+        "bottom": 438
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Plug-Ins",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 416,
+        "right": 281,
+        "bottom": 437
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Plug-Ins",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 419,
+        "right": 87,
+        "bottom": 432
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Clips",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 438,
+        "right": 289,
+        "bottom": 461
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Clips",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 438,
+        "right": 281,
+        "bottom": 459
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Clips",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 442,
+        "right": 68,
+        "bottom": 455
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Samples",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 461,
+        "right": 289,
+        "bottom": 483
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Samples",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 461,
+        "right": 281,
+        "bottom": 482
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Samples",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 464,
+        "right": 88,
+        "bottom": 477
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Grooves",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 483,
+        "right": 289,
+        "bottom": 505
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Grooves",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 483,
+        "right": 281,
+        "bottom": 504
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Grooves",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 487,
+        "right": 87,
+        "bottom": 500
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Tunings",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 505,
+        "right": 289,
+        "bottom": 528
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Tunings",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 505,
+        "right": 281,
+        "bottom": 527
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Tunings",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 509,
+        "right": 85,
+        "bottom": 522
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Templates",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 528,
+        "right": 289,
+        "bottom": 550
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Templates",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 528,
+        "right": 281,
+        "bottom": 549
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Templates",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 531,
+        "right": 100,
+        "bottom": 544
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Places",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 550,
+        "right": 289,
+        "bottom": 752
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Packs",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 595,
+        "right": 289,
+        "bottom": 618
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Packs",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 595,
+        "right": 281,
+        "bottom": 616
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Packs",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 599,
+        "right": 74,
+        "bottom": 612
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Cloud",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 618,
+        "right": 289,
+        "bottom": 640
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Cloud",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 618,
+        "right": 281,
+        "bottom": 639
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Cloud",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 621,
+        "right": 74,
+        "bottom": 634
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Push",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 640,
+        "right": 289,
+        "bottom": 662
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Push",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 640,
+        "right": 281,
+        "bottom": 661
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Push",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 643,
+        "right": 68,
+        "bottom": 656
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "User Library",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 662,
+        "right": 289,
+        "bottom": 685
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "User Library",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 662,
+        "right": 281,
+        "bottom": 684
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "User Library",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 666,
+        "right": 111,
+        "bottom": 679
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Current Project",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 685,
+        "right": 289,
+        "bottom": 707
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Current Project",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 685,
+        "right": 281,
+        "bottom": 706
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Current Project",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 688,
+        "right": 131,
+        "bottom": 701
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "data",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 707,
+        "right": 289,
+        "bottom": 730
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "data",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 707,
+        "right": 281,
+        "bottom": 728
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "data",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 711,
+        "right": 67,
+        "bottom": 724
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Add Folder...",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 730,
+        "right": 289,
+        "bottom": 752
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Add Folder...",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 730,
+        "right": 281,
+        "bottom": 751
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Add Folder",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 17,
+        "top": 730,
+        "right": 37,
+        "bottom": 751
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Add Folder...",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 730,
+        "right": 277,
+        "bottom": 751
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Filters",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 146,
+        "right": 627,
+        "bottom": 169
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show Filters",
+      "automation_id": "ContentBrowser.KeywordEditorSplitter.SidebarSplitter.ContentPane.TreeContentView.FiltersHeadView.ShowFiltersButton",
+      "bounding_rect": {
+        "left": 294,
+        "top": 148,
+        "right": 312,
+        "bottom": 166
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Filters",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 313,
+        "top": 150,
+        "right": 352,
+        "bottom": 163
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Auto Tags",
+      "automation_id": "ContentBrowser.KeywordEditorSplitter.SidebarSplitter.ContentPane.TreeContentView.FiltersHeadView.IncludeAutoKeywordsToggle",
+      "bounding_rect": {
+        "left": 483,
+        "top": 148,
+        "right": 507,
+        "bottom": 166
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Auto Tags",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 510,
+        "top": 150,
+        "right": 568,
+        "bottom": 163
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show Tags Editor",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 577,
+        "top": 148,
+        "right": 624,
+        "bottom": 166
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Filters",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 169,
+        "right": 627,
+        "bottom": 206
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Tree",
+      "name": "Plug-Ins List, 0 Items",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 208,
+        "right": 627,
+        "bottom": 674
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Name",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 294,
+        "top": 208,
+        "right": 542,
+        "bottom": 230
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Size",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 558,
+        "top": 208,
+        "right": 611,
+        "bottom": 230
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Browser File Preview",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 295,
+        "top": 679,
+        "right": 313,
+        "bottom": 697
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    }
+  ]
+}

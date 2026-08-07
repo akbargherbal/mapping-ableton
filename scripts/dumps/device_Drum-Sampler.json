@@ -1,0 +1,537 @@
+{
+  "device_name": "Drum Sampler",
+  "slug": "Drum-Sampler",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Drum Sampler",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 43,
+  "controls_with_automation_id": 5,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Drum Sampler",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 879,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Drum Sampler",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 401,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 767,
+        "right": 848,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 850,
+        "top": 767,
+        "right": 867,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Start",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 897,
+        "right": 333,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Start",
+      "automation_id": "TrackView.Device[0].PlaybackStart",
+      "bounding_rect": {
+        "left": 335,
+        "top": 895,
+        "right": 383,
+        "bottom": 913
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 389,
+        "top": 897,
+        "right": 432,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 434,
+        "top": 895,
+        "right": 483,
+        "bottom": 913
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 491,
+        "top": 897,
+        "right": 519,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 522,
+        "top": 895,
+        "right": 570,
+        "bottom": 913
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 301,
+        "top": 924,
+        "right": 359,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Hold Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 362,
+        "top": 924,
+        "right": 420,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 424,
+        "top": 924,
+        "right": 481,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Transp",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 491,
+        "top": 924,
+        "right": 537,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 539,
+        "top": 922,
+        "right": 595,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 491,
+        "top": 946,
+        "right": 537,
+        "bottom": 959
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 539,
+        "top": 943,
+        "right": 595,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 491,
+        "top": 967,
+        "right": 537,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Envelope Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 539,
+        "top": 964,
+        "right": 595,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 601,
+        "top": 786,
+        "right": 728,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Grain Size, Stretch Factor",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 664,
+        "top": 875,
+        "right": 680,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Playback Effect On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 604,
+        "top": 895,
+        "right": 641,
+        "bottom": 913
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Playback Effect Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 644,
+        "top": 895,
+        "right": 725,
+        "bottom": 913
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stretch Factor",
+      "automation_id": "TrackView.Device[0].StretchParameter1",
+      "bounding_rect": {
+        "left": 608,
+        "top": 924,
+        "right": 663,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Grain Size",
+      "automation_id": "TrackView.Device[0].StretchParameter2",
+      "bounding_rect": {
+        "left": 666,
+        "top": 924,
+        "right": 721,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 734,
+        "top": 790,
+        "right": 794,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 734,
+        "top": 809,
+        "right": 794,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterLowpass12",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 734,
+        "top": 809,
+        "right": 763,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterLowpass24",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 809,
+        "right": 794,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterHighpass24",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 734,
+        "top": 828,
+        "right": 763,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterBell",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 765,
+        "top": 828,
+        "right": 794,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 736,
+        "top": 857,
+        "right": 792,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 736,
+        "top": 924,
+        "right": 792,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 806,
+        "top": 792,
+        "right": 861,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pan",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 849,
+        "right": 864,
+        "bottom": 866
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 809,
+        "top": 875,
+        "right": 828,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vol",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 839,
+        "top": 875,
+        "right": 858,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Velocity to Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 888,
+        "right": 864,
+        "bottom": 905
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 820,
+        "top": 914,
+        "right": 847,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Modulation Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 927,
+        "right": 864,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Modulation Destination",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 946,
+        "right": 864,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 964,
+        "right": 864,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

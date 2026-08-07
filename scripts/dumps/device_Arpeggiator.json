@@ -1,0 +1,493 @@
+{
+  "device_name": "Arpeggiator",
+  "slug": "Arpeggiator",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Arpeggiator",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 39,
+  "controls_with_automation_id": 11,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Arpeggiator",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 733,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 315,
+        "top": 767,
+        "right": 333,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Arpeggiator",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 335,
+        "top": 770,
+        "right": 408,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Use Current Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.UseCurrentScale",
+      "bounding_rect": {
+        "left": 666,
+        "top": 767,
+        "right": 683,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 684,
+        "top": 767,
+        "right": 702,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 703,
+        "top": 767,
+        "right": 721,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Style",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 798,
+        "right": 335,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Style",
+      "automation_id": "TrackView.Device[0].PatternChooser",
+      "bounding_rect": {
+        "left": 341,
+        "top": 796,
+        "right": 474,
+        "bottom": 813
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Previous Style Pattern",
+      "automation_id": "TrackView.Device[0].PreviousPattern",
+      "bounding_rect": {
+        "left": 310,
+        "top": 846,
+        "right": 330,
+        "bottom": 866
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Next Style Pattern",
+      "automation_id": "TrackView.Device[0].NextPattern",
+      "bounding_rect": {
+        "left": 446,
+        "top": 846,
+        "right": 466,
+        "bottom": 866
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Hold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 796,
+        "right": 553,
+        "bottom": 813
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Offset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 822,
+        "right": 517,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pattern Offset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 835,
+        "right": 517,
+        "bottom": 852
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Groove",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 863,
+        "right": 520,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Groove",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 478,
+        "top": 876,
+        "right": 553,
+        "bottom": 894
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Sync/Free Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 927,
+        "right": 325,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Milliseconds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 927,
+        "right": 325,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 946,
+        "right": 325,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Synced Rate",
+      "automation_id": "TrackView.Device[0].SyncedRate",
+      "bounding_rect": {
+        "left": 336,
+        "top": 908,
+        "right": 389,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose Distance",
+      "automation_id": "TrackView.Device[0].TransposeDistance",
+      "bounding_rect": {
+        "left": 394,
+        "top": 908,
+        "right": 454,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose Steps",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 458,
+        "top": 916,
+        "right": 504,
+        "bottom": 973
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 916,
+        "right": 552,
+        "bottom": 973
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 569,
+        "top": 791,
+        "right": 625,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 569,
+        "top": 804,
+        "right": 638,
+        "bottom": 822
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 578,
+        "top": 829,
+        "right": 629,
+        "bottom": 885
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Repeats",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 569,
+        "top": 913,
+        "right": 617,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Repeats",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 569,
+        "top": 925,
+        "right": 638,
+        "bottom": 943
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 791,
+        "right": 697,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 804,
+        "right": 719,
+        "bottom": 822
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 829,
+        "right": 686,
+        "bottom": 842
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Velocity Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 842,
+        "right": 719,
+        "bottom": 859
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Target",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 866,
+        "right": 689,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Velocity Target",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 879,
+        "right": 719,
+        "bottom": 897
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Velocity Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 649,
+        "top": 901,
+        "right": 719,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Root",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 569,
+        "top": 953,
+        "right": 597,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Root",
+      "automation_id": "TrackView.Device[0].RootNoteChooser",
+      "bounding_rect": {
+        "left": 569,
+        "top": 966,
+        "right": 618,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 622,
+        "top": 953,
+        "right": 655,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Scale",
+      "automation_id": "TrackView.Device[0].ScaleChooser",
+      "bounding_rect": {
+        "left": 622,
+        "top": 966,
+        "right": 719,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}
