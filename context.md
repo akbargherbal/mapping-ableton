@@ -54,7 +54,7 @@ unconfirmed possibility to be checked at runtime. That's resolved now:
 primary method for loading a device onto a track (see `AGENTS.md` §4).
 The UIA Browser search-and-load path and the honest `LOAD_FAILED` log
 still exist as tiers 2 and 3 of that same ladder, for the case where MCP
-fails on a *specific* device — not because MCP's overall availability is
+fails on a _specific_ device — not because MCP's overall availability is
 still in doubt.
 
 ## Time budget and checkpointing
@@ -221,13 +221,12 @@ repo is not sufficient.
     step) after the last time the summary was correctly regenerated.
     Net effect is cosmetic — the 39 UNMAPPED contexts themselves are
     all present, legitimate, and individually well-documented; only the
-    one summary integer is stale by 1. Not yet root-caused to a
-    specific script call; see plan below.
+    one summary integer is stale by 1.
   - Verified the report's "all 17 OPAQUE devices are exactly the native
     Max-for-Live devices" claim by listing them: correct, no
     exceptions (Align Delay, Envelope Follower, LFO, Shaper;
     Envelope MIDI, Expression Control, MPE Control, Note Echo,
-    Shaper MIDI; all 8 DS-* drum synths).
+    Shaper MIDI; all 8 DS-\* drum synths).
   - Spot-checked a MAPPED device (`EQ Eight`, 81 controls) — ids look
     real and structurally sane (e.g.
     `TrackView.Device[0].TitleBar.ExtendViewButton`), and the
@@ -240,43 +239,40 @@ repo is not sufficient.
   Goal: decide whether `dumps/control_catalog.json` is trustworthy
   enough to hand to the next project (the tutor / autonomous mixer)
   as-is, or needs a cleanup pass first. Static checks (no Ableton
-  needed) go first; live checks (need the user's machine) go last,
-  since this session cannot reach a live Ableton instance itself —
-  any live check requires handing the user a script to run and
-  reporting results back.
-
+  needed) go first; live checks (run via autonomous AI agent with
+  AbletonMCP access) go last.
   - [x] Read `survey_report.md`, `survey_plan.md`, `survey_checklist.md`.
   - [x] Recompute `coverage_summary` from `contexts` and diff against
-    the stored values → found the `unmapped` 38-vs-39 off-by-one above.
+        the stored values → found the `unmapped` 38-vs-39 off-by-one above.
   - [x] Confirm the OPAQUE set is exactly the Max-for-Live devices.
   - [x] Spot-check one MAPPED device's control list for sane ids
-    (`EQ Eight`).
+        (`EQ Eight`).
   - [x] Root-cause the `unmapped` off-by-one. Confirmed: exactly 3
-    contexts have `loaded_via: "none"` (`Group / Folded Tracks`,
-    `View Menu (top-level views)`, `Plug-Ins`) — documentation-style
-    entries with no device ever loaded, `node_count: 0`, and none of
-    the per-device bookkeeping fields (`title_matched`/
-    `expand_clicked`) populated the way real device merges have them.
-    `update_catalog.py`'s `status_for()`/summary-recompute step always
-    derives the summary fresh from `cat["contexts"]`, so a file it
-    fully produced would be self-consistent — the stale `unmapped: 38`
-    is consistent with at least one of these 3 having been added by a
-    path that skipped that recompute (manual edit or a different merge
-    call). Effect is cosmetic (all 39 UNMAPPED contexts are present and
-    legitimate); the fix is a mechanical recompute-and-save, folded
-    into the fix below rather than done standalone.
+        contexts have `loaded_via: "none"` (`Group / Folded Tracks`,
+        `View Menu (top-level views)`, `Plug-Ins`) — documentation-style
+        entries with no device ever loaded, `node_count: 0`, and none of
+        the per-device bookkeeping fields (`title_matched`/
+        `expand_clicked`) populated the way real device merges have them.
+        `update_catalog.py`'s `status_for()`/summary-recompute step always
+        derives the summary fresh from `cat["contexts"]`, so a file it
+        fully produced would be self-consistent — the stale `unmapped: 38`
+        is consistent with at least one of these 3 having been added by a
+        path that skipped that recompute (manual edit or a different merge
+        call). Effect is cosmetic (all 39 UNMAPPED contexts are present and
+        legitimate); the fix is a mechanical recompute-and-save, folded
+        into the fix below rather than done standalone.
   - [x] Cross-checked all 104 catalog contexts against the 118 raw dump
-    files in `scripts/dumps/`. Every context with `loaded_via: "mcp"`
-    (101 of them) traces to a real source file — 85 to a
-    `device_<slug>.json` (per-device loop, via `survey_device.py` +
-    `update_catalog.py`) and the remaining 16 (Arrangement/Session
-    View, Browser's 6 tabs, Master/Return tracks, Track Mixer, Clip
-    Detail, Groove Pool) to a `section_<slug>.json` (via
-    `survey_section.py`, for Phase F contexts that aren't a single
-    loaded device). No orphan catalog entries; no missing dumps.
+        files in `scripts/dumps/`. Every context with `loaded_via: "mcp"`
+        (101 of them) traces to a real source file — 85 to a
+        `device_<slug>.json` (per-device loop, via `survey_device.py` +
+        `update_catalog.py`) and the remaining 16 (Arrangement/Session
+        View, Browser's 6 tabs, Master/Return tracks, Track Mixer, Clip
+        Detail, Groove Pool) to a `section_<slug>.json` (via
+        `survey_section.py`, for Phase F contexts that aren't a single
+        loaded device). No orphan catalog entries; no missing dumps.
   - [x] Checked for duplicate `automation_id` values across the whole
-    catalog: 72 ids are reused across ≥2 contexts. All are explained,
-    none is a real conflict:
+        catalog: 72 ids are reused across ≥2 contexts. All are explained,
+        none is a real conflict:
     - 20 are `TrackView.Device[0]*` — expected and by design: this
       prefix is a **slot-relative id** (whatever device currently
       occupies Track 3/Track 1's device slot), not a global identifier.
@@ -297,20 +293,20 @@ repo is not sufficient.
       Redundant but not conflicting — same id, same real element,
       recorded under two context names.
   - [x] Re-derived MAPPED/UNMAPPED/OPAQUE status per context from raw
-    `controls` data (mirroring `update_catalog.py`'s `status_for()`
-    rule: exclude the top-level device/section group's own id and any
-    `.TitleBar.` id, then check if anything real remains) and diffed
-    against the stored `status`. 2 mismatches found, investigated
-    individually:
+        `controls` data (mirroring `update_catalog.py`'s `status_for()`
+        rule: exclude the top-level device/section group's own id and any
+        `.TitleBar.` id, then check if anything real remains) and diffed
+        against the stored `status`. 2 mismatches found, investigated
+        individually:
     - `Channel EQ` — re-derive said UNMAPPED, stored says MAPPED.
-      **False alarm**: this device has a *second*, nested `Group` node
+      **False alarm**: this device has a _second_, nested `Group` node
       (`TrackView.Device[0].Filter`, the X-Y Controller) that carries
       its own real automation_id distinct from the top-level device
       group. My re-derivation heuristic excluded all `Group`-typed
       controls, which was too blunt. Manually confirmed MAPPED is
       correct for `Channel EQ`.
     - **`Groove Pool` — likely a genuine misclassification.** Stored
-      status is MAPPED, but its *only* control with a non-null
+      status is MAPPED, but its _only_ control with a non-null
       automation_id is `GroovePool` itself — the section's own
       top-level group id, with `view_state: null`, `node_count: 5`,
       and no other child carries an id. This is the identical
@@ -326,16 +322,15 @@ repo is not sufficient.
       belongs to the top-level node") — **Groove Pool is the only
       occurrence**; not a widespread bug, just this one context.
   - [x] **Fix pass — done** (`dumps/control_catalog.json` edited
-    directly, no re-survey needed since this was a classification/
-    bookkeeping fix, not missing data):
+        directly, no re-survey needed since this was a classification/
+        bookkeeping fix, not missing data):
     - `Groove Pool` reclassified `MAPPED` → **`UNMAPPED`** (not
-      `OPAQUE`, after discussion with the user — `OPAQUE` per this
-      catalog's own schema means "the whole device/panel is one
-      element with no visible children," which doesn't fit a 5-node
-      tree; `UNMAPPED` — "seen, no usable id" — matches the schema
-      better). `notes` field updated in place to explain the
-      reclassification and its cause (see the field itself for full
-      text).
+      `OPAQUE`, after discussion — `OPAQUE` per this catalog's own
+      schema means "the whole device/panel is one element with no
+      visible children," which doesn't fit a 5-node tree; `UNMAPPED` —
+      "seen, no usable id" — matches the schema better). `notes` field
+      updated in place to explain the reclassification and its cause
+      (see the field itself for full text).
     - `coverage_summary` recomputed from `contexts` (the source of
       truth) and rewritten: `mapped` 48→**47** (Groove Pool moved
       out), `unmapped` 38→**40** (the +1 off-by-one fix, +1 more from
@@ -347,18 +342,13 @@ repo is not sufficient.
     - Nothing else in the catalog was touched — no `controls` arrays,
       no other context's `status`, no raw dump files. This was a
       minimal, targeted correction.
-  - [ ] **Live verification (needs the user's machine — this session
-    has no Ableton access)**: write a small read-only script for the
-    user to run against their live Ableton + AbletonMCP that spot-checks
-    a random sample of MAPPED `automation_id`s (e.g. 15–20 across
-    different devices/contexts) by loading each device and confirming
-    the id still resolves via UIA — catches ids that were valid at
-    survey time but wouldn't actually resolve today (stale/renamed/
-    version-drifted). Not started yet.
-  - [ ] Write up final QA verdict (trustworthy as-is / needs the small
-    fix pass above / needs deeper fixes) either as a new section here
-    or a short `qa_report.md`, and state clearly whether the catalog is
-    ready to hand to the next (tutor/mixer) project.
+  - [x] **Autonomous AI Agent Verification Setup (`verification_mapping_ableton`)**:
+        Created a dedicated, standalone repository `verification_mapping_ableton` packaged as `verification_mapping_ableton.zip` for an AI agent to run live verification unattended using AbletonMCP + pywinauto:
+    - **`AGENTS.md`**: Tailored instructions directing the autonomous agent to cycle through all 21 verification targets sequentially without human intervention, utilizing AbletonMCP for device loading (`load_instrument_or_effect`) and view switching (`set_ableton_view`), then running `scripts/verify_context.py` to compare live UIA controls against `control_catalog.json`.
+    - **`verification_targets.json`**: Machine-readable target specification covering 21 contexts (9 devices on Audio/MIDI tracks, 11 primary views/browser tabs, and 1 special check for `Groove Pool`).
+    - **`scripts/verify_context.py`**: Verification helper script that walks the live UIA tree, compares observed `automation_id`s against expected catalog entries (excluding scaffolding nodes), and writes incremental results to `verification_report.json`.
+    - **Curated Environment**: Contains only the required scripts (`dump_ableton_pywinauto.py`, `verify_context.py`, `browser_switch.py`, `survey_device.py`, `survey_section.py`, `grep_dump.py`), target specification, agent instructions, and `dumps/control_catalog.json`.
+  - [ ] **Live verification execution — awaiting run**: The autonomous AI agent will execute `verification_mapping_ableton` against the running Ableton Live instance and produce `verification_report.json` and `verification_report.md`.
+  - [ ] Once live-verification results are generated by the agent: read `verification_report.json` / `verification_report.md`, analyze any PARTIAL or MISSING findings, and write up the final QA verdict stating whether `control_catalog.json` is ready to hand to downstream projects.
 
-  Next session: continue from the first unchecked box above (the fix
-  pass), pending the user's go-ahead on the `Groove Pool` reclassification.
+  Next session: when the autonomous AI agent finishes running `verification_mapping_ableton`, inspect `verification_report.json` / `verification_report.md` to review live results and finalize the QA report.
