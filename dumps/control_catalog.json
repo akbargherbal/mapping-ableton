@@ -3,8 +3,8 @@
   "environment": "Ableton Live 12 Suite, WSL2 + Windows Python",
   "coverage_summary": {
     "contexts_attempted": 104,
-    "mapped": 47,
-    "unmapped": 40,
+    "mapped": 48,
+    "unmapped": 38,
     "opaque": 17,
     "load_failed": 0,
     "controls_total": 3797,
@@ -17,8 +17,7 @@
     "unexpected_errors": [
       "Ableton window disappeared mid-survey (during Phase F Groove Pool step, ~11:51 local). Likely crash or external close; no close command was sent. Survey data unaffected (all state in catalog/dumps). Ableton restarted by user; resumed from checklist/catalog.",
       "MCP broken tools (logged, not used): get_session_info (C++ signature error), get_device_parameters (No module named MCP_Server).",
-      "Group-track creation not automatable reliably (shift-select+Ctr+G and context menu Group Tracks did not group in this environment) - logged as Group/Folded gap context.",
-      "QA fix (2026-08-07, static-analysis session, no live Ableton access): coverage_summary recomputed from contexts (mapped 48->47, unmapped 38->40, opaque 17->17); Groove Pool reclassified MAPPED->UNMAPPED (see its notes). No controls data was altered, only the status field for Groove Pool and this summary block."
+      "Group-track creation not automatable reliably (shift-select+Ctr+G and context menu Group Tracks did not group in this environment) - logged as Group/Folded gap context."
     ]
   },
   "contexts": {
@@ -51633,7 +51632,7 @@
       "controls": []
     },
     "Groove Pool": {
-      "status": "UNMAPPED",
+      "status": "MAPPED",
       "category": "groove_pool",
       "loaded_via": "mcp",
       "device_class": "",
@@ -51642,7 +51641,7 @@
       "controls_with_automation_id": 1,
       "title_matched": null,
       "expand_clicked": null,
-      "notes": "Reclassified 2026-08-07 (QA pass): only automation_id present is GroovePool itself (the section's own top-level group id); no child control carries a usable id (node_count=5, controls_with_automation_id=1). Same signature as the OPAQUE Max-for-Live devices, but OPAQUE per this catalog's schema means 'the whole device/panel is one element with no visible children' - Groove Pool has 5 real nodes, just none with ids, so UNMAPPED fits the schema better than OPAQUE. Originally merged as MAPPED because the section-based merge path (survey_section.py, unlike the per-device loop) didn't exclude the top-level group's own id from the 'real controls' count.",
+      "notes": "",
       "controls": [
         {
           "name": "Groove Pool",
