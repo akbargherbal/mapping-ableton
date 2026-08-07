@@ -1,0 +1,22 @@
+{
+  "context_key": "Browser Item Analog (Instruments)",
+  "section_aid": "",
+  "section_name": "Analog",
+  "found_by": "name 'Analog' instance 0",
+  "node_count": 1,
+  "controls_with_automation_id": 0,
+  "controls": [
+    {
+      "control_type": "TreeItem",
+      "name": "Analog",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 192,
+        "right": 627,
+        "bottom": 214
+      },
+      "patterns": {}
+    }
+  ]
+}

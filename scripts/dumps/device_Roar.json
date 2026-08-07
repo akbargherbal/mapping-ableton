@@ -1,0 +1,401 @@
+{
+  "device_name": "Roar",
+  "slug": "Roar",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Roar",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 31,
+  "controls_with_automation_id": 3,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Roar",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 766,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Roar",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 493,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 717,
+        "top": 767,
+        "right": 735,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 736,
+        "top": 767,
+        "right": 754,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 792,
+        "right": 489,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tone Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 497,
+        "top": 792,
+        "right": 565,
+        "bottom": 837
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tone Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 498,
+        "top": 849,
+        "right": 561,
+        "bottom": 866
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Color Compensation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 540,
+        "top": 792,
+        "right": 565,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Routing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 433,
+        "top": 907,
+        "right": 480,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Routing Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 920,
+        "right": 513,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 884,
+        "right": 556,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Blend",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 433,
+        "top": 950,
+        "right": 467,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "-",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 963,
+        "right": 445,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show Modulation Matrix and Sources",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 576,
+        "top": 789,
+        "right": 594,
+        "bottom": 806
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 576,
+        "top": 809,
+        "right": 594,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "FB Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 792,
+        "right": 666,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Feedback Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 603,
+        "top": 806,
+        "right": 677,
+        "bottom": 824
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback Time Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 603,
+        "top": 825,
+        "right": 677,
+        "bottom": 843
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 846,
+        "right": 669,
+        "bottom": 903
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Feedback Invert",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 621,
+        "top": 905,
+        "right": 638,
+        "bottom": 923
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Feedback Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 641,
+        "top": 905,
+        "right": 658,
+        "bottom": 923
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Freq|Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 607,
+        "top": 931,
+        "right": 674,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback Filter Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 603,
+        "top": 944,
+        "right": 677,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback Filter Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 603,
+        "top": 963,
+        "right": 677,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Compression Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 792,
+        "right": 748,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Compressor Sidechain HP Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 850,
+        "right": 749,
+        "bottom": 868
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 690,
+        "top": 881,
+        "right": 748,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 950,
+        "right": 749,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 963,
+        "right": 749,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

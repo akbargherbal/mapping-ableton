@@ -1,0 +1,281 @@
+{
+  "device_name": "Amp",
+  "slug": "Amp",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Amp",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 22,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Amp",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 806,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Amp",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 473,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 758,
+        "top": 767,
+        "right": 775,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 776,
+        "top": 767,
+        "right": 794,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Amp Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 902,
+        "right": 725,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Clean",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 902,
+        "right": 470,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Boost",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 471,
+        "top": 902,
+        "right": 512,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Blues",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 513,
+        "top": 902,
+        "right": 555,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Rock",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 556,
+        "top": 902,
+        "right": 597,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Lead",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 902,
+        "right": 640,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Heavy",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 641,
+        "top": 902,
+        "right": 682,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Bass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 902,
+        "right": 725,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 434,
+        "top": 924,
+        "right": 474,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 499,
+        "top": 924,
+        "right": 542,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Middle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 924,
+        "right": 595,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Treble",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 605,
+        "top": 924,
+        "right": 648,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Presence",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 667,
+        "top": 924,
+        "right": 723,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 741,
+        "top": 795,
+        "right": 785,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "DualMono",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 743,
+        "top": 810,
+        "right": 782,
+        "bottom": 828
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 737,
+        "top": 865,
+        "right": 789,
+        "bottom": 922
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 737,
+        "top": 924,
+        "right": 789,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "device_name": "Beat Repeat",
+  "slug": "Beat-Repeat",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Beat Repeat",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 27,
+  "controls_with_automation_id": 23,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Beat Repeat",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 830,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Beat Repeat",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 517,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 781,
+        "top": 767,
+        "right": 799,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 800,
+        "top": 767,
+        "right": 818,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Chance",
+      "automation_id": "TrackView.Device[0].Chance",
+      "bounding_rect": {
+        "left": 424,
+        "top": 929,
+        "right": 471,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Interval",
+      "automation_id": "TrackView.Device[0].Interval",
+      "bounding_rect": {
+        "left": 424,
+        "top": 850,
+        "right": 471,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Offset",
+      "automation_id": "TrackView.Device[0].Offset",
+      "bounding_rect": {
+        "left": 485,
+        "top": 850,
+        "right": 532,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Grid",
+      "automation_id": "TrackView.Device[0].Grid",
+      "bounding_rect": {
+        "left": 556,
+        "top": 850,
+        "right": 603,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Variation",
+      "automation_id": "TrackView.Device[0].Variation",
+      "bounding_rect": {
+        "left": 617,
+        "top": 850,
+        "right": 671,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Variation Mode",
+      "automation_id": "TrackView.Device[0].VariationType",
+      "bounding_rect": {
+        "left": 615,
+        "top": 907,
+        "right": 674,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "No Triplets",
+      "automation_id": "TrackView.Device[0].BlockTriplets",
+      "bounding_rect": {
+        "left": 553,
+        "top": 907,
+        "right": 609,
+        "bottom": 924
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gate",
+      "automation_id": "TrackView.Device[0].Gate",
+      "bounding_rect": {
+        "left": 486,
+        "top": 929,
+        "right": 533,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume Decay",
+      "automation_id": "TrackView.Device[0].Decay",
+      "bounding_rect": {
+        "left": 761,
+        "top": 929,
+        "right": 808,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Decay",
+      "automation_id": "TrackView.Device[0].PitchDecay",
+      "bounding_rect": {
+        "left": 610,
+        "top": 929,
+        "right": 681,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch",
+      "automation_id": "TrackView.Device[0].Pitch",
+      "bounding_rect": {
+        "left": 556,
+        "top": 929,
+        "right": 603,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "TrackView.Device[0].Volume",
+      "bounding_rect": {
+        "left": 696,
+        "top": 929,
+        "right": 743,
+        "bottom": 986
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Output Mode",
+      "automation_id": "TrackView.Device[0].MixType",
+      "bounding_rect": {
+        "left": 693,
+        "top": 907,
+        "right": 815,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Mix",
+      "automation_id": "TrackView.Device[0].MixType.Buttons[0]",
+      "bounding_rect": {
+        "left": 693,
+        "top": 907,
+        "right": 733,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Ins",
+      "automation_id": "TrackView.Device[0].MixType.Buttons[1]",
+      "bounding_rect": {
+        "left": 734,
+        "top": 907,
+        "right": 774,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Gate",
+      "automation_id": "TrackView.Device[0].MixType.Buttons[2]",
+      "bounding_rect": {
+        "left": 775,
+        "top": 907,
+        "right": 815,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Beat Repeat",
+      "automation_id": "TrackView.Device[0].FilterOn",
+      "bounding_rect": {
+        "left": 693,
+        "top": 866,
+        "right": 753,
+        "bottom": 884
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 792,
+        "right": 814,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Freq, Filter Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 747,
+        "top": 815,
+        "right": 762,
+        "bottom": 830
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Center Frequency",
+      "automation_id": "TrackView.Device[0].FilterFreq",
+      "bounding_rect": {
+        "left": 693,
+        "top": 848,
+        "right": 753,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bandwidth",
+      "automation_id": "TrackView.Device[0].FilterWidth",
+      "bounding_rect": {
+        "left": 755,
+        "top": 848,
+        "right": 815,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Repeat",
+      "automation_id": "TrackView.Device[0].Repeat",
+      "bounding_rect": {
+        "left": 426,
+        "top": 907,
+        "right": 481,
+        "bottom": 924
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    }
+  ]
+}

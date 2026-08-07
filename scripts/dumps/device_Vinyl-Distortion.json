@@ -1,0 +1,417 @@
+{
+  "device_name": "Vinyl Distortion",
+  "slug": "Vinyl-Distortion",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Vinyl Distortion",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 33,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Vinyl Distortion",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 710,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Vinyl Distortion",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 538,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 662,
+        "top": 767,
+        "right": 680,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 681,
+        "top": 767,
+        "right": 699,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Tracing Model",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 790,
+        "right": 513,
+        "bottom": 803
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 806,
+        "right": 636,
+        "bottom": 862
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tracing Freq., Tracing Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 516,
+        "top": 846,
+        "right": 531,
+        "bottom": 862
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Tracing Model",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 865,
+        "right": 458,
+        "bottom": 883
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tracing Model Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 460,
+        "top": 865,
+        "right": 497,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Freq",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 499,
+        "top": 868,
+        "right": 527,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tracing Model Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 530,
+        "top": 865,
+        "right": 589,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "B",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 591,
+        "top": 868,
+        "right": 601,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tracing Model Bandwidth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 603,
+        "top": 865,
+        "right": 640,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pinch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 889,
+        "right": 463,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Pinch Soft/Hard",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 467,
+        "top": 887,
+        "right": 542,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Soft",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 467,
+        "top": 887,
+        "right": 504,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Hard",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 505,
+        "top": 887,
+        "right": 542,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Stereo/Mono",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 887,
+        "right": 640,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Stereo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 887,
+        "right": 592,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Mono",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 594,
+        "top": 887,
+        "right": 640,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 908,
+        "right": 636,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pinch Freq., Pinch Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 592,
+        "top": 948,
+        "right": 608,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Pinch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 967,
+        "right": 458,
+        "bottom": 984
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pinch Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 460,
+        "top": 967,
+        "right": 497,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Freq",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 499,
+        "top": 969,
+        "right": 527,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pinch Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 530,
+        "top": 967,
+        "right": 589,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "B",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 591,
+        "top": 969,
+        "right": 601,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pinch Bandwidth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 603,
+        "top": 967,
+        "right": 640,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Crackle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 647,
+        "top": 790,
+        "right": 693,
+        "bottom": 803
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Crackle Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 644,
+        "top": 805,
+        "right": 696,
+        "bottom": 862
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Density",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 644,
+        "top": 864,
+        "right": 696,
+        "bottom": 921
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 647,
+        "top": 927,
+        "right": 694,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

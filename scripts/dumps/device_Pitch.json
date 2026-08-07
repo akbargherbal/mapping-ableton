@@ -1,0 +1,211 @@
+{
+  "device_name": "Pitch",
+  "slug": "Pitch",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Pitch",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 16,
+  "controls_with_automation_id": 8,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Pitch",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 425,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 348,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Use Current Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.UseCurrentScale",
+      "bounding_rect": {
+        "left": 358,
+        "top": 767,
+        "right": 375,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 376,
+        "top": 767,
+        "right": 394,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 395,
+        "top": 767,
+        "right": 413,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch",
+      "automation_id": "TrackView.Device[0].Pitch",
+      "bounding_rect": {
+        "left": 325,
+        "top": 799,
+        "right": 385,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Step Down",
+      "automation_id": "TrackView.Device[0].StepDown",
+      "bounding_rect": {
+        "left": 315,
+        "top": 889,
+        "right": 333,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Step Width",
+      "automation_id": "TrackView.Device[0].StepWidth",
+      "bounding_rect": {
+        "left": 335,
+        "top": 889,
+        "right": 374,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Step Up",
+      "automation_id": "TrackView.Device[0].StepUp",
+      "bounding_rect": {
+        "left": 376,
+        "top": 889,
+        "right": 394,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Lowest",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 916,
+        "right": 341,
+        "bottom": 929
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Note Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 929,
+        "right": 354,
+        "bottom": 947
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 355,
+        "top": 916,
+        "right": 393,
+        "bottom": 929
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Note Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 355,
+        "top": 929,
+        "right": 411,
+        "bottom": 947
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 953,
+        "right": 333,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Mode",
+      "automation_id": "TrackView.Device[0].Mode",
+      "bounding_rect": {
+        "left": 299,
+        "top": 966,
+        "right": 411,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

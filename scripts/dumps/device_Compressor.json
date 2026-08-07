@@ -1,0 +1,431 @@
+{
+  "device_name": "Compressor",
+  "slug": "Compressor",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Compressor",
+  "title_matched": true,
+  "view_state": "compact",
+  "node_count": 34,
+  "controls_with_automation_id": 17,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": true,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Compressor",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 870,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sidechain Toggle",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Compressor",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 537,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 821,
+        "top": 767,
+        "right": 839,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 840,
+        "top": 767,
+        "right": 858,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Compression Ratio",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 791,
+        "right": 480,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 848,
+        "right": 480,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 907,
+        "right": 480,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Auto Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 966,
+        "right": 480,
+        "bottom": 983
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Thresh",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 492,
+        "top": 796,
+        "right": 533,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Threshold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 533,
+        "top": 793,
+        "right": 590,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "",
+      "automation_id": "TrackView.Device[0].ActivityCurve",
+      "bounding_rect": {
+        "left": 607,
+        "top": 793,
+        "right": 695,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "GR",
+      "automation_id": "TrackView.Device[0].ActivityCurve.Buttons[0]",
+      "bounding_rect": {
+        "left": 607,
+        "top": 793,
+        "right": 642,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Output",
+      "automation_id": "TrackView.Device[0].ActivityCurve.Buttons[1]",
+      "bounding_rect": {
+        "left": 643,
+        "top": 793,
+        "right": 695,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Out",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 712,
+        "top": 796,
+        "right": 735,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 735,
+        "top": 793,
+        "right": 792,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain Reduction View",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 486,
+        "top": 815,
+        "right": 795,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "",
+      "automation_id": "TrackView.Device[0].ViewMode",
+      "bounding_rect": {
+        "left": 487,
+        "top": 961,
+        "right": 557,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "CompressorCollapsedViewMode",
+      "automation_id": "TrackView.Device[0].ViewMode.CollapsedViewMode",
+      "bounding_rect": {
+        "left": 487,
+        "top": 961,
+        "right": 510,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "CompressorTransferViewMode",
+      "automation_id": "TrackView.Device[0].ViewMode.TransferViewMode",
+      "bounding_rect": {
+        "left": 511,
+        "top": 961,
+        "right": 533,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "CompressorActivityViewMode",
+      "automation_id": "TrackView.Device[0].ViewMode.ActivityViewMode",
+      "bounding_rect": {
+        "left": 535,
+        "top": 961,
+        "right": 557,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Knee",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 564,
+        "top": 966,
+        "right": 595,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Knee",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 595,
+        "top": 963,
+        "right": 637,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Look.",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 642,
+        "top": 966,
+        "right": 674,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Lookahead Time",
+      "automation_id": "TrackView.Device[0].Lookahead",
+      "bounding_rect": {
+        "left": 674,
+        "top": 963,
+        "right": 723,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Env.",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 728,
+        "top": 966,
+        "right": 753,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Linear/Logarithmic Release",
+      "automation_id": "TrackView.Device[0].Envelope",
+      "bounding_rect": {
+        "left": 754,
+        "top": 963,
+        "right": 788,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Makeup Gain",
+      "automation_id": "TrackView.Device[0].Makeup",
+      "bounding_rect": {
+        "left": 801,
+        "top": 791,
+        "right": 855,
+        "bottom": 809
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "",
+      "automation_id": "TrackView.Device[0].Model",
+      "bounding_rect": {
+        "left": 801,
+        "top": 839,
+        "right": 854,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Peak",
+      "automation_id": "TrackView.Device[0].Model.Buttons[0]",
+      "bounding_rect": {
+        "left": 801,
+        "top": 839,
+        "right": 854,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "RMS",
+      "automation_id": "TrackView.Device[0].Model.Buttons[1]",
+      "bounding_rect": {
+        "left": 801,
+        "top": 858,
+        "right": 854,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Expand",
+      "automation_id": "TrackView.Device[0].Model.Buttons[2]",
+      "bounding_rect": {
+        "left": 801,
+        "top": 877,
+        "right": 854,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 801,
+        "top": 927,
+        "right": 855,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

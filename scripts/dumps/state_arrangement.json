@@ -1,0 +1,4144 @@
+{
+  "control_type": "InvalidControlType",
+  "name": "Untitled* - Ableton Live 12 Suite",
+  "automation_id": "",
+  "class_name": "Ableton Live Window Class",
+  "bounding_rect": [
+    0,
+    70,
+    1920,
+    1032
+  ],
+  "is_enabled": true,
+  "is_visible": true,
+  "children": [
+    {
+      "control_type": "TitleBar",
+      "name": "",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        16,
+        -5,
+        1920,
+        33
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "MenuBar",
+          "name": "System",
+          "automation_id": "MenuBar",
+          "class_name": "",
+          "bounding_rect": [
+            0,
+            0,
+            22,
+            32
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "MenuItem",
+              "name": "System",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                0,
+                0,
+                22,
+                32
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Button",
+          "name": "Minimize",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1713,
+            0,
+            1782,
+            32
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Button",
+          "name": "Restore",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1782,
+            0,
+            1850,
+            32
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Button",
+          "name": "Close",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1850,
+            0,
+            1920,
+            32
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "MenuBar",
+      "name": "Application",
+      "automation_id": "MenuBar",
+      "class_name": "",
+      "bounding_rect": [
+        0,
+        33,
+        1920,
+        69
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "MenuItem",
+          "name": "File",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            0,
+            33,
+            46,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "Edit",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            46,
+            33,
+            95,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "Create",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            95,
+            33,
+            169,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "Playback",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            169,
+            33,
+            264,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "View",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            264,
+            33,
+            322,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "Navigate",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            322,
+            33,
+            419,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "Options",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            419,
+            33,
+            506,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "MenuItem",
+          "name": "Help",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            506,
+            33,
+            563,
+            69
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "Group",
+      "name": "Control",
+      "automation_id": "Transport",
+      "class_name": "",
+      "bounding_rect": [
+        63,
+        79,
+        1844,
+        102
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Group",
+          "name": "Tempo and timing",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            63,
+            79,
+            367,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "Button",
+              "name": "Tap",
+              "automation_id": "Transport.TapTempo",
+              "class_name": "",
+              "bounding_rect": [
+                63,
+                79,
+                96,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Tempo",
+              "automation_id": "Transport.Tempo",
+              "class_name": "",
+              "bounding_rect": [
+                96,
+                79,
+                148,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Phase Nudge Down",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                148,
+                79,
+                170,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Phase Nudge Up",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                170,
+                79,
+                192,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Time Signature Numerator",
+              "automation_id": "Transport.TimeSignature.Numerator",
+              "class_name": "",
+              "bounding_rect": [
+                196,
+                83,
+                215,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Text",
+              "name": "⁄",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                216,
+                81,
+                221,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Time Signature Denominator",
+              "automation_id": "Transport.TimeSignature.Denominator",
+              "class_name": "",
+              "bounding_rect": [
+                222,
+                83,
+                241,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Metronome",
+              "automation_id": "Transport.Metronome",
+              "class_name": "",
+              "bounding_rect": [
+                245,
+                81,
+                278,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Metronome Settings",
+              "automation_id": "Transport.MetronomeContextBuddy",
+              "class_name": "",
+              "bounding_rect": [
+                278,
+                81,
+                291,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Quantization Menu",
+              "automation_id": "Transport.GlobalQuantization",
+              "class_name": "",
+              "bounding_rect": [
+                294,
+                81,
+                347,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Scale",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            367,
+            79,
+            555,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "CheckBox",
+              "name": "Scale Mode",
+              "automation_id": "Transport.SongInKey",
+              "class_name": "",
+              "bounding_rect": [
+                371,
+                79,
+                393,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Current Scale Root",
+              "automation_id": "Transport.CurrentScaleRoot",
+              "class_name": "",
+              "bounding_rect": [
+                394,
+                81,
+                446,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Current Scale Name",
+              "automation_id": "Transport.CurrentScaleName",
+              "class_name": "",
+              "bounding_rect": [
+                448,
+                81,
+                531,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Playback",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            670,
+            79,
+            870,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "CheckBox",
+              "name": "Follow",
+              "automation_id": "Transport.Follow",
+              "class_name": "",
+              "bounding_rect": [
+                670,
+                79,
+                697,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ProgressBar",
+              "name": "Playback",
+              "automation_id": "Transport.AbletonLinkPhase",
+              "class_name": "",
+              "bounding_rect": [
+                699,
+                81,
+                795,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Arrangement Position (Bar)",
+              "automation_id": "Transport.ArrangementPosition.Bars",
+              "class_name": "",
+              "bounding_rect": [
+                702,
+                83,
+                735,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Arrangement Position (Beat)",
+              "automation_id": "Transport.ArrangementPosition.Beats",
+              "class_name": "",
+              "bounding_rect": [
+                742,
+                83,
+                763,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Arrangement Position (Sixteenths)",
+              "automation_id": "Transport.ArrangementPosition.Subdivisions",
+              "class_name": "",
+              "bounding_rect": [
+                771,
+                83,
+                792,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Play",
+              "automation_id": "Transport.Play",
+              "class_name": "",
+              "bounding_rect": [
+                815,
+                79,
+                838,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Stop",
+              "automation_id": "Transport.Stop",
+              "class_name": "",
+              "bounding_rect": [
+                843,
+                79,
+                865,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Record and capture",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            870,
+            79,
+            1044,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "CheckBox",
+              "name": "Arrangement Record",
+              "automation_id": "Transport.GlobalRecord",
+              "class_name": "",
+              "bounding_rect": [
+                870,
+                79,
+                892,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "MIDI Arrangement Overdub",
+              "automation_id": "Transport.ArrangementOverdub",
+              "class_name": "",
+              "bounding_rect": [
+                910,
+                79,
+                932,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Automation Arm",
+              "automation_id": "Transport.AutomationArm",
+              "class_name": "",
+              "bounding_rect": [
+                932,
+                79,
+                955,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Re-Enable Automation",
+              "automation_id": "Transport.ReEnableAutomation",
+              "class_name": "",
+              "bounding_rect": [
+                955,
+                79,
+                977,
+                102
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Capture MIDI",
+              "automation_id": "Transport.TriggerCapture",
+              "class_name": "",
+              "bounding_rect": [
+                977,
+                79,
+                999,
+                102
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Session Record",
+              "automation_id": "Transport.SessionRecord",
+              "class_name": "",
+              "bounding_rect": [
+                999,
+                79,
+                1022,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Arrangement looping",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1044,
+            79,
+            1324,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "Slider",
+              "name": "Loop Start/Punch-In Point (Bar)",
+              "automation_id": "Transport.SongLoopStart.Bars",
+              "class_name": "",
+              "bounding_rect": [
+                1049,
+                83,
+                1082,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Loop Start/Punch-In Point (Beat)",
+              "automation_id": "Transport.SongLoopStart.Beats",
+              "class_name": "",
+              "bounding_rect": [
+                1089,
+                83,
+                1110,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Loop Start/Punch-In Point (Sixteenths)",
+              "automation_id": "Transport.SongLoopStart.Subdivisions",
+              "class_name": "",
+              "bounding_rect": [
+                1117,
+                83,
+                1139,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Punch-In Switch",
+              "automation_id": "Transport.PunchIn",
+              "class_name": "",
+              "bounding_rect": [
+                1143,
+                79,
+                1171,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Loop Switch",
+              "automation_id": "Transport.SongLoopSwitch",
+              "class_name": "",
+              "bounding_rect": [
+                1171,
+                79,
+                1198,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Punch-Out Switch",
+              "automation_id": "Transport.PunchOut",
+              "class_name": "",
+              "bounding_rect": [
+                1198,
+                79,
+                1225,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Loop/Punch-Region Length (Bar)",
+              "automation_id": "Transport.SongLoopLength.Bars",
+              "class_name": "",
+              "bounding_rect": [
+                1230,
+                83,
+                1263,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Loop/Punch-Region Length (Beat)",
+              "automation_id": "Transport.SongLoopLength.Beats",
+              "class_name": "",
+              "bounding_rect": [
+                1270,
+                83,
+                1291,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Loop/Punch-Region Length (Sixteenths)",
+              "automation_id": "Transport.SongLoopLength.Subdivisions",
+              "class_name": "",
+              "bounding_rect": [
+                1298,
+                83,
+                1319,
+                98
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Modes",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1546,
+            79,
+            1671,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "CheckBox",
+              "name": "Draw Mode Switch",
+              "automation_id": "Transport.DrawMode",
+              "class_name": "",
+              "bounding_rect": [
+                1546,
+                79,
+                1568,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Computer MIDI Keyboard",
+              "automation_id": "Transport.ComputerMidiKeyboard",
+              "class_name": "",
+              "bounding_rect": [
+                1568,
+                79,
+                1591,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Key Map Mode Switch",
+              "automation_id": "Transport.KeyMapMode",
+              "class_name": "",
+              "bounding_rect": [
+                1591,
+                79,
+                1624,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Key/MIDI In Indicator",
+              "automation_id": "Transport.KeyMidiInLed",
+              "class_name": "",
+              "bounding_rect": [
+                1625,
+                81,
+                1634,
+                90
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Key/MIDI Out Indicator",
+              "automation_id": "Transport.KeyMidiOutLed",
+              "class_name": "",
+              "bounding_rect": [
+                1625,
+                91,
+                1634,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "MIDI Map Mode Switch",
+              "automation_id": "Transport.MidiMapMode",
+              "class_name": "",
+              "bounding_rect": [
+                1635,
+                79,
+                1671,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Monitoring",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1671,
+            79,
+            1844,
+            102
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "Button",
+              "name": "48.0 kHz",
+              "automation_id": "Transport.SampleRateDisplay",
+              "class_name": "",
+              "bounding_rect": [
+                1671,
+                79,
+                1730,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "CPU Meter",
+              "automation_id": "Transport.CpuUsage",
+              "class_name": "",
+              "bounding_rect": [
+                1730,
+                79,
+                1798,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Overload Indicator",
+              "automation_id": "Transport.CombinedOverloadMeter",
+              "class_name": "",
+              "bounding_rect": [
+                1798,
+                79,
+                1834,
+                102
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "MIDI Track In Indicator",
+              "automation_id": "Transport.MidiInLed",
+              "class_name": "",
+              "bounding_rect": [
+                1835,
+                81,
+                1844,
+                90
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "MIDI Track Out Indicator",
+              "automation_id": "Transport.MidiOutLed",
+              "class_name": "",
+              "bounding_rect": [
+                1835,
+                91,
+                1844,
+                101
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "control_type": "Group",
+      "name": "Browser",
+      "automation_id": "ContentBrowser",
+      "class_name": "",
+      "bounding_rect": [
+        11,
+        118,
+        627,
+        700
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Text",
+          "name": "",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Button",
+          "name": "Browse Back",
+          "automation_id": "ContentBrowser.KeywordEditorSplitter.BrowserToolbar.HistoryBack",
+          "class_name": "",
+          "bounding_rect": [
+            11,
+            118,
+            33,
+            143
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Button",
+          "name": "Browse Forward",
+          "automation_id": "ContentBrowser.KeywordEditorSplitter.BrowserToolbar.HistoryForward",
+          "class_name": "",
+          "bounding_rect": [
+            34,
+            118,
+            57,
+            143
+          ],
+          "is_enabled": false,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Edit",
+          "name": "Search",
+          "automation_id": "ContentBrowser.KeywordEditorSplitter.BrowserToolbar.SearchField",
+          "class_name": "",
+          "bounding_rect": [
+            59,
+            118,
+            627,
+            143
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Tree",
+          "name": "Browser Sidebar",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            11,
+            147,
+            289,
+            700
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "TreeItem",
+              "name": "Collections",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                11,
+                147,
+                289,
+                192
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "DataItem",
+                  "name": "Favorites",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    169,
+                    289,
+                    192
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Favorites",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        169,
+                        281,
+                        190
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Favorites",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            173,
+                            93,
+                            186
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "Library",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                11,
+                192,
+                289,
+                550
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "DataItem",
+                  "name": "All",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    236,
+                    289,
+                    259
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "All",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        236,
+                        281,
+                        258
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "All",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            240,
+                            55,
+                            253
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Sounds",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    259,
+                    289,
+                    281
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Sounds",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        259,
+                        281,
+                        280
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Sounds",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            262,
+                            83,
+                            275
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Drums",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    281,
+                    289,
+                    304
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Drums",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        281,
+                        281,
+                        302
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Drums",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            285,
+                            78,
+                            298
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Instruments",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    304,
+                    289,
+                    326
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Instruments",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        304,
+                        281,
+                        325
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Instruments",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            307,
+                            111,
+                            320
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Audio Effects",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    326,
+                    289,
+                    348
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Audio Effects",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        326,
+                        281,
+                        347
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Audio Effects",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            330,
+                            118,
+                            343
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "MIDI Effects",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    348,
+                    289,
+                    371
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "MIDI Effects",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        348,
+                        281,
+                        370
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "MIDI Effects",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            352,
+                            111,
+                            365
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Modulators",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    371,
+                    289,
+                    393
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Modulators",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        371,
+                        281,
+                        392
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Modulators",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            374,
+                            106,
+                            387
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Max for Live",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    393,
+                    289,
+                    416
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Max for Live",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        393,
+                        281,
+                        415
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Max for Live",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            397,
+                            110,
+                            410
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Plug-Ins",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    416,
+                    289,
+                    438
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Plug-Ins",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        416,
+                        281,
+                        437
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Plug-Ins",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            419,
+                            87,
+                            432
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Clips",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    438,
+                    289,
+                    461
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Clips",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        438,
+                        281,
+                        459
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Clips",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            442,
+                            68,
+                            455
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Samples",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    461,
+                    289,
+                    483
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Samples",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        461,
+                        281,
+                        482
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Samples",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            464,
+                            88,
+                            477
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Grooves",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    483,
+                    289,
+                    505
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Grooves",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        483,
+                        281,
+                        504
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Grooves",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            487,
+                            87,
+                            500
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Tunings",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    505,
+                    289,
+                    528
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Tunings",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        505,
+                        281,
+                        527
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Tunings",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            509,
+                            85,
+                            522
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Templates",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    528,
+                    289,
+                    550
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Templates",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        528,
+                        281,
+                        549
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Templates",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            531,
+                            100,
+                            544
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "Places",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                11,
+                550,
+                289,
+                752
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "DataItem",
+                  "name": "Packs",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    595,
+                    289,
+                    618
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Packs",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        595,
+                        281,
+                        616
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Packs",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            599,
+                            74,
+                            612
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Cloud",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    618,
+                    289,
+                    640
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Cloud",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        618,
+                        281,
+                        639
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Cloud",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            621,
+                            74,
+                            634
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Push",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    640,
+                    289,
+                    662
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Push",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        640,
+                        281,
+                        661
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Push",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            643,
+                            68,
+                            656
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "User Library",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    662,
+                    289,
+                    685
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "User Library",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        662,
+                        281,
+                        684
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "User Library",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            666,
+                            111,
+                            679
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Current Project",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    685,
+                    289,
+                    707
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Current Project",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        685,
+                        281,
+                        706
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "Current Project",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            688,
+                            131,
+                            701
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "data",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    707,
+                    289,
+                    730
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "data",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        707,
+                        281,
+                        728
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Text",
+                          "name": "data",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            711,
+                            67,
+                            724
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "control_type": "DataItem",
+                  "name": "Add Folder...",
+                  "automation_id": "",
+                  "class_name": "",
+                  "bounding_rect": [
+                    11,
+                    730,
+                    289,
+                    752
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": [
+                    {
+                      "control_type": "DataItem",
+                      "name": "Add Folder...",
+                      "automation_id": "",
+                      "class_name": "",
+                      "bounding_rect": [
+                        11,
+                        730,
+                        281,
+                        751
+                      ],
+                      "is_enabled": true,
+                      "is_visible": true,
+                      "children": [
+                        {
+                          "control_type": "Button",
+                          "name": "Add Folder",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            17,
+                            730,
+                            37,
+                            751
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        },
+                        {
+                          "control_type": "Button",
+                          "name": "Add Folder...",
+                          "automation_id": "",
+                          "class_name": "",
+                          "bounding_rect": [
+                            39,
+                            730,
+                            277,
+                            751
+                          ],
+                          "is_enabled": true,
+                          "is_visible": true,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Filters",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            291,
+            146,
+            627,
+            169
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "CheckBox",
+              "name": "Show Filters",
+              "automation_id": "ContentBrowser.KeywordEditorSplitter.SidebarSplitter.ContentPane.TreeContentView.FiltersHeadView.ShowFiltersButton",
+              "class_name": "",
+              "bounding_rect": [
+                294,
+                148,
+                312,
+                166
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Text",
+              "name": "Filters",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                313,
+                150,
+                352,
+                163
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Auto Tags",
+              "automation_id": "ContentBrowser.KeywordEditorSplitter.SidebarSplitter.ContentPane.TreeContentView.FiltersHeadView.IncludeAutoKeywordsToggle",
+              "class_name": "",
+              "bounding_rect": [
+                483,
+                148,
+                507,
+                166
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Text",
+              "name": "Auto Tags",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                510,
+                150,
+                568,
+                163
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Show Tags Editor",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                577,
+                148,
+                624,
+                166
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Filters",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            291,
+            169,
+            627,
+            206
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Tree",
+          "name": "Plug-Ins List, 0 Items",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            291,
+            208,
+            627,
+            674
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "Text",
+              "name": "Name",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                294,
+                208,
+                542,
+                230
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Text",
+              "name": "Size",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                558,
+                208,
+                611,
+                230
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "CheckBox",
+          "name": "Browser File Preview",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            295,
+            679,
+            313,
+            697
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "Tree",
+      "name": "Tuning System",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        11,
+        711,
+        627,
+        756
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Text",
+          "name": "Tuning",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            13,
+            711,
+            368,
+            733
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Text",
+          "name": "Octave",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            374,
+            711,
+            425,
+            733
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Text",
+          "name": "Note",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            431,
+            711,
+            481,
+            733
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Text",
+          "name": "Ref. Pitch/Freq",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            487,
+            711,
+            581,
+            733
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Text",
+          "name": "...",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            586,
+            711,
+            623,
+            733
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Text",
+          "name": "Drop Tuning System Here",
+          "automation_id": "TuningPool.DropAreaText",
+          "class_name": "",
+          "bounding_rect": [
+            245,
+            738,
+            392,
+            751
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "Group",
+      "name": "Arrangement",
+      "automation_id": "ArrangementView",
+      "class_name": "",
+      "bounding_rect": [
+        637,
+        140,
+        1909,
+        756
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Text",
+          "name": "Timeline, 1, selected on 1-MIDI, Armed, Track 1 of 4",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            637,
+            189,
+            1566,
+            728
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Group",
+          "name": "Arrangement Controls",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1566,
+            144,
+            1678,
+            187
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "Button",
+              "name": "Set Locator",
+              "automation_id": "ArrangementView.SetDeleteLocator",
+              "class_name": "",
+              "bounding_rect": [
+                1569,
+                144,
+                1606,
+                162
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Previous Locator",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1569,
+                166,
+                1587,
+                183
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Next Locator",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1588,
+                166,
+                1606,
+                183
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Automation Mode",
+              "automation_id": "ArrangementView.AutomationModeButton",
+              "class_name": "",
+              "bounding_rect": [
+                1617,
+                144,
+                1646,
+                162
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Lock Envelopes",
+              "automation_id": "ArrangementView.LockEnvelopes",
+              "class_name": "",
+              "bounding_rect": [
+                1648,
+                144,
+                1678,
+                162
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Tree",
+          "name": "Track Headers",
+          "automation_id": "ArrangementView.ArrangerHeaderManager",
+          "class_name": "",
+          "bounding_rect": [
+            1566,
+            189,
+            1677,
+            728
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "TreeItem",
+              "name": "1-MIDI, Armed",
+              "automation_id": "ArrangementView.Track[0].TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                189,
+                1677,
+                291
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "2-MIDI",
+              "automation_id": "ArrangementView.Track[1].TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                293,
+                1677,
+                395
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "3-Audio",
+              "automation_id": "ArrangementView.Track[2].TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                397,
+                1677,
+                498
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "4-Audio",
+              "automation_id": "ArrangementView.Track[3].TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                501,
+                1677,
+                602
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "A-Reverb",
+              "automation_id": "ArrangementView.ReturnTrack[0].TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                664,
+                1677,
+                684
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "B-Delay",
+              "automation_id": "ArrangementView.ReturnTrack[1].TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                686,
+                1677,
+                706
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "TreeItem",
+              "name": "Main",
+              "automation_id": "ArrangementView.MainTrack.TitleBar",
+              "class_name": "",
+              "bounding_rect": [
+                1567,
+                708,
+                1677,
+                728
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "1-MIDI",
+          "automation_id": "ArrangementView.Track[0].Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            189,
+            1909,
+            293
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Input Type",
+              "automation_id": "ArrangementView.Track[0].Mixer.InputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                190,
+                1765,
+                208
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Input Channel",
+              "automation_id": "ArrangementView.Track[0].Mixer.InputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                210,
+                1765,
+                228
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Group",
+              "name": "Monitoring",
+              "automation_id": "ArrangementView.Track[0].Mixer.Monitoring",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                230,
+                1765,
+                248
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "RadioButton",
+                  "name": "In",
+                  "automation_id": "ArrangementView.Track[0].Mixer.Monitoring.Buttons[0]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1680,
+                    230,
+                    1703,
+                    248
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Auto",
+                  "automation_id": "ArrangementView.Track[0].Mixer.Monitoring.Buttons[1]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1704,
+                    230,
+                    1738,
+                    248
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Off",
+                  "automation_id": "ArrangementView.Track[0].Mixer.Monitoring.Buttons[2]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1739,
+                    230,
+                    1765,
+                    248
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Type",
+              "automation_id": "ArrangementView.Track[0].Mixer.OutputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                251,
+                1765,
+                268
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Channel",
+              "automation_id": "ArrangementView.Track[0].Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                271,
+                1765,
+                288
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Track Activator",
+              "automation_id": "ArrangementView.Track[0].Mixer.Activator",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                190,
+                1827,
+                208
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Solo/Cue",
+              "automation_id": "ArrangementView.Track[0].Mixer.Solo",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                190,
+                1856,
+                208
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Arm Recording",
+              "automation_id": "ArrangementView.Track[0].Mixer.Arm",
+              "class_name": "",
+              "bounding_rect": [
+                1858,
+                190,
+                1886,
+                208
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "2-MIDI",
+          "automation_id": "ArrangementView.Track[1].Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            293,
+            1909,
+            397
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Input Type",
+              "automation_id": "ArrangementView.Track[1].Mixer.InputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                294,
+                1765,
+                312
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Input Channel",
+              "automation_id": "ArrangementView.Track[1].Mixer.InputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                314,
+                1765,
+                332
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Group",
+              "name": "Monitoring",
+              "automation_id": "ArrangementView.Track[1].Mixer.Monitoring",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                334,
+                1765,
+                352
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "RadioButton",
+                  "name": "In",
+                  "automation_id": "ArrangementView.Track[1].Mixer.Monitoring.Buttons[0]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1680,
+                    334,
+                    1703,
+                    352
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Auto",
+                  "automation_id": "ArrangementView.Track[1].Mixer.Monitoring.Buttons[1]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1704,
+                    334,
+                    1738,
+                    352
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Off",
+                  "automation_id": "ArrangementView.Track[1].Mixer.Monitoring.Buttons[2]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1739,
+                    334,
+                    1765,
+                    352
+                  ],
+                  "is_enabled": true,
+                  "is_visible": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Type",
+              "automation_id": "ArrangementView.Track[1].Mixer.OutputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                354,
+                1765,
+                372
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Channel",
+              "automation_id": "ArrangementView.Track[1].Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                374,
+                1765,
+                392
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Track Activator",
+              "automation_id": "ArrangementView.Track[1].Mixer.Activator",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                294,
+                1827,
+                312
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Solo/Cue",
+              "automation_id": "ArrangementView.Track[1].Mixer.Solo",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                294,
+                1856,
+                312
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Arm Recording",
+              "automation_id": "ArrangementView.Track[1].Mixer.Arm",
+              "class_name": "",
+              "bounding_rect": [
+                1858,
+                294,
+                1886,
+                312
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "3-Audio",
+          "automation_id": "ArrangementView.Track[2].Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            397,
+            1909,
+            501
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Input Type",
+              "automation_id": "ArrangementView.Track[2].Mixer.InputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                398,
+                1765,
+                416
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Input Channel",
+              "automation_id": "ArrangementView.Track[2].Mixer.InputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                418,
+                1765,
+                436
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Group",
+              "name": "Monitoring",
+              "automation_id": "ArrangementView.Track[2].Mixer.Monitoring",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                438,
+                1765,
+                456
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "RadioButton",
+                  "name": "In",
+                  "automation_id": "ArrangementView.Track[2].Mixer.Monitoring.Buttons[0]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1680,
+                    438,
+                    1703,
+                    456
+                  ],
+                  "is_enabled": false,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Auto",
+                  "automation_id": "ArrangementView.Track[2].Mixer.Monitoring.Buttons[1]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1704,
+                    438,
+                    1738,
+                    456
+                  ],
+                  "is_enabled": false,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Off",
+                  "automation_id": "ArrangementView.Track[2].Mixer.Monitoring.Buttons[2]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1739,
+                    438,
+                    1765,
+                    456
+                  ],
+                  "is_enabled": false,
+                  "is_visible": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Type",
+              "automation_id": "ArrangementView.Track[2].Mixer.OutputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                458,
+                1765,
+                476
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Channel",
+              "automation_id": "ArrangementView.Track[2].Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                478,
+                1765,
+                496
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Track Activator",
+              "automation_id": "ArrangementView.Track[2].Mixer.Activator",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                398,
+                1827,
+                416
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Solo/Cue",
+              "automation_id": "ArrangementView.Track[2].Mixer.Solo",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                398,
+                1856,
+                416
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Arm Recording",
+              "automation_id": "ArrangementView.Track[2].Mixer.Arm",
+              "class_name": "",
+              "bounding_rect": [
+                1858,
+                398,
+                1886,
+                416
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Volume",
+              "automation_id": "ArrangementView.Track[2].Mixer.Volume",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                418,
+                1827,
+                436
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Pan",
+              "automation_id": "ArrangementView.Track[2].Mixer.Pan",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                418,
+                1886,
+                436
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "A-Reverb",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                438,
+                1808,
+                456
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "B-Delay",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1809,
+                438,
+                1847,
+                456
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "4-Audio",
+          "automation_id": "ArrangementView.Track[3].Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            501,
+            1909,
+            605
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Input Type",
+              "automation_id": "ArrangementView.Track[3].Mixer.InputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                502,
+                1765,
+                520
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Input Channel",
+              "automation_id": "ArrangementView.Track[3].Mixer.InputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                522,
+                1765,
+                540
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Group",
+              "name": "Monitoring",
+              "automation_id": "ArrangementView.Track[3].Mixer.Monitoring",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                542,
+                1765,
+                560
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": [
+                {
+                  "control_type": "RadioButton",
+                  "name": "In",
+                  "automation_id": "ArrangementView.Track[3].Mixer.Monitoring.Buttons[0]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1680,
+                    542,
+                    1703,
+                    560
+                  ],
+                  "is_enabled": false,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Auto",
+                  "automation_id": "ArrangementView.Track[3].Mixer.Monitoring.Buttons[1]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1704,
+                    542,
+                    1738,
+                    560
+                  ],
+                  "is_enabled": false,
+                  "is_visible": true,
+                  "children": []
+                },
+                {
+                  "control_type": "RadioButton",
+                  "name": "Off",
+                  "automation_id": "ArrangementView.Track[3].Mixer.Monitoring.Buttons[2]",
+                  "class_name": "",
+                  "bounding_rect": [
+                    1739,
+                    542,
+                    1765,
+                    560
+                  ],
+                  "is_enabled": false,
+                  "is_visible": true,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Type",
+              "automation_id": "ArrangementView.Track[3].Mixer.OutputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                562,
+                1765,
+                580
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Channel",
+              "automation_id": "ArrangementView.Track[3].Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                582,
+                1765,
+                600
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Track Activator",
+              "automation_id": "ArrangementView.Track[3].Mixer.Activator",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                502,
+                1827,
+                520
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Solo/Cue",
+              "automation_id": "ArrangementView.Track[3].Mixer.Solo",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                502,
+                1856,
+                520
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Arm Recording",
+              "automation_id": "ArrangementView.Track[3].Mixer.Arm",
+              "class_name": "",
+              "bounding_rect": [
+                1858,
+                502,
+                1886,
+                520
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Volume",
+              "automation_id": "ArrangementView.Track[3].Mixer.Volume",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                522,
+                1827,
+                540
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Pan",
+              "automation_id": "ArrangementView.Track[3].Mixer.Pan",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                522,
+                1886,
+                540
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "A-Reverb",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                542,
+                1808,
+                560
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "B-Delay",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1809,
+                542,
+                1847,
+                560
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "A-Reverb",
+          "automation_id": "ArrangementView.ReturnTrack[0].Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            661,
+            1909,
+            684
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Output Type",
+              "automation_id": "ArrangementView.ReturnTrack[0].Mixer.OutputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                645,
+                1765,
+                662
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Channel",
+              "automation_id": "ArrangementView.ReturnTrack[0].Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                665,
+                1765,
+                682
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Track Activator",
+              "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Activator",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                665,
+                1827,
+                682
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Solo/Cue",
+              "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Solo",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                665,
+                1851,
+                682
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Pre/Post Toggle",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1854,
+                665,
+                1886,
+                682
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Volume",
+              "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Volume",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                685,
+                1827,
+                702
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Pan",
+              "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Pan",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                685,
+                1886,
+                702
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "A-Reverb",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                705,
+                1808,
+                723
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "B-Delay",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1809,
+                705,
+                1847,
+                723
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "B-Delay",
+          "automation_id": "ArrangementView.ReturnTrack[1].Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            684,
+            1909,
+            706
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Output Type",
+              "automation_id": "ArrangementView.ReturnTrack[1].Mixer.OutputType",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                667,
+                1765,
+                685
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Output Channel",
+              "automation_id": "ArrangementView.ReturnTrack[1].Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                687,
+                1765,
+                705
+              ],
+              "is_enabled": false,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Track Activator",
+              "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Activator",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                687,
+                1827,
+                705
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "CheckBox",
+              "name": "Solo/Cue",
+              "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Solo",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                687,
+                1851,
+                705
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Button",
+              "name": "Pre/Post Toggle",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1854,
+                687,
+                1886,
+                705
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Volume",
+              "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Volume",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                707,
+                1827,
+                725
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Pan",
+              "automation_id": "ArrangementView.ReturnTrack[1].Mixer.Pan",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                707,
+                1886,
+                725
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "A-Reverb",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                727,
+                1808,
+                745
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "B-Delay",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1809,
+                727,
+                1847,
+                745
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "Group",
+          "name": "Main",
+          "automation_id": "ArrangementView.MainTrack.Mixer",
+          "class_name": "",
+          "bounding_rect": [
+            1677,
+            706,
+            1909,
+            728
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "ComboBox",
+              "name": "Cue Out",
+              "automation_id": "ArrangementView.MainTrack.Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                690,
+                1765,
+                707
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "ComboBox",
+              "name": "Main Out",
+              "automation_id": "ArrangementView.MainTrack.Mixer.OutputChannel",
+              "class_name": "",
+              "bounding_rect": [
+                1680,
+                710,
+                1765,
+                727
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Volume",
+              "automation_id": "ArrangementView.MainTrack.Mixer.Volume",
+              "class_name": "",
+              "bounding_rect": [
+                1770,
+                710,
+                1827,
+                727
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Preview/Cue Volume",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                710,
+                1886,
+                727
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Slider",
+              "name": "Track Pan",
+              "automation_id": "ArrangementView.MainTrack.Mixer.Pan",
+              "class_name": "",
+              "bounding_rect": [
+                1829,
+                730,
+                1886,
+                747
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        },
+        {
+          "control_type": "CheckBox",
+          "name": "Waveform Vertical Zoom",
+          "automation_id": "ArrangementView.IsWaveformVerticalZoomActiveView",
+          "class_name": "",
+          "bounding_rect": [
+            1566,
+            734,
+            1586,
+            752
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Slider",
+          "name": "Waveform Vertical Zoom Level",
+          "automation_id": "ArrangementView.WaveformVerticalZoomFactorView",
+          "class_name": "",
+          "bounding_rect": [
+            1587,
+            734,
+            1631,
+            752
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "CheckBox",
+          "name": "Optimize Arrangement Height",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1635,
+            734,
+            1656,
+            752
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "CheckBox",
+          "name": "Optimize Arrangement Width",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            1657,
+            734,
+            1677,
+            752
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Group",
+          "name": "Loop Brace",
+          "automation_id": "ArrangementView.ArrangerLoopBar",
+          "class_name": "",
+          "bounding_rect": [
+            637,
+            160,
+            1712,
+            731
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": [
+            {
+              "control_type": "Group",
+              "name": "3, Arrangement Loop Start",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                674,
+                160,
+                687,
+                731
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            },
+            {
+              "control_type": "Group",
+              "name": "7, Arrangement Loop End",
+              "automation_id": "",
+              "class_name": "",
+              "bounding_rect": [
+                736,
+                160,
+                749,
+                731
+              ],
+              "is_enabled": true,
+              "is_visible": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Detail",
+      "automation_id": "TrackView",
+      "class_name": "",
+      "bounding_rect": [
+        286,
+        765,
+        1909,
+        989
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "Status",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        2,
+        996,
+        1909,
+        1023
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    }
+  ]
+}

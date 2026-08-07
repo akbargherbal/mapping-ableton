@@ -1,0 +1,215 @@
+{
+  "device_name": "Redux",
+  "slug": "Redux",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Redux",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 16,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Redux",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 605,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Redux",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 483,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 557,
+        "top": 767,
+        "right": 575,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 576,
+        "top": 767,
+        "right": 594,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Sample Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 793,
+        "right": 501,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Jitter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 438,
+        "top": 870,
+        "right": 493,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 933,
+        "right": 461,
+        "bottom": 946
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Pre-Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 946,
+        "right": 465,
+        "bottom": 963
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Post-Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 466,
+        "top": 946,
+        "right": 503,
+        "bottom": 963
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Post-Filter Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 964,
+        "right": 503,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bit Depth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 517,
+        "top": 793,
+        "right": 589,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 525,
+        "top": 870,
+        "right": 581,
+        "bottom": 927
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "DC-Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 516,
+        "top": 930,
+        "right": 590,
+        "bottom": 948
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 516,
+        "top": 951,
+        "right": 566,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 516,
+        "top": 964,
+        "right": 590,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

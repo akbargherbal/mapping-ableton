@@ -1,0 +1,357 @@
+{
+  "device_name": "CC Control",
+  "slug": "CC-Control",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "CC Control",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 28,
+  "controls_with_automation_id": 13,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "CC Control",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 624,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "CC Control",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 381,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.PageSelectorTab",
+      "bounding_rect": {
+        "left": 418,
+        "top": 769,
+        "right": 486,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "1-8",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 418,
+        "top": 769,
+        "right": 451,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "1-8",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 418,
+        "top": 770,
+        "right": 451,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "9-16",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 453,
+        "top": 769,
+        "right": 486,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "9-16",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 453,
+        "top": 770,
+        "right": 486,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.Learn",
+      "bounding_rect": {
+        "left": 490,
+        "top": 767,
+        "right": 531,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Send",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 533,
+        "top": 767,
+        "right": 575,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 576,
+        "top": 767,
+        "right": 594,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 595,
+        "top": 767,
+        "right": 612,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mod Wheel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 795,
+        "right": 368,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mod Wheel",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.ModWheel",
+      "bounding_rect": {
+        "left": 303,
+        "top": 813,
+        "right": 368,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch Bend",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 382,
+        "top": 795,
+        "right": 446,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Bend",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.PitchBend",
+      "bounding_rect": {
+        "left": 382,
+        "top": 810,
+        "right": 447,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Pressure",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 467,
+        "top": 795,
+        "right": 519,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pressure",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.Pressure",
+      "bounding_rect": {
+        "left": 461,
+        "top": 813,
+        "right": 526,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "CC Button",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.RenameableControl",
+      "bounding_rect": {
+        "left": 562,
+        "top": 826,
+        "right": 584,
+        "bottom": 849
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "CC Type Chooser",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.CustomBoolTarget",
+      "bounding_rect": {
+        "left": 539,
+        "top": 863,
+        "right": 607,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "CC Dial",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.RenameableControl",
+      "bounding_rect": {
+        "left": 303,
+        "top": 916,
+        "right": 368,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "CC Type Chooser",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 302,
+        "top": 962,
+        "right": 369,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "CC Dial",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.RenameableControl",
+      "bounding_rect": {
+        "left": 382,
+        "top": 916,
+        "right": 447,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "CC Type Chooser",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 381,
+        "top": 962,
+        "right": 448,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "CC Dial",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.RenameableControl",
+      "bounding_rect": {
+        "left": 461,
+        "top": 916,
+        "right": 526,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "CC Type Chooser",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 460,
+        "top": 962,
+        "right": 527,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "CC Dial",
+      "automation_id": "TrackView.Device[0].PageSelectorTab.RenameableControl",
+      "bounding_rect": {
+        "left": 540,
+        "top": 916,
+        "right": 605,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "CC Type Chooser",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 539,
+        "top": 962,
+        "right": 607,
+        "bottom": 980
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "device_name": "Note Length",
+  "slug": "Note-Length",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Note Length",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 16,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Note Length",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 452,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Note Length",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 389,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 767,
+        "right": 421,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 422,
+        "top": 767,
+        "right": 440,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Trigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 313,
+        "top": 791,
+        "right": 356,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Trigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 804,
+        "right": 365,
+        "bottom": 822
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Trigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 824,
+        "right": 365,
+        "bottom": 842
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 306,
+        "top": 846,
+        "right": 363,
+        "bottom": 903
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Note Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 306,
+        "top": 907,
+        "right": 363,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Time Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 966,
+        "right": 365,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Milliseconds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 966,
+        "right": 334,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 335,
+        "top": 966,
+        "right": 365,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 373,
+        "top": 791,
+        "right": 431,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 373,
+        "top": 855,
+        "right": 431,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Key Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 373,
+        "top": 918,
+        "right": 431,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "device_name": "Master Track",
+  "slug": "Master-Track",
+  "view_state": "opaque",
+  "node_count": 1,
+  "controls_with_automation_id": 0,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Master",
+      "automation_id": null,
+      "bounding_rect": {},
+      "patterns": {}
+    }
+  ]
+}

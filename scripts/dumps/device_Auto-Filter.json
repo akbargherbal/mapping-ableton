@@ -1,0 +1,609 @@
+{
+  "device_name": "Auto Filter",
+  "slug": "Auto-Filter",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Auto Filter",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 49,
+  "controls_with_automation_id": 9,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Auto Filter",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 906,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sidechain Toggle",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Auto Filter",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 527,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 858,
+        "top": 767,
+        "right": 876,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 877,
+        "top": 767,
+        "right": 894,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Envelope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 791,
+        "right": 481,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 812,
+        "right": 481,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 866,
+        "right": 481,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 925,
+        "right": 481,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 493,
+        "top": 792,
+        "right": 729,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency, Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 699,
+        "top": 891,
+        "right": 714,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Filter Type",
+      "automation_id": "TrackView.Device[0].FilterType",
+      "bounding_rect": {
+        "left": 492,
+        "top": 922,
+        "right": 621,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterLowpass",
+      "automation_id": "TrackView.Device[0].FilterType.Buttons[0]",
+      "bounding_rect": {
+        "left": 492,
+        "top": 922,
+        "right": 517,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterHighpass",
+      "automation_id": "TrackView.Device[0].FilterType.Buttons[1]",
+      "bounding_rect": {
+        "left": 518,
+        "top": 922,
+        "right": 543,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterBandpass",
+      "automation_id": "TrackView.Device[0].FilterType.Buttons[2]",
+      "bounding_rect": {
+        "left": 544,
+        "top": 922,
+        "right": 569,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterNotch",
+      "automation_id": "TrackView.Device[0].FilterType.Buttons[3]",
+      "bounding_rect": {
+        "left": 570,
+        "top": 922,
+        "right": 595,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterMorph",
+      "automation_id": "TrackView.Device[0].FilterType.Buttons[4]",
+      "bounding_rect": {
+        "left": 596,
+        "top": 922,
+        "right": 621,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Circuit Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 624,
+        "top": 922,
+        "right": 676,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Slope",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 680,
+        "top": 922,
+        "right": 730,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "12",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 680,
+        "top": 922,
+        "right": 704,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "24",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 706,
+        "top": 922,
+        "right": 730,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Quantize Beat On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 492,
+        "top": 947,
+        "right": 565,
+        "bottom": 964
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Beat Division",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 947,
+        "right": 730,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "0.5",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 947,
+        "right": 598,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 599,
+        "top": 947,
+        "right": 631,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 632,
+        "top": 947,
+        "right": 664,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "3",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 666,
+        "top": 947,
+        "right": 697,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "4",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 699,
+        "top": 947,
+        "right": 730,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "5",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 566,
+        "top": 966,
+        "right": 598,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "6",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 599,
+        "top": 966,
+        "right": 631,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "8",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 632,
+        "top": 966,
+        "right": 664,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "12",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 666,
+        "top": 966,
+        "right": 697,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "16",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 699,
+        "top": 966,
+        "right": 730,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 747,
+        "top": 791,
+        "right": 780,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Cutoff",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 735,
+        "top": 806,
+        "right": 792,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 735,
+        "top": 865,
+        "right": 792,
+        "bottom": 922
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 807,
+        "right": 851,
+        "bottom": 864
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Rate Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 878,
+        "right": 893,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 878,
+        "right": 893,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 897,
+        "right": 893,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Frequency (Hertz)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 804,
+        "top": 866,
+        "right": 851,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 823,
+        "right": 893,
+        "bottom": 841
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Stereo Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 937,
+        "right": 893,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Phi",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 937,
+        "right": 893,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Spin",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 956,
+        "right": 893,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 802,
+        "top": 925,
+        "right": 852,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO / S&H",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 802,
+        "top": 791,
+        "right": 861,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 857,
+        "top": 807,
+        "right": 894,
+        "bottom": 820
+      },
+      "patterns": {}
+    }
+  ]
+}

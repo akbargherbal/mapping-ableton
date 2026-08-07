@@ -1,0 +1,82 @@
+{
+  "context_key": "Arrangement MainTrack Mixer",
+  "section_aid": "ArrangementView.MainTrack.Mixer",
+  "section_name": "Main",
+  "found_by": "aid prefix 'ArrangementView.MainTrack.Mixer'",
+  "node_count": 6,
+  "controls_with_automation_id": 5,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Main",
+      "automation_id": "ArrangementView.MainTrack.Mixer",
+      "bounding_rect": {
+        "left": 1677,
+        "top": 706,
+        "right": 1909,
+        "bottom": 728
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Cue Out",
+      "automation_id": "ArrangementView.MainTrack.Mixer.OutputChannel",
+      "bounding_rect": {
+        "left": 1680,
+        "top": 690,
+        "right": 1765,
+        "bottom": 707
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Main Out",
+      "automation_id": "ArrangementView.MainTrack.Mixer.OutputChannel",
+      "bounding_rect": {
+        "left": 1680,
+        "top": 710,
+        "right": 1765,
+        "bottom": 727
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Volume",
+      "automation_id": "ArrangementView.MainTrack.Mixer.Volume",
+      "bounding_rect": {
+        "left": 1770,
+        "top": 710,
+        "right": 1827,
+        "bottom": 727
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Preview/Cue Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1829,
+        "top": 710,
+        "right": 1886,
+        "bottom": 727
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Pan",
+      "automation_id": "ArrangementView.MainTrack.Mixer.Pan",
+      "bounding_rect": {
+        "left": 1829,
+        "top": 730,
+        "right": 1886,
+        "bottom": 747
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "context_key": "Browser Item 3D Reso Percussion (Sounds)",
+  "section_aid": "",
+  "section_name": "3D Reso Percussion.adg",
+  "found_by": "name '3D Reso Percussion.adg' instance 0",
+  "node_count": 3,
+  "controls_with_automation_id": 0,
+  "controls": [
+    {
+      "control_type": "DataItem",
+      "name": "3D Reso Percussion.adg",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 326,
+        "right": 627,
+        "bottom": 348
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "3D Reso Percussion.adg",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 326,
+        "right": 615,
+        "bottom": 347
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "3D Reso Percussion.adg",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 334,
+        "top": 330,
+        "right": 472,
+        "bottom": 343
+      },
+      "patterns": {}
+    }
+  ]
+}

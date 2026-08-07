@@ -1,0 +1,769 @@
+{
+  "device_name": "Multiband Dynamics",
+  "slug": "Multiband-Dynamics",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Multiband Dynamics",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 61,
+  "controls_with_automation_id": 3,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Multiband Dynamics",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 1123,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sidechain Toggle",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Multiband Dynamics",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 584,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1075,
+        "top": 767,
+        "right": 1093,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1094,
+        "top": 767,
+        "right": 1112,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Split Freq",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 440,
+        "top": 791,
+        "right": 494,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Input",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 520,
+        "top": 791,
+        "right": 555,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "High Band On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 813,
+        "right": 487,
+        "bottom": 831
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mid-High Crossover",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 831,
+        "right": 487,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 831,
+        "right": 510,
+        "bottom": 849
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "High Band Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 813,
+        "right": 510,
+        "bottom": 831
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 513,
+        "top": 805,
+        "right": 563,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mid",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 447,
+        "top": 876,
+        "right": 470,
+        "bottom": 889
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 883,
+        "right": 510,
+        "bottom": 901
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Mid Band Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 865,
+        "right": 510,
+        "bottom": 883
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 513,
+        "top": 857,
+        "right": 563,
+        "bottom": 909
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Low Band On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 917,
+        "right": 487,
+        "bottom": 935
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-Mid Crossover",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 935,
+        "right": 487,
+        "bottom": 953
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 935,
+        "right": 510,
+        "bottom": 953
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Low Band Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 917,
+        "right": 510,
+        "bottom": 935
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 513,
+        "top": 909,
+        "right": 563,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Soft Knee On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 962,
+        "right": 510,
+        "bottom": 980
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Peak/RMS Mode Switch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 514,
+        "top": 962,
+        "right": 563,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Below",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 575,
+        "top": 795,
+        "right": 610,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Below Threshold (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 572,
+        "top": 812,
+        "right": 627,
+        "bottom": 830
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Below Ratio (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 572,
+        "top": 831,
+        "right": 627,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Below Threshold (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 572,
+        "top": 865,
+        "right": 627,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Below Ratio (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 572,
+        "top": 884,
+        "right": 627,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Below Threshold (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 572,
+        "top": 918,
+        "right": 627,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Below Ratio (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 572,
+        "top": 937,
+        "right": 627,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "80",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 627,
+        "top": 967,
+        "right": 642,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "70",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 655,
+        "top": 967,
+        "right": 670,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "60",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 967,
+        "right": 699,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "50",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 712,
+        "top": 967,
+        "right": 727,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "40",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 740,
+        "top": 967,
+        "right": 755,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "30",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 768,
+        "top": 967,
+        "right": 784,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "20",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 796,
+        "top": 967,
+        "right": 812,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "10",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 825,
+        "top": 967,
+        "right": 840,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "0",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 853,
+        "top": 967,
+        "right": 867,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Above",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 870,
+        "top": 795,
+        "right": 907,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Above Threshold (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 812,
+        "right": 922,
+        "bottom": 830
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Above Ratio (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 831,
+        "right": 922,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Above Threshold (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 865,
+        "right": 922,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Above Ratio (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 884,
+        "right": 922,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Above Threshold (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 918,
+        "right": 922,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Above Ratio (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 867,
+        "top": 937,
+        "right": 922,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Att/Rel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 935,
+        "top": 795,
+        "right": 978,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 932,
+        "top": 812,
+        "right": 992,
+        "bottom": 830
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 932,
+        "top": 831,
+        "right": 992,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 932,
+        "top": 865,
+        "right": 992,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 932,
+        "top": 884,
+        "right": 992,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 932,
+        "top": 918,
+        "right": 992,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 932,
+        "top": 937,
+        "right": 992,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1005,
+        "top": 791,
+        "right": 1047,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain (High)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1001,
+        "top": 805,
+        "right": 1050,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain (Mid)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1001,
+        "top": 857,
+        "right": 1050,
+        "bottom": 909
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain (Low)",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1001,
+        "top": 909,
+        "right": 1050,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Global Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1058,
+        "top": 791,
+        "right": 1108,
+        "bottom": 855
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Time Scaling",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1058,
+        "top": 861,
+        "right": 1108,
+        "bottom": 924
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1058,
+        "top": 927,
+        "right": 1108,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

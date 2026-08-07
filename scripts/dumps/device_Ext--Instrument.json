@@ -1,0 +1,221 @@
+{
+  "device_name": "Ext. Instrument",
+  "slug": "Ext--Instrument",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Ext. Instrument",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 17,
+  "controls_with_automation_id": 9,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Ext. Instrument",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 471,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Ext. Instrument",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 409,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 422,
+        "top": 767,
+        "right": 440,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 441,
+        "top": 767,
+        "right": 459,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI To",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 792,
+        "right": 343,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Routing Target",
+      "automation_id": "TrackView.Device[0].OutputType",
+      "bounding_rect": {
+        "left": 299,
+        "top": 805,
+        "right": 457,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "MIDI To",
+      "automation_id": "TrackView.Device[0].OutputChannel",
+      "bounding_rect": {
+        "left": 299,
+        "top": 824,
+        "right": 457,
+        "bottom": 842
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Audio From",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 857,
+        "right": 402,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Audio From",
+      "automation_id": "TrackView.Device[0].InputChannel",
+      "bounding_rect": {
+        "left": 299,
+        "top": 875,
+        "right": 401,
+        "bottom": 892
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 415,
+        "top": 857,
+        "right": 444,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 875,
+        "right": 457,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Peak",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 894,
+        "right": 328,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Peak, −∞dB",
+      "automation_id": "TrackView.Device[0].PeakLevel",
+      "bounding_rect": {
+        "left": 330,
+        "top": 894,
+        "right": 383,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Amount",
+      "automation_id": "TrackView.Device[0].TrackDelay",
+      "bounding_rect": {
+        "left": 299,
+        "top": 964,
+        "right": 343,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Delay Unit",
+      "automation_id": "TrackView.Device[0].TrackDelayUnit",
+      "bounding_rect": {
+        "left": 343,
+        "top": 964,
+        "right": 375,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Hardware Latency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 299,
+        "top": 951,
+        "right": 405,
+        "bottom": 964
+      },
+      "patterns": {}
+    }
+  ]
+}

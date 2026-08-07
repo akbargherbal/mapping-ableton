@@ -1,0 +1,694 @@
+{
+  "context_key": "Session Transport",
+  "section_aid": "Transport",
+  "section_name": "Control",
+  "found_by": "aid prefix 'Transport'",
+  "node_count": 54,
+  "controls_with_automation_id": 44,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Control",
+      "automation_id": "Transport",
+      "bounding_rect": {
+        "left": 63,
+        "top": 79,
+        "right": 1844,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Tempo and timing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 63,
+        "top": 79,
+        "right": 367,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Tap",
+      "automation_id": "Transport.TapTempo",
+      "bounding_rect": {
+        "left": 63,
+        "top": 79,
+        "right": 96,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tempo",
+      "automation_id": "Transport.Tempo",
+      "bounding_rect": {
+        "left": 96,
+        "top": 79,
+        "right": 148,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Phase Nudge Down",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 148,
+        "top": 79,
+        "right": 170,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Phase Nudge Up",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 170,
+        "top": 79,
+        "right": 192,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Time Signature Numerator",
+      "automation_id": "Transport.TimeSignature.Numerator",
+      "bounding_rect": {
+        "left": 196,
+        "top": 83,
+        "right": 215,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "⁄",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 216,
+        "top": 81,
+        "right": 221,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Time Signature Denominator",
+      "automation_id": "Transport.TimeSignature.Denominator",
+      "bounding_rect": {
+        "left": 222,
+        "top": 83,
+        "right": 241,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Metronome",
+      "automation_id": "Transport.Metronome",
+      "bounding_rect": {
+        "left": 245,
+        "top": 81,
+        "right": 278,
+        "bottom": 101
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Metronome Settings",
+      "automation_id": "Transport.MetronomeContextBuddy",
+      "bounding_rect": {
+        "left": 278,
+        "top": 81,
+        "right": 291,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Quantization Menu",
+      "automation_id": "Transport.GlobalQuantization",
+      "bounding_rect": {
+        "left": 294,
+        "top": 81,
+        "right": 347,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 367,
+        "top": 79,
+        "right": 555,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Scale Mode",
+      "automation_id": "Transport.SongInKey",
+      "bounding_rect": {
+        "left": 371,
+        "top": 79,
+        "right": 393,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Current Scale Root",
+      "automation_id": "Transport.CurrentScaleRoot",
+      "bounding_rect": {
+        "left": 394,
+        "top": 81,
+        "right": 446,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Current Scale Name",
+      "automation_id": "Transport.CurrentScaleName",
+      "bounding_rect": {
+        "left": 448,
+        "top": 81,
+        "right": 531,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Playback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 670,
+        "top": 79,
+        "right": 870,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Follow",
+      "automation_id": "Transport.Follow",
+      "bounding_rect": {
+        "left": 670,
+        "top": 79,
+        "right": 697,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ProgressBar",
+      "name": "Playback",
+      "automation_id": "Transport.AbletonLinkPhase",
+      "bounding_rect": {
+        "left": 699,
+        "top": 81,
+        "right": 795,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Arrangement Position (Bar)",
+      "automation_id": "Transport.ArrangementPosition.Bars",
+      "bounding_rect": {
+        "left": 702,
+        "top": 83,
+        "right": 735,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Arrangement Position (Beat)",
+      "automation_id": "Transport.ArrangementPosition.Beats",
+      "bounding_rect": {
+        "left": 742,
+        "top": 83,
+        "right": 763,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Arrangement Position (Sixteenths)",
+      "automation_id": "Transport.ArrangementPosition.Subdivisions",
+      "bounding_rect": {
+        "left": 771,
+        "top": 83,
+        "right": 792,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Play",
+      "automation_id": "Transport.Play",
+      "bounding_rect": {
+        "left": 815,
+        "top": 79,
+        "right": 838,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Stop",
+      "automation_id": "Transport.Stop",
+      "bounding_rect": {
+        "left": 843,
+        "top": 79,
+        "right": 865,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Record and capture",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 870,
+        "top": 79,
+        "right": 1044,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Arrangement Record",
+      "automation_id": "Transport.GlobalRecord",
+      "bounding_rect": {
+        "left": 870,
+        "top": 79,
+        "right": 892,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "MIDI Arrangement Overdub",
+      "automation_id": "Transport.ArrangementOverdub",
+      "bounding_rect": {
+        "left": 910,
+        "top": 79,
+        "right": 932,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Automation Arm",
+      "automation_id": "Transport.AutomationArm",
+      "bounding_rect": {
+        "left": 932,
+        "top": 79,
+        "right": 955,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Re-Enable Automation",
+      "automation_id": "Transport.ReEnableAutomation",
+      "bounding_rect": {
+        "left": 955,
+        "top": 79,
+        "right": 977,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Capture MIDI",
+      "automation_id": "Transport.TriggerCapture",
+      "bounding_rect": {
+        "left": 977,
+        "top": 79,
+        "right": 999,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Session Record",
+      "automation_id": "Transport.SessionRecord",
+      "bounding_rect": {
+        "left": 999,
+        "top": 79,
+        "right": 1022,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Arrangement looping",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1044,
+        "top": 79,
+        "right": 1324,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Start/Punch-In Point (Bar)",
+      "automation_id": "Transport.SongLoopStart.Bars",
+      "bounding_rect": {
+        "left": 1049,
+        "top": 83,
+        "right": 1082,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Start/Punch-In Point (Beat)",
+      "automation_id": "Transport.SongLoopStart.Beats",
+      "bounding_rect": {
+        "left": 1089,
+        "top": 83,
+        "right": 1110,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Start/Punch-In Point (Sixteenths)",
+      "automation_id": "Transport.SongLoopStart.Subdivisions",
+      "bounding_rect": {
+        "left": 1117,
+        "top": 83,
+        "right": 1139,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Punch-In Switch",
+      "automation_id": "Transport.PunchIn",
+      "bounding_rect": {
+        "left": 1143,
+        "top": 79,
+        "right": 1171,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Loop Switch",
+      "automation_id": "Transport.SongLoopSwitch",
+      "bounding_rect": {
+        "left": 1171,
+        "top": 79,
+        "right": 1198,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Punch-Out Switch",
+      "automation_id": "Transport.PunchOut",
+      "bounding_rect": {
+        "left": 1198,
+        "top": 79,
+        "right": 1225,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop/Punch-Region Length (Bar)",
+      "automation_id": "Transport.SongLoopLength.Bars",
+      "bounding_rect": {
+        "left": 1230,
+        "top": 83,
+        "right": 1263,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop/Punch-Region Length (Beat)",
+      "automation_id": "Transport.SongLoopLength.Beats",
+      "bounding_rect": {
+        "left": 1270,
+        "top": 83,
+        "right": 1291,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop/Punch-Region Length (Sixteenths)",
+      "automation_id": "Transport.SongLoopLength.Subdivisions",
+      "bounding_rect": {
+        "left": 1298,
+        "top": 83,
+        "right": 1319,
+        "bottom": 98
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Modes",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1546,
+        "top": 79,
+        "right": 1671,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Draw Mode Switch",
+      "automation_id": "Transport.DrawMode",
+      "bounding_rect": {
+        "left": 1546,
+        "top": 79,
+        "right": 1568,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Computer MIDI Keyboard",
+      "automation_id": "Transport.ComputerMidiKeyboard",
+      "bounding_rect": {
+        "left": 1568,
+        "top": 79,
+        "right": 1591,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Key Map Mode Switch",
+      "automation_id": "Transport.KeyMapMode",
+      "bounding_rect": {
+        "left": 1591,
+        "top": 79,
+        "right": 1624,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Key/MIDI In Indicator",
+      "automation_id": "Transport.KeyMidiInLed",
+      "bounding_rect": {
+        "left": 1625,
+        "top": 81,
+        "right": 1634,
+        "bottom": 90
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Key/MIDI Out Indicator",
+      "automation_id": "Transport.KeyMidiOutLed",
+      "bounding_rect": {
+        "left": 1625,
+        "top": 91,
+        "right": 1634,
+        "bottom": 101
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "MIDI Map Mode Switch",
+      "automation_id": "Transport.MidiMapMode",
+      "bounding_rect": {
+        "left": 1635,
+        "top": 79,
+        "right": 1671,
+        "bottom": 102
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Monitoring",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1671,
+        "top": 79,
+        "right": 1844,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "48.0 kHz",
+      "automation_id": "Transport.SampleRateDisplay",
+      "bounding_rect": {
+        "left": 1671,
+        "top": 79,
+        "right": 1730,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "CPU Meter",
+      "automation_id": "Transport.CpuUsage",
+      "bounding_rect": {
+        "left": 1730,
+        "top": 79,
+        "right": 1798,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Overload Indicator",
+      "automation_id": "Transport.CombinedOverloadMeter",
+      "bounding_rect": {
+        "left": 1798,
+        "top": 79,
+        "right": 1834,
+        "bottom": 102
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "MIDI Track In Indicator",
+      "automation_id": "Transport.MidiInLed",
+      "bounding_rect": {
+        "left": 1835,
+        "top": 81,
+        "right": 1844,
+        "bottom": 90
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "MIDI Track Out Indicator",
+      "automation_id": "Transport.MidiOutLed",
+      "bounding_rect": {
+        "left": 1835,
+        "top": 91,
+        "right": 1844,
+        "bottom": 101
+      },
+      "patterns": {}
+    }
+  ]
+}

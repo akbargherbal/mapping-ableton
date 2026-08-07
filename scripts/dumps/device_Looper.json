@@ -1,0 +1,467 @@
+{
+  "device_name": "Looper",
+  "slug": "Looper",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Looper",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 37,
+  "controls_with_automation_id": 7,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Looper",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 900,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Looper",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 487,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 852,
+        "top": 767,
+        "right": 870,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 871,
+        "top": 767,
+        "right": 889,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Record",
+      "automation_id": "TrackView.Device[0].display.LooperDragHandle.LooperRecordButton",
+      "bounding_rect": {
+        "left": 433,
+        "top": 864,
+        "right": 448,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Overdub",
+      "automation_id": "TrackView.Device[0].display.LooperDragHandle.LooperOverdubButton",
+      "bounding_rect": {
+        "left": 448,
+        "top": 864,
+        "right": 464,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Play",
+      "automation_id": "TrackView.Device[0].display.LooperDragHandle.LooperPlayButton",
+      "bounding_rect": {
+        "left": 464,
+        "top": 864,
+        "right": 479,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Stop",
+      "automation_id": "TrackView.Device[0].display.LooperDragHandle.LooperStopButton",
+      "bounding_rect": {
+        "left": 479,
+        "top": 864,
+        "right": 494,
+        "bottom": 879
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "BPM:",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 524,
+        "top": 865,
+        "right": 555,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "-",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 557,
+        "top": 865,
+        "right": 601,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Length:",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 865,
+        "right": 676,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "empty",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 679,
+        "top": 865,
+        "right": 715,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Half Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 717,
+        "top": 863,
+        "right": 741,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Double Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 743,
+        "top": 863,
+        "right": 767,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Drag me!",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 824,
+        "top": 865,
+        "right": 877,
+        "bottom": 878
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Multi-Purpose Transport Button",
+      "automation_id": "TrackView.Device[0].lower.MultiPurposeTransport",
+      "bounding_rect": {
+        "left": 428,
+        "top": 900,
+        "right": 486,
+        "bottom": 948
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Undo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 490,
+        "top": 913,
+        "right": 530,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Clear",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 490,
+        "top": 930,
+        "right": 530,
+        "bottom": 948
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Quantization",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 953,
+        "right": 504,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Quantization",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 966,
+        "right": 530,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Record",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 894,
+        "right": 585,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Record Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 590,
+        "top": 891,
+        "right": 645,
+        "bottom": 909
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "then",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 650,
+        "top": 894,
+        "right": 679,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Play/Overdub After Recording",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 891,
+        "right": 701,
+        "bottom": 909
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Song control",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 921,
+        "right": 618,
+        "bottom": 934
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Song Control",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 934,
+        "right": 701,
+        "bottom": 951
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Tempo control",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 953,
+        "right": 628,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Tempo Control",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 543,
+        "top": 966,
+        "right": 701,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Double Speed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 715,
+        "top": 913,
+        "right": 733,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Half Speed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 715,
+        "top": 933,
+        "right": 733,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Speed",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 733,
+        "top": 895,
+        "right": 771,
+        "bottom": 959
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Reverse",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 714,
+        "top": 966,
+        "right": 772,
+        "bottom": 983
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 806,
+        "top": 894,
+        "right": 863,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Input",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 785,
+        "top": 953,
+        "right": 818,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 833,
+        "top": 953,
+        "right": 876,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Input -> Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 785,
+        "top": 966,
+        "right": 885,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "device_name": "Ext. Audio Effect",
+  "slug": "Ext--Audio-Effect",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Ext. Audio Effect",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 24,
+  "controls_with_automation_id": 9,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Ext. Audio Effect",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 599,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Ext. Audio Effect",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 545,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 551,
+        "top": 767,
+        "right": 569,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 570,
+        "top": 767,
+        "right": 588,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Audio To",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 787,
+        "right": 531,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Audio To",
+      "automation_id": "TrackView.Device[0].OutputChannel",
+      "bounding_rect": {
+        "left": 427,
+        "top": 805,
+        "right": 530,
+        "bottom": 823
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 544,
+        "top": 787,
+        "right": 572,
+        "bottom": 805
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 532,
+        "top": 805,
+        "right": 585,
+        "bottom": 850
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Peak",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 824,
+        "right": 457,
+        "bottom": 842
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Peak, −∞dB",
+      "automation_id": "TrackView.Device[0].PeakOutLevel",
+      "bounding_rect": {
+        "left": 459,
+        "top": 824,
+        "right": 512,
+        "bottom": 842
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Audio From",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 857,
+        "right": 531,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Audio From",
+      "automation_id": "TrackView.Device[0].InputChannel",
+      "bounding_rect": {
+        "left": 427,
+        "top": 875,
+        "right": 530,
+        "bottom": 892
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 544,
+        "top": 857,
+        "right": 572,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 532,
+        "top": 875,
+        "right": 585,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Peak",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 894,
+        "right": 457,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Peak, −∞dB",
+      "automation_id": "TrackView.Device[0].PeakInLevel",
+      "bounding_rect": {
+        "left": 459,
+        "top": 894,
+        "right": 512,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 911,
+        "right": 472,
+        "bottom": 929
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Invert Phase",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 929,
+        "right": 472,
+        "bottom": 947
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 533,
+        "top": 921,
+        "right": 584,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 532,
+        "top": 938,
+        "right": 585,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Amount",
+      "automation_id": "TrackView.Device[0].TrackDelay",
+      "bounding_rect": {
+        "left": 427,
+        "top": 964,
+        "right": 472,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Delay Unit",
+      "automation_id": "TrackView.Device[0].TrackDelayUnit",
+      "bounding_rect": {
+        "left": 472,
+        "top": 964,
+        "right": 504,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Hardware Latency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 951,
+        "right": 533,
+        "bottom": 964
+      },
+      "patterns": {}
+    }
+  ]
+}

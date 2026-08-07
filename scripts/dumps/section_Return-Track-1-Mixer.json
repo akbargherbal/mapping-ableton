@@ -1,0 +1,146 @@
+{
+  "context_key": "Return Track 1 Mixer",
+  "section_aid": "SessionView.ReturnTrack[0].Mixer",
+  "section_name": "A-Reverb",
+  "found_by": "aid prefix 'SessionView.ReturnTrack[0].Mixer'",
+  "node_count": 11,
+  "controls_with_automation_id": 10,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "A-Reverb",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer",
+      "bounding_rect": {
+        "left": 1586,
+        "top": 377,
+        "right": 1696,
+        "bottom": 756
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Audio To",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1589,
+        "top": 482,
+        "right": 1692,
+        "bottom": 495
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Type",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.OutputType",
+      "bounding_rect": {
+        "left": 1589,
+        "top": 495,
+        "right": 1692,
+        "bottom": 512
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Channel",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.OutputChannel",
+      "bounding_rect": {
+        "left": 1589,
+        "top": 514,
+        "right": 1692,
+        "bottom": 531
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "A-Reverb",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.Send[0]",
+      "bounding_rect": {
+        "left": 1604,
+        "top": 541,
+        "right": 1635,
+        "bottom": 579
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "B-Delay",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.Send[1]",
+      "bounding_rect": {
+        "left": 1643,
+        "top": 561,
+        "right": 1674,
+        "bottom": 599
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Peak, −∞dB",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.PeakLevel",
+      "bounding_rect": {
+        "left": 1593,
+        "top": 610,
+        "right": 1637,
+        "bottom": 628
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Pan",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.Pan",
+      "bounding_rect": {
+        "left": 1599,
+        "top": 631,
+        "right": 1631,
+        "bottom": 669
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Track Activator",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.Activator",
+      "bounding_rect": {
+        "left": 1600,
+        "top": 671,
+        "right": 1630,
+        "bottom": 700
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo/Cue",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.Solo",
+      "bounding_rect": {
+        "left": 1600,
+        "top": 702,
+        "right": 1630,
+        "bottom": 720
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Volume",
+      "automation_id": "SessionView.ReturnTrack[0].Mixer.Volume",
+      "bounding_rect": {
+        "left": 1638,
+        "top": 609,
+        "right": 1689,
+        "bottom": 741
+      },
+      "patterns": {}
+    }
+  ]
+}

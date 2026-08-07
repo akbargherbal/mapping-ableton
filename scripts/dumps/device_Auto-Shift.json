@@ -1,0 +1,837 @@
+{
+  "device_name": "Auto Shift",
+  "slug": "Auto-Shift",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Auto Shift",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 65,
+  "controls_with_automation_id": 25,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Auto Shift",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 966,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Auto Shift",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 506,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.TabSelector",
+      "bounding_rect": {
+        "left": 559,
+        "top": 769,
+        "right": 748,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Quantizer,checked",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 559,
+        "top": 769,
+        "right": 653,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Quantizer/MIDI Tab",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 569,
+        "top": 771,
+        "right": 579,
+        "bottom": 782
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Quantizer",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 582,
+        "top": 770,
+        "right": 641,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "LFO,unchecked",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 655,
+        "top": 769,
+        "right": 748,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO Tab",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 771,
+        "right": 694,
+        "bottom": 782
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 696,
+        "top": 770,
+        "right": 720,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Live Mode",
+      "automation_id": "TrackView.Device[0].TitleBar.LiveModeToggle",
+      "bounding_rect": {
+        "left": 812,
+        "top": 767,
+        "right": 889,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Use Current Scale",
+      "automation_id": "TrackView.Device[0].TitleBar.UseScale",
+      "bounding_rect": {
+        "left": 899,
+        "top": 767,
+        "right": 917,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 918,
+        "top": 767,
+        "right": 936,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 937,
+        "top": 767,
+        "right": 955,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "MIDI Input Panel",
+      "automation_id": "TrackView.Device[0].InputSection.Inputs.InputColumn.MIDIExpand.ExtendViewButton",
+      "bounding_rect": {
+        "left": 428,
+        "top": 790,
+        "right": 446,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 446,
+        "top": 790,
+        "right": 492,
+        "bottom": 807
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Input",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 818,
+        "right": 476,
+        "bottom": 831
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "—",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 453,
+        "top": 844,
+        "right": 466,
+        "bottom": 857
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Pitch Range",
+      "automation_id": "TrackView.Device[0].InputSection.Inputs.InputColumn.AudioIn.RangeRadioButtons",
+      "bounding_rect": {
+        "left": 428,
+        "top": 864,
+        "right": 491,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Bass",
+      "automation_id": "TrackView.Device[0].InputSection.Inputs.InputColumn.AudioIn.RangeRadioButtons.Buttons[0]",
+      "bounding_rect": {
+        "left": 428,
+        "top": 902,
+        "right": 491,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Mid",
+      "automation_id": "TrackView.Device[0].InputSection.Inputs.InputColumn.AudioIn.RangeRadioButtons.Buttons[1]",
+      "bounding_rect": {
+        "left": 428,
+        "top": 883,
+        "right": 491,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "High",
+      "automation_id": "TrackView.Device[0].InputSection.Inputs.InputColumn.AudioIn.RangeRadioButtons.Buttons[2]",
+      "bounding_rect": {
+        "left": 428,
+        "top": 864,
+        "right": 491,
+        "bottom": 882
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 445,
+        "top": 927,
+        "right": 473,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 940,
+        "right": 491,
+        "bottom": 957
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "L 32.0 ms",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 432,
+        "top": 968,
+        "right": 486,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "-100 ct",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 795,
+        "right": 549,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "0 ct",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 642,
+        "top": 795,
+        "right": 666,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "+100 ct",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 756,
+        "top": 795,
+        "right": 801,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Strength",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 837,
+        "right": 607,
+        "bottom": 850
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Correction Strength",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 854,
+        "right": 605,
+        "bottom": 871
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Smooth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 701,
+        "top": 835,
+        "right": 765,
+        "bottom": 852
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Smoothing Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 706,
+        "top": 854,
+        "right": 759,
+        "bottom": 871
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "C",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_0",
+      "bounding_rect": {
+        "left": 537,
+        "top": 878,
+        "right": 573,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "D",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_2",
+      "bounding_rect": {
+        "left": 570,
+        "top": 878,
+        "right": 607,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "E",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_4",
+      "bounding_rect": {
+        "left": 603,
+        "top": 878,
+        "right": 640,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "F",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_5",
+      "bounding_rect": {
+        "left": 636,
+        "top": 878,
+        "right": 673,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "G",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_7",
+      "bounding_rect": {
+        "left": 669,
+        "top": 878,
+        "right": 706,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "A",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_9",
+      "bounding_rect": {
+        "left": 702,
+        "top": 878,
+        "right": 739,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "B",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_11",
+      "bounding_rect": {
+        "left": 735,
+        "top": 878,
+        "right": 772,
+        "bottom": 955
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "C♯",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_1",
+      "bounding_rect": {
+        "left": 559,
+        "top": 878,
+        "right": 585,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "D♯",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_3",
+      "bounding_rect": {
+        "left": 592,
+        "top": 878,
+        "right": 618,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "F♯",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_6",
+      "bounding_rect": {
+        "left": 658,
+        "top": 878,
+        "right": 684,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "G♯",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_8",
+      "bounding_rect": {
+        "left": 691,
+        "top": 878,
+        "right": 717,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "A♯",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.AutoPitchKeyView_10",
+      "bounding_rect": {
+        "left": 725,
+        "top": 878,
+        "right": 750,
+        "bottom": 918
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Root",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 966,
+        "right": 532,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Root Note",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.RootNoteChooser",
+      "bounding_rect": {
+        "left": 533,
+        "top": 963,
+        "right": 575,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 578,
+        "top": 966,
+        "right": 611,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Scale",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.ScaleChooser",
+      "bounding_rect": {
+        "left": 612,
+        "top": 963,
+        "right": 723,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 730,
+        "top": 966,
+        "right": 760,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Shift Scale Degrees",
+      "automation_id": "TrackView.Device[0].TabSelector.QuantizerTab.Correction.ShiftScaleDegrees",
+      "bounding_rect": {
+        "left": 761,
+        "top": 963,
+        "right": 804,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 818,
+        "top": 791,
+        "right": 878,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fine",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 834,
+        "top": 852,
+        "right": 860,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pitch Shift Fine",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 817,
+        "top": 865,
+        "right": 879,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Formant Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 818,
+        "top": 890,
+        "right": 878,
+        "bottom": 947
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "F. Follow",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 822,
+        "top": 951,
+        "right": 872,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Formant Follow",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 817,
+        "top": 964,
+        "right": 879,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vibrato",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 900,
+        "top": 791,
+        "right": 945,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 890,
+        "top": 791,
+        "right": 950,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 905,
+        "top": 852,
+        "right": 933,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 889,
+        "top": 865,
+        "right": 951,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Fade In",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 898,
+        "top": 888,
+        "right": 940,
+        "bottom": 901
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vibrato Fade In Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 889,
+        "top": 901,
+        "right": 951,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Natural Vibrato",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 889,
+        "top": 922,
+        "right": 951,
+        "bottom": 940
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 894,
+        "top": 951,
+        "right": 945,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 889,
+        "top": 964,
+        "right": 951,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

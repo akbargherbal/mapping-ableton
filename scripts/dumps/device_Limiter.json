@@ -1,0 +1,309 @@
+{
+  "device_name": "Limiter",
+  "slug": "Limiter",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Limiter",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 24,
+  "controls_with_automation_id": 3,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Limiter",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 767,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Limiter",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 487,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 767,
+        "right": 736,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 737,
+        "top": 767,
+        "right": 755,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 795,
+        "right": 496,
+        "bottom": 852
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Maximize",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 855,
+        "right": 497,
+        "bottom": 872
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 432,
+        "top": 907,
+        "right": 491,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Auto-Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 966,
+        "right": 497,
+        "bottom": 983
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Ceiling",
+      "automation_id": "TrackView.Device[0].GainRed.Ceiling",
+      "bounding_rect": {
+        "left": 512,
+        "top": 796,
+        "right": 577,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Ceiling",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 524,
+        "top": 797,
+        "right": 565,
+        "bottom": 810
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "GR",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 627,
+        "top": 797,
+        "right": 644,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Link",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 602,
+        "top": 964,
+        "right": 627,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Channel Link",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 629,
+        "top": 962,
+        "right": 670,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Lookahead Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 795,
+        "right": 753,
+        "bottom": 855
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 701,
+        "top": 868,
+        "right": 735,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Ceiling Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 881,
+        "right": 753,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Standard",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 881,
+        "right": 753,
+        "bottom": 898
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Soft Clip",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 900,
+        "right": 753,
+        "bottom": 917
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "True Peak",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 918,
+        "right": 753,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Routing",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 953,
+        "right": 741,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Routing Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 966,
+        "right": 753,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "L/R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 683,
+        "top": 966,
+        "right": 717,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "M/S",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 966,
+        "right": 753,
+        "bottom": 983
+      },
+      "patterns": {}
+    }
+  ]
+}

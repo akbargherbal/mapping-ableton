@@ -1,0 +1,775 @@
+{
+  "device_name": "Resonators",
+  "slug": "Resonators",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Resonators",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 62,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Resonators",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 898,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Resonators",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 512,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 850,
+        "top": 767,
+        "right": 867,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 868,
+        "top": 767,
+        "right": 886,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 791,
+        "right": 460,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 804,
+        "right": 474,
+        "bottom": 822
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 836,
+        "right": 490,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 849,
+        "right": 489,
+        "bottom": 894
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Filter Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 908,
+        "right": 473,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterLowpass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 908,
+        "right": 473,
+        "bottom": 925
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterHighpass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 927,
+        "right": 473,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterBandpass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 946,
+        "right": 473,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "FilterNotch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 442,
+        "top": 964,
+        "right": 473,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 791,
+        "right": 545,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Resonation Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 505,
+        "top": 804,
+        "right": 536,
+        "bottom": 822
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 501,
+        "top": 830,
+        "right": 538,
+        "bottom": 843
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 843,
+        "right": 545,
+        "bottom": 888
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Constant",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 500,
+        "top": 897,
+        "right": 539,
+        "bottom": 915
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Color",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 924,
+        "right": 537,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Color",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 499,
+        "top": 937,
+        "right": 542,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "I",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 551,
+        "top": 791,
+        "right": 602,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Resonator I On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 561,
+        "top": 805,
+        "right": 592,
+        "bottom": 823
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Note",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 562,
+        "top": 824,
+        "right": 591,
+        "bottom": 837
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Note",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 551,
+        "top": 838,
+        "right": 601,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator I Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 559,
+        "top": 897,
+        "right": 594,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 562,
+        "top": 923,
+        "right": 590,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator I Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 551,
+        "top": 937,
+        "right": 602,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "II",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 608,
+        "top": 791,
+        "right": 658,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Resonator II On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 617,
+        "top": 805,
+        "right": 649,
+        "bottom": 823
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 617,
+        "top": 824,
+        "right": 649,
+        "bottom": 837
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator II Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 608,
+        "top": 838,
+        "right": 657,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator II Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 616,
+        "top": 897,
+        "right": 650,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 923,
+        "right": 647,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator II Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 608,
+        "top": 937,
+        "right": 658,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "III",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 664,
+        "top": 791,
+        "right": 715,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Resonator III On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 674,
+        "top": 805,
+        "right": 706,
+        "bottom": 823
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 674,
+        "top": 824,
+        "right": 706,
+        "bottom": 837
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator III Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 664,
+        "top": 838,
+        "right": 714,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator III Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 673,
+        "top": 897,
+        "right": 707,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 675,
+        "top": 923,
+        "right": 703,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator III Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 664,
+        "top": 937,
+        "right": 715,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "IV",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 791,
+        "right": 772,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Resonator IV On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 730,
+        "top": 805,
+        "right": 762,
+        "bottom": 823
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 730,
+        "top": 824,
+        "right": 762,
+        "bottom": 837
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator IV Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 838,
+        "right": 771,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator IV Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 729,
+        "top": 897,
+        "right": 763,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 732,
+        "top": 923,
+        "right": 760,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator IV Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 937,
+        "right": 772,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "V",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 778,
+        "top": 791,
+        "right": 828,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Resonator V On/Off",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 787,
+        "top": 805,
+        "right": 819,
+        "bottom": 823
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 787,
+        "top": 824,
+        "right": 819,
+        "bottom": 837
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator V Pitch",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 778,
+        "top": 838,
+        "right": 827,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator V Fine Tuning",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 786,
+        "top": 897,
+        "right": 820,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 788,
+        "top": 923,
+        "right": 817,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Resonator V Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 778,
+        "top": 937,
+        "right": 828,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 839,
+        "top": 791,
+        "right": 876,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 804,
+        "right": 884,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 843,
+        "top": 854,
+        "right": 871,
+        "bottom": 866
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 866,
+        "right": 884,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 832,
+        "top": 924,
+        "right": 883,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 831,
+        "top": 937,
+        "right": 884,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "context_key": "Group Track Mixer",
+  "section_aid": "SessionView.GroupTrack[1].Mixer",
+  "section_name": "2-Group",
+  "found_by": "aid prefix 'SessionView.GroupTrack[1].Mixer'",
+  "node_count": 14,
+  "controls_with_automation_id": 11,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "2-Group",
+      "automation_id": "SessionView.GroupTrack[1].Mixer",
+      "bounding_rect": {
+        "left": 749,
+        "top": 334,
+        "right": 859,
+        "bottom": 713
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Clip Stop",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Stop",
+      "bounding_rect": {
+        "left": 752,
+        "top": 337,
+        "right": 767,
+        "bottom": 352
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 359,
+        "right": 855,
+        "bottom": 372
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 409,
+        "right": 855,
+        "bottom": 422
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Audio To",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 753,
+        "top": 439,
+        "right": 855,
+        "bottom": 452
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Type",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.OutputType",
+      "bounding_rect": {
+        "left": 753,
+        "top": 452,
+        "right": 855,
+        "bottom": 470
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Channel",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.OutputChannel",
+      "bounding_rect": {
+        "left": 753,
+        "top": 471,
+        "right": 855,
+        "bottom": 489
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "A-Reverb",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Send[0]",
+      "bounding_rect": {
+        "left": 767,
+        "top": 498,
+        "right": 799,
+        "bottom": 536
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "B-Delay",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Send[1]",
+      "bounding_rect": {
+        "left": 806,
+        "top": 518,
+        "right": 838,
+        "bottom": 556
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Peak, −∞dB",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.PeakLevel",
+      "bounding_rect": {
+        "left": 756,
+        "top": 568,
+        "right": 800,
+        "bottom": 586
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Pan",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Pan",
+      "bounding_rect": {
+        "left": 762,
+        "top": 588,
+        "right": 794,
+        "bottom": 627
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Track Activator",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Activator",
+      "bounding_rect": {
+        "left": 763,
+        "top": 628,
+        "right": 793,
+        "bottom": 658
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo/Cue",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Solo",
+      "bounding_rect": {
+        "left": 763,
+        "top": 660,
+        "right": 793,
+        "bottom": 678
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Volume",
+      "automation_id": "SessionView.GroupTrack[1].Mixer.Volume",
+      "bounding_rect": {
+        "left": 801,
+        "top": 567,
+        "right": 852,
+        "bottom": 699
+      },
+      "patterns": {}
+    }
+  ]
+}

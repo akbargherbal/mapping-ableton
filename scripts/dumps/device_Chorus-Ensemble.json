@@ -1,0 +1,273 @@
+{
+  "device_name": "Chorus-Ensemble",
+  "slug": "Chorus-Ensemble",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Chorus-Ensemble",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 21,
+  "controls_with_automation_id": 6,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Chorus-Ensemble",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 721,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Chorus-Ensemble",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 549,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 673,
+        "top": 767,
+        "right": 690,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 691,
+        "top": 767,
+        "right": 709,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Device",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 432,
+        "top": 802,
+        "right": 637,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Chorus-Ensemble Mode",
+      "automation_id": "TrackView.Device[0].ChorusModesss",
+      "bounding_rect": {
+        "left": 431,
+        "top": 859,
+        "right": 638,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Classic",
+      "automation_id": "TrackView.Device[0].ChorusModesss.Buttons[0]",
+      "bounding_rect": {
+        "left": 431,
+        "top": 859,
+        "right": 499,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Ensemble",
+      "automation_id": "TrackView.Device[0].ChorusModesss.Buttons[1]",
+      "bounding_rect": {
+        "left": 500,
+        "top": 859,
+        "right": 569,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Vibrato",
+      "automation_id": "TrackView.Device[0].ChorusModesss.Buttons[2]",
+      "bounding_rect": {
+        "left": 570,
+        "top": 859,
+        "right": 638,
+        "bottom": 877
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 883,
+        "right": 444,
+        "bottom": 896
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "High-Pass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 896,
+        "right": 497,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 503,
+        "top": 883,
+        "right": 539,
+        "bottom": 896
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stereo Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 501,
+        "top": 897,
+        "right": 569,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 433,
+        "top": 925,
+        "right": 489,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 491,
+        "top": 925,
+        "right": 548,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 550,
+        "top": 925,
+        "right": 612,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Invert Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 944,
+        "right": 635,
+        "bottom": 962
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 648,
+        "top": 792,
+        "right": 706,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Warmth",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 648,
+        "top": 858,
+        "right": 706,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 648,
+        "top": 925,
+        "right": 706,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

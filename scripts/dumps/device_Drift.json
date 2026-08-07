@@ -1,0 +1,1143 @@
+{
+  "device_name": "Drift",
+  "slug": "Drift",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Drift",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 92,
+  "controls_with_automation_id": 8,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Drift",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 1267,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Drift",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 346,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Osc Mix",
+      "automation_id": "TrackView.Device[0].TitleBar.OscMixTitle",
+      "bounding_rect": {
+        "left": 537,
+        "top": 770,
+        "right": 583,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "TrackView.Device[0].TitleBar.FilterTitle",
+      "bounding_rect": {
+        "left": 660,
+        "top": 770,
+        "right": 693,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Envelopes",
+      "automation_id": "TrackView.Device[0].TitleBar.EnvelopesTitle",
+      "bounding_rect": {
+        "left": 830,
+        "top": 770,
+        "right": 890,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Device Title Bar",
+      "automation_id": "TrackView.Device[0].TitleBar.Tab",
+      "bounding_rect": {
+        "left": 994,
+        "top": 769,
+        "right": 1113,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 994,
+        "top": 769,
+        "right": 1050,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "LFO",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1010,
+        "top": 770,
+        "right": 1034,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1053,
+        "top": 769,
+        "right": 1113,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1069,
+        "top": 770,
+        "right": 1096,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1220,
+        "top": 767,
+        "right": 1238,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1238,
+        "top": 767,
+        "right": 1256,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Osc 1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 312,
+        "top": 803,
+        "right": 345,
+        "bottom": 816
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator 1 Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 309,
+        "top": 817,
+        "right": 348,
+        "bottom": 835
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 353,
+        "top": 791,
+        "right": 399,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Shape",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 404,
+        "top": 791,
+        "right": 450,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator 1 Shape Mod Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 802,
+        "right": 504,
+        "bottom": 819
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Shape Mod Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 457,
+        "top": 820,
+        "right": 504,
+        "bottom": 838
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 1 On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 519,
+        "top": 803,
+        "right": 535,
+        "bottom": 835
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 1 Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 537,
+        "top": 791,
+        "right": 585,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 1 Filter Processing On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 588,
+        "top": 803,
+        "right": 603,
+        "bottom": 835
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Osc 2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 312,
+        "top": 870,
+        "right": 345,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator 2 Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 309,
+        "top": 884,
+        "right": 348,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Octave",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 372,
+        "top": 858,
+        "right": 427,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Detune",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 437,
+        "top": 858,
+        "right": 492,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 2 On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 519,
+        "top": 870,
+        "right": 535,
+        "bottom": 902
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator 2 Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 537,
+        "top": 858,
+        "right": 585,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator 2 Filter Processing On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 588,
+        "top": 870,
+        "right": 603,
+        "bottom": 902
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pitch Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 931,
+        "right": 360,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator Pitch Mod Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 946,
+        "right": 348,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Oscillator Pitch Mod Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 349,
+        "top": 946,
+        "right": 398,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator Pitch Mod Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 300,
+        "top": 964,
+        "right": 348,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Oscillator Pitch Mod Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 349,
+        "top": 964,
+        "right": 398,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Noise Generator On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 519,
+        "top": 937,
+        "right": 535,
+        "bottom": 969
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Noise Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 537,
+        "top": 925,
+        "right": 585,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Noise Filter Processing On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 588,
+        "top": 937,
+        "right": 603,
+        "bottom": 969
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Oscillator Retrigger On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 519,
+        "top": 845,
+        "right": 535,
+        "bottom": 861
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-pass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 624,
+        "top": 796,
+        "right": 680,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 689,
+        "top": 796,
+        "right": 719,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Low-pass Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 686,
+        "top": 809,
+        "right": 722,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Key",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 693,
+        "top": 831,
+        "right": 715,
+        "bottom": 844
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Key > Low-pass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 686,
+        "top": 844,
+        "right": 722,
+        "bottom": 862
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-pass Resonance",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 621,
+        "top": 871,
+        "right": 674,
+        "bottom": 928
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "High-pass Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 677,
+        "top": 871,
+        "right": 730,
+        "bottom": 928
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Freq Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 618,
+        "top": 931,
+        "right": 674,
+        "bottom": 944
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Low-pass Modulation Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 620,
+        "top": 946,
+        "right": 675,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Low-pass Modulation Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 676,
+        "top": 946,
+        "right": 732,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-pass Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 620,
+        "top": 964,
+        "right": 675,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low-pass Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 676,
+        "top": 964,
+        "right": 732,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "1",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 746,
+        "top": 791,
+        "right": 754,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 1 Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 760,
+        "top": 791,
+        "right": 813,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 1 Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 818,
+        "top": 791,
+        "right": 871,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 1 Sustain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 876,
+        "top": 791,
+        "right": 929,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 1 Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 933,
+        "top": 791,
+        "right": 986,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "1",
+      "automation_id": "TrackView.Device[0].Envelopes.Viz.Env1On",
+      "bounding_rect": {
+        "left": 741,
+        "top": 858,
+        "right": 759,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "2",
+      "automation_id": "TrackView.Device[0].Envelopes.Viz.Env2Off",
+      "bounding_rect": {
+        "left": 741,
+        "top": 896,
+        "right": 759,
+        "bottom": 914
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "2",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 746,
+        "top": 924,
+        "right": 754,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Envelope 2 Cycling On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 741,
+        "top": 944,
+        "right": 759,
+        "bottom": 962
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 2 Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 760,
+        "top": 924,
+        "right": 813,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 2 Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 818,
+        "top": 924,
+        "right": 871,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 2 Sustain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 876,
+        "top": 924,
+        "right": 929,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope 2 Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 933,
+        "top": 924,
+        "right": 986,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Rate",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 998,
+        "top": 791,
+        "right": 1051,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "LFO Time Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1057,
+        "top": 802,
+        "right": 1108,
+        "bottom": 838
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationHertz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1057,
+        "top": 802,
+        "right": 1082,
+        "bottom": 819
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Milliseconds",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1057,
+        "top": 820,
+        "right": 1082,
+        "bottom": 838
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationRatio",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1083,
+        "top": 802,
+        "right": 1108,
+        "bottom": 819
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ModulationBeat",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1083,
+        "top": 820,
+        "right": 1108,
+        "bottom": 838
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Waveform",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 996,
+        "top": 857,
+        "right": 1082,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "LFO Retrigger On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1094,
+        "top": 858,
+        "right": 1109,
+        "bottom": 874
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 998,
+        "top": 924,
+        "right": 1051,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mod",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1056,
+        "top": 924,
+        "right": 1083,
+        "bottom": 937
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "LFO Modulation Source",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1056,
+        "top": 937,
+        "right": 1107,
+        "bottom": 955
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "LFO Modulation Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1056,
+        "top": 956,
+        "right": 1107,
+        "bottom": 974
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 791,
+        "right": 1153,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Voice Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 804,
+        "right": 1181,
+        "bottom": 822
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Voices",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 845,
+        "right": 1158,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Voice Count",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 858,
+        "right": 1181,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Drift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 881,
+        "right": 1148,
+        "bottom": 894
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Drift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 894,
+        "right": 1181,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Legato On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 929,
+        "right": 1181,
+        "bottom": 947
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Glide",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 951,
+        "right": 1151,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Glide Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1119,
+        "top": 964,
+        "right": 1181,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Volume",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1191,
+        "top": 791,
+        "right": 1251,
+        "bottom": 833
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Vel > Vol",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 845,
+        "right": 1239,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Vel > Vol",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 858,
+        "right": 1252,
+        "bottom": 876
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 881,
+        "right": 1251,
+        "bottom": 894
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 894,
+        "right": 1252,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Note Pitch Bend On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 929,
+        "right": 1252,
+        "bottom": 947
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "PB Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 951,
+        "right": 1245,
+        "bottom": 964
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Global Pitch Bend Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1189,
+        "top": 964,
+        "right": 1252,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

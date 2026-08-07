@@ -1,0 +1,369 @@
+{
+  "device_name": "Spectrum",
+  "slug": "Spectrum",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Spectrum",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 29,
+  "controls_with_automation_id": 4,
+  "expand_button_present": true,
+  "expand_clicked": true,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Spectrum",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 578,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Toggle Expanded View",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Spectrum",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 523,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 530,
+        "top": 767,
+        "right": 548,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 549,
+        "top": 767,
+        "right": 566,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Block",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 796,
+        "right": 460,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "FFT Block Length",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 793,
+        "right": 564,
+        "bottom": 811
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Channel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 831,
+        "right": 476,
+        "bottom": 844
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Channel",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 829,
+        "right": 542,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "L",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 829,
+        "right": 493,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 494,
+        "top": 829,
+        "right": 512,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "L+R",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 513,
+        "top": 829,
+        "right": 542,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Avg",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 889,
+        "right": 451,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Number of Averages",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 887,
+        "right": 535,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Refresh",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 868,
+        "right": 473,
+        "bottom": 881
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Refresh Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 864,
+        "right": 535,
+        "bottom": 882
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale X",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 947,
+        "right": 470,
+        "bottom": 960
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Scale X",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 943,
+        "right": 570,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Lin",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 943,
+        "right": 504,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Log",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 505,
+        "top": 943,
+        "right": 533,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "ST",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 535,
+        "top": 943,
+        "right": 563,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Graph",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 925,
+        "right": 465,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Graph",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 922,
+        "right": 523,
+        "bottom": 940
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Maximum Amplitude",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 524,
+        "top": 922,
+        "right": 563,
+        "bottom": 940
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Scale Y Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 964,
+        "right": 470,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dynamic Range Maximum",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 476,
+        "top": 964,
+        "right": 517,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "-",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 516,
+        "top": 964,
+        "right": 523,
+        "bottom": 977
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dynamic Range Minimum",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 522,
+        "top": 964,
+        "right": 563,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

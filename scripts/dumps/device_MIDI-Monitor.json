@@ -1,0 +1,103 @@
+{
+  "device_name": "MIDI Monitor",
+  "slug": "MIDI-Monitor",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "MIDI Monitor",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 7,
+  "controls_with_automation_id": 3,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "MIDI Monitor",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 293,
+        "top": 765,
+        "right": 680,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 296,
+        "top": 767,
+        "right": 314,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI Monitor",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 316,
+        "top": 770,
+        "right": 394,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MPE",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 584,
+        "top": 770,
+        "right": 611,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Edit Button",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 612,
+        "top": 767,
+        "right": 630,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 631,
+        "top": 767,
+        "right": 649,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 650,
+        "top": 767,
+        "right": 668,
+        "bottom": 785
+      },
+      "patterns": {}
+    }
+  ]
+}

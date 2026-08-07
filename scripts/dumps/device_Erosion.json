@@ -1,0 +1,221 @@
+{
+  "device_name": "Erosion",
+  "slug": "Erosion",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Erosion",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 17,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Erosion",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 618,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Erosion",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 490,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 570,
+        "top": 767,
+        "right": 588,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 589,
+        "top": 767,
+        "right": 607,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 791,
+        "right": 603,
+        "bottom": 903
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency, Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 542,
+        "top": 888,
+        "right": 557,
+        "bottom": 903
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Erosion Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 905,
+        "right": 604,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Noise",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 905,
+        "right": 479,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Wide Noise",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 480,
+        "top": 905,
+        "right": 551,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Sine",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 552,
+        "top": 905,
+        "right": 604,
+        "bottom": 923
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Freq",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 950,
+        "right": 457,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 964,
+        "right": 484,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 489,
+        "top": 950,
+        "right": 525,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Width",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 487,
+        "top": 964,
+        "right": 544,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 548,
+        "top": 950,
+        "right": 595,
+        "bottom": 963
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 548,
+        "top": 964,
+        "right": 604,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,1 +1,1 @@
-Call set_device_parameter to change Auto Filter's Frequency parameter on track_index=1, device_index=1, then call get_device_parameters again with show_all=True and show me the Frequency line before and after.
+Write me about your experience as an AI agent survey Ableton; what went well; what went wrong; compare what you planned; vs what you achieved etc; write in survey_report.md in project root.

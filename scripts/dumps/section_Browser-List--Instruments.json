@@ -1,0 +1,310 @@
+{
+  "context_key": "Browser List (Instruments)",
+  "section_aid": "",
+  "section_name": "Instruments List, 23 Items",
+  "found_by": "name 'Instruments List, 23 Items' instance 0",
+  "node_count": 25,
+  "controls_with_automation_id": 0,
+  "controls": [
+    {
+      "control_type": "Tree",
+      "name": "Instruments List, 23 Items",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 169,
+        "right": 627,
+        "bottom": 674
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Name",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 294,
+        "top": 169,
+        "right": 601,
+        "bottom": 192
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Analog",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 192,
+        "right": 627,
+        "bottom": 214
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Collision",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 214,
+        "right": 627,
+        "bottom": 236
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Drift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 236,
+        "right": 627,
+        "bottom": 259
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Drum Rack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 259,
+        "right": 627,
+        "bottom": 281
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Drum Sampler",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 281,
+        "right": 627,
+        "bottom": 304
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS Clang",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 304,
+        "right": 627,
+        "bottom": 326
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS Clap",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 326,
+        "right": 627,
+        "bottom": 348
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS Cymbal",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 348,
+        "right": 627,
+        "bottom": 371
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS FM",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 371,
+        "right": 627,
+        "bottom": 393
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS HH",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 393,
+        "right": 627,
+        "bottom": 416
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS Kick",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 416,
+        "right": 627,
+        "bottom": 438
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS Snare",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 438,
+        "right": 627,
+        "bottom": 461
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "DS Tom",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 461,
+        "right": 627,
+        "bottom": 483
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Electric",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 483,
+        "right": 627,
+        "bottom": 505
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "External Instrument",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 505,
+        "right": 627,
+        "bottom": 528
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Impulse",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 528,
+        "right": 627,
+        "bottom": 550
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Instrument Rack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 550,
+        "right": 627,
+        "bottom": 573
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Meld",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 573,
+        "right": 627,
+        "bottom": 595
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Operator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 595,
+        "right": 627,
+        "bottom": 618
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Sampler",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 618,
+        "right": 627,
+        "bottom": 640
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Simpler",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 640,
+        "right": 627,
+        "bottom": 662
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Tension",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 662,
+        "right": 627,
+        "bottom": 685
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "TreeItem",
+      "name": "Wavetable",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 291,
+        "top": 685,
+        "right": 627,
+        "bottom": 707
+      },
+      "patterns": {}
+    }
+  ]
+}

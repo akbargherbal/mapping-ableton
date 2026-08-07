@@ -1,0 +1,46 @@
+{
+  "context_key": "Plug-Ins",
+  "section_aid": "",
+  "section_name": "Plug-Ins",
+  "found_by": "name 'Plug-Ins' instance 0",
+  "node_count": 3,
+  "controls_with_automation_id": 0,
+  "controls": [
+    {
+      "control_type": "DataItem",
+      "name": "Plug-Ins",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 416,
+        "right": 289,
+        "bottom": 438
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "DataItem",
+      "name": "Plug-Ins",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 11,
+        "top": 416,
+        "right": 281,
+        "bottom": 437
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Plug-Ins",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 39,
+        "top": 419,
+        "right": 87,
+        "bottom": 432
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "device_name": "Cabinet",
+  "slug": "Cabinet",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Cabinet",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 13,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Cabinet",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 539,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Cabinet",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 484,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 491,
+        "top": 767,
+        "right": 509,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 510,
+        "top": 767,
+        "right": 527,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Speaker",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 791,
+        "right": 478,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Speaker",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 806,
+        "right": 524,
+        "bottom": 824
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Microphone",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 830,
+        "right": 500,
+        "bottom": 843
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Microphone",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 845,
+        "right": 524,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Microphone Type",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 865,
+        "right": 524,
+        "bottom": 883
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 889,
+        "right": 472,
+        "bottom": 902
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 904,
+        "right": 524,
+        "bottom": 922
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 448,
+        "top": 924,
+        "right": 503,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

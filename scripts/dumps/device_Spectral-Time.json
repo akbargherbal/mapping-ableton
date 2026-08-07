@@ -1,0 +1,529 @@
+{
+  "device_name": "Spectral Time",
+  "slug": "Spectral-Time",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Spectral Time",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 42,
+  "controls_with_automation_id": 7,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Spectral Time",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 1106,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Spectral Time",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 527,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1057,
+        "top": 767,
+        "right": 1075,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1076,
+        "top": 767,
+        "right": 1094,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freezer On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 790,
+        "right": 442,
+        "bottom": 804
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "1 Freezer",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 445,
+        "top": 791,
+        "right": 500,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Manual/Retrigger Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 809,
+        "right": 520,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Manual",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 809,
+        "right": 520,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Retrigger",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 828,
+        "right": 520,
+        "bottom": 845
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Retrigger Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 845,
+        "right": 520,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Onsets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 845,
+        "right": 480,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Sync",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 481,
+        "top": 845,
+        "right": 520,
+        "bottom": 863
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Freeze",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 454,
+        "top": 934,
+        "right": 494,
+        "bottom": 947
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freeze Toggle",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 948,
+        "right": 520,
+        "bottom": 982
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Freezer Fade Shape",
+      "automation_id": "TrackView.Device[0].XFade.ShapeRadio",
+      "bounding_rect": {
+        "left": 529,
+        "top": 809,
+        "right": 589,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Crossfade",
+      "automation_id": "TrackView.Device[0].XFade.ShapeRadio.Crossfade",
+      "bounding_rect": {
+        "left": 529,
+        "top": 809,
+        "right": 558,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Envelope",
+      "automation_id": "TrackView.Device[0].XFade.ShapeRadio.Envelope",
+      "bounding_rect": {
+        "left": 559,
+        "top": 809,
+        "right": 589,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Freezer Fade In",
+      "automation_id": "TrackView.Device[0].XFade.TopFadeBox.FadeInSec",
+      "bounding_rect": {
+        "left": 529,
+        "top": 838,
+        "right": 589,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Freezer Fade Out",
+      "automation_id": "TrackView.Device[0].XFade.BottomFadeBox.FadeOutSec",
+      "bounding_rect": {
+        "left": 529,
+        "top": 909,
+        "right": 589,
+        "bottom": 966
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Delay On",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 790,
+        "right": 612,
+        "bottom": 804
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "2 Delay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 790,
+        "right": 658,
+        "bottom": 803
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 811,
+        "right": 658,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 878,
+        "right": 645,
+        "bottom": 891
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Delay Time Units",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 892,
+        "right": 658,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Tilt",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 925,
+        "right": 658,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Feedback",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 660,
+        "top": 811,
+        "right": 720,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Stereo",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 669,
+        "top": 878,
+        "right": 709,
+        "bottom": 891
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Stereo Spread",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 660,
+        "top": 892,
+        "right": 720,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Spray",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 660,
+        "top": 925,
+        "right": 720,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Frequency Shift",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 811,
+        "right": 781,
+        "bottom": 868
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 740,
+        "top": 878,
+        "right": 762,
+        "bottom": 891
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 892,
+        "right": 781,
+        "bottom": 910
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Frequency Mask",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 721,
+        "top": 925,
+        "right": 781,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Fold Spectrogram",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 792,
+        "top": 790,
+        "right": 807,
+        "bottom": 805
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Resolution",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 903,
+        "top": 791,
+        "right": 965,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Frequency Resolution",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 968,
+        "top": 789,
+        "right": 1015,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Pre Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1024,
+        "top": 790,
+        "right": 1090,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Processing Order",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1028,
+        "top": 868,
+        "right": 1087,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Frz > Dly",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1028,
+        "top": 868,
+        "right": 1087,
+        "bottom": 885
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Dly > Frz",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1028,
+        "top": 887,
+        "right": 1087,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1028,
+        "top": 925,
+        "right": 1087,
+        "bottom": 982
+      },
+      "patterns": {}
+    }
+  ]
+}

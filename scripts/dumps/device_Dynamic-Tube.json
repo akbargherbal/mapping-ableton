@@ -1,0 +1,221 @@
+{
+  "device_name": "Dynamic Tube",
+  "slug": "Dynamic-Tube",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Dynamic Tube",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 17,
+  "controls_with_automation_id": 3,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Dynamic Tube",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 663,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "TrackView.Device[0].TitleBar.DeviceOn",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Dynamic Tube",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 527,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 615,
+        "top": 767,
+        "right": 632,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 634,
+        "top": 767,
+        "right": 651,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 791,
+        "right": 480,
+        "bottom": 848
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Drive",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 916,
+        "right": 480,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Tone",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 486,
+        "top": 916,
+        "right": 533,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Level",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 849,
+        "right": 480,
+        "bottom": 915
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bias",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 537,
+        "top": 916,
+        "right": 584,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Envelope Amount",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 596,
+        "top": 792,
+        "right": 650,
+        "bottom": 858
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 596,
+        "top": 863,
+        "right": 649,
+        "bottom": 920
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 596,
+        "top": 925,
+        "right": 649,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Tube Mode",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 889,
+        "right": 566,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "A",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 889,
+        "right": 524,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "B",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 525,
+        "top": 889,
+        "right": 545,
+        "bottom": 907
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "C",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 889,
+        "right": 566,
+        "bottom": 907
+      },
+      "patterns": {}
+    }
+  ]
+}

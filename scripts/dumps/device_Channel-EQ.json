@@ -1,0 +1,163 @@
+{
+  "device_name": "Channel EQ",
+  "slug": "Channel-EQ",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Channel EQ",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 12,
+  "controls_with_automation_id": 3,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Channel EQ",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 723,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Channel EQ",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 512,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 675,
+        "top": 767,
+        "right": 693,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 767,
+        "right": 712,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "TrackView.Device[0].Filter",
+      "bounding_rect": {
+        "left": 427,
+        "top": 791,
+        "right": 709,
+        "bottom": 887
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "High-Pass Filter",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 891,
+        "right": 458,
+        "bottom": 909
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mid Frequency",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 891,
+        "right": 553,
+        "bottom": 909
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Low Shelf Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 437,
+        "top": 921,
+        "right": 494,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mid Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 921,
+        "right": 553,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "High Shelf Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 555,
+        "top": 921,
+        "right": 612,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 642,
+        "top": 921,
+        "right": 700,
+        "bottom": 984
+      },
+      "patterns": {}
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "device_name": "Pedal",
+  "slug": "Pedal",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Pedal",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 13,
+  "controls_with_automation_id": 2,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Pedal",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 595,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Pedal",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 479,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 546,
+        "top": 767,
+        "right": 564,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 565,
+        "top": 767,
+        "right": 583,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 452,
+        "top": 790,
+        "right": 504,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 504,
+        "top": 790,
+        "right": 556,
+        "bottom": 846
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Bass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 881,
+        "right": 477,
+        "bottom": 942
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Mid",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 480,
+        "top": 881,
+        "right": 526,
+        "bottom": 942
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Treble",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 530,
+        "top": 881,
+        "right": 576,
+        "bottom": 942
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sub",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 426,
+        "top": 967,
+        "right": 466,
+        "bottom": 984
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 481,
+        "top": 969,
+        "right": 532,
+        "bottom": 982
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 535,
+        "top": 967,
+        "right": 582,
+        "bottom": 984
+      },
+      "patterns": {}
+    }
+  ]
+}

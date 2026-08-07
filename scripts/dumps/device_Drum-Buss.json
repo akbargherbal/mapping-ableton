@@ -1,0 +1,345 @@
+{
+  "device_name": "Drum Buss",
+  "slug": "Drum-Buss",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Drum Buss",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 27,
+  "controls_with_automation_id": 19,
+  "expand_button_present": false,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Drum Buss",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 748,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Drum Buss",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 445,
+        "top": 770,
+        "right": 509,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 700,
+        "top": 767,
+        "right": 717,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 719,
+        "top": 767,
+        "right": 736,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Drive Amount",
+      "automation_id": "TrackView.Device[0].DriveAmount",
+      "bounding_rect": {
+        "left": 427,
+        "top": 792,
+        "right": 485,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Distortion Type",
+      "automation_id": "TrackView.Device[0].DriveType",
+      "bounding_rect": {
+        "left": 427,
+        "top": 854,
+        "right": 485,
+        "bottom": 909
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Soft",
+      "automation_id": "TrackView.Device[0].DriveType.Buttons[0]",
+      "bounding_rect": {
+        "left": 427,
+        "top": 854,
+        "right": 485,
+        "bottom": 871
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Medium",
+      "automation_id": "TrackView.Device[0].DriveType.Buttons[1]",
+      "bounding_rect": {
+        "left": 427,
+        "top": 872,
+        "right": 485,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Hard",
+      "automation_id": "TrackView.Device[0].DriveType.Buttons[2]",
+      "bounding_rect": {
+        "left": 427,
+        "top": 891,
+        "right": 485,
+        "bottom": 909
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Trim",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 427,
+        "top": 917,
+        "right": 454,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Trim",
+      "automation_id": "TrackView.Device[0].InputTrim",
+      "bounding_rect": {
+        "left": 427,
+        "top": 933,
+        "right": 485,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Compression",
+      "automation_id": "TrackView.Device[0].EnableCompression",
+      "bounding_rect": {
+        "left": 427,
+        "top": 963,
+        "right": 485,
+        "bottom": 981
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Crunch Amount",
+      "automation_id": "TrackView.Device[0].CrunchAmount",
+      "bounding_rect": {
+        "left": 498,
+        "top": 792,
+        "right": 556,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Damping Frequency",
+      "automation_id": "TrackView.Device[0].DampingFrequency",
+      "bounding_rect": {
+        "left": 498,
+        "top": 855,
+        "right": 556,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transient Shaping Amount",
+      "automation_id": "TrackView.Device[0].TransientShaping",
+      "bounding_rect": {
+        "left": 496,
+        "top": 917,
+        "right": 558,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Boom Amount",
+      "automation_id": "TrackView.Device[0].BoomAmount",
+      "bounding_rect": {
+        "left": 568,
+        "top": 792,
+        "right": 625,
+        "bottom": 849
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Boom Frequency",
+      "automation_id": "TrackView.Device[0].BoomFrequency",
+      "bounding_rect": {
+        "left": 568,
+        "top": 855,
+        "right": 625,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Decay",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 568,
+        "top": 917,
+        "right": 604,
+        "bottom": 930
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Boom Decay",
+      "automation_id": "TrackView.Device[0].BoomDecay",
+      "bounding_rect": {
+        "left": 568,
+        "top": 933,
+        "right": 625,
+        "bottom": 950
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "G0+",
+      "automation_id": "TrackView.Device[0].QuantizeToNote",
+      "bounding_rect": {
+        "left": 568,
+        "top": 963,
+        "right": 605,
+        "bottom": 981
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Boom Audition",
+      "automation_id": "TrackView.Device[0].BoomAudition",
+      "bounding_rect": {
+        "left": 608,
+        "top": 963,
+        "right": 625,
+        "bottom": 981
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Bass",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 645,
+        "top": 796,
+        "right": 673,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "TrackView.Device[0].OutputGain",
+      "bounding_rect": {
+        "left": 680,
+        "top": 796,
+        "right": 730,
+        "bottom": 956
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Out",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 694,
+        "top": 796,
+        "right": 717,
+        "bottom": 809
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Dry / Wet",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 635,
+        "top": 966,
+        "right": 691,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "TrackView.Device[0].DryWet",
+      "bounding_rect": {
+        "left": 693,
+        "top": 963,
+        "right": 734,
+        "bottom": 981
+      },
+      "patterns": {}
+    }
+  ]
+}

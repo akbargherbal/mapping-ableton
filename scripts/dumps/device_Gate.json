@@ -1,0 +1,237 @@
+{
+  "device_name": "Gate",
+  "slug": "Gate",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Gate",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 18,
+  "controls_with_automation_id": 3,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Gate",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 745,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sidechain Toggle",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Gate",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 493,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 696,
+        "top": 767,
+        "right": 714,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 715,
+        "top": 767,
+        "right": 733,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Threshold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 791,
+        "right": 489,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Threshold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 805,
+        "right": 484,
+        "bottom": 850
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Return",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 852,
+        "right": 491,
+        "bottom": 865
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Return",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 866,
+        "right": 484,
+        "bottom": 911
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Flip",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 925,
+        "right": 493,
+        "bottom": 943
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Lookahead",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 944,
+        "right": 493,
+        "bottom": 961
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Lookahead Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 430,
+        "top": 961,
+        "right": 493,
+        "bottom": 979
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Floor",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 673,
+        "top": 927,
+        "right": 726,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 500,
+        "top": 927,
+        "right": 553,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Hold Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 556,
+        "top": 927,
+        "right": 609,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 611,
+        "top": 927,
+        "right": 664,
+        "bottom": 983
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Gate Activity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 506,
+        "top": 796,
+        "right": 703,
+        "bottom": 920
+      },
+      "patterns": {}
+    }
+  ]
+}

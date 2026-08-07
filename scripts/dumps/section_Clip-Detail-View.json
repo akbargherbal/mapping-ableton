@@ -1,0 +1,1228 @@
+{
+  "context_key": "Clip Detail View",
+  "section_aid": "ClipDetailView",
+  "section_name": "Clip Detail",
+  "found_by": "aid prefix 'ClipDetailView'",
+  "node_count": 100,
+  "controls_with_automation_id": 74,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Clip Detail",
+      "automation_id": "ClipDetailView",
+      "bounding_rect": {
+        "left": 294,
+        "top": 724,
+        "right": 1909,
+        "bottom": 988
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Clip Title Bar",
+      "automation_id": "ClipDetailView.Header",
+      "bounding_rect": {
+        "left": 294,
+        "top": 724,
+        "right": 696,
+        "bottom": 744
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Clip Activator",
+      "automation_id": "ClipDetailView.Header.PowerSwitch",
+      "bounding_rect": {
+        "left": 297,
+        "top": 727,
+        "right": 310,
+        "bottom": 740
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Clip",
+      "automation_id": "ClipDetailView.Header.HeaderText",
+      "bounding_rect": {
+        "left": 313,
+        "top": 726,
+        "right": 336,
+        "bottom": 741
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Clip Tabs",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 294,
+        "top": 744,
+        "right": 494,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Main Properties",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 294,
+        "top": 745,
+        "right": 393,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Main Properties",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 312,
+        "top": 749,
+        "right": 374,
+        "bottom": 759
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Launch Properties",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 394,
+        "top": 745,
+        "right": 494,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Launch Properties",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 412,
+        "top": 749,
+        "right": 476,
+        "bottom": 759
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Show Start",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowInButton",
+      "bounding_rect": {
+        "left": 304,
+        "top": 769,
+        "right": 347,
+        "bottom": 786
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Start",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowInButtonText",
+      "bounding_rect": {
+        "left": 304,
+        "top": 771,
+        "right": 336,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Set",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.SetStartButton",
+      "bounding_rect": {
+        "left": 363,
+        "top": 769,
+        "right": 393,
+        "bottom": 786
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Show End",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowOutButton",
+      "bounding_rect": {
+        "left": 395,
+        "top": 769,
+        "right": 438,
+        "bottom": 786
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "End",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowOutButtonText",
+      "bounding_rect": {
+        "left": 395,
+        "top": 771,
+        "right": 419,
+        "bottom": 784
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Set",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.SetEndButton",
+      "bounding_rect": {
+        "left": 454,
+        "top": 769,
+        "right": 484,
+        "bottom": 786
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Start (Bar)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.StartAbsolute.Bars",
+      "bounding_rect": {
+        "left": 307,
+        "top": 791,
+        "right": 337,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 791,
+        "right": 343,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Start (Beat)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.StartAbsolute.Beats",
+      "bounding_rect": {
+        "left": 343,
+        "top": 791,
+        "right": 363,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 363,
+        "top": 791,
+        "right": 369,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Start (Sixteenths)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.StartAbsolute.Subdivisions",
+      "bounding_rect": {
+        "left": 369,
+        "top": 791,
+        "right": 391,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "End (Bar)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.OutMarker.Bars",
+      "bounding_rect": {
+        "left": 398,
+        "top": 791,
+        "right": 428,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 791,
+        "right": 434,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "End (Beat)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.OutMarker.Beats",
+      "bounding_rect": {
+        "left": 434,
+        "top": 791,
+        "right": 454,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 454,
+        "top": 791,
+        "right": 460,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "End (Sixteenths)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.OutMarker.Subdivisions",
+      "bounding_rect": {
+        "left": 460,
+        "top": 791,
+        "right": 481,
+        "bottom": 804
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Duplicate",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.DuplicateLoop",
+      "bounding_rect": {
+        "left": 304,
+        "top": 809,
+        "right": 484,
+        "bottom": 826
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Loop Switch",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopOnButton",
+      "bounding_rect": {
+        "left": 304,
+        "top": 835,
+        "right": 484,
+        "bottom": 852
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Show Loop Start",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowStartButton",
+      "bounding_rect": {
+        "left": 307,
+        "top": 855,
+        "right": 349,
+        "bottom": 872
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Position",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowStartButtonText",
+      "bounding_rect": {
+        "left": 304,
+        "top": 857,
+        "right": 353,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Set",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.SetLoopPositionButton",
+      "bounding_rect": {
+        "left": 363,
+        "top": 855,
+        "right": 393,
+        "bottom": 872
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Show Loop",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowLoopButton",
+      "bounding_rect": {
+        "left": 395,
+        "top": 855,
+        "right": 438,
+        "bottom": 872
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Length",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.ShowLoopButtonText",
+      "bounding_rect": {
+        "left": 395,
+        "top": 857,
+        "right": 438,
+        "bottom": 870
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Set",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.SetLoopEndButton",
+      "bounding_rect": {
+        "left": 454,
+        "top": 855,
+        "right": 484,
+        "bottom": 872
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Position (Bar)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopStart.Bars",
+      "bounding_rect": {
+        "left": 307,
+        "top": 877,
+        "right": 337,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 337,
+        "top": 877,
+        "right": 343,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Position (Beat)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopStart.Beats",
+      "bounding_rect": {
+        "left": 343,
+        "top": 877,
+        "right": 363,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 363,
+        "top": 877,
+        "right": 369,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Position (Sixteenths)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopStart.Subdivisions",
+      "bounding_rect": {
+        "left": 369,
+        "top": 877,
+        "right": 391,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Length (Bar)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopLength.Bars",
+      "bounding_rect": {
+        "left": 398,
+        "top": 877,
+        "right": 428,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 428,
+        "top": 877,
+        "right": 434,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Length (Beat)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopLength.Beats",
+      "bounding_rect": {
+        "left": 434,
+        "top": 877,
+        "right": 454,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": ".",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 454,
+        "top": 877,
+        "right": 460,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Loop Length (Sixteenths)",
+      "automation_id": "ClipDetailView.MainProperties.RegionProperties.LoopLength.Subdivisions",
+      "bounding_rect": {
+        "left": 460,
+        "top": 877,
+        "right": 481,
+        "bottom": 890
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Signature",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 903,
+        "right": 362,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Clip Time Signature",
+      "automation_id": "ClipDetailView.MainProperties.SignatureNumerator",
+      "bounding_rect": {
+        "left": 304,
+        "top": 921,
+        "right": 346,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "⁄",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 346,
+        "top": 923,
+        "right": 350,
+        "bottom": 936
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Clip Time Signature",
+      "automation_id": "ClipDetailView.MainProperties.SignatureDenominator",
+      "bounding_rect": {
+        "left": 350,
+        "top": 921,
+        "right": 393,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Groove",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 395,
+        "top": 903,
+        "right": 438,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Clip Groove",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 448,
+        "top": 901,
+        "right": 466,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Commit Groove",
+      "automation_id": "ClipDetailView.MainProperties.ClipGrooveView.GrooveCommitButton",
+      "bounding_rect": {
+        "left": 466,
+        "top": 901,
+        "right": 484,
+        "bottom": 918
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Clip Groove",
+      "automation_id": "ClipDetailView.MainProperties.ClipGrooveView.GrooveChooser",
+      "bounding_rect": {
+        "left": 395,
+        "top": 921,
+        "right": 484,
+        "bottom": 938
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 304,
+        "top": 949,
+        "right": 337,
+        "bottom": 962
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Scale Mode",
+      "automation_id": "ClipDetailView.MainProperties.KeyAndScaleSettings.InKey",
+      "bounding_rect": {
+        "left": 304,
+        "top": 967,
+        "right": 322,
+        "bottom": 984
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Root Note",
+      "automation_id": "ClipDetailView.MainProperties.KeyAndScaleSettings.ScaleRoot",
+      "bounding_rect": {
+        "left": 325,
+        "top": 967,
+        "right": 376,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Scale Name",
+      "automation_id": "ClipDetailView.MainProperties.KeyAndScaleSettings.ScaleName",
+      "bounding_rect": {
+        "left": 379,
+        "top": 967,
+        "right": 484,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Tool Tabs",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 744,
+        "right": 696,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Pitch and Time Utilities",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 496,
+        "top": 745,
+        "right": 562,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Pitch and Time Utilities",
+      "automation_id": "ClipDetailView.NoteToolsTabSelector",
+      "bounding_rect": {
+        "left": 506,
+        "top": 749,
+        "right": 551,
+        "bottom": 759
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "MIDI Transformation Tools",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 563,
+        "top": 745,
+        "right": 629,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "MIDI Transformation Tools",
+      "automation_id": "ClipDetailView.TransformationToolsTabSelector",
+      "bounding_rect": {
+        "left": 573,
+        "top": 749,
+        "right": 618,
+        "bottom": 759
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "MIDI Generative Tools",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 630,
+        "top": 745,
+        "right": 696,
+        "bottom": 764
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "MIDI Generative Tools",
+      "automation_id": "ClipDetailView.GenerativeToolsTabSelector",
+      "bounding_rect": {
+        "left": 641,
+        "top": 749,
+        "right": 686,
+        "bottom": 759
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Transpose",
+      "automation_id": "ClipDetailView.NoteTools.Transpose",
+      "bounding_rect": {
+        "left": 511,
+        "top": 773,
+        "right": 590,
+        "bottom": 797
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "",
+      "automation_id": "ClipDetailView.NoteTools.TransposeAmount",
+      "bounding_rect": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Fit to Scale",
+      "automation_id": "ClipDetailView.NoteTools.FitToScale",
+      "bounding_rect": {
+        "left": 597,
+        "top": 770,
+        "right": 686,
+        "bottom": 787
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Invert",
+      "automation_id": "ClipDetailView.NoteTools.Invert",
+      "bounding_rect": {
+        "left": 597,
+        "top": 790,
+        "right": 686,
+        "bottom": 807
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Interval Size",
+      "automation_id": "ClipDetailView.NoteTools.IntervalSize",
+      "bounding_rect": {
+        "left": 506,
+        "top": 818,
+        "right": 595,
+        "bottom": 836
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Add Interval",
+      "automation_id": "ClipDetailView.NoteTools.Interval",
+      "bounding_rect": {
+        "left": 597,
+        "top": 818,
+        "right": 686,
+        "bottom": 836
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stretch Factor",
+      "automation_id": "ClipDetailView.NoteTools.StretchFactor",
+      "bounding_rect": {
+        "left": 520,
+        "top": 848,
+        "right": 579,
+        "bottom": 904
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "×2",
+      "automation_id": "ClipDetailView.NoteTools.StretchDouble",
+      "bounding_rect": {
+        "left": 597,
+        "top": 857,
+        "right": 686,
+        "bottom": 875
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "/2",
+      "automation_id": "ClipDetailView.NoteTools.StretchHalf",
+      "bounding_rect": {
+        "left": 597,
+        "top": 877,
+        "right": 686,
+        "bottom": 895
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Duration",
+      "automation_id": "ClipDetailView.NoteTools.SetLengthSetting",
+      "bounding_rect": {
+        "left": 506,
+        "top": 915,
+        "right": 595,
+        "bottom": 933
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Set Length",
+      "automation_id": "ClipDetailView.NoteTools.SetLength",
+      "bounding_rect": {
+        "left": 597,
+        "top": 915,
+        "right": 686,
+        "bottom": 933
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Humanize Amount",
+      "automation_id": "ClipDetailView.NoteTools.HumanizeAmount",
+      "bounding_rect": {
+        "left": 506,
+        "top": 941,
+        "right": 595,
+        "bottom": 959
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Humanize",
+      "automation_id": "ClipDetailView.NoteTools.Humanize",
+      "bounding_rect": {
+        "left": 597,
+        "top": 941,
+        "right": 686,
+        "bottom": 959
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Reverse",
+      "automation_id": "ClipDetailView.NoteTools.ReverseNotes",
+      "bounding_rect": {
+        "left": 506,
+        "top": 967,
+        "right": 595,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Legato",
+      "automation_id": "ClipDetailView.NoteTools.Legato",
+      "bounding_rect": {
+        "left": 597,
+        "top": 967,
+        "right": 686,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Clip Content Header",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 699,
+        "top": 724,
+        "right": 1909,
+        "bottom": 744
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Find and Select Notes",
+      "automation_id": "ClipDetailView.ClipContentHeader.FindButton",
+      "bounding_rect": {
+        "left": 700,
+        "top": 725,
+        "right": 728,
+        "bottom": 743
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Fold to Notes",
+      "automation_id": "ClipDetailView.ClipContentHeader.FoldToNotesButton",
+      "bounding_rect": {
+        "left": 736,
+        "top": 725,
+        "right": 781,
+        "bottom": 743
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Fold to Scale",
+      "automation_id": "ClipDetailView.ClipContentHeader.FoldToScaleButton",
+      "bounding_rect": {
+        "left": 784,
+        "top": 725,
+        "right": 828,
+        "bottom": 743
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Highlight Scale",
+      "automation_id": "ClipDetailView.ClipContentHeader.ShowScaleButton",
+      "bounding_rect": {
+        "left": 837,
+        "top": 725,
+        "right": 854,
+        "bottom": 743
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Grid Division",
+      "automation_id": "ClipDetailView.ClipContentHeader.ClipGridSettings.GridDivision",
+      "bounding_rect": {
+        "left": 1827,
+        "top": 725,
+        "right": 1890,
+        "bottom": 743
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "MIDI Note Editor Preview",
+      "automation_id": "ClipDetailView.MidiEditorPreview",
+      "bounding_rect": {
+        "left": 733,
+        "top": 792,
+        "right": 763,
+        "bottom": 810
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Group",
+      "name": "Loop Brace",
+      "automation_id": "ClipDetailView.ClipViewLoopBar",
+      "bounding_rect": {
+        "left": 765,
+        "top": 765,
+        "right": 1909,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "1, Clip Loop Start",
+      "automation_id": "ClipDetailView.ClipViewLoopBar.LoopStartMarker",
+      "bounding_rect": {
+        "left": 765,
+        "top": 765,
+        "right": 778,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "2, Clip Loop End",
+      "automation_id": "ClipDetailView.ClipViewLoopBar.LoopEndMarker",
+      "bounding_rect": {
+        "left": 1897,
+        "top": 765,
+        "right": 1910,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "1, Clip Start",
+      "automation_id": "ClipDetailView.ClipViewLoopBar.StartMarker",
+      "bounding_rect": {
+        "left": 765,
+        "top": 778,
+        "right": 778,
+        "bottom": 819
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "2, Clip End",
+      "automation_id": "ClipDetailView.ClipViewLoopBar.EndMarker",
+      "bounding_rect": {
+        "left": 1897,
+        "top": 778,
+        "right": 1910,
+        "bottom": 819
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Untitled clip, in track 1-MIDI, scene 1, 1",
+      "automation_id": "ClipDetailView.MidiEditorSplitter.NoteEditorView.KeyTrackRackView",
+      "bounding_rect": {
+        "left": 765,
+        "top": 812,
+        "right": 1909,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Show/Hide All Editor Lanes",
+      "automation_id": "ClipDetailView.ClipContentFooter.NotesSplitterButton",
+      "bounding_rect": {
+        "left": 700,
+        "top": 969,
+        "right": 717,
+        "bottom": 987
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "Button",
+      "name": "Lane Selector",
+      "automation_id": "ClipDetailView.ClipContentFooter.ContentLaneTypeMenuButton",
+      "bounding_rect": {
+        "left": 719,
+        "top": 969,
+        "right": 732,
+        "bottom": 987
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Velocity",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 737,
+        "top": 972,
+        "right": 786,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Randomize",
+      "automation_id": "ClipDetailView.ClipContentFooter.MidiEditorLaneControls.RandomizeVelocity",
+      "bounding_rect": {
+        "left": 788,
+        "top": 969,
+        "right": 866,
+        "bottom": 987
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Randomization Amount",
+      "automation_id": "ClipDetailView.ClipContentFooter.MidiEditorLaneControls.RandomizeVelocitySlider",
+      "bounding_rect": {
+        "left": 868,
+        "top": 969,
+        "right": 916,
+        "bottom": 987
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Ramp",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 926,
+        "top": 972,
+        "right": 961,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Ramp Start Value",
+      "automation_id": "ClipDetailView.ClipContentFooter.MidiEditorLaneControls.VelocityRampFromSlider",
+      "bounding_rect": {
+        "left": 963,
+        "top": 969,
+        "right": 1010,
+        "bottom": 987
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Ramp End Value",
+      "automation_id": "ClipDetailView.ClipContentFooter.MidiEditorLaneControls.VelocityRampToSlider",
+      "bounding_rect": {
+        "left": 1012,
+        "top": 969,
+        "right": 1060,
+        "bottom": 987
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Deviation",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 1070,
+        "top": 972,
+        "right": 1127,
+        "bottom": 984
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Velocity Deviation",
+      "automation_id": "ClipDetailView.ClipContentFooter.MidiEditorLaneControls.DeviationSlider",
+      "bounding_rect": {
+        "left": 1129,
+        "top": 969,
+        "right": 1200,
+        "bottom": 987
+      },
+      "patterns": {}
+    }
+  ]
+}

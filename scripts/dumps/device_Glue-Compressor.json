@@ -1,0 +1,201 @@
+{
+  "device_name": "Glue Compressor",
+  "slug": "Glue-Compressor",
+  "device_aid": "TrackView.Device[0]",
+  "title_found": "Glue Compressor",
+  "title_matched": true,
+  "view_state": "expanded",
+  "node_count": 15,
+  "controls_with_automation_id": 3,
+  "expand_button_present": true,
+  "expand_clicked": false,
+  "has_viewmode_radios": false,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "Glue Compressor",
+      "automation_id": "TrackView.Device[0]",
+      "bounding_rect": {
+        "left": 421,
+        "top": 765,
+        "right": 760,
+        "bottom": 989
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 425,
+        "top": 767,
+        "right": 442,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Sidechain Toggle",
+      "automation_id": "TrackView.Device[0].TitleBar.ExtendViewButton",
+      "bounding_rect": {
+        "left": 444,
+        "top": 767,
+        "right": 461,
+        "bottom": 785
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Text",
+      "name": "Glue Compressor",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "bounding_rect": {
+        "left": 464,
+        "top": 770,
+        "right": 566,
+        "bottom": 783
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 712,
+        "top": 767,
+        "right": 729,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 730,
+        "top": 767,
+        "right": 748,
+        "bottom": 785
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Attack Time",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 793,
+        "right": 501,
+        "bottom": 852
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Release",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 856,
+        "right": 501,
+        "bottom": 916
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Ratio",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 431,
+        "top": 921,
+        "right": 501,
+        "bottom": 980
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Threshold",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 529,
+        "top": 897,
+        "right": 588,
+        "bottom": 972
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Output Gain",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 598,
+        "top": 897,
+        "right": 657,
+        "bottom": 972
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Clip",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 707,
+        "top": 793,
+        "right": 730,
+        "bottom": 806
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Soft Clip",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 690,
+        "top": 809,
+        "right": 736,
+        "bottom": 826
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "Slider",
+      "name": "Range",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 687,
+        "top": 851,
+        "right": 740,
+        "bottom": 908
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 687,
+        "top": 923,
+        "right": 740,
+        "bottom": 980
+      },
+      "patterns": {}
+    }
+  ]
+}

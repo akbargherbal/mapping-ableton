@@ -1,0 +1,208 @@
+{
+  "context_key": "Group Track Child Mixer",
+  "section_aid": "SessionView.GroupTrack[1].Track[0].Mixer",
+  "section_name": "3-MIDI",
+  "found_by": "aid prefix 'SessionView.GroupTrack[1].Track[0].Mixer'",
+  "node_count": 16,
+  "controls_with_automation_id": 13,
+  "controls": [
+    {
+      "control_type": "Group",
+      "name": "3-MIDI",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer",
+      "bounding_rect": {
+        "left": 861,
+        "top": 334,
+        "right": 971,
+        "bottom": 713
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Button",
+      "name": "Clip Stop",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Stop",
+      "bounding_rect": {
+        "left": 864,
+        "top": 337,
+        "right": 879,
+        "bottom": 352
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI From",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 865,
+        "top": 359,
+        "right": 968,
+        "bottom": 372
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Input Type",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.InputType",
+      "bounding_rect": {
+        "left": 865,
+        "top": 372,
+        "right": 968,
+        "bottom": 390
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Input Channel",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.InputChannel",
+      "bounding_rect": {
+        "left": 865,
+        "top": 391,
+        "right": 968,
+        "bottom": 409
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "Monitor",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 865,
+        "top": 409,
+        "right": 968,
+        "bottom": 422
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Group",
+      "name": "Monitoring",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Monitoring",
+      "bounding_rect": {
+        "left": 865,
+        "top": 422,
+        "right": 968,
+        "bottom": 439
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "In",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Monitoring.Buttons[0]",
+      "bounding_rect": {
+        "left": 865,
+        "top": 422,
+        "right": 887,
+        "bottom": 439
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Auto",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Monitoring.Buttons[1]",
+      "bounding_rect": {
+        "left": 889,
+        "top": 422,
+        "right": 923,
+        "bottom": 439
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "RadioButton",
+      "name": "Off",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Monitoring.Buttons[2]",
+      "bounding_rect": {
+        "left": 924,
+        "top": 422,
+        "right": 950,
+        "bottom": 439
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "Text",
+      "name": "MIDI To",
+      "automation_id": "",
+      "bounding_rect": {
+        "left": 865,
+        "top": 439,
+        "right": 968,
+        "bottom": 452
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Type",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.OutputType",
+      "bounding_rect": {
+        "left": 865,
+        "top": 452,
+        "right": 968,
+        "bottom": 470
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Channel",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.OutputChannel",
+      "bounding_rect": {
+        "left": 865,
+        "top": 471,
+        "right": 968,
+        "bottom": 489
+      },
+      "patterns": {}
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Track Activator",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Activator",
+      "bounding_rect": {
+        "left": 876,
+        "top": 628,
+        "right": 905,
+        "bottom": 658
+      },
+      "patterns": {
+        "toggle_state": true
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo/Cue",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Solo",
+      "bounding_rect": {
+        "left": 876,
+        "top": 660,
+        "right": 905,
+        "bottom": 678
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Arm Recording",
+      "automation_id": "SessionView.GroupTrack[1].Track[0].Mixer.Arm",
+      "bounding_rect": {
+        "left": 876,
+        "top": 680,
+        "right": 905,
+        "bottom": 698
+      },
+      "patterns": {
+        "toggle_state": false
+      }
+    }
+  ]
+}
