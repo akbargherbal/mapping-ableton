@@ -1,0 +1,785 @@
+{
+  "control_type": "Group",
+  "name": "Delay",
+  "automation_id": "TrackView.Device[0]",
+  "class_name": "",
+  "bounding_rect": [
+    -1627,
+    765,
+    -1179,
+    989
+  ],
+  "is_enabled": true,
+  "is_visible": true,
+  "children": [
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1624,
+        767,
+        -1606,
+        785
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Delay",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "class_name": "",
+      "bounding_rect": [
+        -1604,
+        770,
+        -1570,
+        783
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1227,
+        767,
+        -1210,
+        785
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1208,
+        767,
+        -1191,
+        785
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Left",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1604,
+        792,
+        -1579,
+        805
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Delay Mode",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1620,
+        806,
+        -1562,
+        824
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "Beat Division",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1620,
+        825,
+        -1562,
+        900
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "RadioButton",
+          "name": "1",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1620,
+            825,
+            -1592,
+            843
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "2",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1591,
+            825,
+            -1562,
+            843
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "3",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1620,
+            844,
+            -1592,
+            862
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "4",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1591,
+            844,
+            -1562,
+            862
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "5",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1620,
+            863,
+            -1592,
+            881
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "6",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1591,
+            863,
+            -1562,
+            881
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "8",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1620,
+            882,
+            -1592,
+            900
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "16",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1591,
+            882,
+            -1562,
+            900
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Offset",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1620,
+        901,
+        -1562,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Stereo Link",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1561,
+        854,
+        -1539,
+        869
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Right",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1526,
+        792,
+        -1493,
+        805
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Delay Mode",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1538,
+        806,
+        -1480,
+        824
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "Beat Division",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1538,
+        825,
+        -1480,
+        900
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "RadioButton",
+          "name": "1",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1538,
+            825,
+            -1509,
+            843
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "2",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1508,
+            825,
+            -1480,
+            843
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "3",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1538,
+            844,
+            -1509,
+            862
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "4",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1508,
+            844,
+            -1480,
+            862
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "5",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1538,
+            863,
+            -1509,
+            881
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "6",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1508,
+            863,
+            -1480,
+            881
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "8",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1538,
+            882,
+            -1509,
+            900
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "16",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1508,
+            882,
+            -1480,
+            900
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay Offset",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1538,
+        901,
+        -1480,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Feedback",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1581,
+        925,
+        -1519,
+        982
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freeze",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1508,
+        946,
+        -1481,
+        963
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1474,
+        791,
+        -1267,
+        896
+      ],
+      "is_enabled": false,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Slider",
+          "name": "Filter Frequency, Filter Bandwidth",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1377,
+            802,
+            -1362,
+            817
+          ],
+          "is_enabled": false,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1468,
+        901,
+        -1416,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Frequency",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1416,
+        901,
+        -1357,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Width",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1343,
+        903,
+        -1306,
+        916
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter Width",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1306,
+        901,
+        -1273,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Modulation",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1404,
+        925,
+        -1337,
+        938
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1462,
+        942,
+        -1403,
+        955
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1401,
+        942,
+        -1342,
+        955
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Time",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1339,
+        942,
+        -1280,
+        955
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Modulation Frequency",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1460,
+        957,
+        -1407,
+        975
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Filter < Modulation",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1394,
+        957,
+        -1350,
+        975
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Delay < Modulation",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1332,
+        957,
+        -1289,
+        975
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Mode",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1262,
+        792,
+        -1227,
+        805
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "Delay Transition Mode",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1262,
+        806,
+        -1194,
+        862
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "RadioButton",
+          "name": "Repitch",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1262,
+            806,
+            -1194,
+            824
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "Fade",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1262,
+            825,
+            -1194,
+            843
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "RadioButton",
+          "name": "Jump",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1262,
+            844,
+            -1194,
+            862
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Ping Pong",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1262,
+        881,
+        -1194,
+        898
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet",
+      "automation_id": "TrackView.Device[0].DryWet",
+      "class_name": "",
+      "bounding_rect": [
+        -1259,
+        925,
+        -1197,
+        982
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    }
+  ]
+}

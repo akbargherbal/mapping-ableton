@@ -1,0 +1,151 @@
+{
+  "control_type": "Group",
+  "name": "A-Reverb",
+  "automation_id": "ArrangementView.ReturnTrack[0].Mixer",
+  "class_name": "",
+  "bounding_rect": [
+    -243,
+    661,
+    -11,
+    684
+  ],
+  "is_enabled": true,
+  "is_visible": true,
+  "children": [
+    {
+      "control_type": "ComboBox",
+      "name": "Output Type",
+      "automation_id": "ArrangementView.ReturnTrack[0].Mixer.OutputType",
+      "class_name": "",
+      "bounding_rect": [
+        -240,
+        645,
+        -155,
+        662
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Output Channel",
+      "automation_id": "ArrangementView.ReturnTrack[0].Mixer.OutputChannel",
+      "class_name": "",
+      "bounding_rect": [
+        -240,
+        665,
+        -155,
+        682
+      ],
+      "is_enabled": false,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Track Activator",
+      "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Activator",
+      "class_name": "",
+      "bounding_rect": [
+        -150,
+        665,
+        -93,
+        682
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Solo/Cue",
+      "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Solo",
+      "class_name": "",
+      "bounding_rect": [
+        -91,
+        665,
+        -69,
+        682
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Pre/Post Toggle",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -66,
+        665,
+        -34,
+        682
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Volume",
+      "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Volume",
+      "class_name": "",
+      "bounding_rect": [
+        -150,
+        685,
+        -93,
+        702
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Pan",
+      "automation_id": "ArrangementView.ReturnTrack[0].Mixer.Pan",
+      "class_name": "",
+      "bounding_rect": [
+        -91,
+        685,
+        -34,
+        702
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "A-Reverb",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -150,
+        705,
+        -112,
+        723
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "B-Delay",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -111,
+        705,
+        -73,
+        723
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    }
+  ]
+}

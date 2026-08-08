@@ -1,0 +1,109 @@
+{
+ "control_type": "Group",
+ "name": "Undo History",
+ "automation_id": "",
+ "class_name": "",
+ "bounding_rect": [
+  -188,
+  118,
+  -11,
+  1021
+ ],
+ "is_enabled": true,
+ "is_visible": true,
+ "children": [
+  {
+   "control_type": "Button",
+   "name": "Close Undo History",
+   "automation_id": "LessonViewCloseButton",
+   "class_name": "",
+   "bounding_rect": [
+    -185,
+    120,
+    -168,
+    137
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "Undo History",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -165,
+    118,
+    -73,
+    138
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Tree",
+   "name": "Undo History",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -183,
+    143,
+    -15,
+    983
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": [
+    {
+     "control_type": "DataItem",
+     "name": "New Live Set, current step",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      -183,
+      143,
+      6,
+      166
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": [
+      {
+       "control_type": "DataItem",
+       "name": "New Live Set, current step",
+       "automation_id": "",
+       "class_name": "",
+       "bounding_rect": [
+        -183,
+        143,
+        -6,
+        164
+       ],
+       "is_enabled": true,
+       "is_visible": true,
+       "children": [
+        {
+         "control_type": "Text",
+         "name": "New Live Set",
+         "automation_id": "",
+         "class_name": "",
+         "bounding_rect": [
+          -181,
+          147,
+          -8,
+          160
+         ],
+         "is_enabled": true,
+         "is_visible": true,
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

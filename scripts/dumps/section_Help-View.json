@@ -1,0 +1,287 @@
+{
+ "control_type": "Group",
+ "name": "Report a Crash",
+ "automation_id": "",
+ "class_name": "",
+ "bounding_rect": [
+  -336,
+  118,
+  -11,
+  1021
+ ],
+ "is_enabled": true,
+ "is_visible": true,
+ "children": [
+  {
+   "control_type": "Button",
+   "name": "Close Help View",
+   "automation_id": "LessonViewCloseButton",
+   "class_name": "",
+   "bounding_rect": [
+    -334,
+    120,
+    -316,
+    137
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "Report a Crash",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -314,
+    118,
+    -73,
+    138
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Back",
+   "automation_id": "LessonViewBackButton",
+   "class_name": "",
+   "bounding_rect": [
+    -71,
+    120,
+    -53,
+    137
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Forward",
+   "automation_id": "LessonViewNextButton",
+   "class_name": "",
+   "bounding_rect": [
+    -51,
+    120,
+    -33,
+    137
+   ],
+   "is_enabled": false,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Lessons Start Page",
+   "automation_id": "LessonViewHomeButton",
+   "class_name": "",
+   "bounding_rect": [
+    -31,
+    120,
+    -13,
+    137
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "BugReportingBanner.png\n\nA report containing crash information has been generated. To submit crash data for bug tracking only, send the following zipped file to $Link *crashes@ableton.com* <mailto:crashes@ableton.com>:\n\n$Link Ableton Crash Report 2026-08-08 004023 Live 12.1.zip<reveal:C:\\Users\\DELL\\AppData\\Roaming\\Ableton\\Live Reports\\Ableton Crash Report 2026-08-08 004023 Live 12.1.zip>\n\nTo look for the cause of the crash, follow the steps in the $Link Troubleshooting a crash <https://help.ableton.com/hc/articles/209773265> guide, or visit the $Link Ableton Knowledge Base <https://help.ableton.com/hc/> for more help topics.\n\nNote: *Crash Reports* submitted to crashes@ableton.com are not sent to the Ableton Support team and will not receive a reply. To request technical support, visit $Link https://www.ableton.com/help/#contact-support <https://www.ableton.com/help/#contact-support>. Please include a description of the crash and the *zipped* crash report with your request.\n\nDivider.tif\n\nThe crash report encloses copies of the following folders on your computer:\n\n-> Live's current *Preferences, Unlock* and *UsageData* folders\n-> Crash logs created by the operating system *(Mac)* or by Live *(Win),* if available\n\nFor more information, visit $Link Where to find Crash Reports <https://help.ableton.com/hc/en-us/articles/209071629-Where-to-find-Crash-Reports>. Data in the report is used exclusively to track and fix issues. To learn how your information may be used, see our $Link privacy policy <https://www.ableton.com/privacy-policy>.\n\nDivider.tif\n\nThank you for taking the time to report a crash.",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    143,
+    288,
+    1034
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": [
+    {
+     "control_type": "Hyperlink",
+     "name": "crashes@ableton.com",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "Ableton Crash Report 2026-08-08 004023",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "Live 12.1.zip",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "Troubleshooting a crash",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "Ableton Knowledge Base",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "https://www.ableton.com/help/#contact-su",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "pport",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Text",
+     "name": "Live's current *Preferences, Unlock* and *UsageData* folders",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      -314,
+      743,
+      35,
+      783
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Text",
+     "name": "Crash logs created by the operating system *(Mac)* or by Live *(Win),* if available",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      -314,
+      787,
+      -23,
+      828
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "Where to find",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "Crash Reports",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    },
+    {
+     "control_type": "Hyperlink",
+     "name": "privacy policy",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    }
+   ]
+  }
+ ]
+}

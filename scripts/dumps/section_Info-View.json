@@ -1,0 +1,11 @@
+{
+  "context": "Info View",
+  "status": "OPAQUE",
+  "node_count": 0,
+  "automation_id_count": 0,
+  "notes": "Info View (View menu > 'Info', or '?' key) toggled on and a control (Tempo) hovered; window confirmed maximized and alive. UIA tree exposes NO nodes for the Info panel — the view is custom-rendered (canvas/offscreen text) with no automation_ids and no children, even while active. Genuinely opaque, not a capture failure: the toggle was confirmed active by the menu state and the dump was taken with the panel visibly open. Recorded per AGENTS.md 7.",
+  "covered_by_earlier_phase": false,
+  "toggle_shortcut": "?",
+  "menu_item": "View > Info",
+  "captured": "2026-08-08"
+}

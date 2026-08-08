@@ -1,0 +1,813 @@
+{
+  "control_type": "Group",
+  "name": "Reverb",
+  "automation_id": "TrackView.Device[0]",
+  "class_name": "",
+  "bounding_rect": [
+    -1627,
+    765,
+    -1013,
+    989
+  ],
+  "is_enabled": true,
+  "is_visible": true,
+  "children": [
+    {
+      "control_type": "CheckBox",
+      "name": "Device Activator",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1624,
+        767,
+        -1606,
+        785
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Reverb",
+      "automation_id": "TrackView.Device[0].TitleBar.device_title",
+      "class_name": "",
+      "bounding_rect": [
+        -1604,
+        770,
+        -1561,
+        783
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Hot-Swap Presets",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1061,
+        767,
+        -1043,
+        785
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Button",
+      "name": "Save Preset",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1042,
+        767,
+        -1024,
+        785
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Input Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1620,
+        792,
+        -1553,
+        805
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Input Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1620,
+        809,
+        -1565,
+        826
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Input Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1562,
+        809,
+        -1507,
+        826
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1618,
+        831,
+        -1509,
+        896
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Slider",
+          "name": "In Filter Freq, In Filter Width",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1573,
+            850,
+            -1558,
+            865
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1620,
+        901,
+        -1562,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Input Filter",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1540,
+        901,
+        -1508,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1493,
+        792,
+        -1393,
+        805
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1468,
+        822,
+        -1417,
+        839
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1494,
+        848,
+        -1447,
+        861
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1495,
+        861,
+        -1444,
+        878
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1430,
+        848,
+        -1402,
+        861
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Early Reflections",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1441,
+        861,
+        -1390,
+        878
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Shape",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1489,
+        903,
+        -1452,
+        916
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Shape",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1441,
+        901,
+        -1390,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1378,
+        792,
+        -1270,
+        805
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1378,
+        809,
+        -1343,
+        826
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "High Filter Type",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1342,
+        807,
+        -1312,
+        828
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1311,
+        809,
+        -1254,
+        826
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1250,
+        809,
+        -1218,
+        826
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Group",
+      "name": "X-Y Controller",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1376,
+        831,
+        -1220,
+        896
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": [
+        {
+          "control_type": "Slider",
+          "name": "HiFilter Freq, HiShelf Gain",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1263,
+            850,
+            -1247,
+            865
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        },
+        {
+          "control_type": "Slider",
+          "name": "LowShelf Freq, LowShelf Gain",
+          "automation_id": "",
+          "class_name": "",
+          "bounding_rect": [
+            -1344,
+            846,
+            -1329,
+            862
+          ],
+          "is_enabled": true,
+          "is_visible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1378,
+        901,
+        -1343,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1311,
+        901,
+        -1254,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion Network",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1250,
+        901,
+        -1218,
+        918
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Diffusion",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1216,
+        828,
+        -1161,
+        841
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffusion",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1216,
+        841,
+        -1160,
+        858
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Scale",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1205,
+        869,
+        -1172,
+        882
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Scale",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1216,
+        882,
+        -1160,
+        900
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Chorus",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1151,
+        790,
+        -1095,
+        807
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Amount",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1146,
+        828,
+        -1100,
+        841
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Chorus",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1148,
+        841,
+        -1098,
+        858
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Rate",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1136,
+        869,
+        -1109,
+        882
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Chorus",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1148,
+        882,
+        -1098,
+        900
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Predelay",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1592,
+        927,
+        -1537,
+        983
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Smooth",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1495,
+        937,
+        -1449,
+        950
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Size Smoothing",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1496,
+        950,
+        -1448,
+        968
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Size",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1441,
+        927,
+        -1390,
+        983
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Decay Time",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1376,
+        927,
+        -1325,
+        983
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Freeze",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1305,
+        937,
+        -1243,
+        955
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Flat",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1305,
+        956,
+        -1275,
+        974
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "CheckBox",
+      "name": "Cut",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1273,
+        956,
+        -1243,
+        974
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Stereo",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1221,
+        927,
+        -1171,
+        983
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Text",
+      "name": "Density",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1155,
+        937,
+        -1111,
+        950
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Density",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1155,
+        950,
+        -1100,
+        968
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Reflect",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1081,
+        791,
+        -1034,
+        848
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Diffuse",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1081,
+        857,
+        -1034,
+        914
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Dry/Wet Mix",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -1082,
+        924,
+        -1031,
+        981
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    }
+  ]
+}

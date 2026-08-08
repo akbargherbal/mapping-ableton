@@ -1,0 +1,12 @@
+{
+ "type": "Group",
+ "name": "Groove Pool",
+ "status": "OPAQUE",
+ "node_count": 5,
+ "automation_id_count": 0,
+ "notes": "Groove Pool (View menu > Groove Pool, Ctrl+Alt+6) confirmed rendered and visible (panel node present with an empty Tree and no children) in a maximized window. No automation_ids and no exposed controls — custom-rendered list. IMPORTANT: opening/toggling this panel crashed Ableton Live 12 twice in a row (Event Log Application: Ableton Live 12 Suite.exe faulting in ucrtbase.dll, exception 0xc0000409, BEX64 stack-buffer-overrun, same fault bucket both times). The dump above is valid (panel was open when captured); do NOT re-open Groove Pool. Recorded per AGENTS.md 7.",
+ "covered_by_earlier_phase": false,
+ "toggle_shortcut": "Ctrl+Alt+6",
+ "menu_item": "View > Groove Pool",
+ "captured": "2026-08-08"
+}

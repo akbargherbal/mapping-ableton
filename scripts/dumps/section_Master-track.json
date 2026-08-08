@@ -1,0 +1,91 @@
+{
+  "control_type": "Group",
+  "name": "Main",
+  "automation_id": "ArrangementView.MainTrack.Mixer",
+  "class_name": "",
+  "bounding_rect": [
+    -243,
+    706,
+    -11,
+    728
+  ],
+  "is_enabled": true,
+  "is_visible": true,
+  "children": [
+    {
+      "control_type": "ComboBox",
+      "name": "Cue Out",
+      "automation_id": "ArrangementView.MainTrack.Mixer.OutputChannel",
+      "class_name": "",
+      "bounding_rect": [
+        -240,
+        690,
+        -155,
+        707
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "ComboBox",
+      "name": "Main Out",
+      "automation_id": "ArrangementView.MainTrack.Mixer.OutputChannel",
+      "class_name": "",
+      "bounding_rect": [
+        -240,
+        710,
+        -155,
+        727
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Volume",
+      "automation_id": "ArrangementView.MainTrack.Mixer.Volume",
+      "class_name": "",
+      "bounding_rect": [
+        -150,
+        710,
+        -93,
+        727
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Preview/Cue Volume",
+      "automation_id": "",
+      "class_name": "",
+      "bounding_rect": [
+        -91,
+        710,
+        -34,
+        727
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    },
+    {
+      "control_type": "Slider",
+      "name": "Track Pan",
+      "automation_id": "ArrangementView.MainTrack.Mixer.Pan",
+      "class_name": "",
+      "bounding_rect": [
+        -91,
+        730,
+        -34,
+        747
+      ],
+      "is_enabled": true,
+      "is_visible": true,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+ "control_type": "Group",
+ "name": "File Management",
+ "automation_id": "",
+ "class_name": "",
+ "bounding_rect": [
+  -336,
+  118,
+  -11,
+  1021
+ ],
+ "is_enabled": true,
+ "is_visible": true,
+ "children": [
+  {
+   "control_type": "Button",
+   "name": "Close File Manager",
+   "automation_id": "LessonViewCloseButton",
+   "class_name": "",
+   "bounding_rect": [
+    -334,
+    120,
+    -316,
+    137
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "File Management",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -314,
+    118,
+    -73,
+    138
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Back",
+   "automation_id": "LessonViewBackButton",
+   "class_name": "",
+   "bounding_rect": [
+    -71,
+    120,
+    -53,
+    137
+   ],
+   "is_enabled": false,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Forward",
+   "automation_id": "LessonViewNextButton",
+   "class_name": "",
+   "bounding_rect": [
+    -51,
+    120,
+    -33,
+    137
+   ],
+   "is_enabled": false,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "File Manager Start Page",
+   "automation_id": "LessonViewHomeButton",
+   "class_name": "",
+   "bounding_rect": [
+    -31,
+    120,
+    -13,
+    137
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "The File Manager helps organize all the files you work with in Live: samples, movies, presets, Live Clips and Live Sets.",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    157,
+    -33,
+    213
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "The current Live Set has not yet been saved.",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    242,
+    -31,
+    258
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Manage Set",
+   "automation_id": "ManageSet",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    262,
+    -190,
+    280
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "This Live Set belongs to the $Link Project<Lesson:Builtin/BuiltinLessons/What Is A Project> 2026-08-08 004028 Temp.",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    310,
+    -90,
+    345
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": [
+    {
+     "control_type": "Hyperlink",
+     "name": "Project",
+     "automation_id": "",
+     "class_name": "",
+     "bounding_rect": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "is_enabled": true,
+     "is_visible": true,
+     "children": []
+    }
+   ]
+  },
+  {
+   "control_type": "Button",
+   "name": "Manage Project",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    350,
+    -190,
+    367
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "The User Library is the default location when saving presets, grooves or other files.",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    397,
+    -27,
+    432
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Button",
+   "name": "Manage User Library",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -332,
+    437,
+    -190,
+    455
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  }
+ ]
+}

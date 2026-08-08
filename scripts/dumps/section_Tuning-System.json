@@ -1,0 +1,106 @@
+{
+ "control_type": "Tree",
+ "name": "Tuning System",
+ "automation_id": "",
+ "class_name": "",
+ "bounding_rect": [
+  -1909,
+  711,
+  -1293,
+  756
+ ],
+ "is_enabled": true,
+ "is_visible": true,
+ "children": [
+  {
+   "control_type": "Text",
+   "name": "Tuning",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -1907,
+    711,
+    -1552,
+    733
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "Octave",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -1546,
+    711,
+    -1495,
+    733
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "Note",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -1489,
+    711,
+    -1439,
+    733
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "Ref. Pitch/Freq",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -1433,
+    711,
+    -1339,
+    733
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "...",
+   "automation_id": "",
+   "class_name": "",
+   "bounding_rect": [
+    -1334,
+    711,
+    -1297,
+    733
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  },
+  {
+   "control_type": "Text",
+   "name": "Drop Tuning System Here",
+   "automation_id": "TuningPool.DropAreaText",
+   "class_name": "",
+   "bounding_rect": [
+    -1675,
+    738,
+    -1528,
+    751
+   ],
+   "is_enabled": true,
+   "is_visible": true,
+   "children": []
+  }
+ ]
+}
