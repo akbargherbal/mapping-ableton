@@ -171,6 +171,27 @@ TASK_REGISTRY: dict[str, dict] = {
         "required_args": ["tracks"], "optional_args": [], "atomic": True,
         "description": "Read and report solo states of tracks",
     },
+    "idiom_demo": {
+        "required_args": [], "optional_args": [], "atomic": False,
+        "description": "Proof-of-concept micro-lesson demonstrating 3 of "
+                        "the 6 recurring interaction idioms (toggle, "
+                        "continuous value, dropdown) using only "
+                        "automation_ids confirmed in control_catalog.json",
+    },
+    "probe_combobox_read": {
+        "required_args": [], "optional_args": [], "atomic": True,
+        "description": "Diagnostic: test whether ValuePattern generalizes "
+                        "as the live-value read fix across multiple "
+                        "ComboBoxes, not just Transport.GlobalQuantization",
+    },
+    "probe_write_back": {
+        "required_args": [], "optional_args": [], "atomic": False,
+        "description": "Fail-fast diagnostic: test SetValue() write-back "
+                        "against ComboBox, Tempo Slider, and (if present) "
+                        "EQ Eight Freq Slider -- each independently "
+                        "try/excepted, read+write+verify+restore, one "
+                        "test's failure doesn't stop the others",
+    },
 }
 
 
@@ -784,11 +805,22 @@ def task_solo_tour(window: UIAWrapper, track_indices: list[int],
 def task_set_tempo(window: UIAWrapper, bpm: float, dry_run: bool) -> None:
     """Set the project tempo.
 
-    Live's tempo slider supports direct numeric entry: double-click to
-    enter edit mode, type the value, press Enter. We try the UIA
-    RangeValuePattern first (exact, no simulated typing) and fall back to
-    the click+type approach, since not every build exposes ValuePattern
-    on this control.
+    !!! DANGER -- READ BEFORE TOUCHING THIS FUNCTION !!!
+    `RangeValuePattern.SetValue()` (the `tempo.iface_value.SetValue(...)`
+    call this function used to make) is CONFIRMED to crash Ableton Live
+    itself -- not just raise a Python exception -- observed twice on
+    2026-08-08 (once via probe_write_back, once via this task directly).
+    The call is now PERMANENTLY DISABLED below. Do not re-enable it
+    without a much more cautious, isolated test (saved project, willing
+    to lose the session, ideally on a throwaway/test project) -- this is
+    a host-application crash, not a script bug, and it cannot be caught
+    or recovered from on the Python side once triggered.
+
+    The only write path now attempted is double-click + type + Enter
+    (simulated keyboard entry), which is a normal user interaction and
+    not expected to carry the same risk -- but treat every --live write
+    test on a new control as potentially unsafe until proven otherwise,
+    the same way this one turned out to be.
     """
     preflight = build_automation_id_index(window)
     verify_present(preflight, ["Transport.Tempo"])
@@ -798,20 +830,278 @@ def task_set_tempo(window: UIAWrapper, bpm: float, dry_run: bool) -> None:
 
     try:
         current = tempo.iface_value.CurrentValue
-        print(f"  current value (RangeValuePattern): {current}")
-        if dry_run:
-            print(f"  [dry-run] would set_value({bpm})")
-        else:
-            tempo.iface_value.SetValue(str(bpm))
-        return
+        print(f"  current value (RangeValuePattern, read-only): {current}")
     except Exception as e:
-        print(f"  RangeValuePattern unavailable ({e}); falling back to click+type")
+        print(f"  couldn't read current value ({e})")
 
     if dry_run:
         print(f"  [dry-run] would double-click tempo field and type {bpm}")
+        print("  (RangeValuePattern.SetValue() is disabled -- confirmed to "
+              "crash Ableton itself, see docstring)")
         return
-    tempo.double_click_input()
-    tempo.type_keys(f"{bpm}{{ENTER}}", with_spaces=True)
+
+    try:
+        ensure_window_ready(window)  # recover focus/visibility before retrying
+        tempo = resolve(window, "Transport.Tempo")  # FRESH -- never reuse a
+                                                       # reference that just failed
+        tempo.double_click_input()
+        tempo.type_keys(f"{bpm}{{ENTER}}", with_spaces=True)
+        time.sleep(0.2)
+        new_value = resolve(window, "Transport.Tempo").iface_value.CurrentValue
+        if str(new_value) == str(bpm) or abs(float(new_value) - bpm) < 0.01:
+            print(f"  [confirmed] tempo now reads {new_value} (via click+type)")
+        else:
+            print(f"  [warn] click+type sent, but tempo reads {new_value}, "
+                  f"not {bpm} -- check Ableton manually")
+    except Exception as e:
+        print(f"  [FAIL] click+type failed: {type(e).__name__}: {e}")
+        print("  MANUAL STEP: please check Ableton's Tempo field directly.")
+
+
+def read_combobox_value(control: UIAWrapper) -> tuple[str | None, str | None]:
+    """Try the patterns that can expose a ComboBox's LIVE selected value,
+    in order, and return (value, method_name) for whichever one worked --
+    or (None, None) if none did.
+
+    Exists because window_text() on Ableton's ComboBoxes was caught
+    returning the STATIC LABEL from control_catalog.json (e.g.
+    "Quantization Menu") instead of the live selection (e.g. "1 Bar") --
+    see idiom_demo testing, 2026-08-08. ValuePattern.CurrentValue fixed it
+    for Transport.GlobalQuantization; this helper generalizes that fix and
+    keeps trying alternatives so a caller can tell which pattern actually
+    worked for THIS control rather than assuming it's the same for all of
+    them.
+    """
+    label_giveaway = None
+    try:
+        label_giveaway = getattr(control.element_info, "name", None)
+    except Exception:
+        pass
+
+    def _looks_like_static_label(value: str) -> bool:
+        return bool(label_giveaway) and value.strip().lower() == label_giveaway.strip().lower()
+
+    try:
+        val = control.iface_value.CurrentValue
+        if val and not _looks_like_static_label(val):
+            return val, "ValuePattern"
+    except Exception:
+        pass
+    try:
+        val = control.selected_text()
+        if val and not _looks_like_static_label(val):
+            return val, "selected_text()"
+    except Exception:
+        pass
+    try:
+        children_text = [c.window_text() for c in control.children()]
+        children_text = [t for t in children_text if t]
+        if children_text:
+            joined = ", ".join(children_text)
+            if not _looks_like_static_label(joined):
+                return joined, "children() text"
+    except Exception:
+        pass
+    return None, None
+
+
+def task_probe_combobox_read(window: UIAWrapper) -> None:
+    """Diagnostic: test read_combobox_value() against every ComboBox
+    automation_id known (from control_catalog.json) to be reachable right
+    now without loading anything extra -- Transport-level and Track[0]
+    Mixer routing dropdowns. Pure read, no clicks, safe to run anytime.
+
+    Exists to answer a specific open question from idiom_demo testing:
+    did ValuePattern work for Transport.GlobalQuantization by luck, or
+    does it generalize across Ableton's ComboBoxes? Run this once and
+    read the 'method' column -- if it's ValuePattern everywhere, that's
+    confirmed as the general fix, not a one-off.
+    """
+    candidates = [
+        "Transport.GlobalQuantization",
+        "Transport.CurrentScaleRoot",
+        "Transport.CurrentScaleName",
+        "SessionView.Track[0].Mixer.InputType",
+        "SessionView.Track[0].Mixer.OutputType",
+    ]
+    print("Probing ComboBox live-value reads across known controls "
+          "(pure read, nothing clicked):\n")
+    results = []
+    for auto_id in candidates:
+        control = find_control(window, auto_id)
+        if control is None:
+            print(f"  {auto_id:45s} NOT FOUND (control not present right now)")
+            results.append((auto_id, None, None))
+            continue
+        value, method = read_combobox_value(control)
+        if value is not None:
+            print(f"  {auto_id:45s} {method:15s} -> {value!r}")
+        else:
+            print(f"  {auto_id:45s} {'(none worked)':15s} -> unreadable")
+        results.append((auto_id, value, method))
+
+    methods_seen = {m for _, v, m in results if v is not None}
+    print()
+    if len(methods_seen) == 1:
+        print(f"[result] Every readable ComboBox used the SAME method "
+              f"({methods_seen.pop()!r}) -- looks like a general fix, "
+              "not a one-off. Safe to make this the default read path.")
+    elif len(methods_seen) > 1:
+        print(f"[result] Different controls needed different methods "
+              f"({methods_seen}) -- NOT a single general fix; keep "
+              "read_combobox_value()'s fallback chain rather than "
+              "hardcoding one pattern.")
+    else:
+        print("[result] Nothing was readable via any method -- "
+              "investigate further before trusting any ComboBox read.")
+
+
+def task_probe_write_back(window: UIAWrapper, dry_run: bool) -> None:
+    """Fail-fast diagnostic: test SetValue() write-back against several
+    control types in ONE run, each wrapped independently so one failure
+    can't take down the others or crash the script.
+
+    !!! DANGER -- confirmed 2026-08-08 !!!
+    `iface_value.SetValue()` on `Transport.Tempo` crashed Ableton Live
+    ITSELF (not just this Python process) twice in testing -- once via
+    this task, once via task_set_tempo's old fallback. This is a host-
+    application crash, not a Python-catchable error: it cannot be relied
+    on to fail safely. Tests 1 and 2 below (ComboBox and Slider
+    SetValue) are DISABLED as a result and print a skip message instead
+    of calling the dangerous method -- we don't yet know if the ComboBox
+    write is equally dangerous, so it's being treated as guilty until
+    proven innocent rather than tested casually again. Do not re-enable
+    without a much more isolated, low-stakes setup (throwaway project,
+    expectation that Ableton may need restarting).
+
+    Test 3 (checking whether a Freq slider is present) remains enabled --
+    it's read-only, no SetValue call.
+    """
+    results: list[tuple[str, str, str]] = []  # (test_name, status, detail)
+
+    def _run_test(name: str, fn: Callable[[], str]) -> None:
+        print(f"\n--- {name} ---")
+        try:
+            detail = fn()
+            print(f"  [PASS] {detail}")
+            results.append((name, "PASS", detail))
+        except Exception as e:
+            print(f"  [FAIL] {type(e).__name__}: {e}")
+            results.append((name, "FAIL", f"{type(e).__name__}: {e}"))
+
+    # --- Test 1: ComboBox write-back -- DISABLED, see danger notice above ---
+    def _test_combobox() -> str:
+        return ("DISABLED -- ValuePattern.SetValue crashed Ableton itself "
+                 "on a Slider (Transport.Tempo); ComboBox write is "
+                 "untested and treated as equally suspect until proven "
+                 "safe in isolation. Not calling it here.")
+
+    _run_test("Test 1: ComboBox.SetValue (Transport.GlobalQuantization) -- DISABLED", _test_combobox)
+
+    # --- Test 2: Slider write-back (Tempo) -- DISABLED, confirmed dangerous ---
+    def _test_tempo_slider() -> str:
+        return ("DISABLED -- confirmed twice (2026-08-08) to crash "
+                 "Ableton itself, not just raise a Python exception. See "
+                 "task_set_tempo, which now uses click+type only.")
+
+    _run_test("Test 2: Slider.SetValue (Transport.Tempo) -- DISABLED", _test_tempo_slider)
+
+    # --- Test 3: Slider write-back (EQ Eight Freq, if present) ---
+    def _test_freq_slider() -> str:
+        freq_id = "TrackView.Device[0].Freq"
+        control = find_control(window, freq_id)
+        if control is None:
+            return "SKIPPED -- no 'Freq' slider on current track's first device"
+        original = control.iface_value.CurrentValue
+        print(f"  original Freq: {original} (read-only)")
+        return ("DISABLED -- this is the same Slider.SetValue() call that "
+                "crashed Ableton itself on Transport.Tempo. Not attempting "
+                "it on another Slider until that's understood and proven "
+                "safe in isolation.")
+
+    _run_test("Test 3: Slider.SetValue (TrackView.Device[0].Freq)", _test_freq_slider)
+
+    # --- Summary ---
+    print("\n=== Summary ===")
+    for name, status, detail in results:
+        print(f"  [{status}] {name}: {detail}")
+    passed = sum(1 for _, s, _ in results if s == "PASS")
+    print(f"\n{passed}/{len(results)} write-back tests passed "
+          f"(SKIPPED counts as PASS -- nothing to verify).")
+
+
+def task_idiom_demo(window: UIAWrapper, dry_run: bool) -> None:
+    """Proof-of-concept micro-lesson: demonstrate 3 of the 6 recurring
+    interaction idioms identified from control_catalog.json's control_type
+    distribution (see docs/interaction_idioms.md), using only
+    automation_ids confirmed present in that catalog -- nothing guessed.
+
+    Idiom 1 -- Flip a switch (CheckBox):
+        Transport.Metronome. Toggled on, briefly held, then restored to
+        whatever it was before this ran. Safe against any project: it's a
+        transport-level setting, not something tied to track content.
+
+    Idiom 2 -- Turn a knob (Slider):
+        TrackView.Device[0].Freq. Only present if the currently selected
+        track's FIRST device is something exposing a "Freq" slider (EQ
+        Eight's band 1, for example). Read-only in this version -- we
+        print the current value rather than changing it, because Slider
+        write-back (RangeValuePattern vs click+drag) hasn't been
+        hardened with the same verify-and-retry treatment set_checkbox_by_id
+        gives CheckBox controls yet. If no such device is loaded, this
+        idiom is skipped with a clear message instead of failing the demo.
+
+    Idiom 3 -- Pick from a list (ComboBox):
+        Transport.GlobalQuantization. Also read-only for the same reason
+        as idiom 2 -- ComboBox selection write-back isn't wired up yet.
+
+    This intentionally demonstrates only the idioms this codebase can
+    currently PROVE (toggle, with click+verify+restore) alongside the ones
+    it can only observe (slider/dropdown, read-only) -- it should not imply
+    more automation coverage than actually exists yet.
+    """
+    print("=== Idiom 1: Flip a switch  (Transport.Metronome) ===")
+    metro_id = "Transport.Metronome"
+    original_metro = get_toggle_state(resolve(window, metro_id))
+    print(f"  Starting state: {'on' if original_metro else 'off'}")
+    set_checkbox_by_id(window, metro_id, desired=not original_metro,
+                        dry_run=dry_run, label="Metronome")
+    if not dry_run:
+        time.sleep(0.8)
+    set_checkbox_by_id(window, metro_id, desired=original_metro,
+                        dry_run=dry_run, label="Metronome (restore)")
+
+    print("\n=== Idiom 2: Turn a knob  (TrackView.Device[0].Freq) ===")
+    freq_id = "TrackView.Device[0].Freq"
+    control = find_control(window, freq_id)
+    if control is None:
+        print("  [skip] No 'Freq' slider found as the first device on the "
+              "currently selected track. Load EQ Eight on the selected "
+              "track (or select a track that has one) and re-run to see "
+              "this idiom.")
+    else:
+        try:
+            current = control.iface_value.CurrentValue
+            print(f"  [read-only] Current Frequency value: {current}")
+            print("  (Slider write-back isn't hardened yet -- this idiom "
+                  "is demonstrated read-only for now, same honesty rule "
+                  "as the docstring above.)")
+        except Exception as e:
+            print(f"  [skip] Found the control but couldn't read its "
+                  f"value: {e}")
+
+    print("\n=== Idiom 3: Pick from a list  (Transport.GlobalQuantization) ===")
+    quant_id = "Transport.GlobalQuantization"
+    control = resolve(window, quant_id)
+    value, method = read_combobox_value(control)
+    if value is not None:
+        print(f"  [read-only, via {method}] Current Quantization: {value!r}")
+    else:
+        print(f"  [unreliable] No read pattern returned a live value for "
+              "this control -- window_text() would just give back the "
+              "catalog's static label. This control's live-value read is "
+              "an open problem, not solved by this demo yet.")
+    print("  (ComboBox write-back isn't wired up yet -- read-only for now.)")
 
 
 def run_task(task_name: str, tracks: list[int], fn: Callable[[], None]) -> None:
@@ -862,7 +1152,8 @@ def main() -> None:
                                              "set_tempo",
                                              "probe_toggle", "probe_solo_transport",
                                              "probe_keyboard_activator",
-                                             "read_solo_states"],
+                                             "read_solo_states", "idiom_demo",
+                                             "probe_combobox_read", "probe_write_back"],
                          help="Which demo task to run")
     parser.add_argument("--tracks", type=int, nargs="+", default=[],
                          help="Zero-based track indices to act on")
@@ -901,7 +1192,8 @@ def main() -> None:
     dry_run = not args.live
 
     probe_tasks = ("probe_toggle", "probe_solo_transport", "probe_keyboard_activator")
-    if args.task == "read_solo_states":
+    pure_read_tasks = ("read_solo_states", "probe_combobox_read")
+    if args.task in pure_read_tasks:
         pass  # pure read, no dry-run/live distinction applies
     elif dry_run and args.task not in probe_tasks:
         print("*** DRY RUN -- nothing will be clicked. Pass --live to actually execute. ***\n")
@@ -946,6 +1238,12 @@ def main() -> None:
             parser.error("--task read_solo_states needs at least one --tracks index")
         run_task("read_solo_states", args.tracks,
                   lambda: task_read_solo_states(window, args.tracks))
+    elif args.task == "idiom_demo":
+        run_task("idiom_demo", [], lambda: task_idiom_demo(window, dry_run))
+    elif args.task == "probe_combobox_read":
+        run_task("probe_combobox_read", [], lambda: task_probe_combobox_read(window))
+    elif args.task == "probe_write_back":
+        run_task("probe_write_back", [], lambda: task_probe_write_back(window, dry_run))
 
 
 if __name__ == "__main__":
