@@ -1,0 +1,189 @@
+---
+# Course Outline
+## Ableton Live 12 Fundamentals for AI Music Creators
+**Duration:** 20 Hours (Lecture + Hands-on Labs)
+### Target Audience
+* No music theory background required.
+* First experience with a Digital Audio Workstation (DAW).
+* Hobbyists creating music using AI platforms (e.g., Suno).
+* Learners who want to edit, arrange, enhance, and personalize AI-generated music inside Ableton Live 12.
+### Learning Outcomes
+By the end of this course, learners will be able to:
+* Navigate Ableton Live 12 confidently.
+* Import and organize AI-generated music.
+* Edit audio clips and MIDI.
+* Build simple arrangements.
+* Use instruments and effects.
+* Mix and polish a complete track.
+* Export music for streaming and social media.
+---
+# Module 1 — Introduction to Ableton Live 12 (2 Hours)
+### Topics
+* What is a DAW?
+* Ableton workflow
+* Session View vs Arrangement View
+* Live Sets
+* Browser
+* Packs
+* Preferences
+* Audio Interface basics
+* File management
+### Lab
+* Create first Live Set
+* Import a Suno-generated song
+* Navigate the interface
+---
+# Module 2 — Working with Audio (3 Hours)
+### Topics
+* Audio Clips
+* Clip View
+* Warp
+* Warp Modes
+* Looping
+* Crop
+* Consolidate
+* Fade Handles
+* Gain
+* Tempo Matching
+### Lab
+* Trim AI-generated music
+* Loop sections
+* Rearrange song structure
+---
+# Module 3 — MIDI & Instruments (3 Hours)
+### Topics
+* MIDI Clips
+* Piano Roll
+* Drum Rack
+* Simpler
+* Instrument Rack
+* Browser Sounds
+* Recording MIDI
+* Quantization
+### Lab
+* Add drums to a Suno track
+* Create a bass line
+* Edit MIDI notes
+---
+# Module 4 — Creative Editing & Arrangement (3 Hours)
+### Topics
+* Arrangement View
+* Scenes
+* Markers
+* Automation
+* Clip Automation
+* Track Automation
+* Follow Actions (overview)
+* Consolidation
+### Lab
+* Turn a Suno song into a full arrangement
+* Build Intro / Verse / Chorus / Outro
+---
+# Module 5 — Effects & Sound Design Basics (3 Hours)
+### Topics
+* Audio Effects
+* EQ Eight
+* Compressor
+* Reverb
+* Delay
+* Saturator
+* Utility
+* Limiter
+* Effect Chains
+* Presets
+### Lab
+* Improve vocal clarity
+* Add ambience
+* Create transitions
+---
+# Module 6 — Mixing Essentials (3 Hours)
+### Topics
+* Mixer
+* Gain Staging
+* Volume
+* Pan
+* Sends & Returns
+* Buses (Group Tracks)
+* Metering
+* Spectrum
+* Reference Tracks
+### Lab
+* Mix an AI-generated song
+* Balance instruments
+* Create depth using effects
+---
+# Module 7 — Final Project & Export (3 Hours)
+### Topics
+* Workflow recap
+* Project organization
+* Freeze Track
+* Flatten
+* Collect All and Save
+* Export Audio/Video
+* File formats (WAV / MP3)
+* Sharing music online
+### Lab
+* Complete a final project:
+  * Import a Suno song
+  * Edit structure
+  * Add MIDI instruments
+  * Apply effects
+  * Mix
+  * Export final master
+---
+# Core Ableton Live 12 Tools Covered
+### Navigation
+* Browser
+* Session View
+* Arrangement View
+* Info View
+* Clip View
+* Device View
+* Mixer
+### Audio
+* Audio Clips
+* Warp
+* Looping
+* Fade
+* Gain
+* Consolidate
+* Crop
+* Tempo
+### MIDI
+* MIDI Clips
+* Piano Roll
+* Quantize
+* Drum Rack
+* Simpler
+* Instrument Rack
+### Effects
+* EQ Eight
+* Compressor
+* Reverb
+* Delay
+* Utility
+* Saturator
+* Limiter
+* Auto Filter (Introduction)
+### Workflow
+* Automation
+* Groups
+* Sends & Returns
+* Freeze
+* Flatten
+* Export
+* Collect All and Save
+---
+# Suggested Final Project
+**"From AI to Your Own Production"**
+Starting with a Suno-generated track, learners will:
+* Import the audio into Ableton Live 12.
+* Edit and restructure the song.
+* Replace or layer selected parts with Ableton instruments.
+* Add drums, bass, or ambient elements.
+* Apply EQ, compression, reverb, and delay.
+* Balance the mix.
+* Export a polished final track ready for sharing.
+---
+### Design Philosophy
+This outline intentionally avoids traditional music production topics (music theory, synthesis, advanced sound design, mastering, or recording techniques). Instead, it focuses on **editing, enhancing, and personalizing AI-generated music**, making Ableton Live approachable as a creative editing environment rather than a professional studio tool. This progression mirrors the journey of users who start with generative AI (like Suno) and want greater creative control over the music they produce.
