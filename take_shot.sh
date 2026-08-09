@@ -22,14 +22,13 @@
 # Requires: WSL2 with Windows interop enabled (default). No installs needed —
 # uses .NET types already present in Windows via PowerShell.
 #
-# v5 CHANGE — auto-focus/auto-restore (was fail-fast-only in v1-v4):
+# Auto-focus / auto-restore behavior:
 #   - Ableton minimized       -> restored (ShowWindow SW_RESTORE), then re-checked
 #   - Ableton not foreground  -> brought to front (SetForegroundWindow), then re-checked
 #   - Ableton not found at all -> still a hard failure, nothing to bring forward
 #
-# This is ON by default. To restore the old v1-v4 fail-fast-only behavior
-# (never touch window state, just error out and let the caller/human fix it),
-# set ABLETON_AUTO_FOCUS=0:
+# This is ON by default. To disable it (never touch window state, just error
+# out and let the caller/human fix it), set ABLETON_AUTO_FOCUS=0:
 #   ABLETON_AUTO_FOCUS=0 ./take_shot.sh LABS/MOD_02_2026-08-03_1430/creating-drum-loop 03 clip_created_slot1
 #
 # After any restore/focus attempt, the script re-checks IsIconic/
@@ -39,9 +38,9 @@
 # (MINIMIZED_RESTORE_FAILED / FOCUS_FAILED) are emitted so the calling agent
 # can tell "auto-fix was tried and failed" apart from "auto-fix was skipped".
 #
-# v6 CHANGE — auto-maximize (new):
+# Auto-maximize behavior:
 #   - Once the window is confirmed not-minimized and foreground, if it isn't
-#     already maximized (IsZoomed), the script now also maximizes it
+#     already maximized (IsZoomed), the script also maximizes it
 #     (ShowWindow SW_MAXIMIZE) before capturing.
 #   - Rationale: restoring a minimized window returns it to whatever size it
 #     was *before* minimizing (often a small windowed size, especially on a

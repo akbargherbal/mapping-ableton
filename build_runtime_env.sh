@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # build_runtime_env.sh — assemble the minimal, agent-facing runtime folder
-# from this dev repo, so OpenCode never has filesystem access to the audit
-# trail (context.md, docs/, tests, stale dumps, README).
+# from this dev repo, so OpenCode never has filesystem access to anything
+# outside the explicit whitelist below (docs, README, dev-only scripts, etc.
+# all stay behind).
 #
 # WHITELIST, not blacklist: only files listed in FILES[] below ever leave
 # this repo. A new dev file added later is invisible to the agent unless
@@ -31,7 +32,7 @@ TARGET="${1:-$SCRIPT_DIR/../ableton-runtime}"
 #   orchestrate.sh calls automate_ableton_task.py and take_shot.sh by
 #     relative path — both must sit exactly where it expects them.
 #
-# NOTE — dev-repo filename vs. runtime filename (session 7 fix):
+# NOTE — dev-repo filename vs. runtime filename:
 # The routing/agent-instructions file is named `ABLETON_AGENT_POLICY.md`
 # in THIS dev repo — deliberately NOT `AGENTS.md` — because `AGENTS.md`
 # is a filename convention that agentic coding tools (OpenCode, Claude
@@ -54,12 +55,10 @@ FILES=(
 )
 POLICY_SRC_NAME="ABLETON_AGENT_POLICY.md"
 POLICY_DEST_NAME="AGENTS.md"
-# Deliberately NOT included: LICENSE, README.md, context.md, docs/**
-# (including item_8_plan.md, v2_observations.md, the risk framework doc,
-# the MCP setup doc, archived/**), scripts/grep_dump.py, scripts/dumps/*,
-# scripts/test_*.py, and docs/routing_test_protocol.md specifically —
-# that last one is the answer key for live agent tests; shipping it into
-# the runtime folder would let the agent read its own eval.
+# Everything not explicitly listed above stays behind in the dev repo —
+# README.md, docs/**, scripts/grep_dump.py, scripts/dumps/* (existing raw
+# dumps), and anything else added later. Add a file here only if the
+# runtime agent genuinely needs it to execute.
 # -------------------------------------------------------------------------
 
 mkdir -p "$TARGET"

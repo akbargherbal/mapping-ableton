@@ -60,7 +60,7 @@ except Exception:
   fi
 }
 
-# --- drift detection (Phase 3) ---
+# --- drift detection ---
 drift_check() {
   local tasks_json
   tasks_json="$("$PYTHON_CMD" "$AUTOMATE_SCRIPT" --list-tasks 2>/dev/null || true)"
@@ -106,7 +106,7 @@ PYTHON_CMD="${ORCH_PYTHON_CMD:-python.exe}"
 AUTOMATE_SCRIPT="${ORCH_AUTOMATE_SCRIPT:-$SCRIPT_DIR/scripts/automate_ableton_task.py}"
 TAKE_SHOT="${ORCH_TAKE_SHOT:-$SCRIPT_DIR/take_shot.sh}"
 
-# --- Phase 3 drift detection (once per run, before any action) ---
+# --- drift detection (once per run, before any action) ---
 drift_check
 
 mkdir -p "$LAB_ABS_DIR"
@@ -289,7 +289,7 @@ run_one_task() {
 }
 
 # --------------------------------------------------------------------------
-# solo_one: Phase 2 loop over multiple tracks (one seq + screenshot each)
+# solo_one: loop over multiple tracks (one seq + screenshot each)
 # --------------------------------------------------------------------------
 
 if [ "$TASK" = "solo_one" ]; then
