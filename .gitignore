@@ -7,3 +7,8 @@ __pycache__
 .vevn
 **/.venv/*
 
+# Local-only reference material (kept on disk, not versioned)
+docs/live12-manual-en.pdf
+
+# Runtime seq counters inside orchestration output
+LABS/**/.orchestrate_seq

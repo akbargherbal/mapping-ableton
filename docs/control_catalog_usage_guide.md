@@ -1,6 +1,6 @@
 # Using `control_catalog.json` — Reference Guide
 
-Analysis based on the third survey pass (`mapping-ableton`, commit `fb6a71b`):
+Analysis based on the current survey pass (`mapping-ableton`, see `coverage_summary.md` and `survey_checklist.md` for the live record):
 105 contexts, 97 MAPPED / 6 UNMAPPED / 2 OPAQUE.
 
 ---
