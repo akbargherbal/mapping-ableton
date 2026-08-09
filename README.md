@@ -62,14 +62,15 @@ To prevent the agent from guessing visual pixel coordinates, the codebase includ
 
 ## 🛡️ Multi-Tier Escalation Ladder
 
-To uphold the **Non-Halt Imperative** (failures must never stall a student's session), UI actions fall through an automated escalation ladder defined in `docs/ableton_ai_educational_risk_framework.md`:
+To uphold the **Non-Halt Imperative** (failures must never stall a student's session), deterministic UI actions fall through the 3-level escalation ladder implemented in `click_by_id()` in `scripts/automate_ableton_task.py`:
 
-$$\text{Level 1: Mouse UI Click} \longrightarrow \text{Level 2: Keyboard Shortcut} \longrightarrow \text{Level 3: Direct MCP/LOM Call} \longrightarrow \text{Level 4: Human Instructions}$$
+$$\text{Level 1: Mouse UI Click} \longrightarrow \text{Level 2: Keyboard Shortcut} \longrightarrow \text{Level 3: Human Instructions}$$
 
 1. **Level 1 (Mouse UI)**: Attempt explicit UIA element click via `automation_id`.
 2. **Level 2 (Keyboard Shortcut)**: Consult `docs/ableton_keyboard_shortcuts.json` / `scripts/keyboard_shortcuts.py` for a verified factory shortcut keypress.
-3. **Level 3 (Direct API)**: Invoke direct LOM state changes via `AbletonMCP`.
-4. **Level 4 (Human Instructions)**: Fall back to clear, spatial-unambiguous step-by-step instructions for the learner.
+3. **Level 3 (Human Instructions)**: Fall back to clear, spatial-unambiguous step-by-step instructions for the learner.
+
+> **Direct MCP/LOM calls are NOT a ladder tier.** The ladder above is scoped to what `automate_ableton_task.py` actually implements — there is no Level 3 "Direct API" rung in `click_by_id()`. The AbletonMCP/LOM bridge (see the Semantic Layer in [System Architecture](#system-architecture)) is a **separate, parallel capability** used by the agent layer for state reads/device loading; it is not part of the deterministic `click_by_id()` escalation ladder. See `docs/ableton_ai_educational_risk_framework.md` for the broader risk/fallback policy.
 
 ---
 

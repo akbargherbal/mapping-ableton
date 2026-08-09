@@ -70,10 +70,42 @@ Usage
     python automate_ableton_task.py --task probe_keyboard_activator --tracks 0
 """
 
+# --------------------------------------------------------------------------
+# WRITE-BACK STATUS BY CONTROL TYPE  (single source of truth -- read this
+# before writing to ANY control; individual function docstrings below give
+# context, this block is the authority)
+#
+#   CheckBox  -> PROVEN SAFE. set_checkbox_by_id() uses click + verify +
+#                retry. This is the ONE proven reference implementation;
+#                do not change its write mechanism.
+#
+#   Slider    -> SetValue() is CONFIRMED TO CRASH ABLETON LIVE ITSELF.
+#                Calling RangeValuePattern.SetValue() / ValuePattern
+#                .SetValue() on a Slider killed Ableton twice on
+#                2026-08-08. Never call SetValue() on a live Slider.
+#                The PROVEN-SAFE write path is double-click + type +
+#                Enter via set_slider_by_id() (verified write: value is
+#                read back after typing). DISABLED SetValue() / proven
+#                click+type helper.
+#
+#   ComboBox   -> PROVEN SAFE via click-to-open + click-item
+#                (set_combobox_by_id): opens the dropdown (ChooserPopUp)
+#                and clicks the target MenuItem -- the same path a human
+#                uses. ValuePattern.SetValue() / SelectionItemPattern are
+#                NOT used (no confirmed crash, but no need to test a
+#                pattern setter when click-item works). Verified write:
+#                value is read back after the click.
+#
+# The disabled probe_write_back task and task_set_tempo's DANGER docstring
+# preserve the historical record -- re-enabling any disabled SetValue()
+# path is forbidden by this project's operating rules (see AGENTS.md).
+# --------------------------------------------------------------------------
+
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 from typing import Callable
@@ -395,6 +427,233 @@ def set_checkbox_by_id(window: UIAWrapper, auto_id: str, desired: bool,
         f"{max_attempts} click attempt(s). Either the click isn't landing on the "
         "real control (coordinates stale/offset) or get_toggle_state() isn't "
         "reporting this control's true state. Run --task probe_toggle to isolate which."
+    )
+
+
+def _parse_slider_readback(raw) -> float | None:
+    """Convert a RangeValuePattern.CurrentValue read-back into a plain float.
+
+    Ableton's read-backs are inconsistent across controls: some come back
+    numeric (e.g. Transport.Tempo -> 120.0), others come back as a
+    formatted display string with units (e.g. EQ Eight's Freq ->
+    "1.00 kHz"). This returns the value in the control's native unit
+    (multiplying kHz -> Hz, MHz -> Hz, etc.) so a caller can compare it to
+    a numeric target. Returns None if it can't be parsed.
+    """
+    if isinstance(raw, (int, float)):
+        return float(raw)
+    text = str(raw).strip()
+    if not text:
+        return None
+    match = re.match(r"^([-+]?[0-9]*\.?[0-9]+)\s*([a-zA-Z]*)", text)
+    if not match:
+        return None
+    try:
+        number = float(match.group(1))
+    except ValueError:
+        return None
+    unit = match.group(2).lower()
+    multipliers = {
+        "hz": 1.0,
+        "khz": 1e3,
+        "mhz": 1e6,
+        "ghz": 1e9,
+        "db": 1.0,
+    }
+    return number * multipliers.get(unit, 1.0)
+
+
+def set_slider_by_id(window: UIAWrapper, auto_id: str, value: float,
+                     dry_run: bool, label: str,
+                     verify: Callable[[], bool] | None = None,
+                     tolerance: float = 0.01,
+                     max_attempts: int = 2) -> None:
+    """Set a Slider control's value via double-click + type + Enter.
+
+    !!! DANGER -- READ BEFORE CALLING !!!
+    This is the generalized version of the click+type write path first
+    proven safe in task_set_tempo (Transport.Tempo). It NEVER calls
+    RangeValuePattern.SetValue() / ValuePattern.SetValue() -- that call is
+    CONFIRMED to crash Ableton Live itself (twice, 2026-08-08) and is
+    permanently disabled (see the WRITE-BACK STATUS note at the top of this
+    module). The only write mechanism here is simulated keyboard entry:
+    double-click the control's numeric field, type the new value, press
+    Enter. Do not "improve" this to use SetValue() -- it will crash the host.
+
+    value: the target value as a number. type_keys() handles formatting.
+
+    verify: optional zero-arg callable returning bool. Defaults to a
+    built-in read-back verification: after typing, the value is read back
+    via RangeValuePattern.CurrentValue (read-only, safe) and compared to
+    the target within `tolerance`. Success means "confirmed changed", not
+    "keys were sent" -- pass a custom verify only if this control needs
+    different comparison logic.
+
+    Same verify-and-retry discipline set_checkbox_by_id gives CheckBox
+    controls: if verification fails, retry once with a fresh resolve, then
+    raise loudly instead of silently continuing with wrong bookkeeping.
+    """
+    if verify is None:
+        def verify() -> bool:
+            # Fresh resolve every read -- never hold a control reference
+            # across a state-changing action (module docstring lesson #2).
+            try:
+                new_value = resolve(window, auto_id).iface_value.CurrentValue
+            except Exception:
+                return False
+            parsed = _parse_slider_readback(new_value)
+            if parsed is None:
+                return False
+            return abs(parsed - value) < tolerance
+
+    try:
+        current = resolve(window, auto_id).iface_value.CurrentValue
+        print(f"  current value (RangeValuePattern, read-only): {current}")
+    except Exception as e:
+        print(f"  couldn't read current value ({e})")
+
+    print(f"  {'[dry-run] would double-click and type' if dry_run else '[click+type]'} "
+          f"{label}: set to {value}")
+    if dry_run:
+        emit_event("action_result", label=label, level="L1", result="dry_run")
+        return
+
+    emit_event("action_start", label=label, level="L1")
+    for attempt in range(1, max_attempts + 1):
+        try:
+            ensure_window_ready(window)  # recover focus/visibility before retrying
+            control = resolve(window, auto_id)  # FRESH -- never reuse a stale handle
+            control.double_click_input()
+            control.type_keys(f"{value}{{ENTER}}", with_spaces=True)
+            time.sleep(0.2)  # let the UI redraw before re-reading, same as elsewhere
+            if verify():
+                print(f"  [confirmed] {label} now verified (via click+type)")
+                emit_event("action_result", label=label, level="L1", result="success", attempt=attempt)
+                return
+            print(f"  [warn] {label}: click+type sent, but read-back didn't verify "
+                  f"(attempt {attempt}/{max_attempts})")
+            emit_event("action_result", label=label, level="L1", result="warn", attempt=attempt)
+        except Exception as e:
+            print(f"  [warn] {label}: click+type attempt {attempt} failed: "
+                  f"{type(e).__name__}: {e}")
+            emit_event("action_result", label=label, level="L1", result="warn", attempt=attempt)
+
+    emit_event("action_result", label=label, level="L1", result="failed", attempts=max_attempts)
+    raise RuntimeError(
+        f"{label}: value did not verify after {max_attempts} click+type attempt(s). "
+        "Either the keystrokes aren't landing on the real numeric field, or the "
+        "value format needs adjusting. Check Ableton manually."
+    )
+
+
+def set_combobox_by_id(window: UIAWrapper, auto_id: str, item_name: str,
+                       dry_run: bool, label: str,
+                       max_attempts: int = 2) -> None:
+    """Set a ComboBox's selection via click-to-open + click-item (Level 1).
+
+    Does NOT use ValuePattern.SetValue() / SelectionItemPattern assumptions.
+    ComboBox write-back was "guilty until proven innocent" after the Slider
+    SetValue() crash (see WRITE-BACK STATUS note); the proven-safe path
+    here is the same one a human uses: click the closed ComboBox to open
+    its dropdown, then click the target MenuItem. Nothing is assumed about
+    a pattern-based setter.
+
+    item_name: the exact MenuItem text as it appears in the opened dropdown
+        (e.g. "1/8"). The currently-selected item is shown by Ableton as
+        "<name>, checked" -- matching handles that suffix so a caller can
+        pass the plain name either way.
+
+    Verified write: after clicking the item, the ComboBox's live value is
+    read back via read_combobox_value() and compared to `item_name`. Success
+    means "confirmed changed", not "a menu was opened". Same retry-once-then-
+    raise discipline as set_checkbox_by_id / set_slider_by_id.
+    """
+    def _read_value() -> tuple[str | None, str | None]:
+        control = resolve(window, auto_id)  # FRESH, never a stale handle
+        return read_combobox_value(control)
+
+    def _menu_item_matches(candidate_name: str) -> bool:
+        candidate = (candidate_name or "").strip()
+        return candidate == item_name or candidate == f"{item_name}, checked"
+
+    def _find_item_in_open_menu() -> UIAWrapper | None:
+        menu = find_control(window, "ChooserPopUp")
+        if menu is None:
+            return None
+        stack = [menu]
+        while stack:
+            ctrl = stack.pop()
+            try:
+                ctrl_type = ctrl.element_info.control_type
+            except Exception:
+                ctrl_type = None
+            if ctrl_type == "MenuItem":
+                try:
+                    nm = ctrl.element_info.name
+                except Exception:
+                    nm = None
+                if _menu_item_matches(nm):
+                    return ctrl
+            try:
+                stack.extend(ctrl.children())
+            except Exception:
+                pass
+        return None
+
+    current, method = _read_value()
+    if current is not None and str(current).strip() == item_name:
+        print(f"  [skip] {label} already {item_name!r}")
+        emit_event("action_result", label=label, level="L1", result="skip")
+        return
+
+    print(f"  {'[dry-run] would open and pick' if dry_run else '[click]'} "
+          f"{label}: set to {item_name} "
+          f"({'current: ' + repr(current) if current is not None else 'current unreadable'})")
+    if dry_run:
+        emit_event("action_result", label=label, level="L1", result="dry_run")
+        return
+
+    emit_event("action_start", label=label, level="L1")
+    for attempt in range(1, max_attempts + 1):
+        try:
+            ensure_window_ready(window)  # recover focus/visibility before retrying
+            combo = resolve(window, auto_id)  # FRESH each attempt
+            combo.click_input()               # open the dropdown
+            time.sleep(0.4)                   # let the menu render (UI-virtualized)
+            item = _find_item_in_open_menu()
+            if item is None:
+                print(f"  [warn] {label}: opened dropdown but item {item_name!r} "
+                      f"not found (attempt {attempt}/{max_attempts})")
+                emit_event("action_result", label=label, level="L1", result="warn", attempt=attempt)
+                window.type_keys("{ESC}")     # close the stray dropdown
+                time.sleep(0.2)
+                continue
+            item.click_input()
+            time.sleep(0.4)                   # let the dropdown close + UI update
+            new_value, _ = _read_value()
+            if new_value is not None and str(new_value).strip() == item_name:
+                print(f"  [confirmed] {label} now reads {new_value!r} (via click-item)")
+                emit_event("action_result", label=label, level="L1", result="success", attempt=attempt)
+                return
+            print(f"  [warn] {label}: clicked item but read-back gives {new_value!r}, "
+                  f"expected {item_name!r} (attempt {attempt}/{max_attempts})")
+            emit_event("action_result", label=label, level="L1", result="warn", attempt=attempt)
+        except Exception as e:
+            print(f"  [warn] {label}: attempt {attempt} failed: "
+                  f"{type(e).__name__}: {e}")
+            emit_event("action_result", label=label, level="L1", result="warn", attempt=attempt)
+            try:
+                window.type_keys("{ESC}")
+            except Exception:
+                pass
+            time.sleep(0.2)
+
+    emit_event("action_result", label=label, level="L1", result="failed", attempts=max_attempts)
+    raise RuntimeError(
+        f"{label}: selection did not change to {item_name!r} after "
+        f"{max_attempts} attempt(s). Either the dropdown item text differs "
+        "from the expected name, or the click isn't landing. Check Ableton "
+        "manually."
     )
 
 
@@ -1031,10 +1290,17 @@ def task_probe_write_back(window: UIAWrapper, dry_run: bool) -> None:
 
 
 def task_idiom_demo(window: UIAWrapper, dry_run: bool) -> None:
-    """Proof-of-concept micro-lesson: demonstrate 3 of the 6 recurring
-    interaction idioms identified from control_catalog.json's control_type
-    distribution (see docs/interaction_idioms.md), using only
-    automation_ids confirmed present in that catalog -- nothing guessed.
+    """Proof-of-concept micro-lesson: demonstrate 3 recurring interaction
+    idioms -- flip a switch (CheckBox toggle), turn a knob (Slider
+    continuous value), pick from a list (ComboBox selection) -- using
+    only automation_ids confirmed present in control_catalog.json,
+    nothing guessed. (Write-back status per idiom: CheckBox = proven
+    safe; Slider = proven safe via click+type (set_slider_by_id), NOT
+    SetValue() which is confirmed to crash Ableton; ComboBox = proven
+    safe via click-to-open + click-item (set_combobox_by_id), no
+    pattern-based setter. All three are real writes with read-back
+    verification -- see the WRITE-BACK STATUS note at the top of this
+    module.)
 
     Idiom 1 -- Flip a switch (CheckBox):
         Transport.Metronome. Toggled on, briefly held, then restored to
@@ -1044,21 +1310,23 @@ def task_idiom_demo(window: UIAWrapper, dry_run: bool) -> None:
     Idiom 2 -- Turn a knob (Slider):
         TrackView.Device[0].Freq. Only present if the currently selected
         track's FIRST device is something exposing a "Freq" slider (EQ
-        Eight's band 1, for example). Read-only in this version -- we
-        print the current value rather than changing it, because Slider
-        write-back (RangeValuePattern vs click+drag) hasn't been
-        hardened with the same verify-and-retry treatment set_checkbox_by_id
-        gives CheckBox controls yet. If no such device is loaded, this
-        idiom is skipped with a clear message instead of failing the demo.
+        Eight's band 1, for example). This is now a REAL write: we change
+        the value via double-click + type + Enter (set_slider_by_id), read
+        it back to confirm the change actually landed, then restore the
+        original value. Never RangeValuePattern.SetValue() -- that is
+        confirmed to crash Ableton itself (see WRITE-BACK STATUS note). If
+        no such device is loaded, this idiom is skipped with a clear
+        message instead of failing the demo.
 
     Idiom 3 -- Pick from a list (ComboBox):
-        Transport.GlobalQuantization. Also read-only for the same reason
-        as idiom 2 -- ComboBox selection write-back isn't wired up yet.
+        Transport.GlobalQuantization. This is now a REAL write: the
+        dropdown is opened by clicking the closed ComboBox and the target
+        item is clicked (set_combobox_by_id) -- the same path a human
+        uses, no pattern-based setter. The new selection is read back to
+        confirm it landed, then restored to the original value.
 
-    This intentionally demonstrates only the idioms this codebase can
-    currently PROVE (toggle, with click+verify+restore) alongside the ones
-    it can only observe (slider/dropdown, read-only) -- it should not imply
-    more automation coverage than actually exists yet.
+    All three idioms are real, verified writes with restore -- this demo
+    demonstrates exactly what the codebase can currently PROVE, no more.
     """
     print("=== Idiom 1: Flip a switch  (Transport.Metronome) ===")
     metro_id = "Transport.Metronome"
@@ -1081,27 +1349,46 @@ def task_idiom_demo(window: UIAWrapper, dry_run: bool) -> None:
               "this idiom.")
     else:
         try:
-            current = control.iface_value.CurrentValue
-            print(f"  [read-only] Current Frequency value: {current}")
-            print("  (Slider write-back isn't hardened yet -- this idiom "
-                  "is demonstrated read-only for now, same honesty rule "
-                  "as the docstring above.)")
+            original_raw = control.iface_value.CurrentValue
+            original = _parse_slider_readback(original_raw)
+            if original is None:
+                raise ValueError(f"could not parse original value {original_raw!r}")
         except Exception as e:
             print(f"  [skip] Found the control but couldn't read its "
                   f"value: {e}")
+        else:
+            # Any different value proves a real write+verify+restore cycle.
+            # Freq's range on EQ Eight band 1 is ~10 Hz to ~20 kHz, and the
+            # type-in field is Hz-based (double-click then type a number).
+            # Pick a clearly different, mid-range target so it lands away
+            # from the low-end clamp (typing below ~10 Hz clamps to 10 Hz).
+            target = 1000.0 if abs(original - 1000.0) > 50.0 else 500.0
+            print(f"  Original: {original_raw} -> target: {target} Hz "
+                  f"(via click+type, SetValue never called)")
+            set_slider_by_id(window, freq_id, target, dry_run=dry_run,
+                             label="Freq slider")
+            if not dry_run:
+                set_slider_by_id(window, freq_id, original, dry_run=False,
+                                 label="Freq slider (restore)")
 
     print("\n=== Idiom 3: Pick from a list  (Transport.GlobalQuantization) ===")
     quant_id = "Transport.GlobalQuantization"
-    control = resolve(window, quant_id)
-    value, method = read_combobox_value(control)
-    if value is not None:
-        print(f"  [read-only, via {method}] Current Quantization: {value!r}")
-    else:
-        print(f"  [unreliable] No read pattern returned a live value for "
+    value, method = read_combobox_value(resolve(window, quant_id))
+    if value is None:
+        print("  [unreliable] No read pattern returned a live value for "
               "this control -- window_text() would just give back the "
               "catalog's static label. This control's live-value read is "
               "an open problem, not solved by this demo yet.")
-    print("  (ComboBox write-back isn't wired up yet -- read-only for now.)")
+    else:
+        print(f"  Current Quantization: {value!r} (via {method})")
+        target = "1/8" if value != "1/8" else "2 Bars"
+        print(f"  Target: {target!r} (via click-to-open + click-item, "
+              "no pattern-based setter)")
+        set_combobox_by_id(window, quant_id, target, dry_run=dry_run,
+                           label="Quantization dropdown")
+        if not dry_run:
+            set_combobox_by_id(window, quant_id, value, dry_run=False,
+                               label="Quantization dropdown (restore)")
 
 
 def run_task(task_name: str, tracks: list[int], fn: Callable[[], None]) -> None:

@@ -1,0 +1,20 @@
+EVENT: {"v": 1, "type": "task_start", "task": "solo_one", "tracks": [0]}
+Track[0].Solo = off (saved original)
+Track 0: solo -> play 2.0s -> stop -> unsolo
+  [click] Track[0].Solo (off -> on)
+EVENT: {"v": 1, "type": "action_start", "label": "Track[0].Solo", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Track[0].Solo", "level": "L1", "result": "success", "attempt": 1}
+  [warn] Transport.Play: no verification available for this control -- click-and-trust (a documented gap, not a silent one). Add a verify callable once this control exposes a readable outcome.
+  [click L1/mouse] Transport.Play
+EVENT: {"v": 1, "type": "action_start", "label": "Transport.Play", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Transport.Play", "level": "L1", "result": "success", "verified": false}
+  [warn] Transport.Stop: no verification available for this control -- click-and-trust (a documented gap, not a silent one). Add a verify callable once this control exposes a readable outcome.
+  [click L1/mouse] Transport.Stop
+EVENT: {"v": 1, "type": "action_start", "label": "Transport.Stop", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Transport.Stop", "level": "L1", "result": "success", "verified": false}
+  [click] Track[0].Solo (on -> off)
+EVENT: {"v": 1, "type": "action_start", "label": "Track[0].Solo", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Track[0].Solo", "level": "L1", "result": "success", "attempt": 1}
+  [skip] Track[0].Solo (restore) already off
+EVENT: {"v": 1, "type": "action_result", "label": "Track[0].Solo (restore)", "level": "L1", "result": "skip"}
+EVENT: {"v": 1, "type": "task_done", "task": "solo_one", "tracks": [0], "result": "success"}

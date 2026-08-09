@@ -1,0 +1,6 @@
+EVENT: {"v": 1, "type": "task_start", "task": "read_solo_states", "tracks": [0, 1, 2, 3]}
+  Track[0].Solo = off
+  Track[1].Solo = off
+  Track[2].Solo = off
+  Track[3].Solo = off
+EVENT: {"v": 1, "type": "task_done", "task": "read_solo_states", "tracks": [0, 1, 2, 3], "result": "success"}

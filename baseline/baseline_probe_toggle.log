@@ -1,0 +1,10 @@
+*** probe_toggle always live-clicks regardless of --live -- a probe that doesn't click can't tell you anything. ***
+
+EVENT: {"v": 1, "type": "task_start", "task": "probe_toggle", "tracks": [0]}
+Probing SessionView.Track[0].Mixer.Solo -- watch the Ableton window while this runs.
+
+click 1: before=off -> after=on  rect=(L651, T702, R681, B720)
+click 2: before=on -> after=off  rect=(L651, T702, R681, B720)
+click 3: before=off -> after=on  rect=(L651, T702, R681, B720)
+click 4: before=on -> after=off  rect=(L651, T702, R681, B720)
+EVENT: {"v": 1, "type": "task_done", "task": "probe_toggle", "tracks": [0], "result": "success"}

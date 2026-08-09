@@ -1,0 +1,9 @@
+EVENT: {"v": 1, "type": "task_start", "task": "arm_track", "tracks": [0]}
+Task: arm track 0 + set monitor to In
+  [click] Track[0].Arm (off -> on)
+EVENT: {"v": 1, "type": "action_start", "label": "Track[0].Arm", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Track[0].Arm", "level": "L1", "result": "success", "attempt": 1}
+  [click L1/mouse] Track[0].Monitoring=In
+EVENT: {"v": 1, "type": "action_start", "label": "Track[0].Monitoring=In", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Track[0].Monitoring=In", "level": "L1", "result": "success", "attempt": 1}
+EVENT: {"v": 1, "type": "task_done", "task": "arm_track", "tracks": [0], "result": "success"}

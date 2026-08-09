@@ -1,0 +1,17 @@
+EVENT: {"v": 1, "type": "task_start", "task": "idiom_demo", "tracks": []}
+=== Idiom 1: Flip a switch  (Transport.Metronome) ===
+  Starting state: off
+  [click] Metronome (off -> on)
+EVENT: {"v": 1, "type": "action_start", "label": "Metronome", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Metronome", "level": "L1", "result": "success", "attempt": 1}
+  [click] Metronome (restore) (on -> off)
+EVENT: {"v": 1, "type": "action_start", "label": "Metronome (restore)", "level": "L1"}
+EVENT: {"v": 1, "type": "action_result", "label": "Metronome (restore)", "level": "L1", "result": "success", "attempt": 1}
+
+=== Idiom 2: Turn a knob  (TrackView.Device[0].Freq) ===
+  [skip] No 'Freq' slider found as the first device on the currently selected track. Load EQ Eight on the selected track (or select a track that has one) and re-run to see this idiom.
+
+=== Idiom 3: Pick from a list  (Transport.GlobalQuantization) ===
+  [read-only, via ValuePattern] Current Quantization: '1 Bar'
+  (ComboBox write-back isn't wired up yet -- read-only for now.)
+EVENT: {"v": 1, "type": "task_done", "task": "idiom_demo", "tracks": [], "result": "success"}
