@@ -114,14 +114,6 @@ bash orchestrate.sh LABS/MOD_02_2026-08-09/creating-drum-loop arm_track --tracks
 - `take_shot.sh` auto-restores a minimized window, brings it to front, and
   maximizes it before capturing — proven to recover from a minimized state.
 
-## 🧪 Baseline & regression
-
-`baseline/` holds the Phase 0 snapshot of every safe live task's console + `EVENT:`
-output (`probe_toggle`, `idiom_demo`, `arm_track`, `read_solo_states`, `solo_one`)
-plus `--list-tasks`. Every later phase re-runs these unchanged and diffs
-**byte-for-byte**; a diff is only acceptable if it is explained by the phase's own
-intended fix. `reports/phase<N>_report.md` records each phase's evidence.
-
 ---
 
 ## 📊 Current UI Survey & Catalog Status
@@ -145,16 +137,10 @@ The offline survey (`control_catalog.json`) provides verified technical groundin
 ```
 .
 ├── AGENTS.md                   # Operating instructions for the agent driving this repo
-├── ABLETON_AGENT_POLICY.md     # Runtime policy (copied to AGENTS.md in the built runtime). Intentional placeholder for now — written once infrastructure is proven robust
-├── PHASED_PLAN.md              # Infrastructure-remediation plan (Phases 0-5)
-├── POST_FIX_PLAN.md            # Post-fix README/cleanup plan
+├── ABLETON_AGENT_POLICY.md     # Runtime policy (copied to AGENTS.md in the built runtime)
 ├── build_runtime_env.sh        # Assembles the minimal agent-facing runtime folder (whitelist)
 ├── orchestrate.sh              # Screenshot-per-action orchestration of a single task
 ├── take_shot.sh                # Capture the Ableton window (auto-restore/focus/maximize)
-├── coverage_summary.md         # Survey-layer execution log (Phase A onward)
-├── survey_checklist.md         # Survey progress single source of truth
-├── baseline/                   # Phase 0 baseline snapshots (regression-guard reference)
-├── reports/                    # Per-phase remediation reports (phase0..phase5)
 ├── LABS/                       # Orchestration output (real screenshots from live runs)
 ├── docs/
 │   ├── course_outline.txt      # 20-hour curriculum outline for AI creators
@@ -163,7 +149,8 @@ The offline survey (`control_catalog.json`) provides verified technical groundin
 │   ├── control_catalog_usage_guide.md # Practical reference for using control_catalog.json
 │   ├── opencode-ableton-mcp-setup.md  # Setup guide for OpenCode (WSL2) to Windows Ableton MCP
 │   ├── ableton_keyboard_shortcuts.json # Windows/Mac default Ableton Live 12 shortcut index
-│   └── live12-manual-en.pdf   # Official Ableton Live 12 manual (local reference, not versioned)
+│   ├── live12-manual-en.pdf   # Official Ableton Live 12 manual (local reference, not versioned)
+│   └── archived/v004/         # Phased plan, post-fix plan, survey docs, baseline, reports
 └── scripts/
     ├── automate_ableton_task.py # Primary task automation script & UIA click runner
     ├── dump_ableton_pywinauto.py # Core tree-walking and JSON window dumper
