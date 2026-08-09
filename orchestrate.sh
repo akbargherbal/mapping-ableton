@@ -1,0 +1,359 @@
+#!/usr/bin/env bash
+# orchestrate.sh — coordination layer
+#
+# Runs ONE automate_ableton_task.py task against real Ableton, taking a
+# screenshot after each action_start / action_result EVENT: emitted by the
+# engine — so every click gets its own screenshot (not just one per task).
+# Uses a FIFO-based pipeline to capture the screen at the EXACT moment the
+# step completes, preserving intermediate visual state.
+# Single-action tasks only — see SINGLE_ACTION_TASKS below.
+# `solo_tour` is explicitly excluded: though per-event screenshots would
+# work, the multi-track loop inside the task is better driven from
+# orchestrate.sh's solo_one path (one seq per track, clear grouping).
+#
+# Usage:
+#   ./orchestrate.sh <lab_dir> <task> [task-args...]
+
+set -uo pipefail
+
+SINGLE_ACTION_TASKS=(arm_track set_tempo probe_toggle probe_solo_transport
+                      probe_keyboard_activator read_solo_states solo_one)
+
+EXPECTED_SCHEMA_VERSION=1
+
+usage() {
+  echo "Usage: $0 <lab_dir> <task> [task-args...]" >&2
+  echo "  <task> must be one of: ${SINGLE_ACTION_TASKS[*]}" >&2
+  echo "  (solo_tour is explicitly excluded — multi-step internally, no per-click screenshots)" >&2
+  exit 1
+}
+
+if [ "$#" -lt 2 ]; then
+  usage
+fi
+
+LAB_DIR="$1"
+TASK="$2"
+shift 2
+TASK_ARGS=("$@")
+
+log() { echo "[orchestrator] $*"; }
+
+extract_json_float() {
+  local json="$1" field="$2"
+  local py_bin=""
+  if command -v python >/dev/null 2>&1; then
+    py_bin="python"
+  elif command -v python3 >/dev/null 2>&1; then
+    py_bin="python3"
+  fi
+  if [ -n "$py_bin" ]; then
+    "$py_bin" -c '
+import json, sys
+try:
+    d = json.loads(sys.argv[1])
+    v = d.get(sys.argv[2], "")
+    print(v)
+except Exception:
+    print("")
+' "$json" "$field"
+  fi
+}
+
+# --- drift detection (Phase 3) ---
+drift_check() {
+  local tasks_json
+  tasks_json="$("$PYTHON_CMD" "$AUTOMATE_SCRIPT" --list-tasks 2>/dev/null || true)"
+  if [ -z "$tasks_json" ]; then
+    echo "[orchestrator] FATAL: could not retrieve task list from automate_ableton_task.py" >&2
+    echo "[orchestrator]        Is the script broken or pywinauto missing? (--list-tasks should work even without it)" >&2
+    exit 1
+  fi
+
+  local actual_version
+  actual_version="$(extract_json_float "$tasks_json" "schema_version")"
+  if [ "$actual_version" != "$EXPECTED_SCHEMA_VERSION" ]; then
+    echo "[orchestrator] FATAL: EVENT schema version mismatch (expected $EXPECTED_SCHEMA_VERSION, got $actual_version)" >&2
+    exit 1
+  fi
+
+  log "drift check: schema_version=$actual_version OK"
+}
+
+task_is_allowed=0
+for t in "${SINGLE_ACTION_TASKS[@]}"; do
+  if [ "$t" = "$TASK" ]; then
+    task_is_allowed=1
+    break
+  fi
+done
+if [ "$task_is_allowed" -ne 1 ]; then
+  if [ "$TASK" = "solo_tour" ]; then
+    echo "[orchestrator] ERROR: solo_tour is multi-step; use solo_one in a loop instead," >&2
+    echo "[orchestrator]        so each track gets its own screenshot." >&2
+  else
+    echo "[orchestrator] ERROR: unknown or unsupported task '$TASK'." >&2
+  fi
+  usage
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+PROJECT_ROOT="${ABLETON_PROJECT_ROOT:-$SCRIPT_DIR}"
+LAB_ABS_DIR="$PROJECT_ROOT/$LAB_DIR"
+
+PYTHON_CMD="${ORCH_PYTHON_CMD:-python.exe}"
+AUTOMATE_SCRIPT="${ORCH_AUTOMATE_SCRIPT:-$SCRIPT_DIR/scripts/automate_ableton_task.py}"
+TAKE_SHOT="${ORCH_TAKE_SHOT:-$SCRIPT_DIR/take_shot.sh}"
+
+# --- Phase 3 drift detection (once per run, before any action) ---
+drift_check
+
+mkdir -p "$LAB_ABS_DIR"
+SEQ_FILE="$LAB_ABS_DIR/.orchestrate_seq"
+LAST_SEQ=0
+if [ -f "$SEQ_FILE" ]; then
+  LAST_SEQ="$(cat "$SEQ_FILE")"
+  case "$LAST_SEQ" in (*[!0-9]*|'') LAST_SEQ=0 ;; esac
+fi
+
+# --- derive <short_description> from EVENT: line ---
+extract_field() {
+  # $1 = raw JSON body (no "EVENT: " prefix), $2 = field name
+  local json="$1" field="$2"
+  local py_bin=""
+  if command -v python >/dev/null 2>&1; then
+    py_bin="python"
+  elif command -v python3 >/dev/null 2>&1; then
+    py_bin="python3"
+  fi
+
+  if [ -n "$py_bin" ]; then
+    "$py_bin" -c '
+import json, sys
+try:
+    d = json.loads(sys.argv[1])
+    v = d.get(sys.argv[2], "")
+    print(v if isinstance(v, str) else "")
+except Exception:
+    print("")
+' "$json" "$field"
+  else
+    echo "$json" | sed -n "s/.*\"$field\":[[:space:]]*\"\([^\"]*\)\".*/\1/p"
+  fi
+}
+
+slugify() {
+  echo "$1" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/_/g; s/^_+|_+$//g'
+}
+
+# --------------------------------------------------------------------------
+# run_one_task — real-time event-driven screenshot engine
+# --------------------------------------------------------------------------
+#
+# $1 = seq_padded (e.g. "03"), $2 = fallback label (task name), rest = args
+# to automate_ableton_task.py (must include --live for real action).
+#
+# Instead of waiting for the task to finish and taking ONE screenshot from
+# the LAST EVENT: line, we use a FIFO to read the EVENT: stream in real time.
+# Every action_start / action_result event triggers an immediate screenshot
+# (via take_shot.sh), capturing the Ableton window at the exact moment the
+# step completes.  Sub-step numbering looks like "03_01", "03_02", etc.
+#
+# Returns the worse of automate exit code and screenshot exit code.
+
+run_one_task() {
+  local run_seq_padded="$1"
+  local run_fallback_label="$2"
+  shift 2
+  local auto_args=("$@")
+
+  local tmp_dir
+  tmp_dir="$(mktemp -d)"
+  local fifo="$tmp_dir/events.fifo"
+  local py_exit_file="$tmp_dir/py_exit"
+  mkfifo "$fifo"
+
+  local sub_step=0
+  local shot_exit=0
+  local auto_exit=0
+
+  log "running: ${auto_args[*]}"
+  echo "--- automate_ableton_task.py output ---"
+
+  # ----------------------------------------------------------------------
+  # Pipeline: (Python → echo exit code) | tee → FIFO + log file
+  #
+  # The subshell captures Python's real exit code (not tee's exit code,
+  # which is always 0 on clean EOF) and stores it in a temp file.
+  # tee feeds the FIFO line-by-line so the while-read loop below can
+  # trigger screenshots before the entire task is finished.
+  # ----------------------------------------------------------------------
+  (
+    "$PYTHON_CMD" "$AUTOMATE_SCRIPT" "${auto_args[@]}" 2>&1
+    echo "$?" > "$py_exit_file"
+  ) | tee "$tmp_dir/events.log" > "$fifo" &
+  local task_pid=$!
+
+  while IFS= read -r line; do
+    echo "$line"
+
+    if [[ "$line" != "EVENT: "* ]]; then
+      continue
+    fi
+
+    local json_body="${line#EVENT: }"
+    local event_type
+    event_type="$(extract_field "$json_body" "type")"
+
+    if [ "$event_type" = "action_start" ] || [ "$event_type" = "action_result" ]; then
+      sub_step=$((sub_step + 1))
+      local sub_seq_padded
+      sub_seq_padded="$(printf "%s_%02d" "$run_seq_padded" "$sub_step")"
+
+      local raw_desc
+      raw_desc="$(extract_field "$json_body" "label")"
+      if [ -z "$raw_desc" ]; then
+        raw_desc="$(extract_field "$json_body" "task")"
+      fi
+      if [ -z "$raw_desc" ]; then
+        raw_desc="$run_fallback_label"
+      fi
+
+      local desc
+      desc="$(slugify "$raw_desc")"
+
+      log "capturing screenshot: seq=$sub_seq_padded desc=$desc"
+      echo "--- take_shot.sh output ---"
+      "$TAKE_SHOT" "$LAB_DIR" "$sub_seq_padded" "$desc" < /dev/null
+      local this_shot_exit=$?
+      echo "--- end take_shot.sh output ---"
+
+      [ "$this_shot_exit" -ne 0 ] && shot_exit=$this_shot_exit
+    fi
+  done < "$fifo"
+
+  wait "$task_pid"
+
+  # Read the Python exit code the subshell stashed for us
+  for _ in 1 2 3 4 5; do
+    if [ -f "$py_exit_file" ]; then
+      break
+    fi
+    sleep 0.1
+  done
+  if [ -f "$py_exit_file" ]; then
+    auto_exit="$(cat "$py_exit_file")"
+    case "$auto_exit" in
+      *[!0-9]*) auto_exit=1 ;;
+      '')       auto_exit=1 ;;
+    esac
+  else
+    auto_exit=1
+  fi
+
+  echo "--- end automate_ableton_task.py output ---"
+
+  if [ "$auto_exit" -eq 0 ]; then
+    log "task succeeded (exit 0)"
+  else
+    log "task FAILED (exit $auto_exit) — not retrying against live Ableton; still captured failure screenshots"
+  fi
+
+  # Fallback: if no action_start/action_result events were emitted at all
+  # (e.g. a read-only diagnostic task), take one screenshot with the task
+  # name as the label so the lab folder is never left empty.
+  if [ "$sub_step" -eq 0 ]; then
+    local raw_desc
+    raw_desc="$run_fallback_label"
+    local desc
+    desc="$(slugify "$raw_desc")"
+
+    log "no action events; capturing fallback screenshot: seq=$run_seq_padded desc=$desc"
+    echo "--- take_shot.sh output ---"
+    "$TAKE_SHOT" "$LAB_DIR" "$run_seq_padded" "$desc" < /dev/null
+    local this_shot_exit=$?
+    echo "--- end take_shot.sh output ---"
+
+    [ "$this_shot_exit" -ne 0 ] && shot_exit=$this_shot_exit
+  fi
+
+  rm -rf "$tmp_dir"
+
+  local overall_exit=0
+  [ "$auto_exit" -ne 0 ] && overall_exit=$auto_exit
+  [ "$shot_exit" -ne 0 ] && overall_exit=$shot_exit
+
+  log "done. automate_exit=$auto_exit shot_exit=$shot_exit sub_steps=$sub_step"
+  return "$overall_exit"
+}
+
+# --------------------------------------------------------------------------
+# solo_one: Phase 2 loop over multiple tracks (one seq + screenshot each)
+# --------------------------------------------------------------------------
+
+if [ "$TASK" = "solo_one" ]; then
+  # Parse --tracks and --seconds from TASK_ARGS
+  solo_tracks=()
+  solo_seconds=3.0
+  parse_mode=""
+  for arg in "${TASK_ARGS[@]}"; do
+    if [ "$arg" = "--tracks" ]; then
+      parse_mode="tracks"
+    elif [ "$arg" = "--seconds" ]; then
+      parse_mode="seconds"
+    elif [ "$parse_mode" = "tracks" ]; then
+      solo_tracks+=("$arg")
+    elif [ "$parse_mode" = "seconds" ]; then
+      solo_seconds="$arg"
+    fi
+  done
+
+  if [ ${#solo_tracks[@]} -eq 0 ]; then
+    echo "[orchestrator] ERROR: solo_one requires at least one --tracks index" >&2
+    usage
+  fi
+
+  log "solo_one loop: ${#solo_tracks[@]} track(s), seconds=$solo_seconds"
+  overall_exit=0
+  for solo_track in "${solo_tracks[@]}"; do
+    SEQ=$((LAST_SEQ + 1))
+    SEQ_PADDED="$(printf "%02d" "$SEQ")"
+
+    log "solo_one: Track[${solo_track}] (seq=$SEQ_PADDED)"
+
+    run_one_task "$SEQ_PADDED" "solo_one" \
+      --task solo_one --tracks "$solo_track" \
+      --seconds "$solo_seconds" --live
+
+    local_exit=$?
+    [ "$local_exit" -ne 0 ] && overall_exit=$local_exit
+
+    printf '%s' "$SEQ" > "$SEQ_FILE"
+    LAST_SEQ=$SEQ
+  done
+
+  log "done. exit=$overall_exit"
+  exit "$overall_exit"
+fi
+
+# --------------------------------------------------------------------------
+# Standard single-action path (all tasks except solo_one)
+# --------------------------------------------------------------------------
+
+SEQ=$((LAST_SEQ + 1))
+SEQ_PADDED="$(printf "%02d" "$SEQ")"
+printf '%s' "$SEQ" > "$SEQ_FILE"
+
+log "task=$TASK args=${TASK_ARGS[*]:-<none>} lab_dir=$LAB_DIR seq=$SEQ_PADDED"
+log "running automate task (--live, no dry-run — this is a real action)"
+
+if [ ${#TASK_ARGS[@]} -gt 0 ]; then
+  run_one_task "$SEQ_PADDED" "$TASK" \
+    --task "$TASK" --live "${TASK_ARGS[@]}"
+else
+  run_one_task "$SEQ_PADDED" "$TASK" \
+    --task "$TASK" --live
+fi
+
+exit $?
