@@ -62,15 +62,18 @@ To prevent the agent from guessing visual pixel coordinates, the codebase includ
 
 ## 🛡️ Multi-Tier Escalation Ladder
 
-To uphold the **Non-Halt Imperative** (failures must never stall a student's session), deterministic UI actions fall through the 3-level escalation ladder implemented in `click_by_id()` in `scripts/automate_ableton_task.py`:
+To uphold the **Non-Halt Imperative** (failures must never stall a student's session), deterministic UI actions fall through a 4-level escalation ladder, ordered by how directly the student can see and later repeat the action themselves — from most to least visible/learnable, with Human Instructions deliberately last because it's the most disruptive to the "learn by watching" flow, not the most trustworthy:
 
-$$\text{Level 1: Mouse UI Click} \longrightarrow \text{Level 2: Keyboard Shortcut} \longrightarrow \text{Level 3: Human Instructions}$$
+$$\text{Level 1: Mouse UI Click} \longrightarrow \text{Level 2: Keyboard Shortcut} \longrightarrow \text{Level 3: MCP/LOM Call} \longrightarrow \text{Level 4: Human Instructions}$$
 
 1. **Level 1 (Mouse UI)**: Attempt explicit UIA element click via `automation_id`.
 2. **Level 2 (Keyboard Shortcut)**: Consult `docs/ableton_keyboard_shortcuts.json` / `scripts/keyboard_shortcuts.py` for a verified factory shortcut keypress.
-3. **Level 3 (Human Instructions)**: Fall back to clear, spatial-unambiguous step-by-step instructions for the learner.
+3. **Level 3 (MCP/LOM Call)**: Fall back to the AbletonMCP/LOM bridge (see the Semantic Layer in [System Architecture](#system-architecture)) to keep the lesson moving without guessing at pixels — invisible to the student, but preferable to stalling.
+4. **Level 4 (Human Instructions)**: Last resort. Clear, spatial-unambiguous step-by-step instructions for the learner.
 
-> **Direct MCP/LOM calls are NOT a ladder tier.** The ladder above is scoped to what `automate_ableton_task.py` actually implements — there is no Level 3 "Direct API" rung in `click_by_id()`. The AbletonMCP/LOM bridge (see the Semantic Layer in [System Architecture](#system-architecture)) is a **separate, parallel capability** used by the agent layer for state reads/device loading; it is not part of the deterministic `click_by_id()` escalation ladder. See `docs/ableton_ai_educational_risk_framework.md` for the broader risk/fallback policy.
+This is the policy target, matching `docs/ableton_ai_educational_risk_framework.md` (the authoritative source for the full ladder/fallback rationale — this README section is a summary, not the source of truth).
+
+> **Implementation status:** `click_by_id()` in `scripts/automate_ableton_task.py` currently implements Levels 1, 2, and 4 — the Level 3 MCP/LOM fallback rung is **not yet wired into the deterministic escalation path**. Today, the AbletonMCP/LOM bridge is used as a separate, parallel capability by the agent layer (state reads, device loading), not as an automatic fallback inside `click_by_id()`. Wiring it in as a true Level 3 rung is an open build task, not yet done.
 
 ---
 
