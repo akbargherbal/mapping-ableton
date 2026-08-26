@@ -12,12 +12,10 @@ box without re-reading the whole conversation history.
 
 ## Current Status
 
-> **Phase:** 2 complete — ready to start Phase 3
-> **Last updated:** this session — Phase 2's generic control-invocation interface
-> implemented in `scripts/automate_ableton_task.py` and validated against a mock UIA
-> tree (see note in Phase 2 below on what "validated" means this session — **no live
-> Ableton was available to run against**, so the real-Ableton end-to-end check is still
-> an open item for whoever next has the Windows/Ableton environment).
+> **Phase:** 3 complete — ready to start Phase 4
+> **Last updated:** this session — Phase 3's escalation decision rule written into
+> `SUNO_MASTERING_AGENT_POLICY.md`. (Phase 2's one open item — a live-Ableton run of
+> `call_control` — is still outstanding; see Phase 2 below.)
 
 ---
 
@@ -176,22 +174,32 @@ outstanding (see caveat above).**
 README" reference in `SUNO_MASTERING_AGENT_POLICY.md` with a concrete rule
 for this specific persona and this specific tool set.
 
-- [ ] Write a short decision procedure covering: when to physically
+- [x] Write a short decision procedure covering: when to physically
       demonstrate via the Phase 2 interface (visible click, the
       pedagogical moment), when to load/set invisibly via MCP (only where
       Level 1 is a *confirmed* gap, e.g. Browser drag-and-drop), when to
       ask the vision agent to look at the screen first, and when to fall
-      back to plain human instructions (Level 4).
-- [ ] Explicitly state the "show once, then invite the learner to try it
+      back to plain human instructions (Level 4). **Done** — new
+      "Escalation Decision Rule" section, six ordered steps (first-time
+      demonstration → invite learner to repeat it → MCP-only for device
+      loading → MCP read-back for verification → screenshot-before-
+      improvising on any resolve failure or reported visual problem →
+      Level 4 for genuine gaps), plus a quick-reference table.
+- [x] Explicitly state the "show once, then invite the learner to try it
       themselves next time" pattern discussed this session, so the agent
       doesn't default to doing everything for the learner forever.
-- [ ] Fold this into `SUNO_MASTERING_AGENT_POLICY.md` directly (not a
+      **Done** — step 2 of the decision rule states this directly: once
+      an idiom has been demonstrated once in a session, the next
+      occurrence is the learner's to try, not a re-demonstration.
+- [x] Fold this into `SUNO_MASTERING_AGENT_POLICY.md` directly (not a
       separate doc) since that's the file OpenCode actually loads as
-      `AGENTS.md` at runtime.
+      `AGENTS.md` at runtime. **Done** — inserted directly into that
+      file, right after "Available Tooling" and before "Learner Profile."
 
 **Definition of done:** a new contributor (or future agent) reading the
 policy file alone can predict which tool the agent will reach for, for a
 given kind of stuck moment, without guessing.
+**✅ Done.**
 
 **Depends on:** Phase 2 (there needs to be a real interface to write the
 rule around).
