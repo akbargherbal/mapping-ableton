@@ -12,10 +12,12 @@ box without re-reading the whole conversation history.
 
 ## Current Status
 
-> **Phase:** 5 complete — all six phases (0–5) done.
-> **Last updated:** this session — Phase 5 housekeeping finished. (Phase 2's one open
-> item — a live-Ableton run of `call_control` — is still outstanding; see Phase 2
-> below. That's the only unresolved item across the whole plan.)
+> **Phase:** 5 complete — all six original phases (0–5) done. A new Phase 6 was logged
+> this session (design sketch only, not started).
+> **Last updated:** this session — logged Phase 6 (screenshot coordinate annotation) as
+> a new open item, and documented the WSL-Python-vs-`python.exe` split and the Ableton
+> manual reference in `SUNO_MASTERING_AGENT_POLICY.md`. (Phase 2's one open item — a
+> live-Ableton run of `call_control` — is still outstanding; see Phase 2 below.)
 
 ---
 
@@ -300,3 +302,70 @@ purpose.
 
 **Depends on:** nothing. Safe to do whenever, including as a filler task
 between other phases.
+
+---
+
+## Phase 6 — Annotate screenshots with the clicked element's location
+**Priority: additive, not blocking. Logged this session as a design sketch — NOT started.**
+
+**Goal:** instead of asking the learner to eyeball "the Frequency knob" (or whichever
+control was just clicked) in a raw screenshot, draw a marker — a numbered circle or a
+box — directly on the element's location, so the learner can see exactly what was
+clicked without guessing.
+
+**Why this is feasible (confirmed this session, not just assumed):**
+- Every resolved pywinauto control already exposes `control.rectangle()` — screen-
+  absolute pixel coordinates. This is already used today for diagnostics (see
+  `task_probe_toggle` / `task_probe_solo_transport` in `automate_ableton_task.py`,
+  which print `rect` after every click).
+- `take_shot.sh` already computes the Ableton window's own screen-absolute rect
+  (`GetWindowRect`) before capturing.
+- So converting "where is this element in the screenshot" is simple arithmetic no new
+  capability is required for:
+  `image_x = element_rect.left - window_rect.Left` (same pattern for `y`).
+- Drawing the marker itself is a small addition — either extend `take_shot.sh`'s
+  existing PowerShell/System.Drawing capture step (no new dependency), or do it in
+  `python.exe` with Pillow, whichever is easier to wire into `call_control`'s existing
+  click flow.
+
+**The real blocker — DPI awareness mismatch (must be resolved before this is trustworthy):**
+- `take_shot.sh` explicitly calls `SetProcessDPIAware()` before capturing.
+- `automate_ableton_task.py` (pywinauto) does **not** currently set any DPI awareness.
+- If the two processes (`powershell.exe` capturing the screenshot, `python.exe` resolving
+  the element) disagree on DPI awareness on a scaled display, their coordinate systems
+  won't agree either — an annotation box computed from a mismatched rect will silently
+  drift off the actual button. This has to be fixed by making both processes agree on
+  DPI-awareness mode (most likely: make the pywinauto-driving `python.exe` process
+  explicitly call `SetProcessDPIAware()` too, the same way `take_shot.sh` does, and
+  confirm both report the same window rect for a shared reference point) before the
+  annotation coordinates can be trusted — not an optional nice-to-have, a correctness
+  requirement.
+
+**Sketch of the work, not yet broken into checkable tasks:**
+- [ ] Make DPI-awareness mode consistent between the `python.exe` process running
+      pywinauto and the PowerShell process running `take_shot.sh` (likely: call
+      `SetProcessDPIAware()` from the Python side too), and verify with a known
+      reference point that both report the same screen coordinates before trusting
+      annotation math.
+- [ ] Extend the click flow (`call_control` and/or `click_by_id`) to optionally capture
+      the resolved element's `rectangle()` at click time, not just log it.
+- [ ] Add an annotation step — numbered circle or box drawn at the converted
+      image-relative coordinates — either inside `take_shot.sh` (PowerShell/
+      System.Drawing) or as a small `python.exe` + Pillow post-processing step.
+- [ ] Decide the calling convention: does this become a new `take_shot.sh` argument
+      (e.g. an optional `--mark x,y,label`), a separate annotate-in-place script run
+      after the plain screenshot, or built into a future `call_control`-driven "click
+      and show me" combined helper?
+- [ ] Validate on one real example end-to-end (a known control, a known click, one
+      annotated screenshot that visibly circles the right element) before relying on
+      it in a live lesson.
+
+**Definition of done:** a screenshot taken right after a `call_control`/`click_by_id`
+call visibly marks the control that was just clicked, with coordinates confirmed
+correct (not just computed) on a DPI-scaled display.
+**Not started — design only.**
+
+**Depends on:** Phase 2 (needs the generic control path to know which element to
+annotate) and Phase 4 (extends the existing screenshot fallback). Safe to pick up
+independently whenever someone has a live Ableton + Windows environment to verify the
+DPI-awareness fix against.

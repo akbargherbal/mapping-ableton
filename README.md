@@ -14,6 +14,24 @@ This system acts as a **procedural "sidecar" tutor** (a tricycle, not a self-dri
 
 - **Demonstrates Procedure, Not Just State**: Rather than silently altering Ableton's state via API calls behind the scenes, the agent moves the actual mouse cursor and interacts with UI controls (`pywinauto` / UI Automation) so the student absorbs the physical workflow.
 
+### Two Sibling Courses
+
+This repo hosts **two separate AI-agent courses** that both teach inside a real, running
+Ableton Live 12, sharing the same click-automation code but built for different learners
+and different curricula:
+
+| | Click-automation UI-grounding course (this README) | Mastering course |
+|---|---|---|
+| Builder script | `build_runtime_env.sh` | `build_mastering_env.sh` |
+| Runtime folder | `../ableton-runtime` | `../suno-mastering-course` |
+| Policy file | `ABLETON_AGENT_POLICY.md` → `AGENTS.md` | `SUNO_MASTERING_AGENT_POLICY.md` → `AGENTS.md` |
+| Teaches | Ableton UI literacy — where things are, how to click | Mastering an AI-generated (Suno) track: EQ, compression, loudness, stereo |
+| Curriculum reference | `docs/curriculum_map.md`, `docs/course_outline.txt` | `docs/suno-mastering-course-breakdown.md`, `docs/suno-mastering-curriculum.md` |
+
+The rest of this README documents the **click-automation UI-grounding course** above. If
+you're working on the mastering course instead, start with `context.md` (the *why*) and
+`PHASED_PLAN.md` (the *what's next*), not this file.
+
 ---
 
 ## 🏗️ System Architecture
@@ -93,6 +111,17 @@ to actually change) is listed in `docs/curriculum_map.md` → "Proven-write cont
 Exercised by `arm_track`, `solo_one`, `solo_tour`, `set_tempo`, `probe_toggle`, and
 `idiom_demo`.
 
+**Beyond the fixed `--task` menu:** `automate_ableton_task.py` also exposes a generic
+invocation path — `call_control(window, automation_id, action, value=...)`, or
+`--control <automation_id> --action <click|set> --value <v>` on the CLI — that dispatches
+to whichever of the three write mechanisms above matches the control's *live* UIA type.
+This lets an agent operate any control it looks up at runtime (e.g. a specific device
+parameter) without a new named `--task` having to exist for it first. It's mutually
+exclusive with `--task` and carries the same guardrails: only the three proven control
+types above are supported, and `SetValue()` is never called. See `SUNO_MASTERING_AGENT_POLICY.md`
+for the fuller write-up of this path (it was built for that course, but the code itself
+lives here and either course's agent can use it).
+
 ---
 
 ## 🎬 Orchestration (screenshot-per-action)
@@ -140,22 +169,30 @@ The offline survey (`control_catalog.json`) provides verified technical groundin
 ```
 .
 ├── AGENTS.md                   # Operating instructions for the agent driving this repo
-├── ABLETON_AGENT_POLICY.md     # Runtime policy (copied to AGENTS.md in the built runtime)
-├── build_runtime_env.sh        # Assembles the minimal agent-facing runtime folder (whitelist)
+├── ABLETON_AGENT_POLICY.md     # Click-automation course policy (copied to AGENTS.md in ../ableton-runtime)
+├── SUNO_MASTERING_AGENT_POLICY.md # Mastering course policy (copied to AGENTS.md in ../suno-mastering-course)
+├── context.md                  # Mastering course: project digest — read this first for *why*
+├── PHASED_PLAN.md              # Mastering course: resumable implementation plan — *what's next*
+├── build_runtime_env.sh        # Assembles the click-automation runtime folder (whitelist)
+├── build_mastering_env.sh      # Assembles the mastering-course runtime folder (whitelist)
 ├── orchestrate.sh              # Screenshot-per-action orchestration of a single task
 ├── take_shot.sh                # Capture the Ableton window (auto-restore/focus/maximize)
 ├── LABS/                       # Orchestration output (real screenshots from live runs)
 ├── docs/
-│   ├── course_outline.txt      # 20-hour curriculum outline for AI creators
-│   ├── curriculum_map.md       # Lesson topic → automation_id reference layer
+│   ├── course_outline.txt      # 20-hour curriculum outline for AI creators (click-automation course)
+│   ├── curriculum_map.md       # Lesson topic → automation_id reference layer (click-automation course)
+│   ├── suno-mastering-course-breakdown.md # Authoritative mastering-course lesson spec (Lessons 1-10)
+│   ├── suno-mastering-curriculum.md # Leaner 6-module mastering-course operating version
+│   ├── mastering_progress.md  # Mastering-course session log template (date/track/lesson/rating)
 │   ├── ableton_ai_educational_risk_framework.md # Risk/fallback policy (ladder + safety rules)
 │   ├── control_catalog_usage_guide.md # Practical reference for using control_catalog.json
 │   ├── opencode-ableton-mcp-setup.md  # Setup guide for OpenCode (WSL2) to Windows Ableton MCP
 │   ├── ableton_keyboard_shortcuts.json # Windows/Mac default Ableton Live 12 shortcut index
-│   ├── live12-manual-en.pdf   # Official Ableton Live 12 manual (local reference, not versioned)
+│   ├── live12-manual-en.pdf   # Official Ableton Live 12 manual (local reference, not versioned — may be absent)
 │   └── archived/v004/         # Phased plan, post-fix plan, survey docs, baseline, reports
 └── scripts/
-    ├── automate_ableton_task.py # Primary task automation script & UIA click runner
+    ├── automate_ableton_task.py # Task automation, UIA click runner, and the generic
+    │                             # --control/call_control() invocation path (see below)
     ├── dump_ableton_pywinauto.py # Core tree-walking and JSON window dumper
     ├── dump_ableton_states.py    # Automated multi-state/view dumper
     ├── update_catalog.py         # Catalog generator merging raw dumps into control_catalog.json

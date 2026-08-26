@@ -92,6 +92,14 @@ FILES=(
                                                # this whole file into the agent's own
                                                # conversation context
 )
+# Optional whitelist -- unlike FILES[] above, a missing entry here is a
+# warning, not a FATAL. docs/live12-manual-en.pdf is local-only reference
+# material (see .gitignore), so it legitimately may not exist on every dev
+# checkout. Copied through when present so the mastering agent can consult
+# it as ground truth per SUNO_MASTERING_AGENT_POLICY.md's tooling section.
+OPTIONAL_FILES=(
+  "docs/live12-manual-en.pdf"
+)
 POLICY_SRC_NAME="SUNO_MASTERING_AGENT_POLICY.md"
 POLICY_DEST_NAME="AGENTS.md"
 # Same dev-name/runtime-name split as build_runtime_env.sh, and for the same
@@ -120,6 +128,17 @@ for f in "${FILES[@]}"; do
   mkdir -p "$TARGET/$(dirname "$f")"
   cp -f "$src" "$TARGET/$f"
   echo "  copied: $f"
+done
+
+for f in "${OPTIONAL_FILES[@]}"; do
+  src="$SCRIPT_DIR/$f"
+  if [ ! -f "$src" ]; then
+    echo "  skipped (not present in dev repo, optional): $f"
+    continue
+  fi
+  mkdir -p "$TARGET/$(dirname "$f")"
+  cp -f "$src" "$TARGET/$f"
+  echo "  copied (optional): $f"
 done
 
 # mastering_progress.md is a runtime session log, not a build artifact — copy

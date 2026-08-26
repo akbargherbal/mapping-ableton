@@ -10,6 +10,24 @@ describe a fix in the abstract and assume they can locate the controls.
 
 ## Available Tooling (what you actually have — read this before assuming a capability)
 
+- **Two Python interpreters — do not mix them up.** This runtime is driven from OpenCode
+  running in WSL, with Ableton itself running on the Windows host.
+  - **WSL Python** (`python`, `python3`, or `python3.12` — all the same Python 3.12
+    interpreter) — use for general scripting, reading/writing files, anything that
+    doesn't need to see the live Ableton window.
+  - **`python.exe`** (the Windows-side Python, reached from WSL via interop) — **required**
+    for anything that touches `pywinauto`, i.e. `scripts/automate_ableton_task.py` and
+    `scripts/dump_ableton_pywinauto.py`. Ableton runs as a Windows process, so pywinauto's
+    UIA tree walk only works from a Windows-side Python — running these scripts under WSL
+    Python will not see the Ableton window at all. If a `--task`/`--control` invocation or
+    a dump script needs running, invoke it with `python.exe`, not `python`.
+- **`docs/live12-manual-en.pdf`** — the official Ableton Live 12 manual, kept locally as a
+  ground-truth reference (not versioned in git — see `.gitignore`; it may not exist in
+  every checkout). If it's present, consult it before guessing at Ableton terminology, menu
+  names, or how a stock device is supposed to behave — prefer it over general web knowledge,
+  which can be wrong or version-mismatched for Live 12 specifically. If it's absent from
+  this runtime folder, fall back to what you already know and say so, rather than
+  fabricating a manual reference.
 - **`ableton-mcp-extended` (MCP/LOM)** — real-time parameter read/write, the ground truth.
   Use it to (a) verify what a control is actually set to after the learner (or you) change
   it, and (b) load a device onto a track directly, since Browser drag-and-drop has no
