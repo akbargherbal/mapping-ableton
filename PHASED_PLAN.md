@@ -12,8 +12,12 @@ box without re-reading the whole conversation history.
 
 ## Current Status
 
-> **Phase:** 1 complete — ready to start Phase 2
-> **Last updated:** this session — Phase 0 and Phase 1 implemented and verified
+> **Phase:** 2 complete — ready to start Phase 3
+> **Last updated:** this session — Phase 2's generic control-invocation interface
+> implemented in `scripts/automate_ableton_task.py` and validated against a mock UIA
+> tree (see note in Phase 2 below on what "validated" means this session — **no live
+> Ableton was available to run against**, so the real-Ableton end-to-end check is still
+> an open item for whoever next has the Windows/Ableton environment).
 
 ---
 
@@ -101,30 +105,65 @@ Phases 2–4 so they're not built into the wrong (or a not-yet-existing) folder.
 automation_id it looks up live, instead of only through the fixed
 `--task {arm_track, solo_one, ...}` menu.
 
-- [ ] Add a general entry point to `automate_ableton_task.py` — sketched
+- [x] Add a general entry point to `automate_ableton_task.py` — sketched
       as `call_control(automation_id, action, value=None, dry_run=...)` —
       that dispatches to the correct proven-safe primitive based on the
       control's type (read that type from a live/narrow catalog lookup,
-      not hardcoded).
-- [ ] Add a matching CLI mode (e.g. `--control <automation_id> --action
+      not hardcoded). **Done** — `call_control()` reads `control_type`
+      straight off the freshly-`resolve()`d live UIA element (not a
+      hardcoded per-id table, and not blind trust in a possibly-stale
+      catalog snapshot), then dispatches to `set_checkbox_by_id` /
+      `set_slider_by_id` / `set_combobox_by_id` accordingly.
+- [x] Add a matching CLI mode (e.g. `--control <automation_id> --action
       <set|click> --value <v>`) alongside the existing `--task` mode —
       don't remove `--task`, it's still fine for genuinely fixed sequences.
-- [ ] Guard rails carried over unchanged: still only the three proven
+      **Done** — `--control`/`--action`/`--value` added; mutually
+      exclusive with `--task` (argparse-level error if both given);
+      `--value` is auto-typed (`"true"/"false"` → bool, bare number →
+      float, else → string) since the CLI only ever hands over strings.
+- [x] Guard rails carried over unchanged: still only the three proven
       control types; still never call `SetValue()`; unknown/untested
       control types (e.g. the `Text`-type EQ Eight band selectors found
       this session) should refuse with a clear "not yet validated" error,
-      not attempt a guess.
-- [ ] Add a narrow, on-demand catalog lookup helper (e.g.
+      not attempt a guess. **Done** — `UnsupportedControlType` is raised
+      for any control_type outside `{CheckBox, Slider, ComboBox}`, naming
+      the Text-type band-selector case explicitly. `call_control()` calls
+      the same three primitives verbatim (no new write path), so the
+      permanently-disabled `SetValue()` prohibition is untouched.
+- [x] Add a narrow, on-demand catalog lookup helper (e.g.
       `lookup_control(device_or_context, name_hint)`) that returns just the
       matching automation_id(s) + control_type — never load the full
-      `control_catalog.json` into any agent context wholesale.
-- [ ] Validate end-to-end on one real example: EQ Eight's Frequency slider
+      `control_catalog.json` into any agent context wholesale. **Done** —
+      `lookup_control()` opens the catalog file itself and returns only
+      the rows matching `name_hint` inside one named context; raises
+      `LookupError` (with close-match suggestions) if the context itself
+      isn't found, distinct from "found the device, no matching control."
+- [x] Validate end-to-end on one real example: EQ Eight's Frequency slider
       (`TrackView.Device[0].Freq`), since it's already confirmed present
-      and is a proven-safe control type (Slider).
+      and is a proven-safe control type (Slider). **Partially done, with
+      an honest caveat:** `lookup_control("EQ-Eight", "freq")` was run
+      against the real `control_catalog.json` and correctly returns
+      `{"automation_id": "TrackView.Device[0].Freq", "control_type":
+      "Slider", "name": "Frequency"}` — that part is a genuine, live-data
+      check. But **this session's environment has no Windows machine, no
+      running Ableton, and no `pywinauto`** (Linux sandbox), so
+      `call_control()` itself could only be exercised against a hand-built
+      mock UIA tree standing in for the real one (all three control types,
+      `click` vs `set`, every guard-rail rejection, and the
+      `UnsupportedControlType` path all passed against the mock). **A real
+      `--control TrackView.Device[0].Freq --action set --value <hz> --live`
+      run against a live Ableton project with EQ Eight loaded on the
+      selected track is still outstanding** and should be the first thing
+      whoever has that environment does before checking this box off as
+      fully proven — the mock only proves the dispatch logic is sound,
+      not that the live UIA write path behaves identically to
+      `task_idiom_demo`'s already-proven Freq-slider round trip.
 
 **Definition of done:** the sibilance scenario's "set the EQ band" step can
 be executed by calling the generic entry point with a live-looked-up
 automation_id — no new named `task_*` function required.
+**Logic complete and mock-verified; live-Ableton confirmation still
+outstanding (see caveat above).**
 
 **Depends on:** Phase 1 (needs to know which runtime this ships in).
 

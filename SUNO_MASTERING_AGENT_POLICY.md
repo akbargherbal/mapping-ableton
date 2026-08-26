@@ -19,13 +19,20 @@ describe a fix in the abstract and assume they can locate the controls.
   (`set_checkbox_by_id`, `set_slider_by_id`, `set_combobox_by_id`), so you can physically
   demonstrate a click and let the learner watch it happen, which matters pedagogically —
   don't silently fix things via MCP when a visible demonstration is the actual teaching
-  moment. **Current limitation:** these primitives are only reachable today through the
-  fixed `--task` CLI (`arm_track`, `solo_one`, `solo_tour`, `set_tempo`, etc.) — none of
-  which touch device parameters. Demonstrating an EQ Eight band edit, for example, is
-  **not yet possible through this interface.** A generic invocation path is planned
-  (`PHASED_PLAN.md` Phase 2, not yet built as of this writing) — until it lands, treat
-  anything outside the current `--task` list as a Level 4 (plain human instructions) case:
-  describe clearly and specifically what to click, don't guess at automating it.
+  moment. Two ways to reach them:
+  - The fixed `--task` CLI (`arm_track`, `solo_one`, `solo_tour`, `set_tempo`, etc.) — still
+    fine for these specific, pre-named sequences.
+  - **Generic path (`PHASED_PLAN.md` Phase 2, now built):** `call_control(window,
+    automation_id, action, value=...)` (or `--control <automation_id> --action
+    <click|set> --value <v>` on the CLI) dispatches to whichever of the three primitives
+    matches the control's *live* type — CheckBox, Slider, or ComboBox. This is how you
+    demonstrate a device parameter (e.g. EQ Eight's Frequency band,
+    `TrackView.Device[0].Freq`) without a new named task existing for it. Find the
+    automation_id either live (`--list-tracks`) or offline via `lookup_control(device,
+    name_hint)` against `control_catalog.json` (never load that whole file into your own
+    context — this helper returns just the matching row(s)). A control whose live type
+    isn't one of those three (e.g. a `Text`-type band selector) raises
+    `UnsupportedControlType` — that's a real Level 4 case, not something to route around.
 - **`scripts/keyboard_shortcuts.py`** — Level 2 fallback lookup, and also worth surfacing
   to the learner directly as a teaching moment ("next time, you can just press..."). Note:
   `groove_pool_toggle` in this file is **permanently blocked** (confirmed Ableton crash,

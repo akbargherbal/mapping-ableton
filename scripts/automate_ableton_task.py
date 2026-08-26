@@ -108,6 +108,7 @@ import json
 import re
 import sys
 import time
+from pathlib import Path
 from typing import Callable
 
 try:
@@ -776,6 +777,196 @@ def click_by_id(window: UIAWrapper, auto_id: str, dry_run: bool, label: str,
     )
 
 
+# --------------------------------------------------------------------------
+# Generic control invocation (Phase 2)
+# --------------------------------------------------------------------------
+#
+# The three primitives above (set_checkbox_by_id, set_slider_by_id,
+# set_combobox_by_id) never cared what the automation_id was attached to
+# -- Transport.Tempo and TrackView.Device[0].Freq are both just "a
+# Slider" to set_slider_by_id. Before this section, the ONLY way to
+# reach them was a fixed --task {arm_track, solo_one, ...} menu, which
+# meant every new teaching moment turned into "write a new task_*
+# function" instead of "call the existing generic primitive with a
+# newly-looked-up id." See context.md §3 / PHASED_PLAN.md Phase 2.
+#
+# call_control() is the fix: given ANY automation_id (found live via
+# --list-tracks, or offline via lookup_control() below), it reads the
+# control's ACTUAL type straight off the resolved UIA element -- not a
+# hardcoded per-id table, and not blind trust in a catalog snapshot that
+# could be stale for e.g. a differently-loaded device -- and dispatches
+# to whichever of the three proven-safe primitives matches. A control
+# type outside that set (e.g. the 'Text'-type EQ Eight band selectors
+# found during Phase 1 review) is refused with a clear error, never
+# guessed at.
+
+_DEFAULT_CATALOG_PATH = Path(__file__).resolve().parent / "dumps" / "control_catalog.json"
+
+
+def lookup_control(device_or_context: str, name_hint: str,
+                    catalog_path: str | Path | None = None) -> list[dict]:
+    """Narrow, on-demand lookup into control_catalog.json -- returns only
+    the automation_id(s) + control_type matching `name_hint` inside ONE
+    context, never the whole catalog. This is the "offline" counterpart
+    to --list-tracks: use this to find a candidate automation_id (e.g.
+    for a device that isn't a track/mixer control) before ever touching
+    the live window, without bulk-loading the ~6.6MB catalog into an
+    agent's context -- confirmed in context.md as both wasteful and a
+    risk (an agent could end up reasoning over stale bounding_rect pixel
+    data it shouldn't use).
+
+    device_or_context: a catalog context key (e.g. "device:EQ-Eight") or
+        a bare device name ("EQ-Eight") -- both are tried.
+    name_hint: case-insensitive substring matched against each mapped
+        control's automation_id and display name (e.g. "freq", "gain").
+
+    Returns a list of {"automation_id", "control_type", "name"} dicts
+    (possibly empty -- caller decides what to do with zero matches).
+    Raises LookupError if `device_or_context` itself isn't a known
+    catalog context (with close-match suggestions), since that's a
+    different failure than "found the device, no matching control."
+    """
+    path = Path(catalog_path) if catalog_path else _DEFAULT_CATALOG_PATH
+    with open(path, encoding="utf-8") as f:
+        catalog = json.load(f)
+    contexts = catalog.get("contexts", {})
+
+    ctx_key = device_or_context
+    if ctx_key not in contexts:
+        for prefix in ("device:", ""):
+            candidate = f"{prefix}{device_or_context}"
+            if candidate in contexts:
+                ctx_key = candidate
+                break
+        else:
+            close = [k for k in contexts if device_or_context.lower() in k.lower()]
+            raise LookupError(
+                f"No context {device_or_context!r} in {path.name}. "
+                + (f"Did you mean one of: {close[:5]}?" if close
+                   else "No similarly-named context found -- check spelling "
+                        "or run against docs/control_catalog_usage_guide.md.")
+            )
+
+    hint = name_hint.strip().lower()
+    matches = []
+    for m in contexts[ctx_key].get("mapped_controls", []):
+        aid = m.get("automation_id", "") or ""
+        nm = m.get("name", "") or ""
+        if hint in aid.lower() or hint in nm.lower():
+            matches.append({
+                "automation_id": aid,
+                "control_type": m.get("control_type"),
+                "name": nm,
+            })
+    return matches
+
+
+SUPPORTED_CONTROL_TYPES = ("CheckBox", "Slider", "ComboBox")
+
+
+class UnsupportedControlType(RuntimeError):
+    """Raised by call_control() when the resolved control's live type
+    isn't one of the three proven-safe write types. A refusal, not a
+    guess -- see the WRITE-BACK STATUS note at the top of this module."""
+
+
+def call_control(window: UIAWrapper, automation_id: str, action: str,
+                  value: bool | float | str | None = None,
+                  dry_run: bool = True, label: str | None = None,
+                  max_attempts: int = 2) -> None:
+    """Generic entry point: act on ANY automation_id by dispatching to
+    whichever proven-safe primitive matches its LIVE control_type --
+    no new named task_* function required for a new teaching moment.
+
+    action:
+      "click" -- CheckBox only: flips it to the opposite of its current
+                 state. No `value` needed (pass None).
+      "set"   -- requires `value`, matching the resolved control's type:
+                 CheckBox -> bool, Slider -> int/float, ComboBox -> str
+                 (the exact dropdown item text).
+
+    Guard rails carried over unchanged from the three underlying
+    primitives: still only these three control types; still never calls
+    SetValue() on a Slider (permanently disabled -- see WRITE-BACK
+    STATUS); an unrecognized/untested control type (e.g. a 'Text'-type
+    EQ Eight band selector) raises UnsupportedControlType rather than
+    attempting a guessed write path.
+
+    Does NOT accept a pre-supplied control_type -- deliberately always
+    re-reads it from a fresh resolve() so a stale/wrong assumption about
+    what an automation_id points to can't silently drive the wrong write
+    primitive.
+    """
+    if action not in ("click", "set"):
+        raise ValueError(f"action must be 'click' or 'set', got {action!r}")
+
+    control = resolve(window, automation_id)
+    try:
+        control_type = control.element_info.control_type
+    except Exception as e:
+        raise RuntimeError(
+            f"Could not read control_type for {automation_id!r}: {e}"
+        ) from e
+
+    display_label = label or automation_id
+
+    if control_type == "CheckBox":
+        if action == "click":
+            if value is not None:
+                raise ValueError("action='click' on a CheckBox takes no value "
+                                  "(it flips the current state) -- did you mean action='set'?")
+            desired = not get_toggle_state(resolve(window, automation_id))
+        else:  # "set"
+            if not isinstance(value, bool):
+                raise ValueError(
+                    f"action='set' on CheckBox {automation_id!r} needs a bool "
+                    f"value, got {value!r} ({type(value).__name__})"
+                )
+            desired = value
+        set_checkbox_by_id(window, automation_id, desired, dry_run=dry_run,
+                            label=display_label, max_attempts=max_attempts)
+        return
+
+    if control_type == "Slider":
+        if action != "set":
+            raise ValueError(
+                f"Slider {automation_id!r} only supports action='set' with a "
+                "numeric value -- there's no bare 'click' idiom for a "
+                "continuous control"
+            )
+        if not isinstance(value, (int, float)) or isinstance(value, bool):
+            raise ValueError(
+                f"action='set' on Slider {automation_id!r} needs a numeric "
+                f"value, got {value!r} ({type(value).__name__})"
+            )
+        set_slider_by_id(window, automation_id, float(value), dry_run=dry_run,
+                          label=display_label, max_attempts=max_attempts)
+        return
+
+    if control_type == "ComboBox":
+        if action != "set":
+            raise ValueError(
+                f"ComboBox {automation_id!r} only supports action='set' with "
+                "the exact dropdown item text as the value"
+            )
+        if not isinstance(value, str):
+            raise ValueError(
+                f"action='set' on ComboBox {automation_id!r} needs a string "
+                f"item name, got {value!r} ({type(value).__name__})"
+            )
+        set_combobox_by_id(window, automation_id, value, dry_run=dry_run,
+                            label=display_label, max_attempts=max_attempts)
+        return
+
+    raise UnsupportedControlType(
+        f"{automation_id!r} resolved to control_type={control_type!r}, which "
+        f"is not one of the proven-safe write types {SUPPORTED_CONTROL_TYPES}. "
+        "Refusing rather than guessing at an unvalidated write mechanism -- "
+        "e.g. the 'Text'-type EQ Eight band selectors found during Phase 1 "
+        "review are exactly this case. See PHASED_PLAN.md Phase 2."
+    )
+
+
 def task_probe_toggle(window: UIAWrapper, track_index: int) -> None:
     """Diagnostic: click a track's Solo checkbox 4 times, 1s apart, printing
     the read-back state after each click plus its screen bounding_rect.
@@ -1432,6 +1623,23 @@ def _require_ableton_window() -> UIAWrapper:
     return window
 
 
+def _parse_cli_value(raw: str | None) -> bool | float | str | None:
+    """Best-effort auto-typing for --value, since the CLI only ever hands
+    us a string. Order matters: bool literals before float, since
+    float("true") would raise anyway but this keeps the intent explicit.
+    Falls through to the raw string for a ComboBox item name like '1/8'.
+    """
+    if raw is None:
+        return None
+    low = raw.strip().lower()
+    if low in ("true", "false"):
+        return low == "true"
+    try:
+        return float(raw)
+    except ValueError:
+        return raw
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__,
                                       formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1454,6 +1662,18 @@ def main() -> None:
                          help="Print discovered track/return-track automation_ids and exit")
     parser.add_argument("--list-tasks", action="store_true",
                          help="Print task registry with schema version as JSON and exit")
+    parser.add_argument("--control",
+                         help="Generic path (Phase 2): an automation_id to act on directly, "
+                              "bypassing the fixed --task menu. Requires --action. Find "
+                              "candidate ids live via --list-tracks, or offline via "
+                              "lookup_control() against control_catalog.json.")
+    parser.add_argument("--action", choices=["click", "set"],
+                         help="What to do to --control. 'click' flips a CheckBox; 'set' "
+                              "requires --value and works for CheckBox/Slider/ComboBox.")
+    parser.add_argument("--value",
+                         help="Value for --action set. Auto-typed: 'true'/'false' -> bool, "
+                              "a bare number -> float, anything else -> string (e.g. a "
+                              "ComboBox item name like '1/8').")
     args = parser.parse_args()
 
     if args.list_tasks:
@@ -1470,8 +1690,35 @@ def main() -> None:
         list_tracks(index)
         return
 
+    if args.control:
+        if args.task:
+            parser.error("--control is the generic path and can't be combined with --task "
+                         "-- pick one")
+        if not args.action:
+            parser.error("--control requires --action")
+        if args.action == "set" and args.value is None:
+            parser.error("--action set requires --value")
+        if args.action == "click" and args.value is not None:
+            parser.error("--action click takes no --value (it flips the current state)")
+
+        _require_pywinauto("--control")
+        window = _require_ableton_window()
+        dry_run = not args.live
+        if dry_run:
+            print("*** DRY RUN -- nothing will be clicked. Pass --live to actually execute. ***\n")
+
+        value = _parse_cli_value(args.value)
+        label = f"--control {args.control}"
+        run_task(f"call_control:{args.control}", [],
+                  lambda: call_control(window, args.control, args.action, value=value,
+                                        dry_run=dry_run, label=label))
+        return
+
+    if args.action or args.value is not None:
+        parser.error("--action/--value only apply together with --control")
+
     if not args.task:
-        parser.error("--task is required unless --list-tracks or --list-tasks is given")
+        parser.error("--task is required unless --list-tracks, --list-tasks, or --control is given")
 
     _require_pywinauto(args.task)
     window = _require_ableton_window()
