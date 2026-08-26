@@ -60,11 +60,13 @@ TARGET="${1:-$SCRIPT_DIR/../suno-mastering-course}"
 FILES=(
   "docs/suno-mastering-course-breakdown.md"   # authoritative lesson spec
   "docs/suno-mastering-curriculum.md"         # leaner 6-module operating version
-  "docs/opencode-ableton-mcp-setup.md"        # ableton-mcp-extended setup — the
-                                               # only external dependency this
-                                               # course has; included so the
-                                               # target folder is buildable
-                                               # without the main repo for reference
+  # NOTE: docs/opencode-ableton-mcp-setup.md deliberately NOT included here.
+  # It's one-time human setup/troubleshooting content (cloning
+  # ableton-mcp-extended, installing the Remote Script, registering the MCP
+  # server in OpenCode) -- something the person doing the setup handles
+  # before a session starts, not something SUNO_MASTERING_AGENT_POLICY.md
+  # ever tells the agent to read or act on. Keep it in the dev repo's docs/
+  # for the human; don't ship it into the agent's own runtime folder.
   "take_shot.sh"                              # ad hoc screenshot capture (window
                                                # restore/focus/maximize) for the
                                                # vision-agent fallback described in
