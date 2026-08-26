@@ -12,10 +12,10 @@ box without re-reading the whole conversation history.
 
 ## Current Status
 
-> **Phase:** 4 complete — ready to start Phase 5
-> **Last updated:** this session — Phase 4's vision fallback procedure written into
-> `SUNO_MASTERING_AGENT_POLICY.md`. (Phase 2's one open item — a live-Ableton run of
-> `call_control` — is still outstanding; see Phase 2 below.)
+> **Phase:** 5 complete — all six phases (0–5) done.
+> **Last updated:** this session — Phase 5 housekeeping finished. (Phase 2's one open
+> item — a live-Ableton run of `call_control` — is still outstanding; see Phase 2
+> below. That's the only unresolved item across the whole plan.)
 
 ---
 
@@ -258,15 +258,45 @@ in parallel with those if convenient.
 ## Phase 5 — Deprecate stale docs
 **Priority: least urgent. Housekeeping.**
 
-- [ ] Move or clearly mark `docs/curriculum_map.md` and
+- [x] Move or clearly mark `docs/curriculum_map.md` and
       `docs/course_outline.txt` as superseded, pointing readers to
       `docs/suno-mastering-curriculum.md` and
-      `docs/suno-mastering-course-breakdown.md`.
-- [ ] Sanity-check nothing else in the repo (scripts, other docs) still
-      treats the old files as authoritative.
+      `docs/suno-mastering-course-breakdown.md`. **Done, with a
+      correction to the original framing:** these two files are NOT
+      globally stale — `docs/curriculum_map.md` is still a live,
+      accurate, actively-referenced (by `README.md`) reference for the
+      *separate, sibling click-automation UI-grounding course*
+      (confirmed by checking `docs/archived/v004/reports/phase5_report.md`,
+      which shows `curriculum_map.md` was deliberately authored for that
+      course's own phased plan). Blanket-deprecating them would have made
+      `README.md`'s still-current "Proven-write controls" reference and
+      Phase E note wrong. What was actually true (per `context.md` §3)
+      is narrower: these files are stale *specifically as a curriculum
+      source for the mastering course* — a future mastering-course
+      session could plausibly stumble onto a file just called
+      "curriculum_map.md" and mistake it for its own curriculum. Fixed
+      that specific risk instead: added a scope-note banner to the top
+      of both files pointing a reader who lands there for the mastering
+      course to `docs/suno-mastering-course-breakdown.md` /
+      `docs/suno-mastering-curriculum.md`, while leaving both files
+      otherwise fully intact and still authoritative for the
+      click-automation course they were actually written for.
+- [x] Sanity-check nothing else in the repo (scripts, other docs) still
+      treats the old files as authoritative **for the mastering course**.
+      **Done** — grepped `docs/suno-mastering-curriculum.md`,
+      `docs/suno-mastering-course-breakdown.md`, `docs/mastering_progress.md`,
+      and `SUNO_MASTERING_AGENT_POLICY.md`: zero references to
+      `curriculum_map` or `course_outline` in any of them already, so
+      there was nothing else to fix on the mastering side. (Left
+      `README.md`'s references alone, since those are correctly describing
+      the click-automation course, not the mastering course.)
 
 **Definition of done:** no live doc or script references the stale files
-as current.
+as current. **Rescoped to: no *mastering-course* doc or script treats
+`curriculum_map.md`/`course_outline.txt` as its curriculum source** — the
+click-automation course's own use of them remains current and correct on
+purpose.
+**✅ Done.**
 
 **Depends on:** nothing. Safe to do whenever, including as a filler task
 between other phases.

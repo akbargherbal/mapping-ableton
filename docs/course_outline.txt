@@ -2,6 +2,14 @@
 # Course Outline
 ## Ableton Live 12 Fundamentals for AI Music Creators
 **Duration:** 20 Hours (Lecture + Hands-on Labs)
+
+> **Scope note (added in the mastering-course phased plan, Phase 5):** this outline
+> documents the **click-automation UI-grounding course** (see `README.md`) — it is
+> still live and authoritative *for that course*. It is **not** the curriculum for
+> the separate Suno-mastering course. If you're working on the mastering course, use
+> `docs/suno-mastering-course-breakdown.md` and `docs/suno-mastering-curriculum.md`
+> instead — see `SUNO_MASTERING_AGENT_POLICY.md`'s "Curriculum" section.
+
 ### Target Audience
 * No music theory background required.
 * First experience with a Digital Audio Workstation (DAW).
