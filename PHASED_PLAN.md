@@ -12,8 +12,8 @@ box without re-reading the whole conversation history.
 
 ## Current Status
 
-> **Phase:** 0 complete — ready to start Phase 1
-> **Last updated:** this session — Phase 0 implemented and verified
+> **Phase:** 1 complete — ready to start Phase 2
+> **Last updated:** this session — Phase 0 and Phase 1 implemented and verified
 
 ---
 
@@ -56,24 +56,37 @@ class as the other blocked entries, not just a comment in a README.
 `build_mastering_env.sh` (deliberately excludes them), now that the learner
 persona is confirmed to be a total DAW novice, not just a mastering novice.
 
-- [ ] Decide: does `../suno-mastering-course` become a **superset** runtime
+- [x] Decide: does `../suno-mastering-course` become a **superset** runtime
       (mastering curriculum + click-automation layer + on-demand catalog
       access), or does it stay separate and lean on a *different* set of
       tools (vision + MCP + generic primitives, minimal/no pywinauto task
-      layer)?
-- [ ] Update `build_mastering_env.sh`'s `FILES[]` whitelist to match the
-      decision (add or explicitly confirm exclusion of `orchestrate.sh`,
-      `take_shot.sh`, `scripts/automate_ableton_task.py`,
-      `scripts/dump_ableton_pywinauto.py`, `scripts/keyboard_shortcuts.py`,
-      `scripts/dumps/control_catalog.json`).
-- [ ] Update `SUNO_MASTERING_AGENT_POLICY.md`'s opening "Role" section so
+      layer)? **Decided: hybrid.** Include the click-demonstration
+      primitives (`automate_ableton_task.py` + hard deps), the catalog
+      (on-demand lookup, never bulk-loaded), and `take_shot.sh`. Exclude
+      `orchestrate.sh` — its screenshot-per-action pipeline is built for
+      the sibling course's pre-planned, provable lesson steps, not live
+      conversational tutoring.
+- [x] Update `build_mastering_env.sh`'s `FILES[]` whitelist to match the
+      decision. **Done** — added `take_shot.sh`,
+      `scripts/automate_ableton_task.py`, `scripts/dump_ableton_pywinauto.py`,
+      `scripts/keyboard_shortcuts.py`, `scripts/dumps/control_catalog.json`.
+      Rebuilt `../suno-mastering-course` end-to-end and verified all 9
+      files sync correctly, `mastering_progress.md` is still preserved
+      across reruns, and the Phase 0 Groove Pool guard survives the copy
+      intact (re-verified live in the built runtime).
+- [x] Update `SUNO_MASTERING_AGENT_POLICY.md`'s opening "Role" section so
       it accurately states which tools the mastering agent actually has —
       no more mismatch between what the policy assumes and what the build
-      script ships.
+      script ships. **Done** — replaced the vague "pywinauto UIA layer"
+      claim with an itemized "Available Tooling" section, including the
+      honest caveat that device-parameter demonstration (e.g. EQ Eight)
+      isn't possible yet until Phase 2's generic interface exists, and an
+      explicit note that `orchestrate.sh` is NOT included.
 
 **Definition of done:** the policy file and the build script agree on
 which tools exist in the runtime. No aspirational references to tools that
 aren't actually whitelisted.
+**✅ Done.**
 
 **Depends on:** nothing technical, just a decision. Should happen before
 Phases 2–4 so they're not built into the wrong (or a not-yet-existing) folder.

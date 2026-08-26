@@ -35,32 +35,35 @@ instructor standing next to them would.
 
 ---
 
-## 2. What's problematic about `build_mastering_env.sh` right now
+## 2. What was problematic about `build_mastering_env.sh` (RESOLVED this session)
 
-**Core contradiction found this session:**
+**The contradiction found earlier this session, now fixed:**
 
-- `SUNO_MASTERING_AGENT_POLICY.md` opens by stating the agent works via
-  *"`ableton-mcp-extended`... **and** the pywinauto UIA layer (visible
-  clicks, per this repo's escalation ladder in the README)."*
-- But `build_mastering_env.sh`'s own header comment says the opposite:
-  *"this course does **NOT** use the pywinauto/UIA click-automation stack
-  at all"* — and its `FILES[]` whitelist accordingly excludes
-  `orchestrate.sh`, `take_shot.sh`, `scripts/automate_ableton_task.py`,
-  `scripts/dump_ableton_pywinauto.py`, `scripts/keyboard_shortcuts.py`, and
-  `scripts/dumps/control_catalog.json`.
+- `SUNO_MASTERING_AGENT_POLICY.md` claimed the agent works via
+  *"`ableton-mcp-extended`... **and** the pywinauto UIA layer."*
+- But `build_mastering_env.sh`'s whitelist excluded every file that layer
+  depends on.
 
-This split made sense under the **wrong assumption** that the mastering
-learner already knows how to navigate Ableton and only lacks mastering
-knowledge. Given the corrected persona (total DAW novice), the policy file
-is the one describing the real need, and the build script's exclusion is a
-real gap — a `../suno-mastering-course` runtime built today has no way to
-help when "this panel won't appear" or "I don't see EQ Eight anywhere."
+**Resolution (Phase 1, see `PHASED_PLAN.md`):** decided on a **hybrid**
+scope. `build_mastering_env.sh` now whitelists the click-demonstration
+primitives (`scripts/automate_ableton_task.py` + its hard dependencies
+`dump_ableton_pywinauto.py` and `keyboard_shortcuts.py`), the
+`control_catalog.json` ground-truth reference, and `take_shot.sh` for ad
+hoc screenshots — but deliberately **excludes `orchestrate.sh`**, since
+that script's screenshot-per-action pipeline is built for the sibling
+course's pre-planned, provable lesson steps, not live conversational
+tutoring. `SUNO_MASTERING_AGENT_POLICY.md`'s "Role" section was rewritten
+to itemize exactly what's available, including an honest caveat: device-
+parameter demonstration (e.g. an EQ Eight band edit) isn't actually
+possible yet, because the click primitives are only reachable today
+through the fixed `--task` CLI menu — that gap is exactly what Phase 2 is
+for. Rebuilt and verified the runtime folder end-to-end; the Phase 0
+Groove Pool guard survives the copy intact.
 
-**Also found:** the mastering policy admits a second, related gap itself —
-Youlean's LUFS meter has no queryable UIA/MCP surface, and the policy notes
-*"if/when the vision-model tooling from the mapping-ableton project lands,
-this is the first real use case for it"* — i.e., screen-reading for the
-mastering course isn't wired up yet either.
+**Still open, not yet resolved:** the mastering policy's own admitted
+second gap — Youlean's LUFS meter has no queryable UIA/MCP surface, and
+screen-reading for it isn't wired up. This is Phase 4's job (vision
+fallback), not yet started.
 
 ---
 
