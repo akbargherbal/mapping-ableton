@@ -75,7 +75,7 @@ done
 # re-run of this script never clobbers real session history.
 progress_target="$TARGET/mastering_progress.md"
 if [ ! -f "$progress_target" ]; then
-  cp -f "$SCRIPT_DIR/mastering_progress.md" "$progress_target"
+  cp -f "$SCRIPT_DIR/docs/mastering_progress.md" "$progress_target"
   echo "  created: mastering_progress.md (template)"
 else
   echo "  preserved: mastering_progress.md (existing session log untouched)"
