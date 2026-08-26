@@ -12,8 +12,8 @@ box without re-reading the whole conversation history.
 
 ## Current Status
 
-> **Phase:** 3 complete — ready to start Phase 4
-> **Last updated:** this session — Phase 3's escalation decision rule written into
+> **Phase:** 4 complete — ready to start Phase 5
+> **Last updated:** this session — Phase 4's vision fallback procedure written into
 > `SUNO_MASTERING_AGENT_POLICY.md`. (Phase 2's one open item — a live-Ableton run of
 > `call_control` — is still outstanding; see Phase 2 below.)
 
@@ -213,19 +213,42 @@ rule around).
 (`take_shot.sh`) to the vision agent so "this panel won't appear" /
 "this view is hidden" has an actual tool behind it, not just narration.
 
-- [ ] Define the trigger: when a Phase 2 control lookup/click fails to
+- [x] Define the trigger: when a Phase 2 control lookup/click fails to
       resolve, or the learner reports something looks wrong, take a
       screenshot and hand it to the vision agent before improvising.
-- [ ] Define what the vision agent is asked to do with the screenshot:
+      **Done** — new "Vision Fallback: Screenshot-and-Diagnose" section
+      in `SUNO_MASTERING_AGENT_POLICY.md` defines the trigger as any of:
+      `call_control`/`click_by_id` raising `LookupError` /
+      `EscalationExhausted` / `UnsupportedControlType`; the learner
+      reporting something looks wrong/missing/hidden; or a value with no
+      UIA/MCP surface at all (the LUFS case).
+- [x] Define what the vision agent is asked to do with the screenshot:
       identify what's visible, flag if it matches a known OPAQUE/GAP area
       from the catalog (Groove Pool, Info View, Browser item selection),
-      and suggest the next concrete step.
-- [ ] Note the standing use case already flagged in the policy file: the
+      and suggest the next concrete step. **Done** — a 5-step procedure:
+      take the screenshot (with a `LABS/mastering_<YYYY-MM-DD>/` +
+      zero-padded `<seq>` naming convention, since this runtime doesn't
+      have `orchestrate.sh`'s fixed per-lesson `lab_dir` scheme), look at
+      it directly (clarified this is the agent's own multimodal read, not
+      a second tool call — "vision agent" in `context.md` was never a
+      separate process to wire up, just an unused capability), state
+      what's visible before proposing anything, cross-check against
+      Groove Pool / Info View / Browser-item-list before treating it as a
+      new problem, then suggest one concrete next step.
+- [x] Note the standing use case already flagged in the policy file: the
       Youlean LUFS meter has no queryable UIA/MCP surface — this is the
-      first real candidate to wire up.
+      first real candidate to wire up. **Done** — "Verify, Don't Trust"'s
+      LUFS entry now points at this procedure instead of the old "ask the
+      learner to read it" placeholder; the procedure itself spells out
+      screenshot → read the number yourself → cross-check against the
+      learner's own read, flagging any disagreement rather than silently
+      picking one.
 
 **Definition of done:** a stuck moment ("I don't see EQ Eight") triggers an
 actual screenshot + vision read, not just the agent guessing in text.
+**✅ Done** — as a defined procedure the policy file now requires; not
+independently re-verified against a live Ableton session this session (no
+Windows/Ableton available in this environment, same caveat as Phase 2).
 
 **Depends on:** Phase 1 (runtime scope) but not Phase 2/3 — can be built
 in parallel with those if convenient.

@@ -43,10 +43,10 @@ describe a fix in the abstract and assume they can locate the controls.
   on-demand (e.g. grep for one device name) when you need to check something — never load
   the whole file into context, it's large and mostly irrelevant to any single question.
 - **`take_shot.sh`** — ad hoc screenshot capture (handles a minimized/backgrounded window
-  automatically). Use this when the learner says something looks wrong, missing, or
-  hidden, so you can actually see the current state before guessing. There is currently no
-  automatic vision-agent wiring for this (`PHASED_PLAN.md` Phase 4, not yet built) — treat
-  screenshot interpretation as a manual step for now.
+  automatically). Use this per the "Vision Fallback: Screenshot-and-Diagnose" procedure
+  below whenever a control fails to resolve or the learner says something looks wrong,
+  missing, or hidden — see that section for the trigger, the folder/naming convention, and
+  what to do with the resulting image.
 - **NOT included in this runtime:** `orchestrate.sh`. That script's fixed-task,
   screenshot-per-action pipeline belongs to the sibling click-automation course and isn't
   part of this one — don't reference it or assume it's available.
@@ -85,8 +85,8 @@ tool set. Work through these in order; stop at the first one that applies.
 5. **A `call_control` / `click_by_id` resolve fails (`LookupError`,
    `EscalationExhausted`, `UnsupportedControlType`), or the learner says something on
    screen looks wrong, missing, or hidden → take a screenshot (`take_shot.sh`) and look at
-   it before improvising anything.** There's no automatic vision-agent wiring yet (Phase 4)
-   — read the screenshot yourself — but the screenshot comes *before* a guess, always.
+   it before improvising anything.** Full procedure in "Vision Fallback: Screenshot-and-
+   Diagnose" below.
 6. **Still stuck after looking, or the control is a known permanent gap → Level 4, plain
    human instructions, last resort.** This covers: a genuinely `UnsupportedControlType`
    control (e.g. a `Text`-type band selector), Browser item selection (no automation_id on
@@ -107,6 +107,59 @@ tool set. Work through these in order; stop at the first one that applies.
 | Resolve failure, or learner reports something looks wrong | Screenshot first (`take_shot.sh`), then decide |
 | Unsupported control type / Browser item / OPAQUE area (Groove Pool, Info View) | Level 4 human instructions, straight away |
 | Youlean LUFS reading | Ear/report workaround (see "Verify, Don't Trust") — its own documented in-between case |
+
+## Vision Fallback: Screenshot-and-Diagnose
+
+This is the Phase 4 wiring for step 5 of the decision rule above and for the LUFS gap
+flagged in "Verify, Don't Trust." There's no separate vision-model tool call in this
+project — **you are the vision agent**: `context.md`'s "vision agent" line refers to you
+reading the screenshot yourself with your own multimodal capability, not a second process
+to invoke. What was missing before this phase wasn't the capability, it was a defined
+trigger and procedure for using it — this section is that.
+
+**Trigger** — any one of:
+- A `call_control` / `click_by_id` call raises `LookupError`, `EscalationExhausted`, or
+  `UnsupportedControlType`.
+- The learner says something looks wrong, missing, hidden, or "I don't see \_\_\_."
+- A value needs reading that has no UIA/MCP surface at all — right now that means the
+  Youlean LUFS meter specifically (see below).
+
+**Procedure:**
+
+1. **Take the screenshot before guessing or asking the learner to describe further.**
+   ```bash
+   ./take_shot.sh LABS/mastering_<YYYY-MM-DD> <seq> <short_description>
+   ```
+   Use one `LABS/mastering_<YYYY-MM-DD>/` folder per calendar day of tutoring (not per
+   lesson, not per screenshot) and a zero-padded, incrementing `<seq>` within it, so a
+   day's screenshots stay ordered — same spirit as `orchestrate.sh`'s numbered PNGs for the
+   sibling course, just without that script's fixed per-action pipeline (which this runtime
+   deliberately excludes).
+2. **Look at the resulting image directly.** No separate tool call — read it the way you'd
+   read any image handed to you.
+3. **State plainly what's visible before proposing anything** — which panel/view is
+   showing, what device is loaded, what has focus. Resist jumping straight to a fix from
+   the learner's description alone; the screenshot is there so you don't have to guess.
+4. **Check it against known gaps/OPAQUE areas before treating it as a new problem:**
+   - **Groove Pool** — permanently blocked (confirmed Ableton crash). If this is somehow
+     what's on screen or what the learner is asking about, say so plainly and do not
+     suggest opening it, automated or manual.
+   - **Info View** — OPAQUE in the catalog. Treat as Level 4 (describe manually), not
+     something to automate around.
+   - **Browser item list** — confirmed GAP (no automation_id on list items). If the
+     screenshot shows the learner mid-Browser-search, that's expected — this is exactly why
+     device loading always routes through MCP instead (decision rule step 3), not a new
+     problem to solve.
+   If the screenshot matches one of these, go straight to the matching rule instead of
+   spending time trying to automate around a known permanent limitation.
+5. **Otherwise, suggest one concrete next step** — a specific control to click, a specific
+   place to look, or (for the LUFS case below) the specific number you read off the meter.
+
+**The LUFS meter — the first standing use case:** Youlean's integrated LUFS reading has no
+queryable UIA/MCP surface. When a lesson needs that number: screenshot the meter, read the
+integrated LUFS value directly off the image yourself, and also ask the learner to read and
+report the same number. If the two disagree, flag that before trusting either one — don't
+silently pick a value.
 
 ## Learner Profile
 
@@ -183,11 +236,10 @@ For each lesson:
 - Any final quality judgment — the learner is always the judge; you cannot hear the music.
 
 **In-between — no stable UIA surface, needs a workaround:**
-- Youlean's integrated LUFS reading isn't exposed as a queryable device parameter. For now,
-  ask the learner to read it and report the number. If/when the vision-model tooling from
-  the mapping-ableton project lands, this is the first real use case for it — screenshot the
-  meter, ask "what's the integrated LUFS reading," verify against a second read. Don't build
-  that now; just don't let the LUFS-reading gap block a lesson.
+- Youlean's integrated LUFS reading isn't exposed as a queryable device parameter. Use the
+  "Vision Fallback: Screenshot-and-Diagnose" procedure above — screenshot the meter, read
+  the number yourself, cross-check against the learner's own read. Don't let this gap block
+  a lesson.
 
 ## The Stems Trap
 
