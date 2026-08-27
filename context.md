@@ -1,242 +1,157 @@
 # context.md — Project Digest
 
-**Purpose of this file:** a standalone summary of what this project is trying to
-do, what's actually wrong with it as of this session, and what to do next —
-so a new session (or a tired future you) doesn't have to re-derive any of
-this from scratch.
+**Purpose of this file:** a standalone summary of what we're trying to do,
+what's actually wrong with `SUNO_MASTERING_AGENT_POLICY.md` today, and what
+to do next — so a new session doesn't have to re-derive any of this from
+scratch. This file replaces the previous `context.md` entirely; that one
+documented an earlier round of fixes (Phase 0–5 in the old `PHASED_PLAN.md`)
+that are no longer the active problem. Read this file for *why*, then go to
+`PHASED_PLAN.md` for *what's next*.
 
 ---
 
 ## 1. What we're actually trying to achieve
 
-This repo hosts **two sibling AI-agent courses** that both teach inside a real,
-running Ableton Live 12, but for two different problems:
+This repo hosts **two sibling AI-agent courses** that both teach inside a
+real, running Ableton Live 12. This file is only about the **mastering
+course** — teaching a total novice (never used a DAW, no music theory, has
+never touched Ableton) how to master their own AI-generated (Suno) tracks.
+The agent acts as a tour guide sitting at their shoulder, not a Socratic
+tutor and not a silent auto-fixer.
 
-| | Click-automation tutoring course | Mastering course (the one we're focused on) |
-|---|---|---|
-| Builder script | `build_runtime_env.sh` | `build_mastering_env.sh` |
-| Runtime folder | `../ableton-runtime` | `../suno-mastering-course` |
-| Policy file | `ABLETON_AGENT_POLICY.md` → `AGENTS.md` (currently a placeholder, `[PLACEHOLDER]`) | `SUNO_MASTERING_AGENT_POLICY.md` → `AGENTS.md` |
-| Teaches | Ableton UI literacy (where things are, how to click) | Mastering an AI-generated (Suno) track: EQ, compression, loudness, stereo |
-
-**The actual learner for the mastering course** (established mid-session,
-correcting an earlier wrong assumption of mine): a total novice —
-**never used a DAW, no music theory, has never touched Ableton before.**
-They have ~600 self-generated Suno tracks (rated 1–5 stars) and want to
-clean up / master them.
-
-**What they want from the agent:** a **tour guide and instructor sitting at
-their shoulder** — not a Socratic tutor who only asks questions, and not a
-system that silently fixes things via API while the learner watches nothing
-happen. When they say *"I hear a harsh 'ts-ts' sibilance, how do I remove
-it?"*, the agent should help them figure out what's wrong, show them where
-to click and how, and verify the fix in real numbers — the way a real
-instructor standing next to them would.
+The policy file the agent actually reads at runtime is
+`SUNO_MASTERING_AGENT_POLICY.md` → shipped as `AGENTS.md`.
 
 ---
 
-## 2. What was problematic about `build_mastering_env.sh` (RESOLVED this session)
+## 2. The actual problem this session identified
 
-**The contradiction found earlier this session, now fixed:**
+`SUNO_MASTERING_AGENT_POLICY.md` had grown to ~300 lines and was still
+growing, and it was hard to even finish reading it in one pass. The cause
+wasn't missing content — it was **historical narrative and redundant detail
+baked into an operating document**:
 
-- `SUNO_MASTERING_AGENT_POLICY.md` claimed the agent works via
-  *"`ableton-mcp-extended`... **and** the pywinauto UIA layer."*
-- But `build_mastering_env.sh`'s whitelist excluded every file that layer
-  depends on.
+- Cross-references to dev-only files the runtime agent never has
+  (`PHASED_PLAN.md`, `README.md`, `context.md`, `.gitignore`, git
+  "checkout" language).
+- Internal build-plan bookkeeping leaking into prose the agent has to read
+  every session (`"Phase 2, now built"`, `"Phase 4 wiring"`).
+- **Investigation history standing in for a plain instruction.** Instead of
+  "load devices through MCP," the file said "load devices through MCP
+  because Browser drag-and-drop was surveyed in Phase E and found to have
+  no automation_id on list items." The agent doesn't need the survey
+  history to follow the rule.
+- **The same crash re-explained three separate times** (in the tooling
+  bullet, in the escalation rule, and again in a dedicated "Vision
+  Fallback" section), each time with more forensic detail
+  (`0xc0000409`, `ucrtbase.dll`, fault-bucket matching) — for a control
+  (Groove Pool) that **isn't even part of this curriculum** and was never
+  going to come up.
+- An overspecified, numbered "Screenshot-and-Diagnose" procedure that
+  asserted things about how the agent's own vision capability is invoked
+  (`"you are the vision agent... not a second process"`) — narrating
+  internal agent-routing that isn't this policy's business to describe at
+  all, since that's OpenCode's concern, not this document's.
+- Sections carrying detail the agent doesn't need to operate: exact
+  frequency ranges and tool explanations in "Learner Profile" that just
+  duplicate what's already authoritative in the curriculum docs, and a
+  full "Progress Tracking" section built around a persistent session log
+  the actual workflow doesn't use (sessions are stateless; the learner
+  just starts a conversation with whatever track and symptom they're
+  looking at that day).
 
-**Resolution (Phase 1, see `PHASED_PLAN.md`):** decided on a **hybrid**
-scope. `build_mastering_env.sh` now whitelists the click-demonstration
-primitives (`scripts/automate_ableton_task.py` + its hard dependencies
-`dump_ableton_pywinauto.py` and `keyboard_shortcuts.py`), the
-`control_catalog.json` ground-truth reference, and `take_shot.sh` for ad
-hoc screenshots — but deliberately **excludes `orchestrate.sh`**, since
-that script's screenshot-per-action pipeline is built for the sibling
-course's pre-planned, provable lesson steps, not live conversational
-tutoring. `SUNO_MASTERING_AGENT_POLICY.md`'s "Role" section was rewritten
-to itemize exactly what's available, including an honest caveat: device-
-parameter demonstration (e.g. an EQ Eight band edit) isn't actually
-possible yet, because the click primitives are only reachable today
-through the fixed `--task` CLI menu — that gap is exactly what Phase 2 is
-for. Rebuilt and verified the runtime folder end-to-end; the Phase 0
-Groove Pool guard survives the copy intact.
+**The deeper diagnosis, reached by the end of this session:** the crash
+narrative in the policy file isn't the root problem — it's a symptom. The
+`groove_pool_toggle` entry in `scripts/keyboard_shortcuts.py` is *callable
+by design*, gated only by a boolean flag (`blocked=True`) and a generic
+`allow_blocked=True` override that also serves ordinary, harmless
+"not-built-yet" gaps (`monitoring_buttons`, `launch_selected_slot`). Because
+the crash-risk action and the harmless gaps share one mechanism, guarding it
+requires prose — comments, docstrings, and policy paragraphs all repeating
+"please don't." **If a control shouldn't be reachable at all, the fix is to
+not expose a call path for it, not to expose it and then write increasingly
+detailed warnings not to use it.** (Division-by-zero analogy from this
+session: don't hand someone a "0" button and then explain at length why
+pressing it is a bad idea — don't offer the button.)
 
-**Still open, not yet resolved:** the mastering policy's own admitted
-second gap — Youlean's LUFS meter has no queryable UIA/MCP surface, and
-screen-reading for it isn't wired up. This is Phase 4's job (vision
-fallback), not yet started.
-
----
-
-## 2a. Known-Issues logging system (added this session)
-
-**What it's for:** distinct from the phased-plan work above and from
-`mastering_progress.md`'s per-lesson session log. This is a mechanism for
-the *agent itself*, while tutoring live, to flag recurring policy/script/doc
-bugs it runs into — so they get fixed at the root instead of quietly eating
-time every session — without turning into a dumping ground for every minor
-snag. Deliberately kept lean: a strict three-part bar (structural, will
-recur, cheap to fix at the root vs. cost of leaving it) plus an explicit
-"don't log these" list (ordinary teaching friction, one-off track weirdness,
-one-time flukes).
-
-**What was built:**
-- `docs/MASTERING_COURSE_KNOWN_ISSUES.md` — the dev-repo source: the bar,
-  the exclusion list, and the row format (one row per distinct root cause,
-  `Times Seen`/`Last Seen` bumped on repeats rather than duplicated,
-  `Status` of `Open`/`Fixed`/`Wontfix`).
-- `build_mastering_env.sh` now seeds this into the runtime folder as
-  `KNOWN_ISSUES.md` at the root, treating it exactly like
-  `mastering_progress.md`: created once from the dev-repo template, then
-  **never overwritten on re-run** — because the agent appends to it live
-  during sessions, so it's a runtime artifact, not a build output. Verified
-  by running the build twice with a manual edit in between: seeds on first
-  run, preserved untouched on the second.
-- `SUNO_MASTERING_AGENT_POLICY.md` gained a "Known-Issues Log" section (when
-  to check it, when to write to it) and a step 5 in "The Lesson Loop."
-
-**A mistake caught and fixed mid-session, worth remembering:** the first
-draft of `docs/MASTERING_COURSE_KNOWN_ISSUES.md` referred to dev-repo-only
-artifacts — `SUNO_MASTERING_AGENT_POLICY.md` (by its dev name, not
-`AGENTS.md`), `PHASED_PLAN.md`, and the README — inside a file whose exact
-content ships verbatim into the isolated runtime folder as `KNOWN_ISSUES.md`.
-The runtime agent has none of those files (see the whitelist in §1's table),
-so those references would have been dead ends the first time the agent tried
-to follow one. **General lesson, not just a one-off fix:** anything that
-ends up inside a whitelisted/renamed file must only reference other
-whitelisted/renamed files — the runtime folder's own contents, never the dev
-repo's. Rewrote the file to only reference `AGENTS.md`,
-`scripts/dumps/control_catalog.json`, and `mastering_progress.md` — all
-things that actually exist at runtime. **This exact class of bug still
-exists, unfixed, elsewhere — see finding 3 in §4.**
+This reframes the actual fix as **code-level, not just prose-level**:
+`SUNO_MASTERING_AGENT_POLICY.md` can only be permanently debloated once the
+things it's currently narrating around no longer need narrating around.
 
 ---
 
-## 3. What's problematic about our current approach (the deeper issue)
+## 3. Decisions made this session (current, supersedes anything earlier)
 
-Early in this session the instinct was: *"user needs X, task X is missing
-from `automate_ableton_task.py`, therefore go write task X."* This was
-flagged, correctly, as **not how a real tutor works** — it turns the agent
-into someone who memorizes scripts instead of someone who reasons and
-adapts live to whatever's actually in front of the learner.
-
-**The good news, discovered by reading the actual code:** the underlying
-write primitives are *already fully generic*:
-
-- `set_checkbox_by_id(window, auto_id, ...)`
-- `set_slider_by_id(window, auto_id, value, ...)` — double-click + type +
-  Enter, never `SetValue()`
-- `set_combobox_by_id(window, auto_id, ...)`
-
-None of these care what the `automation_id` is attached to. They work on
-`Transport.Tempo` exactly as well as they'd work on
-`TrackView.Device[0].Freq` (EQ Eight's Frequency slider — confirmed present
-in `control_catalog.json` today).
-
-**The actual bottleneck is the interface, not the capability:** the only
-way to invoke these primitives today is through a fixed
-`--task {arm_track, solo_one, solo_tour, set_tempo, ...}` CLI menu
-(`argparse` `choices=[...]` in `automate_ableton_task.py`). Every new
-teaching moment gets funneled into "add a new named task" instead of
-"call the existing generic primitive with a newly-looked-up id." That's the
-real thing to fix — not by writing more `task_*` functions, but by exposing
-a general entry point (sketched as `call_control(automation_id, action,
-value)` in this session) that the agent can drive live, combined with an
-**on-demand, narrow lookup** into `control_catalog.json` (never bulk-loaded
-into the agent's context — confirmed this is both wasteful and risks the
-agent reasoning over stale `bounding_rect` pixel data it shouldn't use).
-
-**Tool roles, clarified this session (audit against the sibilance scenario):**
-
-| Tool | Role | Notes |
-|---|---|---|
-| `ableton-mcp-extended` (MCP/LOM) | Ground-truth read/verify; also the right way to **load a device**, since Browser drag-and-drop automation is a confirmed permanent gap (no automation_id on list items) | Legitimate Level-3 use, not a philosophy violation |
-| `automate_ableton_task.py` primitives | Physically demonstrate a click/drag so the learner watches it happen — the actual pedagogical moment | Should be reachable generically, not just via fixed task names (see above) |
-| `orchestrate.sh` / `take_shot.sh` | Screenshot after each action | Feeds both human review and the vision agent |
-| Vision agent (OpenCode) | Diagnose *what's currently on screen* — hidden panels, missing views, reading meters with no UIA surface (e.g. Youlean LUFS) | The one tool that can answer "why is this stuck," not currently wired into a fallback rule anywhere |
-| `control_catalog.json` | On-demand "does this control exist / is it safe" lookup | Correctly should never be force-fed into context |
-| `keyboard_shortcuts.py` | Level-2 fallback + a teaching moment ("next time, press...") | Underused |
-| `curriculum_map.md`, `course_outline.txt` | Old/stale | **Do not treat as authoritative** — use `docs/suno-mastering-curriculum.md` and `docs/suno-mastering-course-breakdown.md` instead |
-
----
-
-## 4. Two concrete findings logged this session (not yet fixed)
-
-1. ~~**Real bug — Groove Pool guard is not actually enforced in code.**~~
-   **FIXED this session.** Added a `"groove_pool_toggle"` entry to
-   `SHORTCUTS` in `scripts/keyboard_shortcuts.py`, `blocked=True`, noting
-   this is a confirmed crash (not a coverage gap like the other blocked
-   entries) and should not be casually unblocked even if the upstream
-   Ableton bug is fixed. Verified: `load_shortcut("groove_pool_toggle")`
-   raises `ShortcutBlocked` by default; a repo-wide grep confirmed
-   `keyboard_shortcuts.py` is the only file that ever mentioned Groove
-   Pool, so this was the only door that needed closing. See
-   `PHASED_PLAN.md` Phase 0 for the verification detail.
-
-2. **Design gap — task-name-only CLI interface.** Described in full in
-   §3 above. Fix direction: add a generic invocation path so the agent can
-   call the three proven-safe primitives directly with a live-looked-up
-   `automation_id`, instead of requiring a new named task per scenario.
-
-3. **NEW this session — dev-env leaks inside `SUNO_MASTERING_AGENT_POLICY.md`
-   itself.** Found while fixing the same class of bug in the known-issues
-   doc (§2a), but **not yet fixed here** — flagged, not touched, since it
-   wasn't the task in hand this session. Three references inside the file
-   that ships verbatim as the runtime `AGENTS.md` point at files the runtime
-   agent doesn't have: `PHASED_PLAN.md` (Phase 2 mention, tooling section),
-   "the README's [escalation] ladder" (Escalation Decision Rule section),
-   and `context.md` (this file — "vision agent" mention in the Vision
-   Fallback section). All three need rewording to describe the content
-   inline or point at a file that's actually in the runtime whitelist,
-   the same fix already applied to the known-issues doc in §2a. Good
-   first candidate for an actual row in the new `KNOWN_ISSUES.md` once a
-   session hits one of these dead ends live, or just fix proactively next
-   session — either is fine, it's already understood.
-
-(For the record, the *other* crash risk — `SetValue()` on any Slider — **is**
-properly guarded already: disabled in code, documented in three places in
-`automate_ableton_task.py`, no action needed there.)
+- **Groove Pool is not part of the mastering curriculum**, confirmed by
+  grepping `docs/suno-mastering-course-breakdown.md` and
+  `docs/suno-mastering-curriculum.md` — zero mentions. It only exists in
+  this policy file because it's a shared-codebase safety concern inherited
+  from the sibling click-automation course. It should not be a standing
+  callout in the mastering policy at all once the code-level fix (below)
+  removes the call path.
+- **The Youlean LUFS screenshot workaround is genuinely needed** — LUFS/
+  loudness is a real curriculum topic (`docs/suno-mastering-curriculum.md`,
+  the loudness/limiting module) — but it should be one short instruction,
+  not a multi-step procedure with a trigger taxonomy.
+- **Code-level fix identified, not yet applied (deferred to next
+  session):** delete the `groove_pool_toggle` entry from `SHORTCUTS` in
+  `scripts/keyboard_shortcuts.py` entirely, so `load_shortcut(
+  "groove_pool_toggle")` raises a plain `KeyError` ("this isn't a thing"),
+  the same as any unknown label — not a special `ShortcutBlocked` exception
+  carrying a paragraph of justification. The generic `allow_blocked=True`
+  mechanism stays as-is for the legitimate, harmless gap entries; Groove
+  Pool just stops being a member of that group.
+  - **Explicitly out of scope:** `scripts/dumps/control_catalog.json` and
+    `scripts/dumps/section_Groove-Pool.json`. These are static reference
+    data, not executable gates — leave them exactly as they are. The
+    `"status": "OPAQUE"` field and its crash-incident notes are fine to
+    keep as historical record in the data file; the problem was only ever
+    the *callable* guard plus the *prose* narrating it, not the data.
+- **Escalation logic simplified and de-jargoned:** dropped the borrowed
+  "Level 1/2/3/4" labels and internal exception class names
+  (`LookupError`, `EscalationExhausted`, `UnsupportedControlType`) from the
+  policy prose — those are implementation details, not something the agent
+  needs to reason about in plain instructions.
+- **"Already demonstrated once → don't demonstrate again" rule relaxed.**
+  Previous wording was a hard rule. New instruction: keep demonstrating
+  again if the learner actually asks to see it again; don't force them to
+  do it solo just because the idiom came up once before.
+- **"Learner Profile" section needs trimming**, not just leak-removal —
+  domain specifics like exact frequency ranges and what `matchering` is
+  belong in the curriculum docs (which are already the authoritative,
+  detailed source) and shouldn't be duplicated in the policy file's
+  persona summary.
+- **"Progress Tracking" section removed entirely, along with
+  `mastering_progress.md`** as a concept the policy prescribes. Sessions
+  are stateless by design — the learner starts a session by just describing
+  the track and the symptom ("this Suno track, 3/5 stars, starts fine but
+  gets muddy after 2 minutes..."), not by consulting a log. This has a
+  knock-on effect not yet resolved: `build_mastering_env.sh` currently
+  creates and preserves `docs/mastering_progress.md` as a runtime artifact
+  (see its own comments, lines ~147–155) — that build-script behavior needs
+  to be revisited once the policy no longer references the file. Not done
+  this session.
+- **`KNOWN_ISSUES.md` is being repurposed.** Previously it only accepted
+  *already-confirmed, already-fixed-or-permanent* problems, and explicitly
+  excluded anything "already named in `AGENTS.md`" (see
+  `docs/MASTERING_COURSE_KNOWN_ISSUES.md`, its "What does NOT qualify"
+  section, which names Groove Pool as an example of something to **not**
+  log because it's already documented elsewhere). That exclusion is now
+  backwards: once the policy file stops pre-declaring things broken, this
+  log becomes the **only** place such things get tracked — as an
+  open investigation (suspected cause → confirm or refute → root cause →
+  fix), not a settled-facts list. `docs/MASTERING_COURSE_KNOWN_ISSUES.md`
+  itself needs a rewrite to reflect this; not done this session — see
+  `PHASED_PLAN.md`.
 
 ---
 
-## 4a. Where the plan lives
+## 4. Where the plan lives
 
-The priority order below has been turned into a checkable, resumable
-implementation plan: **`PHASED_PLAN.md`** (same folder as this file). It
-breaks the work in §5 into six phases (0 through 5), each with its own
-task checklist, definition of done, and dependencies, plus a "Current
-Status" line at the top to update at the end of every session. If picking
-this project back up later, read this file for *why*, then go straight to
-`PHASED_PLAN.md` for *what's next*.
-
-## 5. The way forward (in rough priority order)
-
-1. **Decide the mastering runtime's real scope**, given the corrected
-   novice persona: does `build_mastering_env.sh` need to become a superset
-   that includes the click-automation layer + on-demand catalog access, or
-   should the mastering agent lean primarily on vision + MCP + generic
-   primitives (per §3) rather than the older task-based click layer?
-2. **Fix the Groove Pool guard** (§4.1) — small, low-risk, unambiguous.
-3. **Build the generic control-invocation interface** (§4.2) so new
-   teaching moments don't require new code — this is the fix that actually
-   stops the "memorize scripts" pattern.
-4. **Write an explicit decision rule** for when the agent should: physically
-   demonstrate (pywinauto), load invisibly (MCP, only where Level 1 is a
-   confirmed gap like the Browser), narrate from a screenshot (vision), or
-   defer to human instructions (Level 4) — today this is only asserted in
-   prose ("per the escalation ladder"), not translated into a concrete
-   runtime rule for this persona.
-5. **Wire the vision agent into a first-class fallback**: if a pywinauto
-   element can't be resolved, or the learner says a panel/view looks wrong,
-   take a screenshot and diagnose before improvising.
-6. Treat `docs/curriculum_map.md` and `docs/course_outline.txt` as
-   deprecated; don't let a future session rediscover and re-trust them.
-7. **NEW:** Fix the three dev-env leaks in `SUNO_MASTERING_AGENT_POLICY.md`
-   found this session (§4.3) — `PHASED_PLAN.md`, the README ladder
-   reference, and `context.md`, all pointing the runtime agent at files it
-   doesn't have. Small, low-risk, same shape of fix already done in §2a.
-8. **NEW:** No automated way yet to pull live entries from the runtime
-   `KNOWN_ISSUES.md` back into the dev-repo's
-   `docs/MASTERING_COURSE_KNOWN_ISSUES.md` — currently a manual, "remember
-   to do it" step (noted in the build script's own output). Not urgent
-   until the log actually has entries, but will be forgotten if left as
-   pure tribal knowledge.
+`PHASED_PLAN.md` (same folder) turns §3 above into a checkable, resumable
+sequence, in dependency order: the code-level fix has to land before the
+policy rewrite can actually stop narrating around it, and the Known-Issues
+doc rewrite should land alongside the policy rewrite since they're meant to
+work as one feedback loop (a suspected crash gets tried, gets logged if
+confirmed, and the *policy* never needs to carry the story — only the log
+does).
