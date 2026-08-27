@@ -84,9 +84,9 @@ FILES=(
   "scripts/dump_ableton_pywinauto.py"         # hard dep of automate_ableton_task.py
   "scripts/keyboard_shortcuts.py"             # hard dep of automate_ableton_task.py;
                                                # also the Level-2 fallback lookup --
-                                               # note groove_pool_toggle is a
-                                               # PERMANENTLY blocked entry in here,
-                                               # see the file itself, do not override
+                                               # note there is no groove_pool_toggle
+                                               # entry in here at all (confirmed-crash
+                                               # action, removed rather than blocked)
   "scripts/dumps/control_catalog.json"        # ground-truth "does this control
                                                # exist / is it safe" reference.
                                                # Consult narrowly/on-demand (e.g. one

@@ -120,25 +120,12 @@ SHORTCUTS: dict[str, ShortcutEntry] = {
             "rediscovered from scratch later."
         ),
     ),
-    "groove_pool_toggle": ShortcutEntry(
-        auto_id_pattern="MainWindow.GroovePool (view toggle, not a Track control)",
-        windows="^%6",  # Ctrl+Alt+6 -- see note: known-good sequence, permanently blocked
-        mac="^%6",
-        source="Ableton manual v12, section 41.1 Showing and Hiding Views; "
-               "docs/ableton_keyboard_shortcuts.json",
-        blocked=True,
-        note=(
-            "PERMANENTLY BLOCKED -- not a coverage gap like the other "
-            "blocked=True entries above, a confirmed CRASH. Opening the "
-            "Groove Pool panel (Ctrl+Alt+6) triggers an upstream Ableton "
-            "Live 12 bug: a stack overrun (0xc0000409 in ucrtbase.dll). "
-            "Confirmed live; see README.md 'Critical Operating Rules' and "
-            "docs/control_catalog_usage_guide.md. Do NOT unblock this entry "
-            "if/when the underlying Ableton bug is fixed upstream -- treat "
-            "any future unblock as a deliberate, separately-verified "
-            "decision, not a routine gap-closing edit like the others here."
-        ),
-    ),
+    # groove_pool_toggle intentionally does not exist here. Opening the
+    # Groove Pool panel is a confirmed Ableton Live 12 crash (see
+    # docs/MASTERING_COURSE_KNOWN_ISSUES.md); removed after a confirmed
+    # crash rather than kept as a blocked-but-callable entry, so
+    # load_shortcut("groove_pool_toggle") raises a plain KeyError like any
+    # other unknown label -- there is no call path to guard against here.
 }
 
 

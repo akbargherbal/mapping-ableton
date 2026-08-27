@@ -14,17 +14,21 @@ can jump straight to the first unchecked box.
 
 ## Current Status
 
-> **Phase:** 0 not started (still the first real item below). Since this
-> plan was originally written, one small out-of-band cleanup landed: the
-> click-automation course's placeholder policy file
-> (`ABLETON_AGENT_POLICY.md`) and its orphaned builder script
-> (`build_runtime_env.sh`) were deleted, and references to them in
-> `README.md` and `build_mastering_env.sh` were fixed up. See `context.md`
-> §3a for the full writeup — it doesn't change anything about Phases 0–3
-> below, just removed some dead weight the diagnosis in §2 also applies to.
-> **Last updated:** this session — recorded the `ABLETON_AGENT_POLICY.md` /
-> `build_runtime_env.sh` deletion. Phase 0 (Groove Pool code fix) itself is
-> still not started.
+> **Phase:** 0 done. Phase 1 (`docs/MASTERING_COURSE_KNOWN_ISSUES.md`
+> rewrite) is next and not started.
+> **Last updated:** this session —
+> 1. Out-of-band cleanup: the click-automation course's placeholder policy
+>    file (`ABLETON_AGENT_POLICY.md`) and its orphaned builder script
+>    (`build_runtime_env.sh`) were deleted, with references in `README.md`
+>    and `build_mastering_env.sh` fixed up. See `context.md` §3a.
+> 2. **Phase 0 completed and verified**: `groove_pool_toggle` deleted from
+>    `SHORTCUTS` in `scripts/keyboard_shortcuts.py`; `load_shortcut(
+>    "groove_pool_toggle")` confirmed to raise a plain `KeyError`; other
+>    `blocked=True` entries confirmed unaffected; repo-wide grep confirmed
+>    no other callable path to Groove Pool; `scripts/dumps/*.json` data
+>    files confirmed untouched; stale `groove_pool_toggle` reference in
+>    `build_mastering_env.sh`'s comments fixed. All checkboxes below are
+>    checked.
 
 ---
 
@@ -37,28 +41,36 @@ nothing left to narrate around.**
 a callable path plus warnings. Apply the "don't hand someone a 0 button"
 principle from this session's discussion.
 
-- [ ] In `scripts/keyboard_shortcuts.py`, delete the `groove_pool_toggle`
+- [x] In `scripts/keyboard_shortcuts.py`, delete the `groove_pool_toggle`
       entry from the `SHORTCUTS` dict entirely (currently lines ~123–141).
-- [ ] Confirm `load_shortcut("groove_pool_toggle")` now raises a plain
+- [x] Confirm `load_shortcut("groove_pool_toggle")` now raises a plain
       `KeyError` (unknown label), not `ShortcutBlocked` — there should be
       no special-cased exception or justification text left for this
-      label, because the label shouldn't exist anymore.
-- [ ] Grep the repo for any other place that could reach Groove Pool
+      label, because the label shouldn't exist anymore. Verified by direct
+      test: `KeyError` raised; `ShortcutBlocked` confirmed still correct
+      for genuine gap entries (`solo_selected_track` etc.), unaffected.
+- [x] Grep the repo for any other place that could reach Groove Pool
       (`grep -rniI "groove" --include="*.py" --include="*.sh" .`) to
       confirm `keyboard_shortcuts.py` was the only door — same check the
       previous session's Phase 0 did, worth re-confirming after the edit.
-- [ ] **Do not touch** `scripts/dumps/control_catalog.json` or
+      Confirmed: only remaining hits are comments (the removal note itself
+      and one now-fixed comment in `build_mastering_env.sh`), no other
+      executable path.
+- [x] **Do not touch** `scripts/dumps/control_catalog.json` or
       `scripts/dumps/section_Groove-Pool.json`. Their `OPAQUE` status and
       crash-incident notes are fine as static historical data — this phase
       is only about removing the *callable* guard and its surrounding
       code comments/docstring justification, not about the data files.
-- [ ] Remove or shorten the now-unnecessary justification comment inside
+      Confirmed untouched (`git status` shows no changes to either).
+- [x] Remove or shorten the now-unnecessary justification comment inside
       `SHORTCUTS` and any docstring text in `load_shortcut`/
       `ShortcutBlocked` that exists specifically to explain the Groove Pool
       case — if the entry is gone, comments defending its existence should
       go with it. The generic `ShortcutBlocked`/`allow_blocked` mechanism
       itself stays, since it's still legitimately used by
-      `monitoring_buttons` and `launch_selected_slot`.
+      `monitoring_buttons` and `launch_selected_slot`. Replaced with a
+      single one-line comment ("removed after a confirmed crash, see
+      KNOWN_ISSUES.md") in place of the old multi-sentence incident report.
 
 **Definition of done:** `groove_pool_toggle` is not a valid label anywhere
 in `SHORTCUTS`; no code comment anywhere still narrates the crash in detail
