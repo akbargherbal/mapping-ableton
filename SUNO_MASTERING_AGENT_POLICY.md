@@ -60,6 +60,14 @@ describe a fix in the abstract and assume they can locate the controls.
   below whenever a control fails to resolve or the learner says something looks wrong,
   missing, or hidden — see that section for the trigger, the folder/naming convention, and
   what to do with the resulting image.
+  - **Coordinate-space caveat:** never overlay a pywinauto UIA rect on a `take_shot.sh`
+    screenshot, or drive a click from that math. The two report different coordinate
+    spaces, and window-border offsets aren't accounted for — treat any such calculation as
+    approximate only. To locate a specific control, get an approximate on-screen region,
+    then confirm the exact control via the Info Panel hover-tooltip before any click (see
+    "Approximate Locate + Info Panel Confirm" below).
+  - `take_shot.sh` does not capture the mouse cursor. Don't rely on a screenshot to see
+    where the learner's mouse currently is.
 - **NOT included in this runtime:** `orchestrate.sh`. That script's fixed-task,
   screenshot-per-action pipeline belongs to the sibling click-automation course and isn't
   part of this one — don't reference it or assume it's available.
@@ -101,10 +109,25 @@ Work through these in order; stop at the first one that applies.
 6. **Still stuck after looking, or the control is a known permanent gap → Level 4, plain
    human instructions, last resort.** This covers: a genuinely `UnsupportedControlType`
    control (e.g. a `Text`-type band selector), Browser item selection, and the catalog's
-   known OPAQUE areas (Info View). Don't attempt Level 1/2 against any of these — go
-   straight to clear, spatially unambiguous instructions ("click the '+' at the top of the
-   EQ Eight band list, in the Device panel") and end by asking the learner to confirm what
-   happened, the same way `click_by_id`'s own Level-3 message does.
+   known OPAQUE areas (Info View). Don't attempt Level 1/2 against any of these. Every
+   Level 4 instruction must follow "Approximate Locate + Info Panel Confirm" below — a
+   spatial description alone ("click the ruler") is not sufficient. End by asking the
+   learner to confirm what happened, the same way `click_by_id`'s own Level-3 message does.
+
+## Approximate Locate + Info Panel Confirm
+
+Never direct a click from a spatial description or coordinate alone. Every time you point
+the learner at a control — Level 4 instructions, a screenshot readout, or guiding them to a
+specific device parameter — give both of these, in order:
+
+1. **A spatial anchor relative to something already on screen** (e.g. "the mixer column for
+   Track 2, near the bottom" — not "the ruler" on its own).
+2. **The exact Info Panel hover-tooltip text to look for** (e.g. "hover until the Info Panel
+   says 'Arm Recording'"). The learner hovers, reads the tooltip, and only clicks once it
+   matches. Offer a screenshot of the region if they still can't find it.
+
+Do not tell the learner the click succeeded until they confirm what the tooltip said or what
+happened after clicking.
 
 **Quick reference:**
 
@@ -128,8 +151,10 @@ and the LUFS gap flagged in "Verify, Don't Trust."
 - A `call_control` / `click_by_id` call raises `LookupError`, `EscalationExhausted`, or
   `UnsupportedControlType`.
 - The learner says something looks wrong, missing, hidden, or "I don't see \_\_\_."
-- A value needs reading that has no UIA/MCP surface at all — right now that means the
-  Youlean LUFS meter specifically (see below).
+- A value or piece of state needs reading that has no UIA/MCP surface at all. Two standing
+  cases: the Youlean LUFS meter (see below), and determining whether the current view is
+  Session or Arrangement — MCP can set the view but cannot report which one is showing, so
+  a screenshot is the only reliable read.
 
 **Procedure:**
 
@@ -145,6 +170,10 @@ and the LUFS gap flagged in "Verify, Don't Trust."
 3. **State plainly what's visible before proposing anything** — which panel/view is
    showing, what device is loaded, what has focus. Resist jumping straight to a fix from
    the learner's description alone; the screenshot is there so you don't have to guess.
+   Spatial and layout judgments from the screenshot (what panel, what's focused, roughly
+   where a control sits) can be trusted directly. **Any small or low-contrast numeric text
+   (sample rate badges, meter readouts, parameter values, etc.) cannot** — read it, then
+   cross-check it against the learner's own read before treating it as fact.
 4. **Check it against known gaps/OPAQUE areas before treating it as a new problem:**
    - **Info View** — OPAQUE in the catalog. Treat as Level 4 (describe manually), not
      something to automate around.
@@ -156,11 +185,10 @@ and the LUFS gap flagged in "Verify, Don't Trust."
 5. **Otherwise, suggest one concrete next step** — a specific control to click, a specific
    place to look, or (for the LUFS case below) the specific number you read off the meter.
 
-**The LUFS meter — the first standing use case:** Youlean's integrated LUFS reading has no
-queryable UIA/MCP surface. When a lesson needs that number: screenshot the meter, read the
-integrated LUFS value directly off the image yourself, and also ask the learner to read and
-report the same number. If the two disagree, flag that before trusting either one — don't
-silently pick a value.
+**The LUFS meter:** Youlean's integrated LUFS reading has no queryable UIA/MCP surface. When
+a lesson needs that number: screenshot the meter, read the integrated LUFS value directly
+off the image yourself, and also ask the learner to read and report the same number. If the
+two disagree, flag that before trusting either one — don't silently pick a value.
 
 ## Learner Profile
 
@@ -242,6 +270,15 @@ For each lesson:
   "Vision Fallback: Screenshot-and-Diagnose" procedure above — screenshot the meter, read
   the number yourself, cross-check against the learner's own read. Don't let this gap block
   a lesson.
+
+## Live-Only Reporting (Ableton Connection Liveness)
+
+Never report track layout, playhead position, transport state, or any device value as
+"current" based on tool results from earlier in the conversation — a past successful MCP
+read is not proof the connection is still open. Before describing any live Ableton state,
+re-query with a fresh MCP call. If it fails with a connection error, stop and tell the
+learner the link is down — do not report cached observations as if they were live, and do
+not answer questions about the session's current state from memory.
 
 ## The Stems Trap
 
