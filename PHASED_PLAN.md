@@ -14,9 +14,19 @@ can jump straight to the first unchecked box.
 
 ## Current Status
 
-> **Phase:** 0 and 0b done. Phase 1 (`docs/MASTERING_COURSE_KNOWN_ISSUES.md`
+> **Phase:** 0, 0b, and 1 done. Phase 2 (`SUNO_MASTERING_AGENT_POLICY.md`
 > rewrite) is next and not started.
 > **Last updated:** this session —
+> 4. **Phase 1 completed**: `docs/MASTERING_COURSE_KNOWN_ISSUES.md`'s
+>    exclusion bullet for gaps "already named in `AGENTS.md`" removed (that
+>    exclusion was backwards once the policy stops pre-declaring things
+>    broken); a Groove Pool row added as an open investigation (known facts,
+>    `Unknown` root cause, a concrete next confirm/refute step), not a
+>    settled fact; the Format section now explicitly allows `Unknown` as a
+>    root cause while a row is still under investigation. The qualifying
+>    bar and the "ordinary teaching friction doesn't count" list were left
+>    as-is, per the plan.
+>
 > 1. Out-of-band cleanup: the click-automation course's placeholder policy
 >    file (`ABLETON_AGENT_POLICY.md`) and its orphaned builder script
 >    (`build_runtime_env.sh`) were deleted, with references in `README.md`
@@ -192,12 +202,13 @@ crash/gap causes get tried, get logged with what's confirmed vs. still
 unknown, and get a root-cause column that starts empty and fills in over
 time, instead of arriving pre-solved.
 
-- [ ] Remove the exclusion bullet under "What does NOT qualify" that
+- [x] Remove the exclusion bullet under "What does NOT qualify" that
       currently says a "gap or OPAQUE area already named in `AGENTS.md`"
       (naming Groove Pool as its example) doesn't belong in this log —
       that's backwards now. Once the policy file stops pre-declaring
       things broken, this log is the *only* place they get tracked.
-- [ ] Add a row (or a short "Under investigation" section above the table)
+      Confirmed removed.
+- [x] Add a row (or a short "Under investigation" section above the table)
       for Groove Pool itself, written as an open question, not a settled
       fact: what's known (two crashes previously observed, same fault
       bucket, `0xc0000409` in `ucrtbase.dll`, before the code-level guard
@@ -205,13 +216,15 @@ time, instead of arriving pre-solved.
       toggle sequence, window state, something else entirely), and what
       the next confirm/refute step would be now that Phase 0 has removed
       the automated path (e.g. a deliberate, isolated manual test).
-- [ ] Update the "Format" table's columns if needed so "Root Cause" can
+      Added as a table row, `Status: Open`, `Root Cause: Unknown`.
+- [x] Update the "Format" table's columns if needed so "Root Cause" can
       honestly be left blank/`Unknown` rather than implying every row
-      already has one filled in.
-- [ ] Leave the three-part bar ("structural, will recur, cheap to fix at
+      already has one filled in. Added a short note above the table
+      instead of changing column headers.
+- [x] Leave the three-part bar ("structural, will recur, cheap to fix at
       the root") and the "ordinary teaching friction doesn't count" list
       as-is — those were never the problem, only the exclusion for
-      already-documented gaps was.
+      already-documented gaps was. Confirmed untouched.
 
 **Definition of done:** this doc can accept "we suspect X crashes but
 haven't confirmed why" as a valid row, and no longer tells someone not to

@@ -31,11 +31,6 @@ applied strictly enough — go re-read it before adding the next row.
   re-explained, or disagreed with an ear-only judgment call.
 - A single track's audio being unusually noisy, quiet, or weird — that's
   the material, not the agent.
-- A gap or OPAQUE area already named in `AGENTS.md` or
-  `scripts/dumps/control_catalog.json` (e.g. Groove Pool — permanently
-  blocked, confirmed crash; Browser drag-and-drop — no automation_id on
-  list items; Info View — OPAQUE). Those are already-known, already-
-  documented limitations — don't duplicate them here.
 - A mistake you made once and immediately corrected, with no reason to
   think it'll happen again.
 
@@ -44,9 +39,15 @@ applied strictly enough — go re-read it before adding the next row.
 One row per **distinct root cause**. If the same root cause shows up again,
 don't add a new row — bump `Times Seen` and `Last Seen` on the existing one.
 
+`Root Cause / Bad Assumption` may honestly say `Unknown` while an entry is
+still under investigation — this log tracks suspected structural problems
+from the moment they're first suspected, not only once they're fully
+root-caused. `Root Fix` for such a row should describe the next confirm/
+refute step, not a finished fix.
+
 | Date First Seen | Times Seen | Last Seen | Symptom | Root Cause / Bad Assumption | Root Fix (what to change, and where) | Status |
 |---|---|---|---|---|---|---|
-| _(no entries yet)_ | | | | | | |
+| 2026-08-08 | 2 | 2026-08-08 | Toggling the Groove Pool panel (Ctrl+Alt+6) crashed Ableton Live 12 twice, same fault bucket (`0xc0000409` in `ucrtbase.dll`) | Unknown — not yet isolated whether it's the specific toggle sequence, window state at the time, or something else in Ableton itself. Not part of this curriculum, so hasn't been prioritized to chase further. | The automated call path was removed as a precaution (Phase 0, `scripts/keyboard_shortcuts.py` — `groove_pool_toggle` no longer exists, `load_shortcut` raises a plain `KeyError`), not because the root cause was confirmed. Next step to actually close this: a deliberate, isolated manual test (open Groove Pool by hand, nothing else running) to confirm or refute the toggle sequence itself as the trigger. | Open |
 
 **Status** is one of: `Open` (not yet fixed) · `Fixed` (root fix applied —
 keep the row, don't delete, so the history of what was wrong survives) ·
