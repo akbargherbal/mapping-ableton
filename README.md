@@ -228,7 +228,7 @@ The offline survey (`control_catalog.json`) provides verified technical groundin
 Install required packages into your Windows Python environment:
 
 ```bash
-pip install pywinauto "mcp[cli]>=1.3.0" python-dotenv
+pip install pywinauto psutil "mcp[cli]>=1.3.0" python-dotenv
 ```
 
 ### 2. WSL2 Interop Configuration (If running from WSL)
@@ -285,6 +285,7 @@ python.exe update_catalog.py --dumps-dir dumps
 2. **Fresh Tree Walks**: UI control handles must **never be cached** across actions or delays. Every click or read must execute a fresh tree walk (`resolve()`) to avoid stale-handle errors.
 3. **Track-Selection Blindness Guard**: UIA cannot natively determine which track is currently focused in Ableton. Track-scoped shortcuts that rely on track selection (e.g., `S` for Solo, `C` for Arm) are flagged `blocked=True` in `keyboard_shortcuts.py` to prevent modifying the wrong track. Positional shortcuts (`F1`–`F8` for Track Activators 1–8) are unblocked.
 4. **Groove Pool Safety Block**: Opening the Groove Pool panel (Ctrl+Alt+6) triggers an upstream stack overrun crash (`0xc0000409` in `ucrtbase.dll`) in Ableton Live 12. Automated scripts are strictly prohibited from toggling the Groove Pool panel.
+5. **Host-Process Liveness Check**: every write path (`resolve()`, the universal chokepoint every click/set/verify goes through) checks the Ableton process is still actually running — via the OS, not by inferring it from a missing UIA control — before doing any work. If the process is confirmed gone, `AbletonProcessGone` is raised immediately and a distinct `host_crashed` event is emitted, instead of retrying or escalating against a dead window handle. See `get_ableton_pid()` / `is_ableton_alive()` / `require_ableton_alive()` in `scripts/dump_ableton_pywinauto.py`. Requires `psutil`.
 
 ---
 

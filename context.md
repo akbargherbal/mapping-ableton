@@ -177,6 +177,65 @@ real work.
 
 ---
 
+## 3b. Decision made in the same later session: host-process liveness detection
+
+Separately from the sibling-course cleanup in §3a, this session identified
+a real gap while discussing the Groove Pool removal: **nothing in the
+codebase could tell the difference between "Ableton crashed" and "a
+control just isn't visible right now."** Every existing failure signal
+(`find_ableton_window()` returning `None`, `resolve()` raising
+`LookupError`) is inferred from UIA symptoms, which are inherently
+ambiguous — a missing control could mean the whole app is gone, or could
+mean nothing is wrong and the UI just hadn't redrawn yet. Worse, several
+of the functions involved (`ensure_window_ready()`'s restore/focus/
+maximize calls) wrap their pywinauto calls in bare `except Exception:
+pass`, so a genuinely dead process would most likely fail *silently*
+rather than surface clearly.
+
+**Explicit instruction from this session, followed literally:** design
+this from a blank slate, not from the Groove Pool incident's specific
+forensics (no `0xc0000409`/`ucrtbase.dll`-style exit-code matching) — the
+mechanism needs to work the same way regardless of *why* Ableton died.
+Also explicit: **do not ask, do not tell** — if a crash happens, the code
+should document it (a clear, structured signal) and stop, not attempt to
+silently recover or ask the user what to do. That recovery/reaction
+question is deferred, not solved.
+
+**What got built** (see `PHASED_PLAN.md` Phase 0b for the full checklist):
+an OS-level liveness check (`psutil.pid_exists()` plus a process-name
+match, to guard against pid recycling) added to
+`scripts/dump_ableton_pywinauto.py` alongside the existing window-
+discovery/readiness helpers, a new `AbletonProcessGone` exception
+distinct from the existing `LookupError`/`ShortcutBlocked`, wired into
+`resolve()` (the universal chokepoint every write path already goes
+through) and the two existing multi-step loops, with a distinct
+`host_crashed` event emitted by `run_task()` — kept separate from the
+ordinary `task_done: failed` event on purpose, so a crash can't get
+silently absorbed by a broad `except Exception` elsewhere and treated as
+"just one more failed step" in a loop.
+
+**A specific edge case this session worked through explicitly:** what
+happens if the user closes and reopens Ableton without telling the agent?
+Traced precisely: the OS hands the new instance a different pid, so the
+*in-flight* task correctly detects the old pid is gone and stops (it was
+holding a stale window handle regardless of whether a new instance now
+exists — continuing against it would itself be a bug). But because nearly
+every entry point here is a fresh, one-shot process per `--task`
+invocation, the *next* task invocation calls `find_ableton_window()` from
+scratch and just picks up the new instance, with no memory that a restart
+happened in between. That's flagged as a known, deliberate gap (see Phase
+0b's "explicitly out of scope" list) rather than something this session
+tried to close — persisting or surfacing "a restart happened" is exactly
+the kind of reaction-to-a-crash question deferred to a later decision.
+
+**Not yet done, left for Phase 1 or later:** `host_crashed` is only a
+structured stdout event right now — nothing appends it to
+`docs/MASTERING_COURSE_KNOWN_ISSUES.md` automatically. Phase 1 has to
+rewrite that log's framing to accept open/unconfirmed entries before it
+would even make sense to wire that up.
+
+---
+
 ## 4. Where the plan lives
 
 `PHASED_PLAN.md` (same folder) turns §3 above into a checkable, resumable

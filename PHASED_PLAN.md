@@ -14,7 +14,7 @@ can jump straight to the first unchecked box.
 
 ## Current Status
 
-> **Phase:** 0 done. Phase 1 (`docs/MASTERING_COURSE_KNOWN_ISSUES.md`
+> **Phase:** 0 and 0b done. Phase 1 (`docs/MASTERING_COURSE_KNOWN_ISSUES.md`
 > rewrite) is next and not started.
 > **Last updated:** this session —
 > 1. Out-of-band cleanup: the click-automation course's placeholder policy
@@ -29,6 +29,18 @@ can jump straight to the first unchecked box.
 >    files confirmed untouched; stale `groove_pool_toggle` reference in
 >    `build_mastering_env.sh`'s comments fixed. All checkboxes below are
 >    checked.
+> 3. **Phase 0b added and completed mid-session**: host-process liveness
+>    detection (`AbletonProcessGone`, `is_ableton_alive()`, wired into
+>    `resolve()` and the multi-step loops) — not originally in this plan,
+>    added because Phase 0 was still open when the gap was raised. See
+>    Phase 0b below for the full writeup, and `context.md` §3b for why.
+>    **Note for Phase 1**: the new `host_crashed` event exists but nothing
+>    persists it to `KNOWN_ISSUES.md` yet or reacts to it beyond stopping
+>    the current task — Phase 1's log-format rewrite should account for
+>    this as a new kind of entry the log needs to accept, and Phase 3
+>    (or a later phase) may want to decide whether `host_crashed` should
+>    auto-append to the log once Phase 1 makes that log's format able to
+>    receive it.
 
 ---
 
@@ -81,6 +93,91 @@ comment is what we're removing).
 **Depends on:** nothing. Pure code change, no live Ableton needed to verify
 the `KeyError` behavior (a plain unit-level check of `SHORTCUTS` and
 `load_shortcut` is enough).
+
+---
+
+## Phase 0b — Host-process liveness detection (added mid-phase)
+**Priority: same as Phase 0 — both are code-level safety mechanisms, not
+policy prose, and both had to land before Phase 2 can describe them
+briefly instead of narrating around them.**
+
+**Goal, from a blank slate (not derived from the Groove Pool incident or
+any other specific crash's forensics): give every write path a way to
+know, authoritatively, that Ableton's process is still running — instead
+of inferring health indirectly from UIA symptoms (missing controls, a
+window that fails to be found), which can't distinguish "the app is gone"
+from "the app is fine but momentarily busy/virtualized". The concrete
+failure mode being prevented: the agent continuing to click, retry, and
+escalate in a loop against a host that has already crashed.**
+
+- [x] Added `get_ableton_pid()`, `is_ableton_alive()`, and
+      `require_ableton_alive()` to `scripts/dump_ableton_pywinauto.py`
+      (the existing single-source-of-truth module for window
+      discovery/readiness) — an OS-level check via `psutil.pid_exists()`
+      plus a process-name match, not a UIA-based inference. New
+      `AbletonProcessGone` exception, distinct from `LookupError`
+      (ambiguous — control missing, could be transient) and
+      `ShortcutBlocked` (guarded action, not a crash).
+- [x] Wired into `scripts/automate_ableton_task.py`: pid captured once in
+      `_require_ableton_window()` right after the window is found;
+      `resolve()` — the universal chokepoint every click/set/verify path
+      already goes through — checks liveness first, before its existing
+      retry-with-refocus logic, so a dead process is caught immediately
+      rather than falling into `ensure_window_ready()`'s silent
+      `except Exception: pass`.
+- [x] Explicit checks also added at the top of the two existing
+      multi-step loops (`task_solo_tour`'s per-track loop,
+      `task_probe_write_back`'s `_run_test` wrapper) — belt-and-suspenders
+      on top of `resolve()`'s coverage, so a crash mid-loop is caught
+      before the next iteration's work starts, not partway through it.
+- [x] `run_task()` (the one instrumentation point every task dispatch goes
+      through) emits a distinct `host_crashed` event, separate from the
+      ordinary `task_done: failed` event, and re-raises rather than
+      swallowing it — checked specifically so a broad `except Exception`
+      elsewhere (e.g. `task_probe_write_back`'s per-test wrapper) can't
+      accidentally catch a crash and report it as "just one more failed
+      test" before continuing to the next one.
+- [x] Identity check included (process name match, not just pid
+      existence) — guards against the OS eventually recycling a pid
+      number onto an unrelated process, which pure existence-checking
+      can't distinguish from Ableton actually still being alive.
+- [x] Verified with mocked tests (no real Windows/Ableton available in
+      this environment): dead-pid detection, `resolve()` short-circuiting
+      before attempting `LookupError`, and `run_task()` emitting
+      `host_crashed` and propagating rather than swallowing the exception.
+- [x] `psutil` added as a dependency (`README.md`'s pip install line);
+      documented as Critical Operating Rule 5 in `README.md`.
+
+**Explicitly out of scope / deferred, not part of this phase:**
+- **Auto-recovery.** If Ableton crashes and is reopened, the *in-flight*
+  task correctly stops (it was holding a stale pid/window handle) — but
+  nothing currently re-discovers the new process and resumes
+  automatically, or surfaces "this session started right after an
+  unannounced restart" to whatever runs next. Each `--task` invocation is
+  already a fresh process that calls `find_ableton_window()` from
+  scratch, so the *next* task just works against the new instance without
+  knowing a restart happened — silently, for this one specific case only.
+  Deliberately not solved here, per this session's instruction: detect
+  and document a crash now, decide how (or whether) to react to it later.
+- **Writing to `KNOWN_ISSUES.md` automatically.** `host_crashed` is
+  emitted as a structured event on stdout; nothing yet appends it to the
+  known-issues log. That's Phase 1's concern (the log's framing has to
+  be rewritten to accept "suspected, not yet root-caused" entries first)
+  — this phase only makes sure the *signal* exists and is unambiguous,
+  not that it's persisted anywhere yet.
+
+**Definition of done:** a process-liveness check exists that doesn't rely
+on any specific crash's symptoms (no exit codes, no fault-bucket
+matching, no exe-specific forensics) — it works the same way whether
+Ableton died from the Groove Pool bug, an unrelated bug, or the user
+just closing it. `AbletonProcessGone` is a clearly distinct signal from
+every other failure mode already in this codebase.
+
+**Depends on:** nothing new — reuses the same "one source of truth"
+pattern `find_ableton_window()`/`ensure_window_ready()` already
+established. Independent of Phase 0's Groove Pool fix; bundled into the
+same phase only because both landed in the same session and both are
+code-level safety work ahead of Phase 2's policy rewrite.
 
 ---
 

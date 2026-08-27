@@ -271,6 +271,99 @@ def ensure_window_ready(window: UIAWrapper, maximize: bool = True) -> None:
     time.sleep(0.3)  # give the redraw a moment before we walk the tree
 
 
+# --------------------------------------------------------------------------
+# Host-process liveness
+# --------------------------------------------------------------------------
+#
+# Everything above this point infers Ableton's health indirectly, from UIA
+# symptoms: a window that fails to be found, a control that fails to
+# resolve, a redraw that hasn't happened yet. Those symptoms are
+# ambiguous by nature -- they can't tell "the app is gone" apart from
+# "the app is fine but momentarily busy/virtualized/off-screen". This
+# section answers a different, narrower question directly from the OS,
+# with no UIA involved: is the specific process we found earlier still
+# running at all. That's the one signal that isn't ambiguous, and it's
+# the one a caller should check before retrying or escalating anything --
+# there's no point retrying a click against a process that no longer
+# exists.
+try:
+    import psutil  # type: ignore[import]
+except ImportError:
+    psutil = None  # guarded at call time; see is_ableton_alive()
+
+ABLETON_PROCESS_NAME_HINT = "ableton"  # case-insensitive substring; matches
+                                        # e.g. "Ableton Live 12 Suite.exe"
+
+
+class AbletonProcessGone(RuntimeError):
+    """Raised when the specific Ableton process we were talking to is
+    confirmed (by the OS, not by UIA) to no longer exist. Distinct from
+    LookupError (a control wasn't found -- ambiguous, could be transient)
+    and from ShortcutBlocked (the action exists but is deliberately
+    guarded) -- this one means: stop, don't retry, don't escalate, the
+    thing we were automating isn't there anymore."""
+
+
+def get_ableton_pid(window: UIAWrapper) -> int:
+    """Capture the OS process id behind a resolved Ableton window. Call
+    this once, right after find_ableton_window() succeeds, and hold onto
+    the result -- don't re-derive it from the window later, since a stale
+    window handle is exactly what we're trying to detect."""
+    return window.process_id()
+
+
+def is_ableton_alive(pid: int, name_hint: str = ABLETON_PROCESS_NAME_HINT) -> bool:
+    """Authoritative liveness check for one specific process id.
+
+    Two checks, both against the OS, neither against UIA:
+      1. Does a process with this pid exist at all right now?
+      2. Is it still (plausibly) Ableton, not some unrelated process that
+         has since reused the same pid number? PIDs get recycled by the
+         OS over a long-running session; without this second check, a
+         crash followed by enough other process churn could produce a
+         false "still alive" on a pid that now belongs to something else
+         entirely. Checking the process name is a cheap guard against
+         that, not a security boundary -- good enough for "don't keep
+         automating a window that's actually gone."
+
+    Returns False (not an exception) for the ordinary case where the
+    process is simply gone -- callers decide what that means. Requires
+    psutil; raises RuntimeError with an install hint if it's missing,
+    rather than silently reporting "alive" and letting a caller loop
+    blind against a dead process.
+    """
+    if psutil is None:
+        raise RuntimeError(
+            "psutil is required for process-liveness checks -- "
+            "pip install psutil"
+        )
+    if not psutil.pid_exists(pid):
+        return False
+    try:
+        proc_name = psutil.Process(pid).name()
+    except psutil.NoSuchProcess:
+        # Exited in the gap between pid_exists() and Process() -- same
+        # answer as "not running", just a different race to get there.
+        return False
+    return name_hint.lower() in proc_name.lower()
+
+
+def require_ableton_alive(pid: int) -> None:
+    """Raise AbletonProcessGone if the given pid is no longer Ableton.
+    Call this before retrying or escalating an action, not after --
+    the point is to stop before doing more work against a dead process,
+    not to explain the failure after the fact."""
+    if not is_ableton_alive(pid):
+        raise AbletonProcessGone(
+            f"Ableton (pid={pid}) is no longer running. The process behind "
+            "the window we were automating is gone -- stopping here rather "
+            "than continuing to retry or escalate against a dead handle. "
+            "If Ableton has been reopened since, it's a new process with a "
+            "new pid; re-run find_ableton_window() to pick it up fresh "
+            "rather than assuming this session can just continue."
+        )
+
+
 def rect_to_tuple(rect) -> Optional[tuple]:
     try:
         return (rect.left, rect.top, rect.right, rect.bottom)

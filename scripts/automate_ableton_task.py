@@ -120,19 +120,51 @@ except ImportError:
 # dump script instead of duplicating them -- keep one source of truth for
 # "how do we find Live" and "how do we make sure its tree is fully visible
 # before we touch it" (the latter used to be a local copy here; consolidated
-# so the two scripts can't quietly drift apart on this).
+# so the two scripts can't quietly drift apart on this). Same reasoning
+# covers the process-liveness helpers below.
 # Lazy import: --list-tasks works without pywinauto / Ableton.
 _find_ableton_window = None
 _ensure_window_ready = None
+_get_ableton_pid = None
+_require_ableton_alive = None
+
+
+class _AbletonProcessGonePlaceholder(RuntimeError):
+    """Stand-in for dump_ableton_pywinauto.AbletonProcessGone until
+    _lazy_import_dump() replaces the module-level name below with the
+    real class. Never actually raised itself -- exists only so
+    `except AbletonProcessGone` is valid Python even if reached before
+    the lazy import has run, instead of `except None` raising its own
+    confusing TypeError."""
+
+
+AbletonProcessGone = _AbletonProcessGonePlaceholder
+
+# The pid of the Ableton process we're currently automating, captured once
+# in main() right after find_ableton_window() succeeds. Deliberately
+# module-level rather than threaded through every function's signature --
+# resolve() is the one chokepoint essentially every write path already
+# goes through, so reading this here is enough to catch a dead process
+# before any control interaction, without a fanout of new parameters
+# across the whole file. None until main() sets it (e.g. --list-tasks,
+# or any code path that runs before a window is found).
+_ableton_pid: int | None = None
 
 
 def _lazy_import_dump() -> None:
     global _find_ableton_window, _ensure_window_ready
+    global _get_ableton_pid, _require_ableton_alive, AbletonProcessGone
     if _find_ableton_window is not None:
         return
-    from dump_ableton_pywinauto import find_ableton_window, ensure_window_ready
+    from dump_ableton_pywinauto import (
+        find_ableton_window, ensure_window_ready,
+        get_ableton_pid, require_ableton_alive, AbletonProcessGone as _APG,
+    )
     _find_ableton_window = find_ableton_window
     _ensure_window_ready = ensure_window_ready
+    _get_ableton_pid = get_ableton_pid
+    _require_ableton_alive = require_ableton_alive
+    AbletonProcessGone = _APG
 
 
 def find_ableton_window():
@@ -143,6 +175,28 @@ def find_ableton_window():
 def ensure_window_ready(window):
     _lazy_import_dump()
     _ensure_window_ready(window)
+
+
+def set_ableton_pid(window) -> int:
+    """Capture and remember the pid behind `window`. Call once, right
+    after find_ableton_window() succeeds; every later liveness check
+    reads this back rather than re-deriving it from a possibly-stale
+    window handle."""
+    global _ableton_pid
+    _lazy_import_dump()
+    _ableton_pid = _get_ableton_pid(window)
+    return _ableton_pid
+
+
+def check_ableton_alive() -> None:
+    """Raise AbletonProcessGone if the pid captured by set_ableton_pid()
+    is no longer running. No-op if set_ableton_pid() was never called
+    (e.g. --list-tasks, or any path that doesn't touch a live window) --
+    there's nothing to check yet, that's not the same as a crash."""
+    if _ableton_pid is None:
+        return
+    _lazy_import_dump()
+    _require_ableton_alive(_ableton_pid)
 
 # Canonical F1..F8 lookup for the Activator positional-shortcut test
 # below. Kept in its own module (keyboard_shortcuts.py) rather than
@@ -290,14 +344,30 @@ def find_control(window: UIAWrapper, auto_id: str, max_depth: int = 20) -> UIAWr
 def resolve(window: UIAWrapper, auto_id: str, retry_with_refocus: bool = True) -> UIAWrapper:
     """Resolve one control by automation_id, right now, freshly.
 
-    If it's missing, try once more after ensure_window_ready() -- covers
-    the case where focus/visibility shifted between the start of a task
-    and this particular click (e.g. clicking Play could plausibly steal
-    focus). Raises a clear error if it's still missing after that.
+    Checks process liveness first: if the Ableton process we captured
+    earlier (via set_ableton_pid()) is confirmed gone, raises
+    AbletonProcessGone immediately rather than falling through to the
+    retry-with-refocus path below -- there's no point calling
+    ensure_window_ready() (restore/focus/maximize) against a window whose
+    process no longer exists; those calls would most likely just fail
+    silently (they're wrapped in bare except-Exception-pass) and mask
+    what actually went wrong.
+
+    If it's missing but Ableton is still alive, try once more after
+    ensure_window_ready() -- covers the case where focus/visibility
+    shifted between the start of a task and this particular click (e.g.
+    clicking Play could plausibly steal focus). Raises a clear error if
+    it's still missing after that.
     """
+    check_ableton_alive()
     control = find_control(window, auto_id)
     if control is None and retry_with_refocus:
         ensure_window_ready(window)
+        check_ableton_alive()  # re-check: ensure_window_ready() just
+                                # touched the window; if the process died
+                                # during/because of that, surface it now
+                                # rather than reporting a confusing
+                                # "control not found" for the wrong reason
         control = find_control(window, auto_id)
     if control is None:
         raise LookupError(
@@ -1249,6 +1319,12 @@ def task_solo_tour(window: UIAWrapper, track_indices: list[int],
     per-track granularity isn't needed, so existing workflows don't regress.
     """
     for i in track_indices:
+        check_ableton_alive()  # explicit, up front: resolve() inside
+                                # task_solo_one() would catch a dead
+                                # process too, but checking here first
+                                # means a crash mid-tour stops before any
+                                # per-track work (sleeps, clicks) starts
+                                # on the next track, not partway through it
         task_solo_one(window, i, seconds, dry_run)
 
 
@@ -1432,9 +1508,21 @@ def task_probe_write_back(window: UIAWrapper, dry_run: bool) -> None:
     def _run_test(name: str, fn: Callable[[], str]) -> None:
         print(f"\n--- {name} ---")
         try:
+            check_ableton_alive()  # explicit here because Test 3 below
+                                    # calls find_control() directly, not
+                                    # resolve(), so it wouldn't otherwise
+                                    # get this check for free
             detail = fn()
             print(f"  [PASS] {detail}")
             results.append((name, "PASS", detail))
+        except AbletonProcessGone:
+            # Deliberately NOT caught by the broad except below: a dead
+            # host isn't "this one test failed, try the next" the way
+            # everything else in this function is designed to be
+            # independent -- it means there's nothing left to test
+            # against, so stop the whole probe here instead of quietly
+            # recording it as one more FAIL and moving on.
+            raise
         except Exception as e:
             print(f"  [FAIL] {type(e).__name__}: {e}")
             results.append((name, "FAIL", f"{type(e).__name__}: {e}"))
@@ -1596,6 +1684,15 @@ def run_task(task_name: str, tracks: list[int], fn: Callable[[], None]) -> None:
     emit_event("task_start", task=task_name, tracks=tracks)
     try:
         fn()
+    except AbletonProcessGone as e:
+        # A separate event type from the ordinary "failed" case below --
+        # this isn't "this task's logic went wrong", it's "the thing
+        # being automated is gone". Keeping it distinct means a consumer
+        # (a human, an orchestrator, KNOWN_ISSUES.md later) can grep for
+        # exactly this instead of pattern-matching error strings.
+        emit_event("host_crashed", task=task_name, tracks=tracks,
+                    pid=_ableton_pid, error=str(e))
+        raise
     except Exception as e:
         emit_event("task_done", task=task_name, tracks=tracks, result="failed", error=str(e))
         raise
@@ -1620,6 +1717,10 @@ def _require_ableton_window() -> UIAWrapper:
         print("Could not find the Ableton Live window. Is it running?", file=sys.stderr)
         sys.exit(1)
     ensure_window_ready(window)
+    set_ableton_pid(window)  # capture once, here -- every later
+                              # check_ableton_alive() call reads this back
+                              # rather than re-deriving it from what could
+                              # by then be a stale window handle
     return window
 
 
