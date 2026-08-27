@@ -14,9 +14,14 @@ can jump straight to the first unchecked box.
 
 ## Current Status
 
-> **Phase:** 0, 0b, 1, and 2 done. Phase 3 (`build_mastering_env.sh`
-> reconciliation) is next and not started.
+> **Phase:** All phases (0, 0b, 1, 2, 3) done. No open phases remain.
 > **Last updated:** this session —
+> 6. **Phase 3 completed**: decided (person's explicit choice) to remove
+>    `mastering_progress.md` entirely rather than keep it as an optional
+>    personal-reference file — `build_mastering_env.sh`'s creation block
+>    removed, the dev-repo template file deleted, and its README listing
+>    removed. `KNOWN_ISSUES.md` seeding confirmed still correct and
+>    unaffected by the removal.
 > 5. **Phase 2 completed**: `SUNO_MASTERING_AGENT_POLICY.md` rewritten —
 >    Groove Pool references removed entirely (no callable path left to warn
 >    about); Browser-loading and manual-cross-reference backstory trimmed to
@@ -328,22 +333,39 @@ rewrite will just reintroduce the same narrative it's trying to remove.
 whatever Phase 2 actually ships — no orphaned artifacts the policy no
 longer references.
 
-- [ ] Decide: since "Progress Tracking" is being removed from the policy
+- [x] Decide: since "Progress Tracking" is being removed from the policy
       (Phase 2), does `build_mastering_env.sh` still create/preserve
       `mastering_progress.md`? If the workflow is genuinely stateless now,
       this is dead weight; if there's still a reason to keep a lightweight
       record (e.g. for the person's own reference, not the agent's), say
       so explicitly rather than leaving the script and the policy
       disagreeing the way the original contradiction (documented in the
-      old `context.md`) did.
-- [ ] Confirm `KNOWN_ISSUES.md` seeding still points at the Phase 1
+      old `context.md`) did. **Decided: remove entirely** (person's
+      explicit choice, offered against "keep as an optional file for your
+      own reference"). Removed the creation block from
+      `build_mastering_env.sh`, deleted the now-unused
+      `docs/mastering_progress.md` template, and removed its line from
+      `README.md`'s repository-structure listing.
+- [x] Confirm `KNOWN_ISSUES.md` seeding still points at the Phase 1
       rewritten `docs/MASTERING_COURSE_KNOWN_ISSUES.md` and that the
       "never overwritten once it exists" behavior (lines ~158–169) is
-      still correct given the new framing.
+      still correct given the new framing. Confirmed unchanged and still
+      correct — the seed source and preserve-on-rerun logic were never
+      coupled to the progress-log mechanism that was removed.
 
 **Definition of done:** running `build_mastering_env.sh` produces exactly
 the files the rewritten policy actually references — nothing more, nothing
-stale.
+stale. **Met** — `mastering_progress.md` is no longer generated, and the
+policy makes no reference to it.
 
 **Depends on:** Phase 2 (needs to know what the final policy actually
 references before deciding what the build script should ship).
+
+---
+
+## Plan status: complete
+
+All four phases (0, 0b, 1, 2, 3) are done as of this session. There is no
+further open work tracked in this file. If a new round of fixes starts,
+replace this file the same way this one replaced its predecessor (see the
+top of this file and of `context.md`).

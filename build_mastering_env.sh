@@ -41,10 +41,10 @@
 #
 # Point OpenCode's working directory at <target_dir> for the mastering
 # course. Re-run any time SUNO_MASTERING_AGENT_POLICY.md or the whitelisted
-# docs/scripts change — straight overwrite of those, but mastering_progress.md
-# and KNOWN_ISSUES.md in the target are never touched once they exist (both
-# are live session artifacts the agent appends to, not build outputs), and
-# LABS/ / scripts/dumps/ raw dump files are preserved if pre-existing.
+# docs/scripts change — straight overwrite of those, but KNOWN_ISSUES.md in
+# the target is never touched once it exists (it's a live session artifact
+# the agent appends to, not a build output), and LABS/ / scripts/dumps/ raw
+# dump files are preserved if pre-existing.
 
 set -euo pipefail
 
@@ -142,22 +142,11 @@ for f in "${OPTIONAL_FILES[@]}"; do
   echo "  copied (optional): $f"
 done
 
-# mastering_progress.md is a runtime session log, not a build artifact — copy
-# the template only if the target doesn't already have one going, so a
-# re-run of this script never clobbers real session history.
-progress_target="$TARGET/mastering_progress.md"
-if [ ! -f "$progress_target" ]; then
-  cp -f "$SCRIPT_DIR/docs/mastering_progress.md" "$progress_target"
-  echo "  created: mastering_progress.md (template)"
-else
-  echo "  preserved: mastering_progress.md (existing session log untouched)"
-fi
-
-# KNOWN_ISSUES.md is the same shape of artifact as mastering_progress.md above:
-# the agent appends to it live during sessions (see SUNO_MASTERING_AGENT_POLICY.md
-# "Known-Issues Log"), so a re-run must never clobber it. Dev-repo name differs
-# from the runtime name -- same construct as the POLICY_SRC_NAME/POLICY_DEST_NAME
-# rename above -- so this is a straight cp-with-rename, seeded once.
+# KNOWN_ISSUES.md is a runtime session log the agent appends to live during
+# sessions (see SUNO_MASTERING_AGENT_POLICY.md "Known-Issues Log"), so a
+# re-run must never clobber it. Dev-repo name differs from the runtime name
+# -- same construct as the POLICY_SRC_NAME/POLICY_DEST_NAME rename above --
+# so this is a straight cp-with-rename, seeded once.
 known_issues_target="$TARGET/KNOWN_ISSUES.md"
 if [ ! -f "$known_issues_target" ]; then
   cp -f "$SCRIPT_DIR/docs/MASTERING_COURSE_KNOWN_ISSUES.md" "$known_issues_target"

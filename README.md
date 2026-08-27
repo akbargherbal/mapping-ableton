@@ -190,7 +190,6 @@ The offline survey (`control_catalog.json`) provides verified technical groundin
 │   ├── curriculum_map.md       # Lesson topic → automation_id reference layer (click-automation course)
 │   ├── suno-mastering-course-breakdown.md # Authoritative mastering-course lesson spec (Lessons 1-10)
 │   ├── suno-mastering-curriculum.md # Leaner 6-module mastering-course operating version
-│   ├── mastering_progress.md  # Mastering-course session log template (date/track/lesson/rating)
 │   ├── ableton_ai_educational_risk_framework.md # Risk/fallback policy (ladder + safety rules)
 │   ├── control_catalog_usage_guide.md # Practical reference for using control_catalog.json
 │   ├── opencode-ableton-mcp-setup.md  # Setup guide for OpenCode (WSL2) to Windows Ableton MCP
