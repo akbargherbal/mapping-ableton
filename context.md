@@ -146,6 +146,37 @@ things it's currently narrating around no longer need narrating around.
 
 ---
 
+## 3a. Decision made in a later session (2026-08-27): removed the sibling course's dead build path
+
+`ABLETON_AGENT_POLICY.md` (a 13-byte `[PLACEHOLDER]`, never actually
+written) and `build_runtime_env.sh` (its now-orphaned builder script) have
+been **deleted**. They were themselves a small instance of the same
+disease diagnosed in §2 above — a policy file that never got written, and
+a build script whose only job was to copy that placeholder into a runtime
+folder, both surviving purely as things other files cross-referenced ("same
+policy as `build_runtime_env.sh`," "copied to `AGENTS.md` in
+`../ableton-runtime`").
+
+**Scope of this cleanup, explicitly:** only those two files. The rest of
+the click-automation course's footprint — `orchestrate.sh`, `LABS/`,
+`docs/course_outline.txt`, `docs/curriculum_map.md`,
+`docs/control_catalog_usage_guide.md`,
+`docs/ableton_ai_educational_risk_framework.md`, `docs/archived/v004/` —
+was considered and deliberately **left in place** (a broader removal was
+offered and declined). `README.md` was updated to note the deletion and
+mark the click-automation course as currently unpackaged (no builder
+script), rather than pretending it still has one. `build_mastering_env.sh`'s
+comments that referenced `build_runtime_env.sh` by name were also cleaned
+up so the mastering course's live build script doesn't point at a deleted
+file.
+
+This does not change anything in §3 above or the phases in
+`PHASED_PLAN.md` — Groove Pool, `KNOWN_ISSUES.md`, and the
+`SUNO_MASTERING_AGENT_POLICY.md` rewrite are unaffected and still the next
+real work.
+
+---
+
 ## 4. Where the plan lives
 
 `PHASED_PLAN.md` (same folder) turns §3 above into a checkable, resumable

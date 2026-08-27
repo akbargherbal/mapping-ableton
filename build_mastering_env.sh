@@ -32,7 +32,7 @@
 # section should be read as describing what EXISTS, not a claim that every
 # device control is already reachable.
 #
-# WHITELIST, not blacklist — same policy as build_runtime_env.sh: only files
+# WHITELIST, not blacklist: only files
 # listed in FILES[] below ever leave this repo.
 #
 # Usage:
@@ -44,8 +44,7 @@
 # docs/scripts change — straight overwrite of those, but mastering_progress.md
 # and KNOWN_ISSUES.md in the target are never touched once they exist (both
 # are live session artifacts the agent appends to, not build outputs), and
-# LABS/ / scripts/dumps/ raw dump files are preserved if pre-existing, same
-# as build_runtime_env.sh's policy.
+# LABS/ / scripts/dumps/ raw dump files are preserved if pre-existing.
 
 set -euo pipefail
 
@@ -105,8 +104,7 @@ OPTIONAL_FILES=(
 )
 POLICY_SRC_NAME="SUNO_MASTERING_AGENT_POLICY.md"
 POLICY_DEST_NAME="AGENTS.md"
-# Same dev-name/runtime-name split as build_runtime_env.sh, and for the same
-# reason: an assistant auditing THIS dev repo must not misread the mastering
+# Dev-name/runtime-name split, so an assistant auditing THIS dev repo must not misread the mastering
 # instructions as being directed at itself. Only in the runtime folder is it
 # renamed to AGENTS.md, where OpenCode auto-loads it for the agent under test.
 # -------------------------------------------------------------------------

@@ -93,6 +93,9 @@ Weak (needs more work):             Module 1 (Browser) > Module 2 (Warp) > Modul
       not a full re-scan.
 - [ ] Before Module 1/3 (Browser), test the "live name-based tree walk"
       hypothesis on one simple example before generalizing it.
-- [ ] Add an explicit rule to `ABLETON_AGENT_POLICY.md` blocking Groove
-      Pool from ever being opened — this doesn't need to wait, you can
-      do it right now while the project is paused.
+- [ ] ~~Add an explicit rule to `ABLETON_AGENT_POLICY.md` blocking Groove
+      Pool~~ — moot: that file was a placeholder and has been deleted
+      (2026-08-27, this course has no policy file currently). The Groove
+      Pool guard now belongs to the mastering course; see `PHASED_PLAN.md`
+      Phase 0 in the repo root for the actual code-level fix
+      (`scripts/keyboard_shortcuts.py`).

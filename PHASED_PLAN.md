@@ -14,13 +14,17 @@ can jump straight to the first unchecked box.
 
 ## Current Status
 
-> **Phase:** 0 not started. This plan was written at the end of a session
-> that diagnosed the problem (see `context.md`) and drafted two intermediate
-> policy rewrites in-conversation, but made **no changes to the actual
-> repo files** — everything below is still to do.
-> **Last updated:** this session — wrote `context.md` and this file from
-> scratch to capture the diagnosis and the plan before starting the code
-> change next session.
+> **Phase:** 0 not started (still the first real item below). Since this
+> plan was originally written, one small out-of-band cleanup landed: the
+> click-automation course's placeholder policy file
+> (`ABLETON_AGENT_POLICY.md`) and its orphaned builder script
+> (`build_runtime_env.sh`) were deleted, and references to them in
+> `README.md` and `build_mastering_env.sh` were fixed up. See `context.md`
+> §3a for the full writeup — it doesn't change anything about Phases 0–3
+> below, just removed some dead weight the diagnosis in §2 also applies to.
+> **Last updated:** this session — recorded the `ABLETON_AGENT_POLICY.md` /
+> `build_runtime_env.sh` deletion. Phase 0 (Groove Pool code fix) itself is
+> still not started.
 
 ---
 

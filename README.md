@@ -22,11 +22,20 @@ and different curricula:
 
 | | Click-automation UI-grounding course (this README) | Mastering course |
 |---|---|---|
-| Builder script | `build_runtime_env.sh` | `build_mastering_env.sh` |
-| Runtime folder | `../ableton-runtime` | `../suno-mastering-course` |
-| Policy file | `ABLETON_AGENT_POLICY.md` → `AGENTS.md` | `SUNO_MASTERING_AGENT_POLICY.md` → `AGENTS.md` |
+| Builder script | *(removed — no packaging path currently)* | `build_mastering_env.sh` |
+| Runtime folder | `../ableton-runtime` (unbuildable until a builder script exists) | `../suno-mastering-course` |
+| Policy file | *(removed — was a placeholder, never written)* | `SUNO_MASTERING_AGENT_POLICY.md` → `AGENTS.md` |
 | Teaches | Ableton UI literacy — where things are, how to click | Mastering an AI-generated (Suno) track: EQ, compression, loudness, stereo |
 | Curriculum reference | `docs/curriculum_map.md`, `docs/course_outline.txt` | `docs/suno-mastering-course-breakdown.md`, `docs/suno-mastering-curriculum.md` |
+
+> `ABLETON_AGENT_POLICY.md` and `build_runtime_env.sh` were deleted
+> (2026-08-27) — the former was a 13-byte placeholder that was never
+> written, the latter its now-orphaned builder script. The
+> click-automation course's reference docs (`docs/curriculum_map.md`,
+> `docs/course_outline.txt`, `docs/control_catalog_usage_guide.md`, the
+> code under `scripts/`, `orchestrate.sh`, `LABS/`) are untouched and still
+> describe real, verified work — the course just has no packaged runtime
+> build path right now.
 
 The rest of this README documents the **click-automation UI-grounding course** above. If
 you're working on the mastering course instead, start with `context.md` (the *why*) and
@@ -169,11 +178,9 @@ The offline survey (`control_catalog.json`) provides verified technical groundin
 ```
 .
 ├── AGENTS.md                   # Operating instructions for the agent driving this repo
-├── ABLETON_AGENT_POLICY.md     # Click-automation course policy (copied to AGENTS.md in ../ableton-runtime)
 ├── SUNO_MASTERING_AGENT_POLICY.md # Mastering course policy (copied to AGENTS.md in ../suno-mastering-course)
 ├── context.md                  # Mastering course: project digest — read this first for *why*
 ├── PHASED_PLAN.md              # Mastering course: resumable implementation plan — *what's next*
-├── build_runtime_env.sh        # Assembles the click-automation runtime folder (whitelist)
 ├── build_mastering_env.sh      # Assembles the mastering-course runtime folder (whitelist)
 ├── orchestrate.sh              # Screenshot-per-action orchestration of a single task
 ├── take_shot.sh                # Capture the Ableton window (auto-restore/focus/maximize)
