@@ -238,6 +238,9 @@ For each lesson:
 3. Pull the actual resulting parameter values via `ableton-mcp-extended` (see "Verify, Don't
    Trust" below) and give feedback grounded in real numbers, not the learner's self-report.
 4. Log the outcome in `mastering_progress.md` (see below) before moving on.
+5. If something went wrong in a way that met the bar in "Known-Issues Log" below (not
+   ordinary teaching friction — see that section for the line), record or update it there
+   before moving on. Most lessons will have nothing to add here; that's expected.
 
 ## Verify, Don't Trust: What's Machine-Checkable vs. Ear-Only
 
@@ -276,3 +279,23 @@ or "the vocal channel" and the learner only has one bus, that's the tell.
 Log every session to `mastering_progress.md`, one row per session: date, track, lesson,
 before/after self-rating (1–5, learner's own judgment), defect addressed. Check that file
 at the start of a session if the learner says "pick up where we left off."
+
+## Known-Issues Log
+
+`KNOWN_ISSUES.md` (root of this runtime folder) is a **separate, deliberately lean** log from
+`mastering_progress.md` above. It is not a session diary — it exists to catch bad
+assumptions baked into *this policy file*, the scripts, or the docs, so they get fixed at
+the root instead of silently costing time every session they recur.
+
+**Do not log every snag.** Ordinary tutoring friction — the learner got confused, an
+ear-only judgment call was debated, one particular track's audio was unusually messy — is
+expected and normal. It is not what this file is for. Full inclusion/exclusion criteria and
+the row format live in `KNOWN_ISSUES.md` itself; read that before adding an entry, not just
+this summary. In short, something only qualifies if it's structural (lives in the policy/
+scripts/docs, not the specific session), would recur unchanged next time, and is cheap to
+fix at the root relative to what it costs left alone.
+
+**When to check it:** at the start of a session, alongside `mastering_progress.md` — an
+`Open` row may mean a workaround is still needed until the root fix lands. **When to write
+to it:** per step 5 of "The Lesson Loop" above, only when a qualifying snag actually
+occurs — most sessions add nothing.

@@ -42,9 +42,10 @@
 # Point OpenCode's working directory at <target_dir> for the mastering
 # course. Re-run any time SUNO_MASTERING_AGENT_POLICY.md or the whitelisted
 # docs/scripts change — straight overwrite of those, but mastering_progress.md
-# in the target is never touched once it exists (session log, not a build
-# artifact), and LABS/ / scripts/dumps/ raw dump files are preserved if
-# pre-existing, same as build_runtime_env.sh's policy.
+# and KNOWN_ISSUES.md in the target are never touched once they exist (both
+# are live session artifacts the agent appends to, not build outputs), and
+# LABS/ / scripts/dumps/ raw dump files are preserved if pre-existing, same
+# as build_runtime_env.sh's policy.
 
 set -euo pipefail
 
@@ -152,6 +153,20 @@ if [ ! -f "$progress_target" ]; then
   echo "  created: mastering_progress.md (template)"
 else
   echo "  preserved: mastering_progress.md (existing session log untouched)"
+fi
+
+# KNOWN_ISSUES.md is the same shape of artifact as mastering_progress.md above:
+# the agent appends to it live during sessions (see SUNO_MASTERING_AGENT_POLICY.md
+# "Known-Issues Log"), so a re-run must never clobber it. Dev-repo name differs
+# from the runtime name -- same construct as the POLICY_SRC_NAME/POLICY_DEST_NAME
+# rename above -- so this is a straight cp-with-rename, seeded once.
+known_issues_target="$TARGET/KNOWN_ISSUES.md"
+if [ ! -f "$known_issues_target" ]; then
+  cp -f "$SCRIPT_DIR/docs/MASTERING_COURSE_KNOWN_ISSUES.md" "$known_issues_target"
+  echo "  created: KNOWN_ISSUES.md (seeded from docs/MASTERING_COURSE_KNOWN_ISSUES.md)"
+else
+  echo "  preserved: KNOWN_ISSUES.md (existing runtime log untouched -- pull its"
+  echo "             entries back into docs/MASTERING_COURSE_KNOWN_ISSUES.md by hand)"
 fi
 
 echo "[build] done. $((${#FILES[@]} + 1)) files synced."
