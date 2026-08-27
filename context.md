@@ -67,6 +67,50 @@ fallback), not yet started.
 
 ---
 
+## 2a. Known-Issues logging system (added this session)
+
+**What it's for:** distinct from the phased-plan work above and from
+`mastering_progress.md`'s per-lesson session log. This is a mechanism for
+the *agent itself*, while tutoring live, to flag recurring policy/script/doc
+bugs it runs into — so they get fixed at the root instead of quietly eating
+time every session — without turning into a dumping ground for every minor
+snag. Deliberately kept lean: a strict three-part bar (structural, will
+recur, cheap to fix at the root vs. cost of leaving it) plus an explicit
+"don't log these" list (ordinary teaching friction, one-off track weirdness,
+one-time flukes).
+
+**What was built:**
+- `docs/MASTERING_COURSE_KNOWN_ISSUES.md` — the dev-repo source: the bar,
+  the exclusion list, and the row format (one row per distinct root cause,
+  `Times Seen`/`Last Seen` bumped on repeats rather than duplicated,
+  `Status` of `Open`/`Fixed`/`Wontfix`).
+- `build_mastering_env.sh` now seeds this into the runtime folder as
+  `KNOWN_ISSUES.md` at the root, treating it exactly like
+  `mastering_progress.md`: created once from the dev-repo template, then
+  **never overwritten on re-run** — because the agent appends to it live
+  during sessions, so it's a runtime artifact, not a build output. Verified
+  by running the build twice with a manual edit in between: seeds on first
+  run, preserved untouched on the second.
+- `SUNO_MASTERING_AGENT_POLICY.md` gained a "Known-Issues Log" section (when
+  to check it, when to write to it) and a step 5 in "The Lesson Loop."
+
+**A mistake caught and fixed mid-session, worth remembering:** the first
+draft of `docs/MASTERING_COURSE_KNOWN_ISSUES.md` referred to dev-repo-only
+artifacts — `SUNO_MASTERING_AGENT_POLICY.md` (by its dev name, not
+`AGENTS.md`), `PHASED_PLAN.md`, and the README — inside a file whose exact
+content ships verbatim into the isolated runtime folder as `KNOWN_ISSUES.md`.
+The runtime agent has none of those files (see the whitelist in §1's table),
+so those references would have been dead ends the first time the agent tried
+to follow one. **General lesson, not just a one-off fix:** anything that
+ends up inside a whitelisted/renamed file must only reference other
+whitelisted/renamed files — the runtime folder's own contents, never the dev
+repo's. Rewrote the file to only reference `AGENTS.md`,
+`scripts/dumps/control_catalog.json`, and `mastering_progress.md` — all
+things that actually exist at runtime. **This exact class of bug still
+exists, unfixed, elsewhere — see finding 3 in §4.**
+
+---
+
 ## 3. What's problematic about our current approach (the deeper issue)
 
 Early in this session the instinct was: *"user needs X, task X is missing
@@ -133,6 +177,21 @@ agent reasoning over stale `bounding_rect` pixel data it shouldn't use).
    call the three proven-safe primitives directly with a live-looked-up
    `automation_id`, instead of requiring a new named task per scenario.
 
+3. **NEW this session — dev-env leaks inside `SUNO_MASTERING_AGENT_POLICY.md`
+   itself.** Found while fixing the same class of bug in the known-issues
+   doc (§2a), but **not yet fixed here** — flagged, not touched, since it
+   wasn't the task in hand this session. Three references inside the file
+   that ships verbatim as the runtime `AGENTS.md` point at files the runtime
+   agent doesn't have: `PHASED_PLAN.md` (Phase 2 mention, tooling section),
+   "the README's [escalation] ladder" (Escalation Decision Rule section),
+   and `context.md` (this file — "vision agent" mention in the Vision
+   Fallback section). All three need rewording to describe the content
+   inline or point at a file that's actually in the runtime whitelist,
+   the same fix already applied to the known-issues doc in §2a. Good
+   first candidate for an actual row in the new `KNOWN_ISSUES.md` once a
+   session hits one of these dead ends live, or just fix proactively next
+   session — either is fine, it's already understood.
+
 (For the record, the *other* crash risk — `SetValue()` on any Slider — **is**
 properly guarded already: disabled in code, documented in three places in
 `automate_ableton_task.py`, no action needed there.)
@@ -171,3 +230,13 @@ this project back up later, read this file for *why*, then go straight to
    take a screenshot and diagnose before improvising.
 6. Treat `docs/curriculum_map.md` and `docs/course_outline.txt` as
    deprecated; don't let a future session rediscover and re-trust them.
+7. **NEW:** Fix the three dev-env leaks in `SUNO_MASTERING_AGENT_POLICY.md`
+   found this session (§4.3) — `PHASED_PLAN.md`, the README ladder
+   reference, and `context.md`, all pointing the runtime agent at files it
+   doesn't have. Small, low-risk, same shape of fix already done in §2a.
+8. **NEW:** No automated way yet to pull live entries from the runtime
+   `KNOWN_ISSUES.md` back into the dev-repo's
+   `docs/MASTERING_COURSE_KNOWN_ISSUES.md` — currently a manual, "remember
+   to do it" step (noted in the build script's own output). Not urgent
+   until the log actually has entries, but will be forgotten if left as
+   pure tribal knowledge.
