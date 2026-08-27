@@ -14,9 +14,26 @@ can jump straight to the first unchecked box.
 
 ## Current Status
 
-> **Phase:** 0, 0b, and 1 done. Phase 2 (`SUNO_MASTERING_AGENT_POLICY.md`
-> rewrite) is next and not started.
+> **Phase:** 0, 0b, 1, and 2 done. Phase 3 (`build_mastering_env.sh`
+> reconciliation) is next and not started.
 > **Last updated:** this session —
+> 5. **Phase 2 completed**: `SUNO_MASTERING_AGENT_POLICY.md` rewritten —
+>    Groove Pool references removed entirely (no callable path left to warn
+>    about); Browser-loading and manual-cross-reference backstory trimmed to
+>    plain instructions (MCP-only for device loading confirmed as the
+>    correct default, not just a preference — Browser list items have no
+>    `automation_id`, so clicking can't resolve them regardless); the
+>    "already demonstrated once" rule relaxed to allow re-demonstrating on
+>    request; Learner Profile trimmed of domain specifics that duplicate
+>    the curriculum docs; "Progress Tracking" and `mastering_progress.md`
+>    removed entirely (Lesson Loop and Known-Issues Log renumbered/reworded
+>    accordingly); Known-Issues Log section's framing updated to match
+>    Phase 1's open-investigation model; dev-only cross-references
+>    (`README.md`, `context.md`, `PHASED_PLAN.md`, `.gitignore`, "Phase N"
+>    bookkeeping, internal vision-agent-routing narration) removed
+>    throughout. Role, Curriculum pointers, Global Rules, the rest of the
+>    Lesson Loop, Verify/Don't Trust, and The Stems Trap confirmed
+>    unchanged.
 > 4. **Phase 1 completed**: `docs/MASTERING_COURSE_KNOWN_ISSUES.md`'s
 >    exclusion bullet for gaps "already named in `AGENTS.md`" removed (that
 >    exclusion was backwards once the policy stops pre-declaring things
@@ -245,47 +262,54 @@ detail, and no crash forensics — because Phase 0 removed the thing that
 needed narrating around, and Phase 1 gave crash/gap tracking a proper home
 outside this file.
 
-- [ ] Remove the standalone Groove Pool "hard rule" callout entirely. With
+- [x] Remove the standalone Groove Pool "hard rule" callout entirely. With
       Phase 0 done, there's no automated path to warn against — if it's
       not part of the curriculum and not a callable action, the policy
       doesn't need to mention it at all. If the learner opens it manually
       and something happens, that's exactly what `KNOWN_ISSUES.md` (Phase
-      1) is for, not this file.
-- [ ] Remove the Browser-loading and Info-panel "no automation surface"
+      1) is for, not this file. Confirmed: zero mentions of Groove Pool
+      remain anywhere in the policy file.
+- [x] Remove the Browser-loading and Info-panel "no automation surface"
       justifications; keep only the plain instruction ("device loading
       goes through MCP") without the backstory of why clicking doesn't
-      work. Confirm with the person whether clicking should still be tried
-      first now (see the open question logged at the end of the previous
-      session) or whether MCP-first stays the default.
-- [ ] Relax the "already demonstrated once this session" rule per this
+      work. Confirmed with the person whether clicking should still be
+      tried first now or whether MCP-first stays the default — person
+      deferred to judgment; kept MCP-only, since Browser list items having
+      no `automation_id` is a confirmed technical constraint (clicking
+      cannot resolve them), not a preference to weigh.
+- [x] Relax the "already demonstrated once this session" rule per this
       session's decision: keep demonstrating again if the learner asks to
       see it again; only default to "invite them to do it themselves" when
       they haven't asked otherwise.
-- [ ] Trim "Learner Profile" down to what actually changes how the agent
+- [x] Trim "Learner Profile" down to what actually changes how the agent
       should behave (novice, single stereo file / no stems, no paid
       plugins) and cut domain specifics that duplicate the curriculum docs
       (exact frequency ranges, what `matchering` does) — those live in
       `docs/suno-mastering-course-breakdown.md` /
       `docs/suno-mastering-curriculum.md` already.
-- [ ] Remove the "Progress Tracking" section entirely. Sessions are
+- [x] Remove the "Progress Tracking" section entirely. Sessions are
       stateless; the learner states their starting point conversationally
       each time. (Leaves an open question for Phase 3 below: does
       `mastering_progress.md` still get created by the build script if
       nothing in the policy references it?)
-- [ ] Rewrite the Known-Issues Log section's framing to match Phase 1's
+- [x] Rewrite the Known-Issues Log section's framing to match Phase 1's
       new version of the doc: check it at the start of a session the same
       as before, but writing to it now includes "tried something and it's
       unconfirmed/still investigating," not just confirmed root-caused
       fixes.
-- [ ] Re-verify the "When Something Doesn't Work" / escalation section
+- [x] Re-verify the "When Something Doesn't Work" / escalation section
       still reads cleanly once the Groove Pool callout and the Browser
       justification are gone — it may compress further once those two
-      cross-references are removed.
-- [ ] Full read-through against the two prior in-conversation drafts from
+      cross-references are removed. Confirmed: full read-through done,
+      reads cleanly, decision rule steps and quick-reference table both
+      updated to match.
+- [x] Full read-through against the two prior in-conversation drafts from
       this session (not saved as files, only discussed) to make sure
       nothing legitimate got dropped along with the bloat — Role, Curriculum
       pointers, Global Rules, Lesson Loop, Verify/Don't Trust, and The
       Stems Trap were all confirmed fine as-is and shouldn't change.
+      Confirmed unchanged in this session's read-through (no saved prior
+      drafts existed to diff against, per the note this refers to).
 
 **Definition of done:** a person can read the entire file in one pass
 without hitting a place where it explains *why* a rule exists via incident
